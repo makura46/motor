@@ -9,7 +9,7 @@
     <peripheral>
       <name>reverse_3</name>
       <description>No description available</description>
-      <baseAddress>0x40006476</baseAddress>
+      <baseAddress>0x40006477</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -38,18 +38,9 @@
       </addressBlock>
       <registers>
         <register>
-          <name>motor3_COMPARE_Reg_</name>
-          <description>UDB.D0 - Assigned Compare Value</description>
-          <addressOffset>0x40006425</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
-        <register>
           <name>motor3_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006477</addressOffset>
+          <addressOffset>0x40006474</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -81,7 +72,7 @@
         <register>
           <name>motor3_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006487</addressOffset>
+          <addressOffset>0x40006485</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -125,9 +116,36 @@
           </fields>
         </register>
         <register>
+          <name>motor3_DeadBand_Counter</name>
+          <description>UDB DeadBand - DeadBand Counter Value</description>
+          <addressOffset>0x40006504</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+        <register>
+          <name>motor3_DeadBand_Count</name>
+          <description>UDB DeadBand - Assigned DeadBand Count Value</description>
+          <addressOffset>0x40006524</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+        <register>
+          <name>motor3_COMPARE_Reg_</name>
+          <description>UDB.D0 - Assigned Compare Value</description>
+          <addressOffset>0x40006526</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+        <register>
           <name>motor3_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006495</addressOffset>
+          <addressOffset>0x40006596</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -249,24 +267,6 @@
             </field>
           </fields>
         </register>
-        <register>
-          <name>motor3_DeadBand_Counter</name>
-          <description>UDB DeadBand - DeadBand Counter Value</description>
-          <addressOffset>0x40006507</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
-        <register>
-          <name>motor3_DeadBand_Count</name>
-          <description>UDB DeadBand - Assigned DeadBand Count Value</description>
-          <addressOffset>0x40006527</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -282,7 +282,7 @@
         <register>
           <name>TX_UART_1_TX_DATA</name>
           <description>TX Data Register</description>
-          <addressOffset>0x4000644B</addressOffset>
+          <addressOffset>0x40006548</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -291,7 +291,7 @@
         <register>
           <name>TX_UART_1_TX_STATUS</name>
           <description>TX status register</description>
-          <addressOffset>0x40006464</addressOffset>
+          <addressOffset>0x40006564</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -342,7 +342,7 @@
         <register>
           <name>RX_UART_PS3_RX_ADDRESS1</name>
           <description>RX Address1 Register</description>
-          <addressOffset>0x40006526</addressOffset>
+          <addressOffset>0x40006425</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -351,7 +351,7 @@
         <register>
           <name>RX_UART_PS3_RX_ADDRESS2</name>
           <description>RX Address2 Register</description>
-          <addressOffset>0x40006536</addressOffset>
+          <addressOffset>0x40006435</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -360,7 +360,7 @@
         <register>
           <name>RX_UART_PS3_RX_DATA</name>
           <description>RX Data Register</description>
-          <addressOffset>0x40006546</addressOffset>
+          <addressOffset>0x40006445</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -369,7 +369,7 @@
         <register>
           <name>RX_UART_PS3_RX_STATUS</name>
           <description>RX status register</description>
-          <addressOffset>0x40006567</addressOffset>
+          <addressOffset>0x40006565</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -431,7 +431,7 @@
     <peripheral>
       <name>reverse_1</name>
       <description>No description available</description>
-      <baseAddress>0x40006577</baseAddress>
+      <baseAddress>0x40006574</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -462,7 +462,7 @@
         <register>
           <name>motor1_DeadBand_Counter</name>
           <description>UDB DeadBand - DeadBand Counter Value</description>
-          <addressOffset>0x40006406</addressOffset>
+          <addressOffset>0x40006505</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -471,16 +471,57 @@
         <register>
           <name>motor1_DeadBand_Count</name>
           <description>UDB DeadBand - Assigned DeadBand Count Value</description>
-          <addressOffset>0x40006426</addressOffset>
+          <addressOffset>0x40006525</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
         </register>
         <register>
+          <name>motor1_COMPARE_Reg_</name>
+          <description>UDB.D0 - Assigned Compare Value</description>
+          <addressOffset>0x40006527</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+        </register>
+        <register>
+          <name>motor1_Control_Reg</name>
+          <description>UDB Control Register - Assigned Control Register Value</description>
+          <addressOffset>0x40006577</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+          <fields>
+            <field>
+              <name>CTRL_ENABLE</name>
+              <description>Enable the PWM</description>
+              <lsb>7</lsb>
+              <msb>7</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CMPMODE2</name>
+              <description>Compare mode 2</description>
+              <lsb>3</lsb>
+              <msb>5</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CMPMODE1</name>
+              <description>Compare mode 1</description>
+              <lsb>0</lsb>
+              <msb>2</msb>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>motor1_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006485</addressOffset>
+          <addressOffset>0x40006587</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -524,50 +565,9 @@
           </fields>
         </register>
         <register>
-          <name>motor1_COMPARE_Reg_</name>
-          <description>UDB.D0 - Assigned Compare Value</description>
-          <addressOffset>0x40006525</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-        </register>
-        <register>
-          <name>motor1_Control_Reg</name>
-          <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006576</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-          <fields>
-            <field>
-              <name>CTRL_ENABLE</name>
-              <description>Enable the PWM</description>
-              <lsb>7</lsb>
-              <msb>7</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CMPMODE2</name>
-              <description>Compare mode 2</description>
-              <lsb>3</lsb>
-              <msb>5</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CMPMODE1</name>
-              <description>Compare mode 1</description>
-              <lsb>0</lsb>
-              <msb>2</msb>
-              <access>read-write</access>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>motor1_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006595</addressOffset>
+          <addressOffset>0x40006597</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -694,7 +694,7 @@
     <peripheral>
       <name>reverse_2</name>
       <description>No description available</description>
-      <baseAddress>0x4000647A</baseAddress>
+      <baseAddress>0x40006479</baseAddress>
       <addressBlock>
         <offset>0</offset>
         <size>0x0</size>
@@ -725,7 +725,7 @@
         <register>
           <name>motor2_DeadBand_Counter</name>
           <description>UDB DeadBand - DeadBand Counter Value</description>
-          <addressOffset>0x40006508</addressOffset>
+          <addressOffset>0x40006404</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -734,7 +734,7 @@
         <register>
           <name>motor2_DeadBand_Count</name>
           <description>UDB DeadBand - Assigned DeadBand Count Value</description>
-          <addressOffset>0x40006528</addressOffset>
+          <addressOffset>0x40006424</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -743,48 +743,16 @@
         <register>
           <name>motor2_COMPARE_Reg_</name>
           <description>UDB.D0 - Assigned Compare Value</description>
-          <addressOffset>0x40006529</addressOffset>
+          <addressOffset>0x40006428</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
           <resetMask>0</resetMask>
-        </register>
-        <register>
-          <name>motor2_Control_Reg</name>
-          <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006579</addressOffset>
-          <size>8</size>
-          <access>read-write</access>
-          <resetValue>0</resetValue>
-          <resetMask>0</resetMask>
-          <fields>
-            <field>
-              <name>CTRL_ENABLE</name>
-              <description>Enable the PWM</description>
-              <lsb>7</lsb>
-              <msb>7</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CMPMODE2</name>
-              <description>Compare mode 2</description>
-              <lsb>3</lsb>
-              <msb>5</msb>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>CTRL_CMPMODE1</name>
-              <description>Compare mode 1</description>
-              <lsb>0</lsb>
-              <msb>2</msb>
-              <access>read-write</access>
-            </field>
-          </fields>
         </register>
         <register>
           <name>motor2_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006589</addressOffset>
+          <addressOffset>0x40006487</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -830,7 +798,7 @@
         <register>
           <name>motor2_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006599</addressOffset>
+          <addressOffset>0x40006498</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -949,6 +917,38 @@
                   <value>1</value>
                 </enumeratedValue>
               </enumeratedValues>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>motor2_Control_Reg</name>
+          <description>UDB Control Register - Assigned Control Register Value</description>
+          <addressOffset>0x40006578</addressOffset>
+          <size>8</size>
+          <access>read-write</access>
+          <resetValue>0</resetValue>
+          <resetMask>0</resetMask>
+          <fields>
+            <field>
+              <name>CTRL_ENABLE</name>
+              <description>Enable the PWM</description>
+              <lsb>7</lsb>
+              <msb>7</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CMPMODE2</name>
+              <description>Compare mode 2</description>
+              <lsb>3</lsb>
+              <msb>5</msb>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>CTRL_CMPMODE1</name>
+              <description>Compare mode 1</description>
+              <lsb>0</lsb>
+              <msb>2</msb>
+              <access>read-write</access>
             </field>
           </fields>
         </register>

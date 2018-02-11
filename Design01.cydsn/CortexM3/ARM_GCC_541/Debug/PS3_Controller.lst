@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
   41 000a 564B     		ldr	r3, .L11
   42 000c 1870     		strb	r0, [r3]
   15:PS3_Controller.c **** 	if(count==-1)
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 2
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 2
 
 
   43              		.loc 1 15 0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
   81 0052 9DF80010 		ldrb	r1, [sp]	@ zero_extendqisi2
   82 0056 63F38611 		bfi	r1, r3, #6, #1
   32:PS3_Controller.c **** 			rxdata[0]>>=1;
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 3
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 3
 
 
   83              		.loc 1 32 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  121 00a6 2F4A     		ldr	r2, .L11
  122 00a8 5371     		strb	r3, [r2, #5]
  123              	.L7:
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 4
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 4
 
 
   49:PS3_Controller.c ****             }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  161              		.loc 1 65 0
  162 00f4 5208     		lsrs	r2, r2, #1
   66:PS3_Controller.c **** 			ps3rxdata.CROSS=rxdata[1]&0x1;
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 5
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 5
 
 
  163              		.loc 1 66 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  204              	.L4:
   80:PS3_Controller.c **** 	}
   81:PS3_Controller.c **** 	else
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 6
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 6
 
 
   82:PS3_Controller.c ****     {
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
   91:PS3_Controller.c **** 	UART_PS3_ClearRxBuffer();
  250              		.loc 1 91 0
  251 0006 FFF7FEFF 		bl	UART_PS3_ClearRxBuffer
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 7
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 7
 
 
  252              	.LVL2:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  298              		.thumb_func
  299              		.type	PS3_Controller_get, %function
  300              	PS3_Controller_get:
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 8
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 8
 
 
  301              	.LFB66:
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  349 0004 00000000 		.space	6
  349      0000
  350              		.text
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 9
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 9
 
 
  351              	.Letext0:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  405 005d 50020000 		.4byte	.LASF6
  406 0061 02       		.uleb128 0x2
  407 0062 08       		.byte	0x8
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 10
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 10
 
 
  408 0063 07       		.byte	0x7
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  462 00cc CE010000 		.4byte	0x1ce
  463 00d0 07       		.uleb128 0x7
  464 00d1 95000000 		.4byte	.LASF19
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 11
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 11
 
 
  465 00d5 05       		.byte	0x5
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  519 012d 05       		.byte	0x5
  520 012e 10       		.byte	0x10
  521 012f 81000000 		.4byte	0x81
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 12
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 12
 
 
  522 0133 01       		.byte	0x1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  576 018a 01       		.byte	0x1
  577 018b 01       		.byte	0x1
  578 018c 03       		.byte	0x3
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 13
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 13
 
 
  579 018d 01       		.byte	0x1
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  633 01f9 02       		.uleb128 0x2
  634 01fa 91       		.byte	0x91
  635 01fb 70       		.sleb128 -16
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 14
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 14
 
 
  636 01fc 0C       		.uleb128 0xc
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  690 027d CE010000 		.4byte	0x1ce
  691 0281 00000000 		.4byte	.LFB66
  692 0285 10000000 		.4byte	.LFE66-.LFB66
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 15
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 15
 
 
  693 0289 01       		.uleb128 0x1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  747 02fb 03       		.byte	0x3
  748 02fc 00000000 		.4byte	PS3_temp
  749 0300 16       		.uleb128 0x16
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 16
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 16
 
 
  750 0301 00000000 		.4byte	.LASF40
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  804 0011 00       		.byte	0
  805 0012 00       		.byte	0
  806 0013 02       		.uleb128 0x2
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 17
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 17
 
 
  807 0014 24       		.uleb128 0x24
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  861 004a 3B       		.uleb128 0x3b
  862 004b 0B       		.uleb128 0xb
  863 004c 01       		.uleb128 0x1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 18
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 18
 
 
  864 004d 13       		.uleb128 0x13
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  918 0083 49       		.uleb128 0x49
  919 0084 13       		.uleb128 0x13
  920 0085 38       		.uleb128 0x38
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 19
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 19
 
 
  921 0086 0B       		.uleb128 0xb
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  975 00c1 01       		.byte	0x1
  976 00c2 11       		.uleb128 0x11
  977 00c3 01       		.uleb128 0x1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 20
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 20
 
 
  978 00c4 31       		.uleb128 0x31
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  1032 00fe 19       		.uleb128 0x19
  1033 00ff 00       		.byte	0
  1034 0100 00       		.byte	0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 21
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 21
 
 
  1035 0101 11       		.uleb128 0x11
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  1089 0137 13       		.uleb128 0x13
  1090 0138 2F       		.uleb128 0x2f
  1091 0139 0B       		.uleb128 0xb
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 22
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 22
 
 
  1092 013a 00       		.byte	0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  1144      00000201 
  1144      FB0E0D00 
  1144      01010101 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 23
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 23
 
 
  1145              	.LASF40:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  1170      727400
  1171              	.LASF19:
  1172 0095 53454C45 		.ascii	"SELECT\000"
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 24
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 24
 
 
  1172      435400
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  1197              	.LASF12:
  1198 012e 75696E74 		.ascii	"uint16\000"
  1198      313600
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 25
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 25
 
 
  1199              	.LASF13:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  1220              	.LASF18:
  1221 0247 73697A65 		.ascii	"sizetype\000"
  1221      74797065 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 26
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 26
 
 
  1221      00
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
  1251 02ce 5053335F 		.ascii	"PS3_Controller_get\000"
  1251      436F6E74 
  1251      726F6C6C 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 27
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccauti0Y.s 			page 27
 
 
  1251      65725F67 
