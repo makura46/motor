@@ -28,12 +28,14 @@ int main(void)
     motor2_Start();
     motor3_Start();
 	PS3_Start();
+    UART_1_Start();
 	PS3Controller *ps3;
     char i;
 	uint8 power;
 	uint8 m[3] = {0};
     double s;
 	double x, y;
+    char output[100] = {0};
     
     for(;;)
     {
@@ -64,6 +66,9 @@ int main(void)
 		motor1_WriteCompare(m[0]);
 		motor2_WriteCompare(m[1]);
 		motor3_WriteCompare(m[2]);
+        
+        sprintf(output, "%d %d %d\n", m[0], m[1], m[2]);
+        UART_1_PutString(output);
         /* Place your application code here. */
     }
 }

@@ -1,0 +1,1566 @@
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"PS3_Controller.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.ISR_PS3,"ax",%progbits
+  20              		.align	2
+  21              		.global	ISR_PS3
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	ISR_PS3, %function
+  25              	ISR_PS3:
+  26              	.LFB63:
+  27              		.file 1 "PS3_Controller.c"
+   1:PS3_Controller.c **** #include <project.h>
+   2:PS3_Controller.c **** #include "PS3_Controller.h"
+   3:PS3_Controller.c **** 
+   4:PS3_Controller.c **** int8   count = -1;
+   5:PS3_Controller.c **** uint8  rx = 0;
+   6:PS3_Controller.c **** uint8  rxdata[6] = {0};
+   7:PS3_Controller.c **** uint16 sum = 0;
+   8:PS3_Controller.c **** 
+   9:PS3_Controller.c **** PS3Controller PS3_temp;
+  10:PS3_Controller.c **** 
+  11:PS3_Controller.c **** CY_ISR(ISR_PS3)
+  12:PS3_Controller.c **** {
+  28              		.loc 1 12 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 8
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 00B5     		push	{lr}
+  33              		.cfi_def_cfa_offset 4
+  34              		.cfi_offset 14, -4
+  35 0002 83B0     		sub	sp, sp, #12
+  36              		.cfi_def_cfa_offset 16
+  13:PS3_Controller.c **** 	PS3Controller ps3rxdata;
+  14:PS3_Controller.c ****     rx = UART_PS3_GetByte();   
+  37              		.loc 1 14 0
+  38 0004 FFF7FEFF 		bl	UART_PS3_GetByte
+  39              	.LVL0:
+  40 0008 C0B2     		uxtb	r0, r0
+  41 000a 564B     		ldr	r3, .L11
+  42 000c 1870     		strb	r0, [r3]
+  15:PS3_Controller.c **** 	if(count==-1)
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 2
+
+
+  43              		.loc 1 15 0
+  44 000e 564B     		ldr	r3, .L11+4
+  45 0010 93F90030 		ldrsb	r3, [r3]
+  46 0014 B3F1FF3F 		cmp	r3, #-1
+  47 0018 08D1     		bne	.L2
+  16:PS3_Controller.c ****     {
+  17:PS3_Controller.c **** 		if(rx==0x80)
+  48              		.loc 1 17 0
+  49 001a 8028     		cmp	r0, #128
+  50 001c 40F09E80 		bne	.L1
+  18:PS3_Controller.c ****         {
+  19:PS3_Controller.c ****             sum=0;
+  51              		.loc 1 19 0
+  52 0020 0023     		movs	r3, #0
+  53 0022 504A     		ldr	r2, .L11
+  54 0024 5380     		strh	r3, [r2, #2]	@ movhi
+  20:PS3_Controller.c **** 			count=0;
+  55              		.loc 1 20 0
+  56 0026 504A     		ldr	r2, .L11+4
+  57 0028 1370     		strb	r3, [r2]
+  58 002a 97E0     		b	.L1
+  59              	.L2:
+  21:PS3_Controller.c **** 		}
+  22:PS3_Controller.c **** 	}
+  23:PS3_Controller.c **** 	else if(count==6)
+  60              		.loc 1 23 0
+  61 002c 062B     		cmp	r3, #6
+  62 002e 40F08C80 		bne	.L4
+  24:PS3_Controller.c ****     {
+  25:PS3_Controller.c **** 		if(rx==(uint8)(sum&0x7F))
+  63              		.loc 1 25 0
+  64 0032 4C4B     		ldr	r3, .L11
+  65 0034 9B78     		ldrb	r3, [r3, #2]	@ zero_extendqisi2
+  66 0036 03F07F03 		and	r3, r3, #127
+  67 003a 9842     		cmp	r0, r3
+  68 003c 7ED1     		bne	.L5
+  26:PS3_Controller.c ****         {
+  27:PS3_Controller.c **** 			ps3rxdata.SQUARE=rxdata[0]&0x1;
+  69              		.loc 1 27 0
+  70 003e 4948     		ldr	r0, .L11
+  71 0040 0379     		ldrb	r3, [r0, #4]	@ zero_extendqisi2
+  72 0042 9DF80120 		ldrb	r2, [sp, #1]	@ zero_extendqisi2
+  73 0046 63F34512 		bfi	r2, r3, #5, #1
+  28:PS3_Controller.c **** 			rxdata[0]>>=1;
+  74              		.loc 1 28 0
+  75 004a 5B08     		lsrs	r3, r3, #1
+  29:PS3_Controller.c **** 			ps3rxdata.L1=rxdata[0]&0x1;
+  76              		.loc 1 29 0
+  77 004c 63F30002 		bfi	r2, r3, #0, #1
+  30:PS3_Controller.c **** 			rxdata[0]>>=1;
+  78              		.loc 1 30 0
+  79 0050 5B08     		lsrs	r3, r3, #1
+  31:PS3_Controller.c **** 			ps3rxdata.L2=rxdata[0]&0x1;
+  80              		.loc 1 31 0
+  81 0052 9DF80010 		ldrb	r1, [sp]	@ zero_extendqisi2
+  82 0056 63F38611 		bfi	r1, r3, #6, #1
+  32:PS3_Controller.c **** 			rxdata[0]>>=1;
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 3
+
+
+  83              		.loc 1 32 0
+  84 005a 5B08     		lsrs	r3, r3, #1
+  33:PS3_Controller.c **** 			ps3rxdata.R1=rxdata[0]&0x1;
+  85              		.loc 1 33 0
+  86 005c 63F34102 		bfi	r2, r3, #1, #1
+  87 0060 8DF80120 		strb	r2, [sp, #1]
+  34:PS3_Controller.c **** 			rxdata[0]>>=1;
+  88              		.loc 1 34 0
+  89 0064 5B08     		lsrs	r3, r3, #1
+  90 0066 0371     		strb	r3, [r0, #4]
+  35:PS3_Controller.c **** 			ps3rxdata.R2=rxdata[0]&0x1;
+  91              		.loc 1 35 0
+  92 0068 0A46     		mov	r2, r1
+  93 006a 63F3C712 		bfi	r2, r3, #7, #1
+  94 006e 8DF80020 		strb	r2, [sp]
+  36:PS3_Controller.c ****             
+  37:PS3_Controller.c **** 			if((rxdata[1]&0x03)==0x3)
+  95              		.loc 1 37 0
+  96 0072 4379     		ldrb	r3, [r0, #5]	@ zero_extendqisi2
+  97 0074 03F00302 		and	r2, r3, #3
+  98 0078 032A     		cmp	r2, #3
+  99 007a 08D1     		bne	.L6
+  38:PS3_Controller.c ****             {
+  39:PS3_Controller.c **** 				ps3rxdata.START=1;
+ 100              		.loc 1 39 0
+ 101 007c 9DF80020 		ldrb	r2, [sp]	@ zero_extendqisi2
+ 102 0080 42F00202 		orr	r2, r2, #2
+ 103 0084 8DF80020 		strb	r2, [sp]
+  40:PS3_Controller.c ****  				rxdata[1]>>=2;
+ 104              		.loc 1 40 0
+ 105 0088 9B08     		lsrs	r3, r3, #2
+ 106 008a 4371     		strb	r3, [r0, #5]
+ 107 008c 0DE0     		b	.L7
+ 108              	.L6:
+  41:PS3_Controller.c ****             }
+  42:PS3_Controller.c ****             else
+  43:PS3_Controller.c ****             {
+  44:PS3_Controller.c ****                 ps3rxdata.START=0;
+ 109              		.loc 1 44 0
+ 110 008e 9DF80020 		ldrb	r2, [sp]	@ zero_extendqisi2
+  45:PS3_Controller.c ****                 ps3rxdata.UP=rxdata[1]&0x1;
+ 111              		.loc 1 45 0
+ 112 0092 02F0FD02 		and	r2, r2, #253
+ 113 0096 63F38202 		bfi	r2, r3, #2, #1
+  46:PS3_Controller.c **** 		    	rxdata[1]>>=1;
+ 114              		.loc 1 46 0
+ 115 009a 5B08     		lsrs	r3, r3, #1
+  47:PS3_Controller.c **** 			    ps3rxdata.DOWN=rxdata[1]&0x1;
+ 116              		.loc 1 47 0
+ 117 009c 63F30412 		bfi	r2, r3, #4, #1
+ 118 00a0 8DF80020 		strb	r2, [sp]
+  48:PS3_Controller.c **** 		    	rxdata[1]>>=1;
+ 119              		.loc 1 48 0
+ 120 00a4 5B08     		lsrs	r3, r3, #1
+ 121 00a6 2F4A     		ldr	r2, .L11
+ 122 00a8 5371     		strb	r3, [r2, #5]
+ 123              	.L7:
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 4
+
+
+  49:PS3_Controller.c ****             }
+  50:PS3_Controller.c **** 			if((rxdata[1]&0x03)==0x3)
+ 124              		.loc 1 50 0
+ 125 00aa 2E4B     		ldr	r3, .L11
+ 126 00ac 5B79     		ldrb	r3, [r3, #5]	@ zero_extendqisi2
+ 127 00ae 03F00302 		and	r2, r3, #3
+ 128 00b2 032A     		cmp	r2, #3
+ 129 00b4 09D1     		bne	.L8
+  51:PS3_Controller.c ****             {
+  52:PS3_Controller.c **** 				ps3rxdata.SELECT=1;
+ 130              		.loc 1 52 0
+ 131 00b6 9DF80020 		ldrb	r2, [sp]	@ zero_extendqisi2
+ 132 00ba 42F00102 		orr	r2, r2, #1
+ 133 00be 8DF80020 		strb	r2, [sp]
+  53:PS3_Controller.c ****                 rxdata[1]>>=2;
+ 134              		.loc 1 53 0
+ 135 00c2 9B08     		lsrs	r3, r3, #2
+ 136 00c4 274A     		ldr	r2, .L11
+ 137 00c6 5371     		strb	r3, [r2, #5]
+ 138 00c8 0EE0     		b	.L9
+ 139              	.L8:
+  54:PS3_Controller.c ****             }
+  55:PS3_Controller.c **** 			else
+  56:PS3_Controller.c ****             {
+  57:PS3_Controller.c **** 				ps3rxdata.RIGHT=rxdata[1]&0x1;
+ 140              		.loc 1 57 0
+ 141 00ca 9DF80020 		ldrb	r2, [sp]	@ zero_extendqisi2
+ 142 00ce 63F3C302 		bfi	r2, r3, #3, #1
+  58:PS3_Controller.c **** 				rxdata[1]>>=1;
+ 143              		.loc 1 58 0
+ 144 00d2 5B08     		lsrs	r3, r3, #1
+  59:PS3_Controller.c **** 				ps3rxdata.LEFT=rxdata[1]&0x1;
+ 145              		.loc 1 59 0
+ 146 00d4 63F34512 		bfi	r2, r3, #5, #1
+  60:PS3_Controller.c **** 				rxdata[1]>>=1;
+ 147              		.loc 1 60 0
+ 148 00d8 5B08     		lsrs	r3, r3, #1
+ 149 00da 2249     		ldr	r1, .L11
+ 150 00dc 4B71     		strb	r3, [r1, #5]
+  61:PS3_Controller.c ****                 ps3rxdata.SELECT=0;
+ 151              		.loc 1 61 0
+ 152 00de 1346     		mov	r3, r2
+ 153 00e0 6FF30003 		bfc	r3, #0, #1
+ 154 00e4 8DF80030 		strb	r3, [sp]
+ 155              	.L9:
+  62:PS3_Controller.c **** 			}
+  63:PS3_Controller.c ****             
+  64:PS3_Controller.c **** 			ps3rxdata.TRIANGLE=rxdata[1]&0x1;
+ 156              		.loc 1 64 0
+ 157 00e8 1E49     		ldr	r1, .L11
+ 158 00ea 4A79     		ldrb	r2, [r1, #5]	@ zero_extendqisi2
+ 159 00ec 9DF80130 		ldrb	r3, [sp, #1]	@ zero_extendqisi2
+ 160 00f0 62F38203 		bfi	r3, r2, #2, #1
+  65:PS3_Controller.c **** 			rxdata[1]>>=1;
+ 161              		.loc 1 65 0
+ 162 00f4 5208     		lsrs	r2, r2, #1
+  66:PS3_Controller.c **** 			ps3rxdata.CROSS=rxdata[1]&0x1;
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 5
+
+
+ 163              		.loc 1 66 0
+ 164 00f6 62F30413 		bfi	r3, r2, #4, #1
+  67:PS3_Controller.c **** 			rxdata[1]>>=1;
+ 165              		.loc 1 67 0
+ 166 00fa 5208     		lsrs	r2, r2, #1
+ 167 00fc 4A71     		strb	r2, [r1, #5]
+  68:PS3_Controller.c **** 			ps3rxdata.CIRCLE=rxdata[1]&0x1;
+ 168              		.loc 1 68 0
+ 169 00fe 62F3C303 		bfi	r3, r2, #3, #1
+ 170 0102 8DF80130 		strb	r3, [sp, #1]
+  69:PS3_Controller.c ****             
+  70:PS3_Controller.c **** 			ps3rxdata.ANALOG_LX=rxdata[2]&0x7f;
+ 171              		.loc 1 70 0
+ 172 0106 8B79     		ldrb	r3, [r1, #6]	@ zero_extendqisi2
+ 173 0108 03F07F03 		and	r3, r3, #127
+ 174 010c 8DF80430 		strb	r3, [sp, #4]
+  71:PS3_Controller.c **** 			ps3rxdata.ANALOG_LY=rxdata[3]&0x7f;
+ 175              		.loc 1 71 0
+ 176 0110 CB79     		ldrb	r3, [r1, #7]	@ zero_extendqisi2
+ 177 0112 03F07F03 		and	r3, r3, #127
+ 178 0116 8DF80530 		strb	r3, [sp, #5]
+  72:PS3_Controller.c **** 			ps3rxdata.ANALOG_RX=rxdata[4]&0x7f;
+ 179              		.loc 1 72 0
+ 180 011a 0B7A     		ldrb	r3, [r1, #8]	@ zero_extendqisi2
+ 181 011c 03F07F03 		and	r3, r3, #127
+ 182 0120 8DF80230 		strb	r3, [sp, #2]
+  73:PS3_Controller.c **** 			ps3rxdata.ANALOG_RY=rxdata[5]&0x7f;
+ 183              		.loc 1 73 0
+ 184 0124 4B7A     		ldrb	r3, [r1, #9]	@ zero_extendqisi2
+ 185 0126 03F07F03 		and	r3, r3, #127
+ 186 012a 8DF80330 		strb	r3, [sp, #3]
+  74:PS3_Controller.c **** 			
+  75:PS3_Controller.c **** 			PS3_temp=ps3rxdata;
+ 187              		.loc 1 75 0
+ 188 012e 0F4A     		ldr	r2, .L11+8
+ 189 0130 02AB     		add	r3, sp, #8
+ 190 0132 53F8080D 		ldr	r0, [r3, #-8]!	@ unaligned
+ 191 0136 1060     		str	r0, [r2]	@ unaligned
+ 192 0138 9B88     		ldrh	r3, [r3, #4]	@ unaligned
+ 193 013a 9380     		strh	r3, [r2, #4]	@ unaligned
+ 194              	.L5:
+  76:PS3_Controller.c **** 		
+  77:PS3_Controller.c **** 		}
+  78:PS3_Controller.c **** 		count=-1;
+ 195              		.loc 1 78 0
+ 196 013c FF22     		movs	r2, #255
+ 197 013e 0A4B     		ldr	r3, .L11+4
+ 198 0140 1A70     		strb	r2, [r3]
+  79:PS3_Controller.c **** 		sum=0;
+ 199              		.loc 1 79 0
+ 200 0142 0022     		movs	r2, #0
+ 201 0144 074B     		ldr	r3, .L11
+ 202 0146 5A80     		strh	r2, [r3, #2]	@ movhi
+ 203 0148 08E0     		b	.L1
+ 204              	.L4:
+  80:PS3_Controller.c **** 	}
+  81:PS3_Controller.c **** 	else
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 6
+
+
+  82:PS3_Controller.c ****     {
+  83:PS3_Controller.c **** 		rxdata[count++]=rx;
+ 205              		.loc 1 83 0
+ 206 014a 591C     		adds	r1, r3, #1
+ 207 014c 064A     		ldr	r2, .L11+4
+ 208 014e 1170     		strb	r1, [r2]
+ 209 0150 044A     		ldr	r2, .L11
+ 210 0152 1344     		add	r3, r3, r2
+ 211 0154 1871     		strb	r0, [r3, #4]
+  84:PS3_Controller.c **** 		sum+=rx;
+ 212              		.loc 1 84 0
+ 213 0156 5388     		ldrh	r3, [r2, #2]
+ 214 0158 1844     		add	r0, r0, r3
+ 215 015a 5080     		strh	r0, [r2, #2]	@ movhi
+ 216              	.L1:
+  85:PS3_Controller.c **** 	}
+  86:PS3_Controller.c **** }
+ 217              		.loc 1 86 0
+ 218 015c 03B0     		add	sp, sp, #12
+ 219              		.cfi_def_cfa_offset 4
+ 220              		@ sp needed
+ 221 015e 5DF804FB 		ldr	pc, [sp], #4
+ 222              	.L12:
+ 223 0162 00BF     		.align	2
+ 224              	.L11:
+ 225 0164 00000000 		.word	.LANCHOR0
+ 226 0168 00000000 		.word	.LANCHOR1
+ 227 016c 00000000 		.word	PS3_temp
+ 228              		.cfi_endproc
+ 229              	.LFE63:
+ 230              		.size	ISR_PS3, .-ISR_PS3
+ 231              		.section	.text.PS3_Start,"ax",%progbits
+ 232              		.align	2
+ 233              		.global	PS3_Start
+ 234              		.thumb
+ 235              		.thumb_func
+ 236              		.type	PS3_Start, %function
+ 237              	PS3_Start:
+ 238              	.LFB64:
+  87:PS3_Controller.c **** 
+  88:PS3_Controller.c **** void PS3_Start(void)
+  89:PS3_Controller.c **** {
+ 239              		.loc 1 89 0
+ 240              		.cfi_startproc
+ 241              		@ args = 0, pretend = 0, frame = 0
+ 242              		@ frame_needed = 0, uses_anonymous_args = 0
+ 243 0000 08B5     		push	{r3, lr}
+ 244              		.cfi_def_cfa_offset 8
+ 245              		.cfi_offset 3, -8
+ 246              		.cfi_offset 14, -4
+  90:PS3_Controller.c **** 	UART_PS3_Start();
+ 247              		.loc 1 90 0
+ 248 0002 FFF7FEFF 		bl	UART_PS3_Start
+ 249              	.LVL1:
+  91:PS3_Controller.c **** 	UART_PS3_ClearRxBuffer();
+ 250              		.loc 1 91 0
+ 251 0006 FFF7FEFF 		bl	UART_PS3_ClearRxBuffer
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 7
+
+
+ 252              	.LVL2:
+  92:PS3_Controller.c **** 	ISR_PS3_StartEx(ISR_PS3);
+ 253              		.loc 1 92 0
+ 254 000a 0348     		ldr	r0, .L15
+ 255 000c FFF7FEFF 		bl	ISR_PS3_StartEx
+ 256              	.LVL3:
+  93:PS3_Controller.c **** 	ISR_PS3_Enable();
+ 257              		.loc 1 93 0
+ 258 0010 FFF7FEFF 		bl	ISR_PS3_Enable
+ 259              	.LVL4:
+ 260 0014 08BD     		pop	{r3, pc}
+ 261              	.L16:
+ 262 0016 00BF     		.align	2
+ 263              	.L15:
+ 264 0018 00000000 		.word	ISR_PS3
+ 265              		.cfi_endproc
+ 266              	.LFE64:
+ 267              		.size	PS3_Start, .-PS3_Start
+ 268              		.section	.text.PS3_Stop,"ax",%progbits
+ 269              		.align	2
+ 270              		.global	PS3_Stop
+ 271              		.thumb
+ 272              		.thumb_func
+ 273              		.type	PS3_Stop, %function
+ 274              	PS3_Stop:
+ 275              	.LFB65:
+  94:PS3_Controller.c **** }
+  95:PS3_Controller.c **** 
+  96:PS3_Controller.c **** void PS3_Stop(void)
+  97:PS3_Controller.c **** {
+ 276              		.loc 1 97 0
+ 277              		.cfi_startproc
+ 278              		@ args = 0, pretend = 0, frame = 0
+ 279              		@ frame_needed = 0, uses_anonymous_args = 0
+ 280 0000 08B5     		push	{r3, lr}
+ 281              		.cfi_def_cfa_offset 8
+ 282              		.cfi_offset 3, -8
+ 283              		.cfi_offset 14, -4
+  98:PS3_Controller.c **** 	UART_PS3_Stop();
+ 284              		.loc 1 98 0
+ 285 0002 FFF7FEFF 		bl	UART_PS3_Stop
+ 286              	.LVL5:
+  99:PS3_Controller.c **** 	ISR_PS3_Disable();
+ 287              		.loc 1 99 0
+ 288 0006 FFF7FEFF 		bl	ISR_PS3_Disable
+ 289              	.LVL6:
+ 290 000a 08BD     		pop	{r3, pc}
+ 291              		.cfi_endproc
+ 292              	.LFE65:
+ 293              		.size	PS3_Stop, .-PS3_Stop
+ 294              		.section	.text.PS3_Controller_get,"ax",%progbits
+ 295              		.align	2
+ 296              		.global	PS3_Controller_get
+ 297              		.thumb
+ 298              		.thumb_func
+ 299              		.type	PS3_Controller_get, %function
+ 300              	PS3_Controller_get:
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 8
+
+
+ 301              	.LFB66:
+ 100:PS3_Controller.c **** }
+ 101:PS3_Controller.c **** 
+ 102:PS3_Controller.c **** PS3Controller PS3_Controller_get()
+ 103:PS3_Controller.c **** {
+ 302              		.loc 1 103 0
+ 303              		.cfi_startproc
+ 304              		@ args = 0, pretend = 0, frame = 0
+ 305              		@ frame_needed = 0, uses_anonymous_args = 0
+ 306              		@ link register save eliminated.
+ 307              	.LVL7:
+ 104:PS3_Controller.c **** 	return PS3_temp;
+ 308              		.loc 1 104 0
+ 309 0000 024A     		ldr	r2, .L20
+ 310 0002 1168     		ldr	r1, [r2]	@ unaligned
+ 311 0004 0160     		str	r1, [r0]	@ unaligned
+ 312 0006 9288     		ldrh	r2, [r2, #4]	@ unaligned
+ 313 0008 8280     		strh	r2, [r0, #4]	@ unaligned
+ 105:PS3_Controller.c **** }
+ 314              		.loc 1 105 0
+ 315 000a 7047     		bx	lr
+ 316              	.L21:
+ 317              		.align	2
+ 318              	.L20:
+ 319 000c 00000000 		.word	PS3_temp
+ 320              		.cfi_endproc
+ 321              	.LFE66:
+ 322              		.size	PS3_Controller_get, .-PS3_Controller_get
+ 323              		.comm	PS3_temp,6,4
+ 324              		.global	sum
+ 325              		.global	rxdata
+ 326              		.global	rx
+ 327              		.global	count
+ 328              		.data
+ 329              		.set	.LANCHOR1,. + 0
+ 330              		.type	count, %object
+ 331              		.size	count, 1
+ 332              	count:
+ 333 0000 FF       		.byte	-1
+ 334              		.bss
+ 335              		.align	2
+ 336              		.set	.LANCHOR0,. + 0
+ 337              		.type	rx, %object
+ 338              		.size	rx, 1
+ 339              	rx:
+ 340 0000 00       		.space	1
+ 341 0001 00       		.space	1
+ 342              		.type	sum, %object
+ 343              		.size	sum, 2
+ 344              	sum:
+ 345 0002 0000     		.space	2
+ 346              		.type	rxdata, %object
+ 347              		.size	rxdata, 6
+ 348              	rxdata:
+ 349 0004 00000000 		.space	6
+ 349      0000
+ 350              		.text
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 9
+
+
+ 351              	.Letext0:
+ 352              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 353              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 354              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 355              		.file 5 "PS3_Controller.h"
+ 356              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ 357              		.file 7 "Generated_Source\\PSoC5/UART_PS3.h"
+ 358              		.file 8 "Generated_Source\\PSoC5/ISR_PS3.h"
+ 359              		.section	.debug_info,"",%progbits
+ 360              	.Ldebug_info0:
+ 361 0000 4A030000 		.4byte	0x34a
+ 362 0004 0400     		.2byte	0x4
+ 363 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 364 000a 04       		.byte	0x4
+ 365 000b 01       		.uleb128 0x1
+ 366 000c 85010000 		.4byte	.LASF47
+ 367 0010 0C       		.byte	0xc
+ 368 0011 74010000 		.4byte	.LASF48
+ 369 0015 13020000 		.4byte	.LASF49
+ 370 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 371 001d 00000000 		.4byte	0
+ 372 0021 00000000 		.4byte	.Ldebug_line0
+ 373 0025 02       		.uleb128 0x2
+ 374 0026 01       		.byte	0x1
+ 375 0027 06       		.byte	0x6
+ 376 0028 AE020000 		.4byte	.LASF0
+ 377 002c 02       		.uleb128 0x2
+ 378 002d 01       		.byte	0x1
+ 379 002e 08       		.byte	0x8
+ 380 002f 9C000000 		.4byte	.LASF1
+ 381 0033 02       		.uleb128 0x2
+ 382 0034 02       		.byte	0x2
+ 383 0035 05       		.byte	0x5
+ 384 0036 78020000 		.4byte	.LASF2
+ 385 003a 02       		.uleb128 0x2
+ 386 003b 02       		.byte	0x2
+ 387 003c 07       		.byte	0x7
+ 388 003d DD000000 		.4byte	.LASF3
+ 389 0041 03       		.uleb128 0x3
+ 390 0042 2C000000 		.4byte	.LASF9
+ 391 0046 02       		.byte	0x2
+ 392 0047 3F       		.byte	0x3f
+ 393 0048 4C000000 		.4byte	0x4c
+ 394 004c 02       		.uleb128 0x2
+ 395 004d 04       		.byte	0x4
+ 396 004e 05       		.byte	0x5
+ 397 004f 99020000 		.4byte	.LASF4
+ 398 0053 02       		.uleb128 0x2
+ 399 0054 04       		.byte	0x4
+ 400 0055 07       		.byte	0x7
+ 401 0056 CB000000 		.4byte	.LASF5
+ 402 005a 02       		.uleb128 0x2
+ 403 005b 08       		.byte	0x8
+ 404 005c 05       		.byte	0x5
+ 405 005d 50020000 		.4byte	.LASF6
+ 406 0061 02       		.uleb128 0x2
+ 407 0062 08       		.byte	0x8
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 10
+
+
+ 408 0063 07       		.byte	0x7
+ 409 0064 4E010000 		.4byte	.LASF7
+ 410 0068 04       		.uleb128 0x4
+ 411 0069 04       		.byte	0x4
+ 412 006a 05       		.byte	0x5
+ 413 006b 696E7400 		.ascii	"int\000"
+ 414 006f 02       		.uleb128 0x2
+ 415 0070 04       		.byte	0x4
+ 416 0071 07       		.byte	0x7
+ 417 0072 41010000 		.4byte	.LASF8
+ 418 0076 03       		.uleb128 0x3
+ 419 0077 7E000000 		.4byte	.LASF10
+ 420 007b 03       		.byte	0x3
+ 421 007c 2C       		.byte	0x2c
+ 422 007d 41000000 		.4byte	0x41
+ 423 0081 05       		.uleb128 0x5
+ 424 0082 8B020000 		.4byte	.LASF11
+ 425 0086 04       		.byte	0x4
+ 426 0087 9201     		.2byte	0x192
+ 427 0089 2C000000 		.4byte	0x2c
+ 428 008d 05       		.uleb128 0x5
+ 429 008e 2E010000 		.4byte	.LASF12
+ 430 0092 04       		.byte	0x4
+ 431 0093 9301     		.2byte	0x193
+ 432 0095 3A000000 		.4byte	0x3a
+ 433 0099 05       		.uleb128 0x5
+ 434 009a 35010000 		.4byte	.LASF13
+ 435 009e 04       		.byte	0x4
+ 436 009f 9501     		.2byte	0x195
+ 437 00a1 25000000 		.4byte	0x25
+ 438 00a5 02       		.uleb128 0x2
+ 439 00a6 04       		.byte	0x4
+ 440 00a7 04       		.byte	0x4
+ 441 00a8 21000000 		.4byte	.LASF14
+ 442 00ac 02       		.uleb128 0x2
+ 443 00ad 08       		.byte	0x8
+ 444 00ae 04       		.byte	0x4
+ 445 00af 13010000 		.4byte	.LASF15
+ 446 00b3 02       		.uleb128 0x2
+ 447 00b4 01       		.byte	0x1
+ 448 00b5 08       		.byte	0x8
+ 449 00b6 68020000 		.4byte	.LASF16
+ 450 00ba 02       		.uleb128 0x2
+ 451 00bb 08       		.byte	0x8
+ 452 00bc 04       		.byte	0x4
+ 453 00bd A2020000 		.4byte	.LASF17
+ 454 00c1 02       		.uleb128 0x2
+ 455 00c2 04       		.byte	0x4
+ 456 00c3 07       		.byte	0x7
+ 457 00c4 47020000 		.4byte	.LASF18
+ 458 00c8 06       		.uleb128 0x6
+ 459 00c9 06       		.byte	0x6
+ 460 00ca 05       		.byte	0x5
+ 461 00cb 08       		.byte	0x8
+ 462 00cc CE010000 		.4byte	0x1ce
+ 463 00d0 07       		.uleb128 0x7
+ 464 00d1 95000000 		.4byte	.LASF19
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 11
+
+
+ 465 00d5 05       		.byte	0x5
+ 466 00d6 0A       		.byte	0xa
+ 467 00d7 81000000 		.4byte	0x81
+ 468 00db 01       		.byte	0x1
+ 469 00dc 01       		.byte	0x1
+ 470 00dd 07       		.byte	0x7
+ 471 00de 00       		.byte	0
+ 472 00df 07       		.uleb128 0x7
+ 473 00e0 06010000 		.4byte	.LASF20
+ 474 00e4 05       		.byte	0x5
+ 475 00e5 0B       		.byte	0xb
+ 476 00e6 81000000 		.4byte	0x81
+ 477 00ea 01       		.byte	0x1
+ 478 00eb 01       		.byte	0x1
+ 479 00ec 06       		.byte	0x6
+ 480 00ed 00       		.byte	0
+ 481 00ee 08       		.uleb128 0x8
+ 482 00ef 555000   		.ascii	"UP\000"
+ 483 00f2 05       		.byte	0x5
+ 484 00f3 0C       		.byte	0xc
+ 485 00f4 81000000 		.4byte	0x81
+ 486 00f8 01       		.byte	0x1
+ 487 00f9 01       		.byte	0x1
+ 488 00fa 05       		.byte	0x5
+ 489 00fb 00       		.byte	0
+ 490 00fc 07       		.uleb128 0x7
+ 491 00fd 6E010000 		.4byte	.LASF21
+ 492 0101 05       		.byte	0x5
+ 493 0102 0D       		.byte	0xd
+ 494 0103 81000000 		.4byte	0x81
+ 495 0107 01       		.byte	0x1
+ 496 0108 01       		.byte	0x1
+ 497 0109 04       		.byte	0x4
+ 498 010a 00       		.byte	0
+ 499 010b 07       		.uleb128 0x7
+ 500 010c 73020000 		.4byte	.LASF22
+ 501 0110 05       		.byte	0x5
+ 502 0111 0E       		.byte	0xe
+ 503 0112 81000000 		.4byte	0x81
+ 504 0116 01       		.byte	0x1
+ 505 0117 01       		.byte	0x1
+ 506 0118 03       		.byte	0x3
+ 507 0119 00       		.byte	0
+ 508 011a 07       		.uleb128 0x7
+ 509 011b 27000000 		.4byte	.LASF23
+ 510 011f 05       		.byte	0x5
+ 511 0120 0F       		.byte	0xf
+ 512 0121 81000000 		.4byte	0x81
+ 513 0125 01       		.byte	0x1
+ 514 0126 01       		.byte	0x1
+ 515 0127 02       		.byte	0x2
+ 516 0128 00       		.byte	0
+ 517 0129 08       		.uleb128 0x8
+ 518 012a 4C3200   		.ascii	"L2\000"
+ 519 012d 05       		.byte	0x5
+ 520 012e 10       		.byte	0x10
+ 521 012f 81000000 		.4byte	0x81
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 12
+
+
+ 522 0133 01       		.byte	0x1
+ 523 0134 01       		.byte	0x1
+ 524 0135 01       		.byte	0x1
+ 525 0136 00       		.byte	0
+ 526 0137 08       		.uleb128 0x8
+ 527 0138 523200   		.ascii	"R2\000"
+ 528 013b 05       		.byte	0x5
+ 529 013c 11       		.byte	0x11
+ 530 013d 81000000 		.4byte	0x81
+ 531 0141 01       		.byte	0x1
+ 532 0142 01       		.byte	0x1
+ 533 0143 00       		.byte	0
+ 534 0144 00       		.byte	0
+ 535 0145 08       		.uleb128 0x8
+ 536 0146 4C3100   		.ascii	"L1\000"
+ 537 0149 05       		.byte	0x5
+ 538 014a 12       		.byte	0x12
+ 539 014b 81000000 		.4byte	0x81
+ 540 014f 01       		.byte	0x1
+ 541 0150 01       		.byte	0x1
+ 542 0151 07       		.byte	0x7
+ 543 0152 01       		.byte	0x1
+ 544 0153 08       		.uleb128 0x8
+ 545 0154 523100   		.ascii	"R1\000"
+ 546 0157 05       		.byte	0x5
+ 547 0158 13       		.byte	0x13
+ 548 0159 81000000 		.4byte	0x81
+ 549 015d 01       		.byte	0x1
+ 550 015e 01       		.byte	0x1
+ 551 015f 06       		.byte	0x6
+ 552 0160 01       		.byte	0x1
+ 553 0161 07       		.uleb128 0x7
+ 554 0162 82020000 		.4byte	.LASF24
+ 555 0166 05       		.byte	0x5
+ 556 0167 14       		.byte	0x14
+ 557 0168 81000000 		.4byte	0x81
+ 558 016c 01       		.byte	0x1
+ 559 016d 01       		.byte	0x1
+ 560 016e 05       		.byte	0x5
+ 561 016f 01       		.byte	0x1
+ 562 0170 07       		.uleb128 0x7
+ 563 0171 0C010000 		.4byte	.LASF25
+ 564 0175 05       		.byte	0x5
+ 565 0176 15       		.byte	0x15
+ 566 0177 81000000 		.4byte	0x81
+ 567 017b 01       		.byte	0x1
+ 568 017c 01       		.byte	0x1
+ 569 017d 04       		.byte	0x4
+ 570 017e 01       		.byte	0x1
+ 571 017f 07       		.uleb128 0x7
+ 572 0180 1A010000 		.4byte	.LASF26
+ 573 0184 05       		.byte	0x5
+ 574 0185 16       		.byte	0x16
+ 575 0186 81000000 		.4byte	0x81
+ 576 018a 01       		.byte	0x1
+ 577 018b 01       		.byte	0x1
+ 578 018c 03       		.byte	0x3
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 13
+
+
+ 579 018d 01       		.byte	0x1
+ 580 018e 07       		.uleb128 0x7
+ 581 018f 3A010000 		.4byte	.LASF27
+ 582 0193 05       		.byte	0x5
+ 583 0194 17       		.byte	0x17
+ 584 0195 81000000 		.4byte	0x81
+ 585 0199 01       		.byte	0x1
+ 586 019a 01       		.byte	0x1
+ 587 019b 02       		.byte	0x2
+ 588 019c 01       		.byte	0x1
+ 589 019d 09       		.uleb128 0x9
+ 590 019e BA020000 		.4byte	.LASF28
+ 591 01a2 05       		.byte	0x5
+ 592 01a3 18       		.byte	0x18
+ 593 01a4 81000000 		.4byte	0x81
+ 594 01a8 02       		.byte	0x2
+ 595 01a9 09       		.uleb128 0x9
+ 596 01aa C4020000 		.4byte	.LASF29
+ 597 01ae 05       		.byte	0x5
+ 598 01af 19       		.byte	0x19
+ 599 01b0 81000000 		.4byte	0x81
+ 600 01b4 03       		.byte	0x3
+ 601 01b5 09       		.uleb128 0x9
+ 602 01b6 5E020000 		.4byte	.LASF30
+ 603 01ba 05       		.byte	0x5
+ 604 01bb 1A       		.byte	0x1a
+ 605 01bc 81000000 		.4byte	0x81
+ 606 01c0 04       		.byte	0x4
+ 607 01c1 09       		.uleb128 0x9
+ 608 01c2 36000000 		.4byte	.LASF31
+ 609 01c6 05       		.byte	0x5
+ 610 01c7 1B       		.byte	0x1b
+ 611 01c8 81000000 		.4byte	0x81
+ 612 01cc 05       		.byte	0x5
+ 613 01cd 00       		.byte	0
+ 614 01ce 03       		.uleb128 0x3
+ 615 01cf 20010000 		.4byte	.LASF32
+ 616 01d3 05       		.byte	0x5
+ 617 01d4 1C       		.byte	0x1c
+ 618 01d5 C8000000 		.4byte	0xc8
+ 619 01d9 0A       		.uleb128 0xa
+ 620 01da 91020000 		.4byte	.LASF33
+ 621 01de 01       		.byte	0x1
+ 622 01df 0B       		.byte	0xb
+ 623 01e0 00000000 		.4byte	.LFB63
+ 624 01e4 70010000 		.4byte	.LFE63-.LFB63
+ 625 01e8 01       		.uleb128 0x1
+ 626 01e9 9C       		.byte	0x9c
+ 627 01ea 06020000 		.4byte	0x206
+ 628 01ee 0B       		.uleb128 0xb
+ 629 01ef 40000000 		.4byte	.LASF50
+ 630 01f3 01       		.byte	0x1
+ 631 01f4 0D       		.byte	0xd
+ 632 01f5 CE010000 		.4byte	0x1ce
+ 633 01f9 02       		.uleb128 0x2
+ 634 01fa 91       		.byte	0x91
+ 635 01fb 70       		.sleb128 -16
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 14
+
+
+ 636 01fc 0C       		.uleb128 0xc
+ 637 01fd 08000000 		.4byte	.LVL0
+ 638 0201 00030000 		.4byte	0x300
+ 639 0205 00       		.byte	0
+ 640 0206 0A       		.uleb128 0xa
+ 641 0207 AA000000 		.4byte	.LASF34
+ 642 020b 01       		.byte	0x1
+ 643 020c 58       		.byte	0x58
+ 644 020d 00000000 		.4byte	.LFB64
+ 645 0211 1C000000 		.4byte	.LFE64-.LFB64
+ 646 0215 01       		.uleb128 0x1
+ 647 0216 9C       		.byte	0x9c
+ 648 0217 4E020000 		.4byte	0x24e
+ 649 021b 0C       		.uleb128 0xc
+ 650 021c 06000000 		.4byte	.LVL1
+ 651 0220 0B030000 		.4byte	0x30b
+ 652 0224 0C       		.uleb128 0xc
+ 653 0225 0A000000 		.4byte	.LVL2
+ 654 0229 16030000 		.4byte	0x316
+ 655 022d 0D       		.uleb128 0xd
+ 656 022e 10000000 		.4byte	.LVL3
+ 657 0232 21030000 		.4byte	0x321
+ 658 0236 44020000 		.4byte	0x244
+ 659 023a 0E       		.uleb128 0xe
+ 660 023b 01       		.uleb128 0x1
+ 661 023c 50       		.byte	0x50
+ 662 023d 05       		.uleb128 0x5
+ 663 023e 03       		.byte	0x3
+ 664 023f 00000000 		.4byte	ISR_PS3
+ 665 0243 00       		.byte	0
+ 666 0244 0C       		.uleb128 0xc
+ 667 0245 14000000 		.4byte	.LVL4
+ 668 0249 2C030000 		.4byte	0x32c
+ 669 024d 00       		.byte	0
+ 670 024e 0A       		.uleb128 0xa
+ 671 024f F0000000 		.4byte	.LASF35
+ 672 0253 01       		.byte	0x1
+ 673 0254 60       		.byte	0x60
+ 674 0255 00000000 		.4byte	.LFB65
+ 675 0259 0C000000 		.4byte	.LFE65-.LFB65
+ 676 025d 01       		.uleb128 0x1
+ 677 025e 9C       		.byte	0x9c
+ 678 025f 76020000 		.4byte	0x276
+ 679 0263 0C       		.uleb128 0xc
+ 680 0264 06000000 		.4byte	.LVL5
+ 681 0268 37030000 		.4byte	0x337
+ 682 026c 0C       		.uleb128 0xc
+ 683 026d 0A000000 		.4byte	.LVL6
+ 684 0271 42030000 		.4byte	0x342
+ 685 0275 00       		.byte	0
+ 686 0276 0F       		.uleb128 0xf
+ 687 0277 CE020000 		.4byte	.LASF51
+ 688 027b 01       		.byte	0x1
+ 689 027c 66       		.byte	0x66
+ 690 027d CE010000 		.4byte	0x1ce
+ 691 0281 00000000 		.4byte	.LFB66
+ 692 0285 10000000 		.4byte	.LFE66-.LFB66
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 15
+
+
+ 693 0289 01       		.uleb128 0x1
+ 694 028a 9C       		.byte	0x9c
+ 695 028b 10       		.uleb128 0x10
+ 696 028c F9000000 		.4byte	.LASF36
+ 697 0290 06       		.byte	0x6
+ 698 0291 1207     		.2byte	0x712
+ 699 0293 97020000 		.4byte	0x297
+ 700 0297 11       		.uleb128 0x11
+ 701 0298 76000000 		.4byte	0x76
+ 702 029c 12       		.uleb128 0x12
+ 703 029d 6D020000 		.4byte	.LASF37
+ 704 02a1 01       		.byte	0x1
+ 705 02a2 04       		.byte	0x4
+ 706 02a3 99000000 		.4byte	0x99
+ 707 02a7 05       		.uleb128 0x5
+ 708 02a8 03       		.byte	0x3
+ 709 02a9 00000000 		.4byte	count
+ 710 02ad 13       		.uleb128 0x13
+ 711 02ae 727800   		.ascii	"rx\000"
+ 712 02b1 01       		.byte	0x1
+ 713 02b2 05       		.byte	0x5
+ 714 02b3 81000000 		.4byte	0x81
+ 715 02b7 05       		.uleb128 0x5
+ 716 02b8 03       		.byte	0x3
+ 717 02b9 00000000 		.4byte	rx
+ 718 02bd 14       		.uleb128 0x14
+ 719 02be 81000000 		.4byte	0x81
+ 720 02c2 CD020000 		.4byte	0x2cd
+ 721 02c6 15       		.uleb128 0x15
+ 722 02c7 C1000000 		.4byte	0xc1
+ 723 02cb 05       		.byte	0x5
+ 724 02cc 00       		.byte	0
+ 725 02cd 12       		.uleb128 0x12
+ 726 02ce 67000000 		.4byte	.LASF38
+ 727 02d2 01       		.byte	0x1
+ 728 02d3 06       		.byte	0x6
+ 729 02d4 BD020000 		.4byte	0x2bd
+ 730 02d8 05       		.uleb128 0x5
+ 731 02d9 03       		.byte	0x3
+ 732 02da 00000000 		.4byte	rxdata
+ 733 02de 13       		.uleb128 0x13
+ 734 02df 73756D00 		.ascii	"sum\000"
+ 735 02e3 01       		.byte	0x1
+ 736 02e4 07       		.byte	0x7
+ 737 02e5 8D000000 		.4byte	0x8d
+ 738 02e9 05       		.uleb128 0x5
+ 739 02ea 03       		.byte	0x3
+ 740 02eb 00000000 		.4byte	sum
+ 741 02ef 12       		.uleb128 0x12
+ 742 02f0 65010000 		.4byte	.LASF39
+ 743 02f4 01       		.byte	0x1
+ 744 02f5 09       		.byte	0x9
+ 745 02f6 CE010000 		.4byte	0x1ce
+ 746 02fa 05       		.uleb128 0x5
+ 747 02fb 03       		.byte	0x3
+ 748 02fc 00000000 		.4byte	PS3_temp
+ 749 0300 16       		.uleb128 0x16
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 16
+
+
+ 750 0301 00000000 		.4byte	.LASF40
+ 751 0305 00000000 		.4byte	.LASF40
+ 752 0309 07       		.byte	0x7
+ 753 030a 72       		.byte	0x72
+ 754 030b 16       		.uleb128 0x16
+ 755 030c 86000000 		.4byte	.LASF41
+ 756 0310 86000000 		.4byte	.LASF41
+ 757 0314 07       		.byte	0x7
+ 758 0315 54       		.byte	0x54
+ 759 0316 16       		.uleb128 0x16
+ 760 0317 B4000000 		.4byte	.LASF42
+ 761 031b B4000000 		.4byte	.LASF42
+ 762 031f 07       		.byte	0x7
+ 763 0320 75       		.byte	0x75
+ 764 0321 16       		.uleb128 0x16
+ 765 0322 11000000 		.4byte	.LASF43
+ 766 0326 11000000 		.4byte	.LASF43
+ 767 032a 08       		.byte	0x8
+ 768 032b 18       		.byte	0x18
+ 769 032c 16       		.uleb128 0x16
+ 770 032d 58000000 		.4byte	.LASF44
+ 771 0331 58000000 		.4byte	.LASF44
+ 772 0335 08       		.byte	0x8
+ 773 0336 23       		.byte	0x23
+ 774 0337 16       		.uleb128 0x16
+ 775 0338 4A000000 		.4byte	.LASF45
+ 776 033c 4A000000 		.4byte	.LASF45
+ 777 0340 07       		.byte	0x7
+ 778 0341 55       		.byte	0x55
+ 779 0342 16       		.uleb128 0x16
+ 780 0343 6E000000 		.4byte	.LASF46
+ 781 0347 6E000000 		.4byte	.LASF46
+ 782 034b 08       		.byte	0x8
+ 783 034c 25       		.byte	0x25
+ 784 034d 00       		.byte	0
+ 785              		.section	.debug_abbrev,"",%progbits
+ 786              	.Ldebug_abbrev0:
+ 787 0000 01       		.uleb128 0x1
+ 788 0001 11       		.uleb128 0x11
+ 789 0002 01       		.byte	0x1
+ 790 0003 25       		.uleb128 0x25
+ 791 0004 0E       		.uleb128 0xe
+ 792 0005 13       		.uleb128 0x13
+ 793 0006 0B       		.uleb128 0xb
+ 794 0007 03       		.uleb128 0x3
+ 795 0008 0E       		.uleb128 0xe
+ 796 0009 1B       		.uleb128 0x1b
+ 797 000a 0E       		.uleb128 0xe
+ 798 000b 55       		.uleb128 0x55
+ 799 000c 17       		.uleb128 0x17
+ 800 000d 11       		.uleb128 0x11
+ 801 000e 01       		.uleb128 0x1
+ 802 000f 10       		.uleb128 0x10
+ 803 0010 17       		.uleb128 0x17
+ 804 0011 00       		.byte	0
+ 805 0012 00       		.byte	0
+ 806 0013 02       		.uleb128 0x2
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 17
+
+
+ 807 0014 24       		.uleb128 0x24
+ 808 0015 00       		.byte	0
+ 809 0016 0B       		.uleb128 0xb
+ 810 0017 0B       		.uleb128 0xb
+ 811 0018 3E       		.uleb128 0x3e
+ 812 0019 0B       		.uleb128 0xb
+ 813 001a 03       		.uleb128 0x3
+ 814 001b 0E       		.uleb128 0xe
+ 815 001c 00       		.byte	0
+ 816 001d 00       		.byte	0
+ 817 001e 03       		.uleb128 0x3
+ 818 001f 16       		.uleb128 0x16
+ 819 0020 00       		.byte	0
+ 820 0021 03       		.uleb128 0x3
+ 821 0022 0E       		.uleb128 0xe
+ 822 0023 3A       		.uleb128 0x3a
+ 823 0024 0B       		.uleb128 0xb
+ 824 0025 3B       		.uleb128 0x3b
+ 825 0026 0B       		.uleb128 0xb
+ 826 0027 49       		.uleb128 0x49
+ 827 0028 13       		.uleb128 0x13
+ 828 0029 00       		.byte	0
+ 829 002a 00       		.byte	0
+ 830 002b 04       		.uleb128 0x4
+ 831 002c 24       		.uleb128 0x24
+ 832 002d 00       		.byte	0
+ 833 002e 0B       		.uleb128 0xb
+ 834 002f 0B       		.uleb128 0xb
+ 835 0030 3E       		.uleb128 0x3e
+ 836 0031 0B       		.uleb128 0xb
+ 837 0032 03       		.uleb128 0x3
+ 838 0033 08       		.uleb128 0x8
+ 839 0034 00       		.byte	0
+ 840 0035 00       		.byte	0
+ 841 0036 05       		.uleb128 0x5
+ 842 0037 16       		.uleb128 0x16
+ 843 0038 00       		.byte	0
+ 844 0039 03       		.uleb128 0x3
+ 845 003a 0E       		.uleb128 0xe
+ 846 003b 3A       		.uleb128 0x3a
+ 847 003c 0B       		.uleb128 0xb
+ 848 003d 3B       		.uleb128 0x3b
+ 849 003e 05       		.uleb128 0x5
+ 850 003f 49       		.uleb128 0x49
+ 851 0040 13       		.uleb128 0x13
+ 852 0041 00       		.byte	0
+ 853 0042 00       		.byte	0
+ 854 0043 06       		.uleb128 0x6
+ 855 0044 13       		.uleb128 0x13
+ 856 0045 01       		.byte	0x1
+ 857 0046 0B       		.uleb128 0xb
+ 858 0047 0B       		.uleb128 0xb
+ 859 0048 3A       		.uleb128 0x3a
+ 860 0049 0B       		.uleb128 0xb
+ 861 004a 3B       		.uleb128 0x3b
+ 862 004b 0B       		.uleb128 0xb
+ 863 004c 01       		.uleb128 0x1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 18
+
+
+ 864 004d 13       		.uleb128 0x13
+ 865 004e 00       		.byte	0
+ 866 004f 00       		.byte	0
+ 867 0050 07       		.uleb128 0x7
+ 868 0051 0D       		.uleb128 0xd
+ 869 0052 00       		.byte	0
+ 870 0053 03       		.uleb128 0x3
+ 871 0054 0E       		.uleb128 0xe
+ 872 0055 3A       		.uleb128 0x3a
+ 873 0056 0B       		.uleb128 0xb
+ 874 0057 3B       		.uleb128 0x3b
+ 875 0058 0B       		.uleb128 0xb
+ 876 0059 49       		.uleb128 0x49
+ 877 005a 13       		.uleb128 0x13
+ 878 005b 0B       		.uleb128 0xb
+ 879 005c 0B       		.uleb128 0xb
+ 880 005d 0D       		.uleb128 0xd
+ 881 005e 0B       		.uleb128 0xb
+ 882 005f 0C       		.uleb128 0xc
+ 883 0060 0B       		.uleb128 0xb
+ 884 0061 38       		.uleb128 0x38
+ 885 0062 0B       		.uleb128 0xb
+ 886 0063 00       		.byte	0
+ 887 0064 00       		.byte	0
+ 888 0065 08       		.uleb128 0x8
+ 889 0066 0D       		.uleb128 0xd
+ 890 0067 00       		.byte	0
+ 891 0068 03       		.uleb128 0x3
+ 892 0069 08       		.uleb128 0x8
+ 893 006a 3A       		.uleb128 0x3a
+ 894 006b 0B       		.uleb128 0xb
+ 895 006c 3B       		.uleb128 0x3b
+ 896 006d 0B       		.uleb128 0xb
+ 897 006e 49       		.uleb128 0x49
+ 898 006f 13       		.uleb128 0x13
+ 899 0070 0B       		.uleb128 0xb
+ 900 0071 0B       		.uleb128 0xb
+ 901 0072 0D       		.uleb128 0xd
+ 902 0073 0B       		.uleb128 0xb
+ 903 0074 0C       		.uleb128 0xc
+ 904 0075 0B       		.uleb128 0xb
+ 905 0076 38       		.uleb128 0x38
+ 906 0077 0B       		.uleb128 0xb
+ 907 0078 00       		.byte	0
+ 908 0079 00       		.byte	0
+ 909 007a 09       		.uleb128 0x9
+ 910 007b 0D       		.uleb128 0xd
+ 911 007c 00       		.byte	0
+ 912 007d 03       		.uleb128 0x3
+ 913 007e 0E       		.uleb128 0xe
+ 914 007f 3A       		.uleb128 0x3a
+ 915 0080 0B       		.uleb128 0xb
+ 916 0081 3B       		.uleb128 0x3b
+ 917 0082 0B       		.uleb128 0xb
+ 918 0083 49       		.uleb128 0x49
+ 919 0084 13       		.uleb128 0x13
+ 920 0085 38       		.uleb128 0x38
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 19
+
+
+ 921 0086 0B       		.uleb128 0xb
+ 922 0087 00       		.byte	0
+ 923 0088 00       		.byte	0
+ 924 0089 0A       		.uleb128 0xa
+ 925 008a 2E       		.uleb128 0x2e
+ 926 008b 01       		.byte	0x1
+ 927 008c 3F       		.uleb128 0x3f
+ 928 008d 19       		.uleb128 0x19
+ 929 008e 03       		.uleb128 0x3
+ 930 008f 0E       		.uleb128 0xe
+ 931 0090 3A       		.uleb128 0x3a
+ 932 0091 0B       		.uleb128 0xb
+ 933 0092 3B       		.uleb128 0x3b
+ 934 0093 0B       		.uleb128 0xb
+ 935 0094 27       		.uleb128 0x27
+ 936 0095 19       		.uleb128 0x19
+ 937 0096 11       		.uleb128 0x11
+ 938 0097 01       		.uleb128 0x1
+ 939 0098 12       		.uleb128 0x12
+ 940 0099 06       		.uleb128 0x6
+ 941 009a 40       		.uleb128 0x40
+ 942 009b 18       		.uleb128 0x18
+ 943 009c 9742     		.uleb128 0x2117
+ 944 009e 19       		.uleb128 0x19
+ 945 009f 01       		.uleb128 0x1
+ 946 00a0 13       		.uleb128 0x13
+ 947 00a1 00       		.byte	0
+ 948 00a2 00       		.byte	0
+ 949 00a3 0B       		.uleb128 0xb
+ 950 00a4 34       		.uleb128 0x34
+ 951 00a5 00       		.byte	0
+ 952 00a6 03       		.uleb128 0x3
+ 953 00a7 0E       		.uleb128 0xe
+ 954 00a8 3A       		.uleb128 0x3a
+ 955 00a9 0B       		.uleb128 0xb
+ 956 00aa 3B       		.uleb128 0x3b
+ 957 00ab 0B       		.uleb128 0xb
+ 958 00ac 49       		.uleb128 0x49
+ 959 00ad 13       		.uleb128 0x13
+ 960 00ae 02       		.uleb128 0x2
+ 961 00af 18       		.uleb128 0x18
+ 962 00b0 00       		.byte	0
+ 963 00b1 00       		.byte	0
+ 964 00b2 0C       		.uleb128 0xc
+ 965 00b3 898201   		.uleb128 0x4109
+ 966 00b6 00       		.byte	0
+ 967 00b7 11       		.uleb128 0x11
+ 968 00b8 01       		.uleb128 0x1
+ 969 00b9 31       		.uleb128 0x31
+ 970 00ba 13       		.uleb128 0x13
+ 971 00bb 00       		.byte	0
+ 972 00bc 00       		.byte	0
+ 973 00bd 0D       		.uleb128 0xd
+ 974 00be 898201   		.uleb128 0x4109
+ 975 00c1 01       		.byte	0x1
+ 976 00c2 11       		.uleb128 0x11
+ 977 00c3 01       		.uleb128 0x1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 20
+
+
+ 978 00c4 31       		.uleb128 0x31
+ 979 00c5 13       		.uleb128 0x13
+ 980 00c6 01       		.uleb128 0x1
+ 981 00c7 13       		.uleb128 0x13
+ 982 00c8 00       		.byte	0
+ 983 00c9 00       		.byte	0
+ 984 00ca 0E       		.uleb128 0xe
+ 985 00cb 8A8201   		.uleb128 0x410a
+ 986 00ce 00       		.byte	0
+ 987 00cf 02       		.uleb128 0x2
+ 988 00d0 18       		.uleb128 0x18
+ 989 00d1 9142     		.uleb128 0x2111
+ 990 00d3 18       		.uleb128 0x18
+ 991 00d4 00       		.byte	0
+ 992 00d5 00       		.byte	0
+ 993 00d6 0F       		.uleb128 0xf
+ 994 00d7 2E       		.uleb128 0x2e
+ 995 00d8 00       		.byte	0
+ 996 00d9 3F       		.uleb128 0x3f
+ 997 00da 19       		.uleb128 0x19
+ 998 00db 03       		.uleb128 0x3
+ 999 00dc 0E       		.uleb128 0xe
+ 1000 00dd 3A       		.uleb128 0x3a
+ 1001 00de 0B       		.uleb128 0xb
+ 1002 00df 3B       		.uleb128 0x3b
+ 1003 00e0 0B       		.uleb128 0xb
+ 1004 00e1 27       		.uleb128 0x27
+ 1005 00e2 19       		.uleb128 0x19
+ 1006 00e3 49       		.uleb128 0x49
+ 1007 00e4 13       		.uleb128 0x13
+ 1008 00e5 11       		.uleb128 0x11
+ 1009 00e6 01       		.uleb128 0x1
+ 1010 00e7 12       		.uleb128 0x12
+ 1011 00e8 06       		.uleb128 0x6
+ 1012 00e9 40       		.uleb128 0x40
+ 1013 00ea 18       		.uleb128 0x18
+ 1014 00eb 9742     		.uleb128 0x2117
+ 1015 00ed 19       		.uleb128 0x19
+ 1016 00ee 00       		.byte	0
+ 1017 00ef 00       		.byte	0
+ 1018 00f0 10       		.uleb128 0x10
+ 1019 00f1 34       		.uleb128 0x34
+ 1020 00f2 00       		.byte	0
+ 1021 00f3 03       		.uleb128 0x3
+ 1022 00f4 0E       		.uleb128 0xe
+ 1023 00f5 3A       		.uleb128 0x3a
+ 1024 00f6 0B       		.uleb128 0xb
+ 1025 00f7 3B       		.uleb128 0x3b
+ 1026 00f8 05       		.uleb128 0x5
+ 1027 00f9 49       		.uleb128 0x49
+ 1028 00fa 13       		.uleb128 0x13
+ 1029 00fb 3F       		.uleb128 0x3f
+ 1030 00fc 19       		.uleb128 0x19
+ 1031 00fd 3C       		.uleb128 0x3c
+ 1032 00fe 19       		.uleb128 0x19
+ 1033 00ff 00       		.byte	0
+ 1034 0100 00       		.byte	0
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 21
+
+
+ 1035 0101 11       		.uleb128 0x11
+ 1036 0102 35       		.uleb128 0x35
+ 1037 0103 00       		.byte	0
+ 1038 0104 49       		.uleb128 0x49
+ 1039 0105 13       		.uleb128 0x13
+ 1040 0106 00       		.byte	0
+ 1041 0107 00       		.byte	0
+ 1042 0108 12       		.uleb128 0x12
+ 1043 0109 34       		.uleb128 0x34
+ 1044 010a 00       		.byte	0
+ 1045 010b 03       		.uleb128 0x3
+ 1046 010c 0E       		.uleb128 0xe
+ 1047 010d 3A       		.uleb128 0x3a
+ 1048 010e 0B       		.uleb128 0xb
+ 1049 010f 3B       		.uleb128 0x3b
+ 1050 0110 0B       		.uleb128 0xb
+ 1051 0111 49       		.uleb128 0x49
+ 1052 0112 13       		.uleb128 0x13
+ 1053 0113 3F       		.uleb128 0x3f
+ 1054 0114 19       		.uleb128 0x19
+ 1055 0115 02       		.uleb128 0x2
+ 1056 0116 18       		.uleb128 0x18
+ 1057 0117 00       		.byte	0
+ 1058 0118 00       		.byte	0
+ 1059 0119 13       		.uleb128 0x13
+ 1060 011a 34       		.uleb128 0x34
+ 1061 011b 00       		.byte	0
+ 1062 011c 03       		.uleb128 0x3
+ 1063 011d 08       		.uleb128 0x8
+ 1064 011e 3A       		.uleb128 0x3a
+ 1065 011f 0B       		.uleb128 0xb
+ 1066 0120 3B       		.uleb128 0x3b
+ 1067 0121 0B       		.uleb128 0xb
+ 1068 0122 49       		.uleb128 0x49
+ 1069 0123 13       		.uleb128 0x13
+ 1070 0124 3F       		.uleb128 0x3f
+ 1071 0125 19       		.uleb128 0x19
+ 1072 0126 02       		.uleb128 0x2
+ 1073 0127 18       		.uleb128 0x18
+ 1074 0128 00       		.byte	0
+ 1075 0129 00       		.byte	0
+ 1076 012a 14       		.uleb128 0x14
+ 1077 012b 01       		.uleb128 0x1
+ 1078 012c 01       		.byte	0x1
+ 1079 012d 49       		.uleb128 0x49
+ 1080 012e 13       		.uleb128 0x13
+ 1081 012f 01       		.uleb128 0x1
+ 1082 0130 13       		.uleb128 0x13
+ 1083 0131 00       		.byte	0
+ 1084 0132 00       		.byte	0
+ 1085 0133 15       		.uleb128 0x15
+ 1086 0134 21       		.uleb128 0x21
+ 1087 0135 00       		.byte	0
+ 1088 0136 49       		.uleb128 0x49
+ 1089 0137 13       		.uleb128 0x13
+ 1090 0138 2F       		.uleb128 0x2f
+ 1091 0139 0B       		.uleb128 0xb
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 22
+
+
+ 1092 013a 00       		.byte	0
+ 1093 013b 00       		.byte	0
+ 1094 013c 16       		.uleb128 0x16
+ 1095 013d 2E       		.uleb128 0x2e
+ 1096 013e 00       		.byte	0
+ 1097 013f 3F       		.uleb128 0x3f
+ 1098 0140 19       		.uleb128 0x19
+ 1099 0141 3C       		.uleb128 0x3c
+ 1100 0142 19       		.uleb128 0x19
+ 1101 0143 6E       		.uleb128 0x6e
+ 1102 0144 0E       		.uleb128 0xe
+ 1103 0145 03       		.uleb128 0x3
+ 1104 0146 0E       		.uleb128 0xe
+ 1105 0147 3A       		.uleb128 0x3a
+ 1106 0148 0B       		.uleb128 0xb
+ 1107 0149 3B       		.uleb128 0x3b
+ 1108 014a 0B       		.uleb128 0xb
+ 1109 014b 00       		.byte	0
+ 1110 014c 00       		.byte	0
+ 1111 014d 00       		.byte	0
+ 1112              		.section	.debug_aranges,"",%progbits
+ 1113 0000 34000000 		.4byte	0x34
+ 1114 0004 0200     		.2byte	0x2
+ 1115 0006 00000000 		.4byte	.Ldebug_info0
+ 1116 000a 04       		.byte	0x4
+ 1117 000b 00       		.byte	0
+ 1118 000c 0000     		.2byte	0
+ 1119 000e 0000     		.2byte	0
+ 1120 0010 00000000 		.4byte	.LFB63
+ 1121 0014 70010000 		.4byte	.LFE63-.LFB63
+ 1122 0018 00000000 		.4byte	.LFB64
+ 1123 001c 1C000000 		.4byte	.LFE64-.LFB64
+ 1124 0020 00000000 		.4byte	.LFB65
+ 1125 0024 0C000000 		.4byte	.LFE65-.LFB65
+ 1126 0028 00000000 		.4byte	.LFB66
+ 1127 002c 10000000 		.4byte	.LFE66-.LFB66
+ 1128 0030 00000000 		.4byte	0
+ 1129 0034 00000000 		.4byte	0
+ 1130              		.section	.debug_ranges,"",%progbits
+ 1131              	.Ldebug_ranges0:
+ 1132 0000 00000000 		.4byte	.LFB63
+ 1133 0004 70010000 		.4byte	.LFE63
+ 1134 0008 00000000 		.4byte	.LFB64
+ 1135 000c 1C000000 		.4byte	.LFE64
+ 1136 0010 00000000 		.4byte	.LFB65
+ 1137 0014 0C000000 		.4byte	.LFE65
+ 1138 0018 00000000 		.4byte	.LFB66
+ 1139 001c 10000000 		.4byte	.LFE66
+ 1140 0020 00000000 		.4byte	0
+ 1141 0024 00000000 		.4byte	0
+ 1142              		.section	.debug_line,"",%progbits
+ 1143              	.Ldebug_line0:
+ 1144 0000 01020000 		.section	.debug_str,"MS",%progbits,1
+ 1144      02008501 
+ 1144      00000201 
+ 1144      FB0E0D00 
+ 1144      01010101 
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 23
+
+
+ 1145              	.LASF40:
+ 1146 0000 55415254 		.ascii	"UART_PS3_GetByte\000"
+ 1146      5F505333 
+ 1146      5F476574 
+ 1146      42797465 
+ 1146      00
+ 1147              	.LASF43:
+ 1148 0011 4953525F 		.ascii	"ISR_PS3_StartEx\000"
+ 1148      5053335F 
+ 1148      53746172 
+ 1148      74457800 
+ 1149              	.LASF14:
+ 1150 0021 666C6F61 		.ascii	"float\000"
+ 1150      7400
+ 1151              	.LASF23:
+ 1152 0027 4C454654 		.ascii	"LEFT\000"
+ 1152      00
+ 1153              	.LASF9:
+ 1154 002c 5F5F696E 		.ascii	"__int32_t\000"
+ 1154      7433325F 
+ 1154      7400
+ 1155              	.LASF31:
+ 1156 0036 414E414C 		.ascii	"ANALOG_LY\000"
+ 1156      4F475F4C 
+ 1156      5900
+ 1157              	.LASF50:
+ 1158 0040 70733372 		.ascii	"ps3rxdata\000"
+ 1158      78646174 
+ 1158      6100
+ 1159              	.LASF45:
+ 1160 004a 55415254 		.ascii	"UART_PS3_Stop\000"
+ 1160      5F505333 
+ 1160      5F53746F 
+ 1160      7000
+ 1161              	.LASF44:
+ 1162 0058 4953525F 		.ascii	"ISR_PS3_Enable\000"
+ 1162      5053335F 
+ 1162      456E6162 
+ 1162      6C6500
+ 1163              	.LASF38:
+ 1164 0067 72786461 		.ascii	"rxdata\000"
+ 1164      746100
+ 1165              	.LASF46:
+ 1166 006e 4953525F 		.ascii	"ISR_PS3_Disable\000"
+ 1166      5053335F 
+ 1166      44697361 
+ 1166      626C6500 
+ 1167              	.LASF10:
+ 1168 007e 696E7433 		.ascii	"int32_t\000"
+ 1168      325F7400 
+ 1169              	.LASF41:
+ 1170 0086 55415254 		.ascii	"UART_PS3_Start\000"
+ 1170      5F505333 
+ 1170      5F537461 
+ 1170      727400
+ 1171              	.LASF19:
+ 1172 0095 53454C45 		.ascii	"SELECT\000"
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 24
+
+
+ 1172      435400
+ 1173              	.LASF1:
+ 1174 009c 756E7369 		.ascii	"unsigned char\000"
+ 1174      676E6564 
+ 1174      20636861 
+ 1174      7200
+ 1175              	.LASF34:
+ 1176 00aa 5053335F 		.ascii	"PS3_Start\000"
+ 1176      53746172 
+ 1176      7400
+ 1177              	.LASF42:
+ 1178 00b4 55415254 		.ascii	"UART_PS3_ClearRxBuffer\000"
+ 1178      5F505333 
+ 1178      5F436C65 
+ 1178      61725278 
+ 1178      42756666 
+ 1179              	.LASF5:
+ 1180 00cb 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1180      20756E73 
+ 1180      69676E65 
+ 1180      6420696E 
+ 1180      7400
+ 1181              	.LASF3:
+ 1182 00dd 73686F72 		.ascii	"short unsigned int\000"
+ 1182      7420756E 
+ 1182      7369676E 
+ 1182      65642069 
+ 1182      6E7400
+ 1183              	.LASF35:
+ 1184 00f0 5053335F 		.ascii	"PS3_Stop\000"
+ 1184      53746F70 
+ 1184      00
+ 1185              	.LASF36:
+ 1186 00f9 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1186      52784275 
+ 1186      66666572 
+ 1186      00
+ 1187              	.LASF20:
+ 1188 0106 53544152 		.ascii	"START\000"
+ 1188      5400
+ 1189              	.LASF25:
+ 1190 010c 43495243 		.ascii	"CIRCLE\000"
+ 1190      4C4500
+ 1191              	.LASF15:
+ 1192 0113 646F7562 		.ascii	"double\000"
+ 1192      6C6500
+ 1193              	.LASF26:
+ 1194 011a 43524F53 		.ascii	"CROSS\000"
+ 1194      5300
+ 1195              	.LASF32:
+ 1196 0120 50533343 		.ascii	"PS3Controller\000"
+ 1196      6F6E7472 
+ 1196      6F6C6C65 
+ 1196      7200
+ 1197              	.LASF12:
+ 1198 012e 75696E74 		.ascii	"uint16\000"
+ 1198      313600
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 25
+
+
+ 1199              	.LASF13:
+ 1200 0135 696E7438 		.ascii	"int8\000"
+ 1200      00
+ 1201              	.LASF27:
+ 1202 013a 53515541 		.ascii	"SQUARE\000"
+ 1202      524500
+ 1203              	.LASF8:
+ 1204 0141 756E7369 		.ascii	"unsigned int\000"
+ 1204      676E6564 
+ 1204      20696E74 
+ 1204      00
+ 1205              	.LASF7:
+ 1206 014e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1206      206C6F6E 
+ 1206      6720756E 
+ 1206      7369676E 
+ 1206      65642069 
+ 1207              	.LASF39:
+ 1208 0165 5053335F 		.ascii	"PS3_temp\000"
+ 1208      74656D70 
+ 1208      00
+ 1209              	.LASF21:
+ 1210 016e 52494748 		.ascii	"RIGHT\000"
+ 1210      5400
+ 1211              	.LASF48:
+ 1212 0174 5053335F 		.ascii	"PS3_Controller.c\000"
+ 1212      436F6E74 
+ 1212      726F6C6C 
+ 1212      65722E63 
+ 1212      00
+ 1213              	.LASF47:
+ 1214 0185 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1214      43313120 
+ 1214      352E342E 
+ 1214      31203230 
+ 1214      31363036 
+ 1215 01b8 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1215      20726576 
+ 1215      6973696F 
+ 1215      6E203233 
+ 1215      37373135 
+ 1216 01eb 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1216      66756E63 
+ 1216      74696F6E 
+ 1216      2D736563 
+ 1216      74696F6E 
+ 1217              	.LASF49:
+ 1218 0213 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\motor_yao\\Design01."
+ 1218      73657273 
+ 1218      5C746574 
+ 1218      73757961 
+ 1218      5C446F63 
+ 1219 0241 63796473 		.ascii	"cydsn\000"
+ 1219      6E00
+ 1220              	.LASF18:
+ 1221 0247 73697A65 		.ascii	"sizetype\000"
+ 1221      74797065 
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 26
+
+
+ 1221      00
+ 1222              	.LASF6:
+ 1223 0250 6C6F6E67 		.ascii	"long long int\000"
+ 1223      206C6F6E 
+ 1223      6720696E 
+ 1223      7400
+ 1224              	.LASF30:
+ 1225 025e 414E414C 		.ascii	"ANALOG_LX\000"
+ 1225      4F475F4C 
+ 1225      5800
+ 1226              	.LASF16:
+ 1227 0268 63686172 		.ascii	"char\000"
+ 1227      00
+ 1228              	.LASF37:
+ 1229 026d 636F756E 		.ascii	"count\000"
+ 1229      7400
+ 1230              	.LASF22:
+ 1231 0273 444F574E 		.ascii	"DOWN\000"
+ 1231      00
+ 1232              	.LASF2:
+ 1233 0278 73686F72 		.ascii	"short int\000"
+ 1233      7420696E 
+ 1233      7400
+ 1234              	.LASF24:
+ 1235 0282 54524941 		.ascii	"TRIANGLE\000"
+ 1235      4E474C45 
+ 1235      00
+ 1236              	.LASF11:
+ 1237 028b 75696E74 		.ascii	"uint8\000"
+ 1237      3800
+ 1238              	.LASF33:
+ 1239 0291 4953525F 		.ascii	"ISR_PS3\000"
+ 1239      50533300 
+ 1240              	.LASF4:
+ 1241 0299 6C6F6E67 		.ascii	"long int\000"
+ 1241      20696E74 
+ 1241      00
+ 1242              	.LASF17:
+ 1243 02a2 6C6F6E67 		.ascii	"long double\000"
+ 1243      20646F75 
+ 1243      626C6500 
+ 1244              	.LASF0:
+ 1245 02ae 7369676E 		.ascii	"signed char\000"
+ 1245      65642063 
+ 1245      68617200 
+ 1246              	.LASF28:
+ 1247 02ba 414E414C 		.ascii	"ANALOG_RX\000"
+ 1247      4F475F52 
+ 1247      5800
+ 1248              	.LASF29:
+ 1249 02c4 414E414C 		.ascii	"ANALOG_RY\000"
+ 1249      4F475F52 
+ 1249      5900
+ 1250              	.LASF51:
+ 1251 02ce 5053335F 		.ascii	"PS3_Controller_get\000"
+ 1251      436F6E74 
+ 1251      726F6C6C 
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccGfwxsa.s 			page 27
+
+
+ 1251      65725F67 
+ 1251      657400
+ 1252              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
