@@ -1,7 +1,7 @@
 #include "matrix.h"
 #include <math.h>
 
-void matrix(PS3Controller *ps3, int motor[], int power) {
+void matrix(PS3Controller *ps3, uint8 motor[], int power) {
 	int i;
 	double L = 176;
 	//double m[3] = {0}
@@ -22,6 +22,6 @@ void matrix(PS3Controller *ps3, int motor[], int power) {
 		}
 	}
 	for (i = 0; i < 3; i++) {
-		*motor[i] = re[i];
+		motor[i] = re[i];
 	}
 }

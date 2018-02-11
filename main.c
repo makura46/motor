@@ -11,9 +11,10 @@
 */
 #include "project.h"
 #include <stdio.h>
+#include <math.h>
 #include "matrix.h"
 #include "PS3_Controller.h"
-#include <math.h>
+
 
 #define MAX_POWER 230
 
@@ -31,13 +32,18 @@ int main(void)
     char i;
 	uint8 power;
 	uint8 m[3] = {0};
-	uint8 x, y;
+    double s;
+	double x, y;
+    
     for(;;)
     {
-		ps3 = PS3_Contorller_get();
+		*ps3 = PS3_Controller_get();
 		x = ps3->ANALOG_LX - 64;
 		y = ps3->ANALOG_LY - 64;
-		power = sqrt(x * x + y * y);
+        s = x * x + y * y;
+		//power = (uint8)(sqrt((double)x * x + y * y));
+        power = (uint8)(sqrt(s));
+        
 		matrix(ps3, m, power);
 		if (m[0] >= 0)
 			reverse_1_Write(0);
