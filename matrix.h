@@ -3,7 +3,7 @@
     
 #include "PS3_Controller.h"
 
-void matrix(PS3Controller *ps3, int motor[], int power) {
+void matrix(PS3Controller *ps3, int motor[], int power);
 	/*
 	double L = 30;
 	double mat[3][3] = {{1.0, 0.0, L}, 
