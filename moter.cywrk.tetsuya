@@ -13,30 +13,14 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="moter\Design01\Source Files\PS3_Controller.c">
 <ExpandedNodeIds>
 <v>moter</v>
 <v>moter\Design01</v>
 <v>moter\Design01\TopDesign</v>
 <v>moter\Design01\Design01.cydwr</v>
-<v>moter\Design01\Design01.cydwr\Pins</v>
-<v>moter\Design01\Design01.cydwr\Analog</v>
-<v>moter\Design01\Design01.cydwr\Clocks</v>
-<v>moter\Design01\Design01.cydwr\Interrupts</v>
-<v>moter\Design01\Design01.cydwr\DMA</v>
-<v>moter\Design01\Design01.cydwr\System</v>
-<v>moter\Design01\Design01.cydwr\Directives</v>
-<v>moter\Design01\Design01.cydwr\Flash Security</v>
-<v>moter\Design01\Design01.cydwr\EEPROM</v>
 <v>moter\Design01\Header Files</v>
-<v>moter\Design01\Header Files\cyapicallbacks.h</v>
-<v>moter\Design01\Header Files\matrix.h</v>
-<v>moter\Design01\Header Files\PS3_Controller.h</v>
 <v>moter\Design01\Source Files</v>
-<v>moter\Design01\Source Files\main.c</v>
-<v>moter\Design01\Source Files\matrix.c</v>
-<v>moter\Design01\Source Files\PS3_Controller.c</v>
-<v>moter\Design01\Generated_Source\PSoC5</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>moter</v>
@@ -67,14 +51,11 @@
 <ExpandedNodeIds>
 <v>moter</v>
 <v>moter\Design01</v>
-<v>moter\Design01\TopDesign</v>
-<v>moter\Design01\TopDesign\TopDesign.cysch</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>moter</v>
 <v>moter\Design01</v>
 <v>moter\Design01\TopDesign</v>
-<v>moter\Design01\TopDesign\TopDesign.cysch</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -116,19 +97,19 @@
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\low3_2.lst</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\matrix.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motor1.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motor1_PM.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motor2.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motor2_PM.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motor3.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motor3_PM.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motorB.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motorB_PM.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motorC.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motorC_PM.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motorD.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\motorD_PM.lst</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\PS3_Controller.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_1.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_1_PM.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_2.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_2_PM.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_3.lst</v>
-<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_3_PM.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_B.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_B_PM.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_C.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_C_PM.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_D.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\reverse_D_PM.lst</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1.lst</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_BOOT.lst</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_1_INT.lst</v>
@@ -143,8 +124,6 @@
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Design01.hex</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Design01.map</v>
 <v>moter\Design01\Design01.gpdsc</v>
-<v>moter\Design01\Design01.rpt</v>
-<v>moter\Design01\Design01_timing.html</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>moter</v>
@@ -159,7 +138,6 @@
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>moter</v>
-<v>moter\Design01</v>
 <v>moter\Design01\PSoC 5LP Architecture TRM</v>
 <v>moter\Design01\CY8C58LP Family Datasheet</v>
 <v>moter\Design01\System Reference Guides</v>
@@ -187,29 +165,6 @@
 <VisibleNodeIds>
 <v>moter</v>
 <v>moter\Design01</v>
-<v>moter\Design01\PSoC 5LP Architecture TRM</v>
-<v>moter\Design01\CY8C58LP Family Datasheet</v>
-<v>moter\Design01\System Reference Guides</v>
-<v>moter\Design01\System Reference Guides\cy_boot_v5_60</v>
-<v>moter\Design01\and_v1_0</v>
-<v>moter\Design01\and_v1_0\and_v1_0.pdf</v>
-<v>moter\Design01\cy_clock_v2_20</v>
-<v>moter\Design01\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>moter\Design01\cy_constant_v1_0.pdf</v>
-<v>moter\Design01\cy_isr_v1_70</v>
-<v>moter\Design01\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>moter\Design01\cy_pins_v2_10.pdf</v>
-<v>moter\Design01\cy_pins_v2_20</v>
-<v>moter\Design01\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>moter\Design01\CyControlReg_v1_80</v>
-<v>moter\Design01\CyControlReg_v1_80\CyControlReg_v1_80.pdf</v>
-<v>moter\Design01\or_v1_0</v>
-<v>moter\Design01\or_v1_0\or_v1_0.pdf</v>
-<v>moter\Design01\PWM_v3_30</v>
-<v>moter\Design01\PWM_v3_30\PWM_v3_30.pdf</v>
-<v>moter\Design01\UART_v2_50</v>
-<v>moter\Design01\UART_v2_50\UART_v2_50.pdf</v>
-<v>moter\Design01\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -220,13 +175,12 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\Design01.cydsn\main.c" />
-<name v=".\Design01.cydsn\matrix.h" />
-<name v=".\Design01.cydsn\PS3_Controller.h" />
 <name v=".\Design01.cydsn\matrix.c" />
-<name v=".\Design01.cydsn\PS3_Controller.c" />
 <name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
 <name v=".\Design01.cydsn\Design01.cydwr" />
-<name v=".\Design01.cydsn\cyapicallbacks.h" />
+<name v=".\Design01.cydsn\matrix.h" />
+<name v=".\Design01.cydsn\PS3_Controller.h" />
+<name v=".\Design01.cydsn\PS3_Controller.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -234,7 +188,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 711" SelectedTabbedMdiWindow="f370db1f-88b2-4345-933e-d80621b4892b"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="b3562d99-93b2-4ef3-b1e0-31e9ba557148" /><ToolWindow Key="CyFeedbackPageToolWindow:279a374f-99bb-478b-83b4-831f8474bf17:Component Feedback" Guid="09fb76c1-8aa1-4c3f-a00d-6e98aa309963" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\main.c" Guid="abbb56f1-a788-4988-9b93-bff99db1572e" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\matrix.h" Guid="f0ef1175-b493-4fe5-bcfc-fc6c11451043" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\PS3_Controller.h" Guid="347b3830-a921-4ea4-8fd2-7cd1910734c0" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\matrix.c" Guid="f370db1f-88b2-4345-933e-d80621b4892b" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\PS3_Controller.c" Guid="17bc4da2-dc6b-4ebd-859d-f2e925dfb85a" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="f5289d3b-9d57-405c-8069-ede3564af25c" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\Design01.cydwr" Guid="355e06e1-699d-4e54-ad3e-b7d1db4c7fa2" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\cyapicallbacks.h" Guid="4cca7727-cfca-4400-9c65-00a120d5babe" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 711" SelectedTabbedMdiWindow="64fb457b-a08f-41c7-8522-5a66a04b96a7"><ToolWindow Key="CyFeedbackPageToolWindow:279a374f-99bb-478b-83b4-831f8474bf17:Component Feedback" Guid="719558cf-6077-438b-907f-962b481f6555" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="85e9028f-6e03-410b-9b24-eb586ac63506" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\main.c" Guid="64fb457b-a08f-41c7-8522-5a66a04b96a7" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\matrix.c" Guid="12b64b61-a96c-4087-98f6-23fdd096138a" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="af5b2f46-18fe-4aa0-8fff-bd7af0959892" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\Design01.cydwr" Guid="6fdeac10-bc7f-4674-a645-5f51a1ca7466" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\matrix.h" Guid="b2f97f93-e6a3-4fdb-9554-253b47573d2a" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\PS3_Controller.h" Guid="b4b71793-78d8-473e-a865-11043161ffbd" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\PS3_Controller.c" Guid="1d4f0474-a9d5-4df6-87cf-b0b43c3ddaa8" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

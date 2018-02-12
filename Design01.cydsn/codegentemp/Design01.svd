@@ -7,7 +7,7 @@
   <width>32</width>
   <peripherals>
     <peripheral>
-      <name>reverse_3</name>
+      <name>reverse_C</name>
       <description>No description available</description>
       <baseAddress>0x40006474</baseAddress>
       <addressBlock>
@@ -17,7 +17,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>reverse_3_CONTROL_REG</name>
+          <name>reverse_C_CONTROL_REG</name>
           <description>No description available</description>
           <addressOffset>0x0</addressOffset>
           <size>8</size>
@@ -28,7 +28,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>motor3</name>
+      <name>motorC</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -38,7 +38,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>motor3_Control_Reg</name>
+          <name>motorC_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
           <addressOffset>0x40006479</addressOffset>
           <size>8</size>
@@ -70,7 +70,7 @@
           </fields>
         </register>
         <register>
-          <name>motor3_STATUS_MASK</name>
+          <name>motorC_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
           <addressOffset>0x40006487</addressOffset>
           <size>8</size>
@@ -116,7 +116,7 @@
           </fields>
         </register>
         <register>
-          <name>motor3_DeadBand_Counter</name>
+          <name>motorC_DeadBand_Counter</name>
           <description>UDB DeadBand - DeadBand Counter Value</description>
           <addressOffset>0x40006507</addressOffset>
           <size>8</size>
@@ -125,7 +125,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>motor3_DeadBand_Count</name>
+          <name>motorC_DeadBand_Count</name>
           <description>UDB DeadBand - Assigned DeadBand Count Value</description>
           <addressOffset>0x40006527</addressOffset>
           <size>8</size>
@@ -134,7 +134,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>motor3_COMPARE_Reg_</name>
+          <name>motorC_COMPARE_Reg_</name>
           <description>UDB.D0 - Assigned Compare Value</description>
           <addressOffset>0x40006528</addressOffset>
           <size>8</size>
@@ -143,7 +143,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>motor3_STATUS_AUX_CTRL</name>
+          <name>motorC_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
           <addressOffset>0x40006598</addressOffset>
           <size>8</size>
@@ -429,7 +429,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>reverse_1</name>
+      <name>reverse_D</name>
       <description>No description available</description>
       <baseAddress>0x40006476</baseAddress>
       <addressBlock>
@@ -439,7 +439,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>reverse_1_CONTROL_REG</name>
+          <name>reverse_D_CONTROL_REG</name>
           <description>No description available</description>
           <addressOffset>0x0</addressOffset>
           <size>8</size>
@@ -450,7 +450,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>motor1</name>
+      <name>motorD</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -460,7 +460,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>motor1_COMPARE_Reg_</name>
+          <name>motorD_COMPARE_Reg_</name>
           <description>UDB.D0 - Assigned Compare Value</description>
           <addressOffset>0x40006425</addressOffset>
           <size>8</size>
@@ -469,7 +469,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>motor1_Control_Reg</name>
+          <name>motorD_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
           <addressOffset>0x40006475</addressOffset>
           <size>8</size>
@@ -501,7 +501,7 @@
           </fields>
         </register>
         <register>
-          <name>motor1_STATUS_MASK</name>
+          <name>motorD_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
           <addressOffset>0x40006486</addressOffset>
           <size>8</size>
@@ -547,7 +547,7 @@
           </fields>
         </register>
         <register>
-          <name>motor1_STATUS_AUX_CTRL</name>
+          <name>motorD_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
           <addressOffset>0x40006495</addressOffset>
           <size>8</size>
@@ -672,7 +672,7 @@
           </fields>
         </register>
         <register>
-          <name>motor1_DeadBand_Counter</name>
+          <name>motorD_DeadBand_Counter</name>
           <description>UDB DeadBand - DeadBand Counter Value</description>
           <addressOffset>0x40006505</addressOffset>
           <size>8</size>
@@ -681,7 +681,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>motor1_DeadBand_Count</name>
+          <name>motorD_DeadBand_Count</name>
           <description>UDB DeadBand - Assigned DeadBand Count Value</description>
           <addressOffset>0x40006525</addressOffset>
           <size>8</size>
@@ -692,7 +692,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>reverse_2</name>
+      <name>reverse_B</name>
       <description>No description available</description>
       <baseAddress>0x40006579</baseAddress>
       <addressBlock>
@@ -702,7 +702,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>reverse_2_CONTROL_REG</name>
+          <name>reverse_B_CONTROL_REG</name>
           <description>No description available</description>
           <addressOffset>0x0</addressOffset>
           <size>8</size>
@@ -713,7 +713,7 @@
       </registers>
     </peripheral>
     <peripheral>
-      <name>motor2</name>
+      <name>motorB</name>
       <description>No description available</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
@@ -723,7 +723,7 @@
       </addressBlock>
       <registers>
         <register>
-          <name>motor2_DeadBand_Counter</name>
+          <name>motorB_DeadBand_Counter</name>
           <description>UDB DeadBand - DeadBand Counter Value</description>
           <addressOffset>0x40006407</addressOffset>
           <size>8</size>
@@ -732,7 +732,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>motor2_DeadBand_Count</name>
+          <name>motorB_DeadBand_Count</name>
           <description>UDB DeadBand - Assigned DeadBand Count Value</description>
           <addressOffset>0x40006427</addressOffset>
           <size>8</size>
@@ -741,7 +741,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>motor2_COMPARE_Reg_</name>
+          <name>motorB_COMPARE_Reg_</name>
           <description>UDB.D0 - Assigned Compare Value</description>
           <addressOffset>0x40006524</addressOffset>
           <size>8</size>
@@ -750,7 +750,7 @@
           <resetMask>0</resetMask>
         </register>
         <register>
-          <name>motor2_Control_Reg</name>
+          <name>motorB_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
           <addressOffset>0x40006578</addressOffset>
           <size>8</size>
@@ -782,7 +782,7 @@
           </fields>
         </register>
         <register>
-          <name>motor2_STATUS_MASK</name>
+          <name>motorB_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
           <addressOffset>0x40006584</addressOffset>
           <size>8</size>
@@ -828,7 +828,7 @@
           </fields>
         </register>
         <register>
-          <name>motor2_STATUS_AUX_CTRL</name>
+          <name>motorB_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
           <addressOffset>0x40006594</addressOffset>
           <size>8</size>

@@ -44,7 +44,7 @@ net \UART_PS3:BUART:rx_postpoll\
 	switch ":udb@[UDB=(3,2)]:dp_wrapper:input_permute.route_si==>:udb@[UDB=(3,2)]:dp_wrapper:datapath.route_si"
 	term   ":udb@[UDB=(3,2)]:dp_wrapper:datapath.route_si"
 end \UART_PS3:BUART:rx_postpoll\
-net \motor2:PWMUDB:cmp1_less\
+net \motorB:PWMUDB:cmp1_less\
 	term   ":udb@[UDB=(2,0)]:dp_wrapper:datapath.cl0_comb"
 	switch ":udb@[UDB=(2,0)]:dp_wrapper:datapath.cl0_comb==>:udb@[UDB=(2,0)]:dp_wrapper:output_permute.cl0_comb"
 	switch ":udb@[UDB=(2,0)]:dp_wrapper:output_permute.outs_3==>Stub-:udbswitch@[UDB=(2,0)][side=top]:v82"
@@ -85,8 +85,8 @@ net \motor2:PWMUDB:cmp1_less\
 	switch "Stub-:udbswitch@[UDB=(2,0)][side=top]:v58==>:udb@[UDB=(2,0)]:pld1:input_permute.input_2"
 	switch ":udb@[UDB=(2,0)]:pld1:input_permute.mc1_main_3==>:udb@[UDB=(2,0)]:pld1:mc1.main_3"
 	term   ":udb@[UDB=(2,0)]:pld1:mc1.main_3"
-end \motor2:PWMUDB:cmp1_less\
-net \motor2:PWMUDB:db_csaddr_0\
+end \motorB:PWMUDB:cmp1_less\
+net \motorB:PWMUDB:db_csaddr_0\
 	term   ":udb@[UDB=(1,2)]:pld0:mc2.q"
 	switch ":udb@[UDB=(1,2)]:pld0:mc2.q==>:udb@[UDB=(1,2)]:pld0:output_permute0.q_2"
 	switch ":udb@[UDB=(1,2)]:pld0:output_permute0.output_0==>Stub-:udbswitch@[UDB=(0,2)][side=top]:v25"
@@ -100,8 +100,8 @@ net \motor2:PWMUDB:db_csaddr_0\
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v68==>:udb@[UDB=(2,2)]:dp_wrapper:input_permute.ina_2"
 	switch ":udb@[UDB=(2,2)]:dp_wrapper:input_permute.cs_addr_0==>:udb@[UDB=(2,2)]:dp_wrapper:datapath.cs_addr_0"
 	term   ":udb@[UDB=(2,2)]:dp_wrapper:datapath.cs_addr_0"
-end \motor2:PWMUDB:db_csaddr_0\
-net \motor2:PWMUDB:db_tc\
+end \motorB:PWMUDB:db_csaddr_0\
+net \motorB:PWMUDB:db_tc\
 	term   ":udb@[UDB=(2,2)]:dp_wrapper:datapath.z0_comb"
 	switch ":udb@[UDB=(2,2)]:dp_wrapper:datapath.z0_comb==>:udb@[UDB=(2,2)]:dp_wrapper:output_permute.z0_comb"
 	switch ":udb@[UDB=(2,2)]:dp_wrapper:output_permute.outs_0==>Stub-:udbswitch@[UDB=(2,2)][side=top]:v76"
@@ -127,8 +127,8 @@ net \motor2:PWMUDB:db_tc\
 	switch "Stub-:udbswitch@[UDB=(0,2)][side=top]:v53==>:udb@[UDB=(1,2)]:pld1:input_permute.input_5"
 	switch ":udb@[UDB=(1,2)]:pld1:input_permute.mc1_main_3==>:udb@[UDB=(1,2)]:pld1:mc1.main_3"
 	term   ":udb@[UDB=(1,2)]:pld1:mc1.main_3"
-end \motor2:PWMUDB:db_tc\
-net \motor2:PWMUDB:db_ph2_run_temp\
+end \motorB:PWMUDB:db_tc\
+net \motorB:PWMUDB:db_ph2_run_temp\
 	term   ":udb@[UDB=(1,1)]:pld1:mc3.q"
 	switch ":udb@[UDB=(1,1)]:pld1:mc3.q==>:udb@[UDB=(1,1)]:pld1:output_permute1.q_3"
 	switch ":udb@[UDB=(1,1)]:pld1:output_permute1.output_1==>Stub-:udbswitch@[UDB=(0,1)][side=top]:v37"
@@ -154,8 +154,8 @@ net \motor2:PWMUDB:db_ph2_run_temp\
 	switch "Stub-:udbswitch@[UDB=(0,1)][side=top]:v51==>:udb@[UDB=(1,1)]:pld1:input_permute.input_6"
 	switch ":udb@[UDB=(1,1)]:pld1:input_permute.mc3_main_3==>:udb@[UDB=(1,1)]:pld1:mc3.main_3"
 	term   ":udb@[UDB=(1,1)]:pld1:mc3.main_3"
-end \motor2:PWMUDB:db_ph2_run_temp\
-net \motor2:PWMUDB:pwm_db_reg\
+end \motorB:PWMUDB:db_ph2_run_temp\
+net \motorB:PWMUDB:pwm_db_reg\
 	term   ":udb@[UDB=(1,2)]:pld0:mc1.q"
 	switch ":udb@[UDB=(1,2)]:pld0:mc1.q==>:udb@[UDB=(1,2)]:pld0:output_permute1.q_1"
 	switch ":udb@[UDB=(1,2)]:pld0:output_permute1.output_1==>Stub-:udbswitch@[UDB=(0,2)][side=top]:v27"
@@ -190,8 +190,8 @@ net \motor2:PWMUDB:pwm_db_reg\
 	term   ":udb@[UDB=(1,1)]:pld1:mc2.main_1"
 	switch ":udb@[UDB=(1,1)]:pld1:input_permute.mc3_main_1==>:udb@[UDB=(1,1)]:pld1:mc3.main_1"
 	term   ":udb@[UDB=(1,1)]:pld1:mc3.main_1"
-end \motor2:PWMUDB:pwm_db_reg\
-net \motor2:PWMUDB:runmode_enable\
+end \motorB:PWMUDB:pwm_db_reg\
+net \motorB:PWMUDB:runmode_enable\
 	term   ":udb@[UDB=(1,1)]:pld1:mc1.q"
 	switch ":udb@[UDB=(1,1)]:pld1:mc1.q==>:udb@[UDB=(1,1)]:pld1:output_permute0.q_1"
 	switch ":udb@[UDB=(1,1)]:pld1:output_permute0.output_0==>Stub-:udbswitch@[UDB=(0,1)][side=top]:v39"
@@ -239,8 +239,8 @@ net \motor2:PWMUDB:runmode_enable\
 	term   ":udb@[UDB=(1,1)]:pld1:mc2.main_0"
 	switch ":udb@[UDB=(1,1)]:pld1:input_permute.mc3_main_0==>:udb@[UDB=(1,1)]:pld1:mc3.main_0"
 	term   ":udb@[UDB=(1,1)]:pld1:mc3.main_0"
-end \motor2:PWMUDB:runmode_enable\
-net \motor3:PWMUDB:cmp1_less\
+end \motorB:PWMUDB:runmode_enable\
+net \motorC:PWMUDB:cmp1_less\
 	term   ":udb@[UDB=(1,1)]:dp_wrapper:datapath.cl0_comb"
 	switch ":udb@[UDB=(1,1)]:dp_wrapper:datapath.cl0_comb==>:udb@[UDB=(1,1)]:dp_wrapper:output_permute.cl0_comb"
 	switch ":udb@[UDB=(1,1)]:dp_wrapper:output_permute.outs_4==>Stub-:udbswitch@[UDB=(0,1)][side=top]:v85"
@@ -280,8 +280,8 @@ net \motor3:PWMUDB:cmp1_less\
 	term   ":udb@[UDB=(2,1)]:pld1:mc1.main_3"
 	switch ":udb@[UDB=(2,1)]:pld1:input_permute.mc3_main_4==>:udb@[UDB=(2,1)]:pld1:mc3.main_4"
 	term   ":udb@[UDB=(2,1)]:pld1:mc3.main_4"
-end \motor3:PWMUDB:cmp1_less\
-net \motor3:PWMUDB:db_csaddr_0\
+end \motorC:PWMUDB:cmp1_less\
+net \motorC:PWMUDB:db_csaddr_0\
 	term   ":udb@[UDB=(2,1)]:pld0:mc0.q"
 	switch ":udb@[UDB=(2,1)]:pld0:mc0.q==>:udb@[UDB=(2,1)]:pld0:output_permute2.q_0"
 	switch ":udb@[UDB=(2,1)]:pld0:output_permute2.output_2==>Stub-:udbswitch@[UDB=(2,1)][side=top]:v28"
@@ -292,8 +292,8 @@ net \motor3:PWMUDB:db_csaddr_0\
 	switch "Stub-:udbswitch@[UDB=(2,1)][side=top]:v66==>:udb@[UDB=(2,1)]:dp_wrapper:input_permute.ina_1"
 	switch ":udb@[UDB=(2,1)]:dp_wrapper:input_permute.cs_addr_0==>:udb@[UDB=(2,1)]:dp_wrapper:datapath.cs_addr_0"
 	term   ":udb@[UDB=(2,1)]:dp_wrapper:datapath.cs_addr_0"
-end \motor3:PWMUDB:db_csaddr_0\
-net \motor2:PWMUDB:db_ph1_run_temp\
+end \motorC:PWMUDB:db_csaddr_0\
+net \motorB:PWMUDB:db_ph1_run_temp\
 	term   ":udb@[UDB=(1,2)]:pld1:mc1.q"
 	switch ":udb@[UDB=(1,2)]:pld1:mc1.q==>:udb@[UDB=(1,2)]:pld1:output_permute0.q_1"
 	switch ":udb@[UDB=(1,2)]:pld1:output_permute0.output_0==>Stub-:udbswitch@[UDB=(0,2)][side=top]:v39"
@@ -316,8 +316,8 @@ net \motor2:PWMUDB:db_ph1_run_temp\
 	switch "Stub-:udbswitch@[UDB=(0,2)][side=top]:v49==>:udb@[UDB=(1,2)]:pld1:input_permute.input_7"
 	switch ":udb@[UDB=(1,2)]:pld1:input_permute.mc1_main_2==>:udb@[UDB=(1,2)]:pld1:mc1.main_2"
 	term   ":udb@[UDB=(1,2)]:pld1:mc1.main_2"
-end \motor2:PWMUDB:db_ph1_run_temp\
-net \motor1:PWMUDB:cmp1_less\
+end \motorB:PWMUDB:db_ph1_run_temp\
+net \motorD:PWMUDB:cmp1_less\
 	term   ":udb@[UDB=(3,3)]:dp_wrapper:datapath.cl0_comb"
 	switch ":udb@[UDB=(3,3)]:dp_wrapper:datapath.cl0_comb==>:udb@[UDB=(3,3)]:dp_wrapper:output_permute.cl0_comb"
 	switch ":udb@[UDB=(3,3)]:dp_wrapper:output_permute.outs_5==>Stub-:udbswitch@[UDB=(2,3)][side=top]:v87"
@@ -357,8 +357,8 @@ net \motor1:PWMUDB:cmp1_less\
 	switch "Stub-:udbswitch@[UDB=(2,3)][side=top]:v40==>:udb@[UDB=(2,3)]:pld1:input_permute.input_11"
 	switch ":udb@[UDB=(2,3)]:pld1:input_permute.mc1_main_0==>:udb@[UDB=(2,3)]:pld1:mc1.main_0"
 	term   ":udb@[UDB=(2,3)]:pld1:mc1.main_0"
-end \motor1:PWMUDB:cmp1_less\
-net \motor1:PWMUDB:db_csaddr_0\
+end \motorD:PWMUDB:cmp1_less\
+net \motorD:PWMUDB:db_csaddr_0\
 	term   ":udb@[UDB=(3,0)]:pld0:mc0.q"
 	switch ":udb@[UDB=(3,0)]:pld0:mc0.q==>:udb@[UDB=(3,0)]:pld0:output_permute0.q_0"
 	switch ":udb@[UDB=(3,0)]:pld0:output_permute0.output_0==>Stub-:udbswitch@[UDB=(2,0)][side=top]:v25"
@@ -369,8 +369,8 @@ net \motor1:PWMUDB:db_csaddr_0\
 	switch "Stub-:udbswitch@[UDB=(2,0)][side=top]:v71==>:udb@[UDB=(3,0)]:dp_wrapper:input_permute.ina_3"
 	switch ":udb@[UDB=(3,0)]:dp_wrapper:input_permute.cs_addr_0==>:udb@[UDB=(3,0)]:dp_wrapper:datapath.cs_addr_0"
 	term   ":udb@[UDB=(3,0)]:dp_wrapper:datapath.cs_addr_0"
-end \motor1:PWMUDB:db_csaddr_0\
-net \motor3:PWMUDB:runmode_enable\
+end \motorD:PWMUDB:db_csaddr_0\
+net \motorC:PWMUDB:runmode_enable\
 	term   ":udb@[UDB=(2,2)]:pld1:mc1.q"
 	switch ":udb@[UDB=(2,2)]:pld1:mc1.q==>:udb@[UDB=(2,2)]:pld1:output_permute0.q_1"
 	switch ":udb@[UDB=(2,2)]:pld1:output_permute0.output_0==>Stub-:udbswitch@[UDB=(2,2)][side=top]:v38"
@@ -413,8 +413,8 @@ net \motor3:PWMUDB:runmode_enable\
 	term   ":udb@[UDB=(2,2)]:pld0:mc1.main_0"
 	switch ":udb@[UDB=(2,2)]:pld1:input_permute.mc2_main_0==>:udb@[UDB=(2,2)]:pld1:mc2.main_0"
 	term   ":udb@[UDB=(2,2)]:pld1:mc2.main_0"
-end \motor3:PWMUDB:runmode_enable\
-net \motor1:PWMUDB:runmode_enable\
+end \motorC:PWMUDB:runmode_enable\
+net \motorD:PWMUDB:runmode_enable\
 	term   ":udb@[UDB=(2,3)]:pld1:mc0.q"
 	switch ":udb@[UDB=(2,3)]:pld1:mc0.q==>:udb@[UDB=(2,3)]:pld1:output_permute1.q_0"
 	switch ":udb@[UDB=(2,3)]:pld1:output_permute1.output_1==>Stub-:udbswitch@[UDB=(2,3)][side=top]:v36"
@@ -454,8 +454,8 @@ net \motor1:PWMUDB:runmode_enable\
 	term   ":udb@[UDB=(3,1)]:pld1:mc2.main_0"
 	switch ":udb@[UDB=(3,1)]:pld1:input_permute.mc0_main_0==>:udb@[UDB=(3,1)]:pld1:mc0.main_0"
 	term   ":udb@[UDB=(3,1)]:pld1:mc0.main_0"
-end \motor1:PWMUDB:runmode_enable\
-net \motor3:PWMUDB:pwm_db_reg\
+end \motorD:PWMUDB:runmode_enable\
+net \motorC:PWMUDB:pwm_db_reg\
 	term   ":udb@[UDB=(2,2)]:pld1:mc2.q"
 	switch ":udb@[UDB=(2,2)]:pld1:mc2.q==>:udb@[UDB=(2,2)]:pld1:output_permute3.q_2"
 	switch ":udb@[UDB=(2,2)]:pld1:output_permute3.output_3==>Stub-:udbswitch@[UDB=(2,2)][side=top]:v32"
@@ -482,8 +482,8 @@ net \motor3:PWMUDB:pwm_db_reg\
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v8==>:udb@[UDB=(2,2)]:pld0:input_permute.input_4"
 	switch ":udb@[UDB=(2,2)]:pld0:input_permute.mc1_main_1==>:udb@[UDB=(2,2)]:pld0:mc1.main_1"
 	term   ":udb@[UDB=(2,2)]:pld0:mc1.main_1"
-end \motor3:PWMUDB:pwm_db_reg\
-net \motor3:PWMUDB:db_tc\
+end \motorC:PWMUDB:pwm_db_reg\
+net \motorC:PWMUDB:db_tc\
 	term   ":udb@[UDB=(2,1)]:dp_wrapper:datapath.z0_comb"
 	switch ":udb@[UDB=(2,1)]:dp_wrapper:datapath.z0_comb==>:udb@[UDB=(2,1)]:dp_wrapper:output_permute.z0_comb"
 	switch ":udb@[UDB=(2,1)]:dp_wrapper:output_permute.outs_5==>Stub-:udbswitch@[UDB=(2,1)][side=top]:v86"
@@ -506,8 +506,8 @@ net \motor3:PWMUDB:db_tc\
 	switch "Stub-:udbswitch@[UDB=(2,1)][side=top]:v46==>:udb@[UDB=(2,1)]:pld1:input_permute.input_8"
 	switch ":udb@[UDB=(2,1)]:pld1:input_permute.mc3_main_2==>:udb@[UDB=(2,1)]:pld1:mc3.main_2"
 	term   ":udb@[UDB=(2,1)]:pld1:mc3.main_2"
-end \motor3:PWMUDB:db_tc\
-net \motor1:PWMUDB:pwm_db_reg\
+end \motorC:PWMUDB:db_tc\
+net \motorD:PWMUDB:pwm_db_reg\
 	term   ":udb@[UDB=(3,1)]:pld1:mc1.q"
 	switch ":udb@[UDB=(3,1)]:pld1:mc1.q==>:udb@[UDB=(3,1)]:pld1:output_permute1.q_1"
 	switch ":udb@[UDB=(3,1)]:pld1:output_permute1.output_1==>Stub-:udbswitch@[UDB=(2,1)][side=top]:v37"
@@ -533,8 +533,8 @@ net \motor1:PWMUDB:pwm_db_reg\
 	term   ":udb@[UDB=(3,1)]:pld1:mc2.main_1"
 	switch ":udb@[UDB=(3,1)]:pld1:input_permute.mc0_main_1==>:udb@[UDB=(3,1)]:pld1:mc0.main_1"
 	term   ":udb@[UDB=(3,1)]:pld1:mc0.main_1"
-end \motor1:PWMUDB:pwm_db_reg\
-net \motor3:PWMUDB:db_ph1_run_temp\
+end \motorD:PWMUDB:pwm_db_reg\
+net \motorC:PWMUDB:db_ph1_run_temp\
 	term   ":udb@[UDB=(2,2)]:pld0:mc1.q"
 	switch ":udb@[UDB=(2,2)]:pld0:mc1.q==>:udb@[UDB=(2,2)]:pld0:output_permute1.q_1"
 	switch ":udb@[UDB=(2,2)]:pld0:output_permute1.output_1==>Stub-:udbswitch@[UDB=(2,2)][side=top]:v26"
@@ -556,8 +556,8 @@ net \motor3:PWMUDB:db_ph1_run_temp\
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v4==>:udb@[UDB=(2,2)]:pld0:input_permute.input_2"
 	switch ":udb@[UDB=(2,2)]:pld0:input_permute.mc1_main_2==>:udb@[UDB=(2,2)]:pld0:mc1.main_2"
 	term   ":udb@[UDB=(2,2)]:pld0:mc1.main_2"
-end \motor3:PWMUDB:db_ph1_run_temp\
-net \motor1:PWMUDB:db_tc\
+end \motorC:PWMUDB:db_ph1_run_temp\
+net \motorD:PWMUDB:db_tc\
 	term   ":udb@[UDB=(3,0)]:dp_wrapper:datapath.z0_comb"
 	switch ":udb@[UDB=(3,0)]:dp_wrapper:datapath.z0_comb==>:udb@[UDB=(3,0)]:dp_wrapper:output_permute.z0_comb"
 	switch ":udb@[UDB=(3,0)]:dp_wrapper:output_permute.outs_2==>Stub-:udbswitch@[UDB=(2,0)][side=top]:v81"
@@ -579,8 +579,8 @@ net \motor1:PWMUDB:db_tc\
 	switch "Stub-:udbswitch@[UDB=(2,1)][side=top]:v1==>:udb@[UDB=(3,1)]:pld0:input_permute.input_0"
 	switch ":udb@[UDB=(3,1)]:pld0:input_permute.mc1_main_2==>:udb@[UDB=(3,1)]:pld0:mc1.main_2"
 	term   ":udb@[UDB=(3,1)]:pld0:mc1.main_2"
-end \motor1:PWMUDB:db_tc\
-net \motor1:PWMUDB:db_ph2_run_temp\
+end \motorD:PWMUDB:db_tc\
+net \motorD:PWMUDB:db_ph2_run_temp\
 	term   ":udb@[UDB=(3,1)]:pld0:mc1.q"
 	switch ":udb@[UDB=(3,1)]:pld0:mc1.q==>:udb@[UDB=(3,1)]:pld0:output_permute3.q_1"
 	switch ":udb@[UDB=(3,1)]:pld0:output_permute3.output_3==>Stub-:udbswitch@[UDB=(2,1)][side=top]:v31"
@@ -599,8 +599,8 @@ net \motor1:PWMUDB:db_ph2_run_temp\
 	switch "Stub-:udbswitch@[UDB=(2,1)][side=top]:v7==>:udb@[UDB=(3,1)]:pld0:input_permute.input_3"
 	switch ":udb@[UDB=(3,1)]:pld0:input_permute.mc1_main_3==>:udb@[UDB=(3,1)]:pld0:mc1.main_3"
 	term   ":udb@[UDB=(3,1)]:pld0:mc1.main_3"
-end \motor1:PWMUDB:db_ph2_run_temp\
-net \motor1:PWMUDB:db_ph1_run_temp\
+end \motorD:PWMUDB:db_ph2_run_temp\
+net \motorD:PWMUDB:db_ph1_run_temp\
 	term   ":udb@[UDB=(3,1)]:pld1:mc0.q"
 	switch ":udb@[UDB=(3,1)]:pld1:mc0.q==>:udb@[UDB=(3,1)]:pld1:output_permute2.q_0"
 	switch ":udb@[UDB=(3,1)]:pld1:output_permute2.output_2==>Stub-:udbswitch@[UDB=(2,1)][side=top]:v35"
@@ -619,8 +619,8 @@ net \motor1:PWMUDB:db_ph1_run_temp\
 	term   ":udb@[UDB=(3,1)]:pld1:mc2.main_2"
 	switch ":udb@[UDB=(3,1)]:pld1:input_permute.mc0_main_2==>:udb@[UDB=(3,1)]:pld1:mc0.main_2"
 	term   ":udb@[UDB=(3,1)]:pld1:mc0.main_2"
-end \motor1:PWMUDB:db_ph1_run_temp\
-net \motor3:PWMUDB:tc_i\
+end \motorD:PWMUDB:db_ph1_run_temp\
+net \motorC:PWMUDB:tc_i\
 	term   ":udb@[UDB=(1,1)]:dp_wrapper:datapath.z0_comb"
 	switch ":udb@[UDB=(1,1)]:dp_wrapper:datapath.z0_comb==>:udb@[UDB=(1,1)]:dp_wrapper:output_permute.z0_comb"
 	switch ":udb@[UDB=(1,1)]:dp_wrapper:output_permute.outs_5==>Stub-:udbswitch@[UDB=(0,1)][side=top]:v87"
@@ -641,8 +641,8 @@ net \motor3:PWMUDB:tc_i\
 	switch "Stub-:udbswitch@[UDB=(0,1)][side=top]:v65==>:udb@[UDB=(1,1)]:dp_wrapper:input_permute.ina_0"
 	switch ":udb@[UDB=(1,1)]:dp_wrapper:input_permute.cs_addr_2==>:udb@[UDB=(1,1)]:dp_wrapper:datapath.cs_addr_2"
 	term   ":udb@[UDB=(1,1)]:dp_wrapper:datapath.cs_addr_2"
-end \motor3:PWMUDB:tc_i\
-net \motor3:PWMUDB:status_2\
+end \motorC:PWMUDB:tc_i\
+net \motorC:PWMUDB:status_2\
 	term   ":udb@[UDB=(2,2)]:pld1:mc0.q"
 	switch ":udb@[UDB=(2,2)]:pld1:mc0.q==>:udb@[UDB=(2,2)]:pld1:output_permute1.q_0"
 	switch ":udb@[UDB=(2,2)]:pld1:output_permute1.output_1==>Stub-:udbswitch@[UDB=(2,2)][side=top]:v36"
@@ -652,8 +652,8 @@ net \motor3:PWMUDB:status_2\
 	switch "IStub-:udbswitch@[UDB=(2,2)][side=top]:v92"
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v92==>:udb@[UDB=(2,2)]:statusicell.status_2"
 	term   ":udb@[UDB=(2,2)]:statusicell.status_2"
-end \motor3:PWMUDB:status_2\
-net \motor3:PWMUDB:db_ph2_run_temp\
+end \motorC:PWMUDB:status_2\
+net \motorC:PWMUDB:db_ph2_run_temp\
 	term   ":udb@[UDB=(2,1)]:pld1:mc3.q"
 	switch ":udb@[UDB=(2,1)]:pld1:mc3.q==>:udb@[UDB=(2,1)]:pld1:output_permute0.q_3"
 	switch ":udb@[UDB=(2,1)]:pld1:output_permute0.output_0==>Stub-:udbswitch@[UDB=(2,1)][side=top]:v38"
@@ -671,8 +671,8 @@ net \motor3:PWMUDB:db_ph2_run_temp\
 	term   ":udb@[UDB=(2,1)]:pld1:mc1.main_2"
 	switch ":udb@[UDB=(2,1)]:pld1:input_permute.mc3_main_3==>:udb@[UDB=(2,1)]:pld1:mc3.main_3"
 	term   ":udb@[UDB=(2,1)]:pld1:mc3.main_3"
-end \motor3:PWMUDB:db_ph2_run_temp\
-net \motor2:PWMUDB:status_2\
+end \motorC:PWMUDB:db_ph2_run_temp\
+net \motorB:PWMUDB:status_2\
 	term   ":udb@[UDB=(2,0)]:pld0:mc2.q"
 	switch ":udb@[UDB=(2,0)]:pld0:mc2.q==>:udb@[UDB=(2,0)]:pld0:output_permute1.q_2"
 	switch ":udb@[UDB=(2,0)]:pld0:output_permute1.output_1==>Stub-:udbswitch@[UDB=(2,0)][side=top]:v26"
@@ -682,8 +682,8 @@ net \motor2:PWMUDB:status_2\
 	switch "IStub-:udbswitch@[UDB=(2,0)][side=top]:v92"
 	switch "Stub-:udbswitch@[UDB=(2,0)][side=top]:v92==>:udb@[UDB=(2,0)]:statusicell.status_2"
 	term   ":udb@[UDB=(2,0)]:statusicell.status_2"
-end \motor2:PWMUDB:status_2\
-net \motor1:PWMUDB:tc_i\
+end \motorB:PWMUDB:status_2\
+net \motorD:PWMUDB:tc_i\
 	term   ":udb@[UDB=(3,3)]:dp_wrapper:datapath.z0_comb"
 	switch ":udb@[UDB=(3,3)]:dp_wrapper:datapath.z0_comb==>:udb@[UDB=(3,3)]:dp_wrapper:output_permute.z0_comb"
 	switch ":udb@[UDB=(3,3)]:dp_wrapper:output_permute.outs_0==>Stub-:udbswitch@[UDB=(2,3)][side=top]:v77"
@@ -703,8 +703,8 @@ net \motor1:PWMUDB:tc_i\
 	switch "Stub-:udbswitch@[UDB=(2,3)][side=top]:v67==>:udb@[UDB=(3,3)]:dp_wrapper:input_permute.ina_1"
 	switch ":udb@[UDB=(3,3)]:dp_wrapper:input_permute.cs_addr_2==>:udb@[UDB=(3,3)]:dp_wrapper:datapath.cs_addr_2"
 	term   ":udb@[UDB=(3,3)]:dp_wrapper:datapath.cs_addr_2"
-end \motor1:PWMUDB:tc_i\
-net \motor1:PWMUDB:status_2\
+end \motorD:PWMUDB:tc_i\
+net \motorD:PWMUDB:status_2\
 	term   ":udb@[UDB=(2,1)]:pld0:mc1.q"
 	switch ":udb@[UDB=(2,1)]:pld0:mc1.q==>:udb@[UDB=(2,1)]:pld0:output_permute1.q_1"
 	switch ":udb@[UDB=(2,1)]:pld0:output_permute1.output_1==>Stub-:udbswitch@[UDB=(2,1)][side=top]:v26"
@@ -715,8 +715,8 @@ net \motor1:PWMUDB:status_2\
 	switch "IStub-:udbswitch@[UDB=(2,2)][side=top]:v93"
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v93==>:udb@[UDB=(3,2)]:statusicell.status_2"
 	term   ":udb@[UDB=(3,2)]:statusicell.status_2"
-end \motor1:PWMUDB:status_2\
-net \motor2:PWMUDB:tc_i\
+end \motorD:PWMUDB:status_2\
+net \motorB:PWMUDB:tc_i\
 	term   ":udb@[UDB=(2,0)]:dp_wrapper:datapath.z0_comb"
 	switch ":udb@[UDB=(2,0)]:dp_wrapper:datapath.z0_comb==>:udb@[UDB=(2,0)]:dp_wrapper:output_permute.z0_comb"
 	switch ":udb@[UDB=(2,0)]:dp_wrapper:output_permute.outs_0==>Stub-:udbswitch@[UDB=(2,0)][side=top]:v76"
@@ -733,8 +733,8 @@ net \motor2:PWMUDB:tc_i\
 	switch "Stub-:udbswitch@[UDB=(2,0)][side=top]:v68==>:udb@[UDB=(2,0)]:dp_wrapper:input_permute.ina_2"
 	switch ":udb@[UDB=(2,0)]:dp_wrapper:input_permute.cs_addr_2==>:udb@[UDB=(2,0)]:dp_wrapper:datapath.cs_addr_2"
 	term   ":udb@[UDB=(2,0)]:dp_wrapper:datapath.cs_addr_2"
-end \motor2:PWMUDB:tc_i\
-net \motor3:PWMUDB:control_7\
+end \motorB:PWMUDB:tc_i\
+net \motorC:PWMUDB:control_7\
 	term   ":udb@[UDB=(0,2)]:controlcell.control_7"
 	switch ":udb@[UDB=(0,2)]:controlcell.control_7==>:udb@[UDB=(0,2)]:controlcell_control_7_permute.in_0"
 	switch ":udb@[UDB=(0,2)]:controlcell_control_7_permute.controlcell_control_7==>Stub-:udbswitch@[UDB=(0,2)][side=top]:v118"
@@ -748,8 +748,8 @@ net \motor3:PWMUDB:control_7\
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v62==>:udb@[UDB=(2,2)]:pld1:input_permute.input_0"
 	switch ":udb@[UDB=(2,2)]:pld1:input_permute.mc1_main_0==>:udb@[UDB=(2,2)]:pld1:mc1.main_0"
 	term   ":udb@[UDB=(2,2)]:pld1:mc1.main_0"
-end \motor3:PWMUDB:control_7\
-net \motor2:PWMUDB:status_0\
+end \motorC:PWMUDB:control_7\
+net \motorB:PWMUDB:status_0\
 	term   ":udb@[UDB=(1,1)]:pld1:mc0.q"
 	switch ":udb@[UDB=(1,1)]:pld1:mc0.q==>:udb@[UDB=(1,1)]:pld1:output_permute2.q_0"
 	switch ":udb@[UDB=(1,1)]:pld1:output_permute2.output_2==>Stub-:udbswitch@[UDB=(0,1)][side=top]:v35"
@@ -763,8 +763,8 @@ net \motor2:PWMUDB:status_0\
 	switch "IStub-:udbswitch@[UDB=(2,0)][side=top]:v88"
 	switch "Stub-:udbswitch@[UDB=(2,0)][side=top]:v88==>:udb@[UDB=(2,0)]:statusicell.status_0"
 	term   ":udb@[UDB=(2,0)]:statusicell.status_0"
-end \motor2:PWMUDB:status_0\
-net \motor1:PWMUDB:prevCompare1\
+end \motorB:PWMUDB:status_0\
+net \motorD:PWMUDB:prevCompare1\
 	term   ":udb@[UDB=(2,3)]:pld1:mc1.q"
 	switch ":udb@[UDB=(2,3)]:pld1:mc1.q==>:udb@[UDB=(2,3)]:pld1:output_permute2.q_1"
 	switch ":udb@[UDB=(2,3)]:pld1:output_permute2.output_2==>Stub-:udbswitch@[UDB=(2,3)][side=top]:v34"
@@ -776,8 +776,8 @@ net \motor1:PWMUDB:prevCompare1\
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v51==>:udb@[UDB=(3,2)]:pld1:input_permute.input_6"
 	switch ":udb@[UDB=(3,2)]:pld1:input_permute.mc3_main_0==>:udb@[UDB=(3,2)]:pld1:mc3.main_0"
 	term   ":udb@[UDB=(3,2)]:pld1:mc3.main_0"
-end \motor1:PWMUDB:prevCompare1\
-net \motor2:PWMUDB:prevCompare1\
+end \motorD:PWMUDB:prevCompare1\
+net \motorB:PWMUDB:prevCompare1\
 	term   ":udb@[UDB=(1,2)]:pld1:mc0.q"
 	switch ":udb@[UDB=(1,2)]:pld1:mc0.q==>:udb@[UDB=(1,2)]:pld1:output_permute1.q_0"
 	switch ":udb@[UDB=(1,2)]:pld1:output_permute1.output_1==>Stub-:udbswitch@[UDB=(0,2)][side=top]:v37"
@@ -789,8 +789,8 @@ net \motor2:PWMUDB:prevCompare1\
 	switch "Stub-:udbswitch@[UDB=(0,1)][side=top]:v61==>:udb@[UDB=(1,1)]:pld1:input_permute.input_1"
 	switch ":udb@[UDB=(1,1)]:pld1:input_permute.mc0_main_0==>:udb@[UDB=(1,1)]:pld1:mc0.main_0"
 	term   ":udb@[UDB=(1,1)]:pld1:mc0.main_0"
-end \motor2:PWMUDB:prevCompare1\
-net \motor3:PWMUDB:prevCompare1\
+end \motorB:PWMUDB:prevCompare1\
+net \motorC:PWMUDB:prevCompare1\
 	term   ":udb@[UDB=(2,2)]:pld1:mc3.q"
 	switch ":udb@[UDB=(2,2)]:pld1:mc3.q==>:udb@[UDB=(2,2)]:pld1:output_permute2.q_3"
 	switch ":udb@[UDB=(2,2)]:pld1:output_permute2.output_2==>Stub-:udbswitch@[UDB=(2,2)][side=top]:v34"
@@ -801,8 +801,8 @@ net \motor3:PWMUDB:prevCompare1\
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v2==>:udb@[UDB=(2,2)]:pld0:input_permute.input_1"
 	switch ":udb@[UDB=(2,2)]:pld0:input_permute.mc0_main_0==>:udb@[UDB=(2,2)]:pld0:mc0.main_0"
 	term   ":udb@[UDB=(2,2)]:pld0:mc0.main_0"
-end \motor3:PWMUDB:prevCompare1\
-net \motor2:PWMUDB:control_7\
+end \motorC:PWMUDB:prevCompare1\
+net \motorB:PWMUDB:control_7\
 	term   ":udb@[UDB=(1,1)]:controlcell.control_7"
 	switch ":udb@[UDB=(1,1)]:controlcell.control_7==>:udb@[UDB=(1,1)]:controlcell_control_7_permute.in_0"
 	switch ":udb@[UDB=(1,1)]:controlcell_control_7_permute.controlcell_control_7==>Stub-:udbswitch@[UDB=(0,1)][side=top]:v119"
@@ -813,8 +813,8 @@ net \motor2:PWMUDB:control_7\
 	switch "Stub-:udbswitch@[UDB=(0,1)][side=top]:v41==>:udb@[UDB=(1,1)]:pld1:input_permute.input_11"
 	switch ":udb@[UDB=(1,1)]:pld1:input_permute.mc1_main_0==>:udb@[UDB=(1,1)]:pld1:mc1.main_0"
 	term   ":udb@[UDB=(1,1)]:pld1:mc1.main_0"
-end \motor2:PWMUDB:control_7\
-net \motor1:PWMUDB:control_7\
+end \motorB:PWMUDB:control_7\
+net \motorD:PWMUDB:control_7\
 	term   ":udb@[UDB=(3,3)]:controlcell.control_7"
 	switch ":udb@[UDB=(3,3)]:controlcell.control_7==>:udb@[UDB=(3,3)]:controlcell_control_7_permute.in_0"
 	switch ":udb@[UDB=(3,3)]:controlcell_control_7_permute.controlcell_control_7==>Stub-:udbswitch@[UDB=(2,3)][side=top]:v119"
@@ -825,8 +825,8 @@ net \motor1:PWMUDB:control_7\
 	switch "Stub-:udbswitch@[UDB=(2,3)][side=top]:v56==>:udb@[UDB=(2,3)]:pld1:input_permute.input_3"
 	switch ":udb@[UDB=(2,3)]:pld1:input_permute.mc0_main_0==>:udb@[UDB=(2,3)]:pld1:mc0.main_0"
 	term   ":udb@[UDB=(2,3)]:pld1:mc0.main_0"
-end \motor1:PWMUDB:control_7\
-net \motor3:PWMUDB:status_0\
+end \motorD:PWMUDB:control_7\
+net \motorC:PWMUDB:status_0\
 	term   ":udb@[UDB=(2,2)]:pld0:mc0.q"
 	switch ":udb@[UDB=(2,2)]:pld0:mc0.q==>:udb@[UDB=(2,2)]:pld0:output_permute0.q_0"
 	switch ":udb@[UDB=(2,2)]:pld0:output_permute0.output_0==>Stub-:udbswitch@[UDB=(2,2)][side=top]:v24"
@@ -836,8 +836,8 @@ net \motor3:PWMUDB:status_0\
 	switch "IStub-:udbswitch@[UDB=(2,2)][side=top]:v88"
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v88==>:udb@[UDB=(2,2)]:statusicell.status_0"
 	term   ":udb@[UDB=(2,2)]:statusicell.status_0"
-end \motor3:PWMUDB:status_0\
-net \motor1:PWMUDB:status_0\
+end \motorC:PWMUDB:status_0\
+net \motorD:PWMUDB:status_0\
 	term   ":udb@[UDB=(3,2)]:pld1:mc3.q"
 	switch ":udb@[UDB=(3,2)]:pld1:mc3.q==>:udb@[UDB=(3,2)]:pld1:output_permute0.q_3"
 	switch ":udb@[UDB=(3,2)]:pld1:output_permute0.output_0==>Stub-:udbswitch@[UDB=(2,2)][side=top]:v39"
@@ -847,7 +847,7 @@ net \motor1:PWMUDB:status_0\
 	switch "IStub-:udbswitch@[UDB=(2,2)][side=top]:v89"
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v89==>:udb@[UDB=(3,2)]:statusicell.status_0"
 	term   ":udb@[UDB=(3,2)]:statusicell.status_0"
-end \motor1:PWMUDB:status_0\
+end \motorD:PWMUDB:status_0\
 net \UART_1:BUART:tx_fifo_empty\
 	term   ":udb@[UDB=(1,2)]:dp_wrapper:datapath.f0_blk_stat_comb"
 	switch ":udb@[UDB=(1,2)]:dp_wrapper:datapath.f0_blk_stat_comb==>:udb@[UDB=(1,2)]:dp_wrapper:output_permute.f0_blk_stat_comb"
@@ -2381,19 +2381,7 @@ net \UART_PS3:BUART:rx_status_5\
 	switch "Stub-:udbswitch@[UDB=(2,0)][side=top]:v99==>:udb@[UDB=(3,0)]:statusicell.status_5"
 	term   ":udb@[UDB=(3,0)]:statusicell.status_5"
 end \UART_PS3:BUART:rx_status_5\
-net \motor1:PWMUDB:status_3\
-	term   ":udb@[UDB=(3,3)]:dp_wrapper:datapath.f1_blk_stat_comb"
-	switch ":udb@[UDB=(3,3)]:dp_wrapper:datapath.f1_blk_stat_comb==>:udb@[UDB=(3,3)]:dp_wrapper:output_permute.f1_blk_stat_comb"
-	switch ":udb@[UDB=(3,3)]:dp_wrapper:output_permute.outs_1==>Stub-:udbswitch@[UDB=(2,3)][side=top]:v79"
-	switch "OStub-:udbswitch@[UDB=(2,3)][side=top]:v79"
-	switch ":udbswitch@[UDB=(2,3)][side=top]:79,24"
-	switch ":hvswitch@[UDB=(2,2)][side=left]:hseg_24_b"
-	switch ":udbswitch@[UDB=(2,2)][side=top]:95,24_f"
-	switch "IStub-:udbswitch@[UDB=(2,2)][side=top]:v95"
-	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v95==>:udb@[UDB=(3,2)]:statusicell.status_3"
-	term   ":udb@[UDB=(3,2)]:statusicell.status_3"
-end \motor1:PWMUDB:status_3\
-net \motor2:PWMUDB:status_3\
+net \motorB:PWMUDB:status_3\
 	term   ":udb@[UDB=(2,0)]:dp_wrapper:datapath.f1_blk_stat_comb"
 	switch ":udb@[UDB=(2,0)]:dp_wrapper:datapath.f1_blk_stat_comb==>:udb@[UDB=(2,0)]:dp_wrapper:output_permute.f1_blk_stat_comb"
 	switch ":udb@[UDB=(2,0)]:dp_wrapper:output_permute.outs_1==>Stub-:udbswitch@[UDB=(2,0)][side=top]:v78"
@@ -2403,8 +2391,8 @@ net \motor2:PWMUDB:status_3\
 	switch "IStub-:udbswitch@[UDB=(2,0)][side=top]:v94"
 	switch "Stub-:udbswitch@[UDB=(2,0)][side=top]:v94==>:udb@[UDB=(2,0)]:statusicell.status_3"
 	term   ":udb@[UDB=(2,0)]:statusicell.status_3"
-end \motor2:PWMUDB:status_3\
-net \motor3:PWMUDB:status_3\
+end \motorB:PWMUDB:status_3\
+net \motorC:PWMUDB:status_3\
 	term   ":udb@[UDB=(1,1)]:dp_wrapper:datapath.f1_blk_stat_comb"
 	switch ":udb@[UDB=(1,1)]:dp_wrapper:datapath.f1_blk_stat_comb==>:udb@[UDB=(1,1)]:dp_wrapper:output_permute.f1_blk_stat_comb"
 	switch ":udb@[UDB=(1,1)]:dp_wrapper:output_permute.outs_3==>Stub-:udbswitch@[UDB=(0,1)][side=top]:v83"
@@ -2418,4 +2406,16 @@ net \motor3:PWMUDB:status_3\
 	switch "IStub-:udbswitch@[UDB=(2,2)][side=top]:v94"
 	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v94==>:udb@[UDB=(2,2)]:statusicell.status_3"
 	term   ":udb@[UDB=(2,2)]:statusicell.status_3"
-end \motor3:PWMUDB:status_3\
+end \motorC:PWMUDB:status_3\
+net \motorD:PWMUDB:status_3\
+	term   ":udb@[UDB=(3,3)]:dp_wrapper:datapath.f1_blk_stat_comb"
+	switch ":udb@[UDB=(3,3)]:dp_wrapper:datapath.f1_blk_stat_comb==>:udb@[UDB=(3,3)]:dp_wrapper:output_permute.f1_blk_stat_comb"
+	switch ":udb@[UDB=(3,3)]:dp_wrapper:output_permute.outs_1==>Stub-:udbswitch@[UDB=(2,3)][side=top]:v79"
+	switch "OStub-:udbswitch@[UDB=(2,3)][side=top]:v79"
+	switch ":udbswitch@[UDB=(2,3)][side=top]:79,24"
+	switch ":hvswitch@[UDB=(2,2)][side=left]:hseg_24_b"
+	switch ":udbswitch@[UDB=(2,2)][side=top]:95,24_f"
+	switch "IStub-:udbswitch@[UDB=(2,2)][side=top]:v95"
+	switch "Stub-:udbswitch@[UDB=(2,2)][side=top]:v95==>:udb@[UDB=(3,2)]:statusicell.status_3"
+	term   ":udb@[UDB=(3,2)]:statusicell.status_3"
+end \motorD:PWMUDB:status_3\

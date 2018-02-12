@@ -18,9 +18,9 @@
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\cyfitteriar.inc" value="HEADER;;;;;" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motor1.c" value="SOURCE_C;CortexM3;;;;motor1" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motor1.h" value="HEADER;;;;;motor1" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motor1_PM.c" value="SOURCE_C;CortexM3;;;;motor1" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motorD.c" value="SOURCE_C;CortexM3;;;;motorD" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motorD.h" value="HEADER;;;;;motorD" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motorD_PM.c" value="SOURCE_C;CortexM3;;;;motorD" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\high1_1_aliases.h" value="HEADER;;;;;high1_1" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\high1_1.c" value="SOURCE_C;CortexM3;;;;high1_1" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\high1_1.h" value="HEADER;;;;;high1_1" />
@@ -33,17 +33,17 @@
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\low1_2_aliases.h" value="HEADER;;;;;low1_2" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\low1_2.c" value="SOURCE_C;CortexM3;;;;low1_2" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\low1_2.h" value="HEADER;;;;;low1_2" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_1.h" value="HEADER;;;;;reverse_1" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_1.c" value="SOURCE_C;CortexM3;;;;reverse_1" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_1_PM.c" value="SOURCE_C;CortexM3;;;;reverse_1" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_D.h" value="HEADER;;;;;reverse_D" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_D.c" value="SOURCE_C;CortexM3;;;;reverse_D" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_D_PM.c" value="SOURCE_C;CortexM3;;;;reverse_D" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\Clock_1.c" value="SOURCE_C;CortexM3;;;;Clock_1" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\Clock_1.h" value="HEADER;;;;;Clock_1" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\led_aliases.h" value="HEADER;;;;;led" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\led.c" value="SOURCE_C;CortexM3;;;;led" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\led.h" value="HEADER;;;;;led" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motor2.c" value="SOURCE_C;CortexM3;;;;motor2" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motor2.h" value="HEADER;;;;;motor2" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motor2_PM.c" value="SOURCE_C;CortexM3;;;;motor2" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motorB.c" value="SOURCE_C;CortexM3;;;;motorB" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motorB.h" value="HEADER;;;;;motorB" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motorB_PM.c" value="SOURCE_C;CortexM3;;;;motorB" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\high2_1_aliases.h" value="HEADER;;;;;high2_1" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\high2_1.c" value="SOURCE_C;CortexM3;;;;high2_1" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\high2_1.h" value="HEADER;;;;;high2_1" />
@@ -56,14 +56,14 @@
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\low2_2_aliases.h" value="HEADER;;;;;low2_2" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\low2_2.c" value="SOURCE_C;CortexM3;;;;low2_2" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\low2_2.h" value="HEADER;;;;;low2_2" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_2.h" value="HEADER;;;;;reverse_2" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_2.c" value="SOURCE_C;CortexM3;;;;reverse_2" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_2_PM.c" value="SOURCE_C;CortexM3;;;;reverse_2" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_B.h" value="HEADER;;;;;reverse_B" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_B.c" value="SOURCE_C;CortexM3;;;;reverse_B" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_B_PM.c" value="SOURCE_C;CortexM3;;;;reverse_B" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\Clock_2.c" value="SOURCE_C;CortexM3;;;;Clock_2" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\Clock_2.h" value="HEADER;;;;;Clock_2" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motor3.c" value="SOURCE_C;CortexM3;;;;motor3" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motor3.h" value="HEADER;;;;;motor3" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motor3_PM.c" value="SOURCE_C;CortexM3;;;;motor3" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motorC.c" value="SOURCE_C;CortexM3;;;;motorC" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motorC.h" value="HEADER;;;;;motorC" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\motorC_PM.c" value="SOURCE_C;CortexM3;;;;motorC" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\high3_1_aliases.h" value="HEADER;;;;;high3_1" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\high3_1.c" value="SOURCE_C;CortexM3;;;;high3_1" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\high3_1.h" value="HEADER;;;;;high3_1" />
@@ -76,9 +76,9 @@
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\low3_2_aliases.h" value="HEADER;;;;;low3_2" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\low3_2.c" value="SOURCE_C;CortexM3;;;;low3_2" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\low3_2.h" value="HEADER;;;;;low3_2" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_3.h" value="HEADER;;;;;reverse_3" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_3.c" value="SOURCE_C;CortexM3;;;;reverse_3" />
-  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_3_PM.c" value="SOURCE_C;CortexM3;;;;reverse_3" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_C.h" value="HEADER;;;;;reverse_C" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_C.c" value="SOURCE_C;CortexM3;;;;reverse_C" />
+  <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\reverse_C_PM.c" value="SOURCE_C;CortexM3;;;;reverse_C" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\Clock_3.c" value="SOURCE_C;CortexM3;;;;Clock_3" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\Clock_3.h" value="HEADER;;;;;Clock_3" />
   <file name="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\codegentemp\UART_PS3.c" value="SOURCE_C;CortexM3;;;;UART_PS3" />

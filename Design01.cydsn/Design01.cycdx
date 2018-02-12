@@ -3,8 +3,8 @@
   <block name="and_14" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_13" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="low3_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="reverse_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="reverse_3_CONTROL_REG" address="0x40006474" bitWidth="8" desc="" hidden="false" />
+  <block name="reverse_C" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <register name="reverse_C_CONTROL_REG" address="0x40006474" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="and_15" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="or_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -12,7 +12,7 @@
   <block name="and_12" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_11" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="or_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="motor3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+  <block name="motorC" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="vmIRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="vmCompare" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -20,22 +20,22 @@
     <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="vmTC" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="PWMUDB" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="motor3_Control_Reg" address="0x40006479" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="motorC_Control_Reg" address="0x40006479" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the PWM" hidden="false" />
       <field name="CTRL_CMPMODE2" from="5" to="3" access="RW" resetVal="" desc="Compare mode 2" hidden="false" />
       <field name="CTRL_CMPMODE1" from="2" to="0" access="RW" resetVal="" desc="Compare mode 1" hidden="false" />
     </register>
-    <register name="motor3_STATUS_MASK" address="0x40006487" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
+    <register name="motorC_STATUS_MASK" address="0x40006487" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
       <field name="PWM_STS_CMP1" from="0" to="0" access="R" resetVal="" desc="Enables the Interrupt on Compare 1" hidden="false" />
       <field name="PWM_STS_CMP2" from="1" to="1" access="R" resetVal="" desc="Enables the Interrupt on Compare 2" hidden="false" />
       <field name="PWM_STS_TC" from="2" to="2" access="R" resetVal="" desc="Enables the Interrupt on Terminal Count" hidden="false" />
       <field name="PWM_STS_FIFO_FULL" from="3" to="3" access="R" resetVal="" desc="FIFO Full Status Mask " hidden="false" />
       <field name="PWM_STS_KILL" from="5" to="5" access="R" resetVal="" desc="Enables the Interrupt on Kill" hidden="false" />
     </register>
-    <register name="motor3_DeadBand_Counter" address="0x40006507" bitWidth="8" desc="UDB DeadBand - DeadBand Counter Value" hidden="false" />
-    <register name="motor3_DeadBand_Count" address="0x40006527" bitWidth="8" desc="UDB DeadBand - Assigned DeadBand Count Value" hidden="false" />
-    <register name="motor3_COMPARE_Reg_" address="0x40006528" bitWidth="8" desc="UDB.D0 - Assigned Compare Value" hidden="false" />
-    <register name="motor3_STATUS_AUX_CTRL" address="0x40006598" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
+    <register name="motorC_DeadBand_Counter" address="0x40006507" bitWidth="8" desc="UDB DeadBand - DeadBand Counter Value" hidden="false" />
+    <register name="motorC_DeadBand_Count" address="0x40006527" bitWidth="8" desc="UDB DeadBand - Assigned DeadBand Count Value" hidden="false" />
+    <register name="motorC_COMPARE_Reg_" address="0x40006528" bitWidth="8" desc="UDB.D0 - Assigned Compare Value" hidden="false" />
+    <register name="motorC_STATUS_AUX_CTRL" address="0x40006598" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
       <field name="FIFO0_CLR" from="0" to="0" access="RW" resetVal="" desc="FIFO0 clear" hidden="false">
         <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
         <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />
@@ -108,8 +108,8 @@
     </register>
   </block>
   <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="reverse_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="reverse_1_CONTROL_REG" address="0x40006476" bitWidth="8" desc="" hidden="false" />
+  <block name="reverse_D" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <register name="reverse_D_CONTROL_REG" address="0x40006476" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="and_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="or_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -118,7 +118,7 @@
   <block name="and_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="low1_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="high1_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="motor1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+  <block name="motorD" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="vmIRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="vmCompare" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -126,20 +126,20 @@
     <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="vmTC" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="PWMUDB" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="motor1_COMPARE_Reg_" address="0x40006425" bitWidth="8" desc="UDB.D0 - Assigned Compare Value" hidden="false" />
-    <register name="motor1_Control_Reg" address="0x40006475" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="motorD_COMPARE_Reg_" address="0x40006425" bitWidth="8" desc="UDB.D0 - Assigned Compare Value" hidden="false" />
+    <register name="motorD_Control_Reg" address="0x40006475" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the PWM" hidden="false" />
       <field name="CTRL_CMPMODE2" from="5" to="3" access="RW" resetVal="" desc="Compare mode 2" hidden="false" />
       <field name="CTRL_CMPMODE1" from="2" to="0" access="RW" resetVal="" desc="Compare mode 1" hidden="false" />
     </register>
-    <register name="motor1_STATUS_MASK" address="0x40006486" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
+    <register name="motorD_STATUS_MASK" address="0x40006486" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
       <field name="PWM_STS_CMP1" from="0" to="0" access="R" resetVal="" desc="Enables the Interrupt on Compare 1" hidden="false" />
       <field name="PWM_STS_CMP2" from="1" to="1" access="R" resetVal="" desc="Enables the Interrupt on Compare 2" hidden="false" />
       <field name="PWM_STS_TC" from="2" to="2" access="R" resetVal="" desc="Enables the Interrupt on Terminal Count" hidden="false" />
       <field name="PWM_STS_FIFO_FULL" from="3" to="3" access="R" resetVal="" desc="FIFO Full Status Mask " hidden="false" />
       <field name="PWM_STS_KILL" from="5" to="5" access="R" resetVal="" desc="Enables the Interrupt on Kill" hidden="false" />
     </register>
-    <register name="motor1_STATUS_AUX_CTRL" address="0x40006495" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
+    <register name="motorD_STATUS_AUX_CTRL" address="0x40006495" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
       <field name="FIFO0_CLR" from="0" to="0" access="RW" resetVal="" desc="FIFO0 clear" hidden="false">
         <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
         <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />
@@ -165,15 +165,15 @@
         <value name="E_CNT_START1" value="1" desc="Enable counter" />
       </field>
     </register>
-    <register name="motor1_DeadBand_Counter" address="0x40006505" bitWidth="8" desc="UDB DeadBand - DeadBand Counter Value" hidden="false" />
-    <register name="motor1_DeadBand_Count" address="0x40006525" bitWidth="8" desc="UDB DeadBand - Assigned DeadBand Count Value" hidden="false" />
+    <register name="motorD_DeadBand_Counter" address="0x40006505" bitWidth="8" desc="UDB DeadBand - DeadBand Counter Value" hidden="false" />
+    <register name="motorD_DeadBand_Count" address="0x40006525" bitWidth="8" desc="UDB DeadBand - Assigned DeadBand Count Value" hidden="false" />
   </block>
   <block name="high1_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="low1_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="reverse_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <register name="reverse_2_CONTROL_REG" address="0x40006579" bitWidth="8" desc="" hidden="false" />
+  <block name="reverse_B" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <register name="reverse_B_CONTROL_REG" address="0x40006579" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="and_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -181,7 +181,7 @@
   <block name="and_10" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_9" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="or_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="motor2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+  <block name="motorB" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="vmIRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="vmCompare" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="ZeroTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -189,22 +189,22 @@
     <block name="OneTerminal_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="vmTC" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="PWMUDB" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="motor2_DeadBand_Counter" address="0x40006407" bitWidth="8" desc="UDB DeadBand - DeadBand Counter Value" hidden="false" />
-    <register name="motor2_DeadBand_Count" address="0x40006427" bitWidth="8" desc="UDB DeadBand - Assigned DeadBand Count Value" hidden="false" />
-    <register name="motor2_COMPARE_Reg_" address="0x40006524" bitWidth="8" desc="UDB.D0 - Assigned Compare Value" hidden="false" />
-    <register name="motor2_Control_Reg" address="0x40006578" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
+    <register name="motorB_DeadBand_Counter" address="0x40006407" bitWidth="8" desc="UDB DeadBand - DeadBand Counter Value" hidden="false" />
+    <register name="motorB_DeadBand_Count" address="0x40006427" bitWidth="8" desc="UDB DeadBand - Assigned DeadBand Count Value" hidden="false" />
+    <register name="motorB_COMPARE_Reg_" address="0x40006524" bitWidth="8" desc="UDB.D0 - Assigned Compare Value" hidden="false" />
+    <register name="motorB_Control_Reg" address="0x40006578" bitWidth="8" desc="UDB Control Register - Assigned Control Register Value" hidden="false">
       <field name="CTRL_ENABLE" from="7" to="7" access="RW" resetVal="" desc="Enable the PWM" hidden="false" />
       <field name="CTRL_CMPMODE2" from="5" to="3" access="RW" resetVal="" desc="Compare mode 2" hidden="false" />
       <field name="CTRL_CMPMODE1" from="2" to="0" access="RW" resetVal="" desc="Compare mode 1" hidden="false" />
     </register>
-    <register name="motor2_STATUS_MASK" address="0x40006584" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
+    <register name="motorB_STATUS_MASK" address="0x40006584" bitWidth="8" desc="UDB Status bits Interrupt Mask Enable Register" hidden="false">
       <field name="PWM_STS_CMP1" from="0" to="0" access="R" resetVal="" desc="Enables the Interrupt on Compare 1" hidden="false" />
       <field name="PWM_STS_CMP2" from="1" to="1" access="R" resetVal="" desc="Enables the Interrupt on Compare 2" hidden="false" />
       <field name="PWM_STS_TC" from="2" to="2" access="R" resetVal="" desc="Enables the Interrupt on Terminal Count" hidden="false" />
       <field name="PWM_STS_FIFO_FULL" from="3" to="3" access="R" resetVal="" desc="FIFO Full Status Mask " hidden="false" />
       <field name="PWM_STS_KILL" from="5" to="5" access="R" resetVal="" desc="Enables the Interrupt on Kill" hidden="false" />
     </register>
-    <register name="motor2_STATUS_AUX_CTRL" address="0x40006594" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
+    <register name="motorB_STATUS_AUX_CTRL" address="0x40006594" bitWidth="8" desc="UDB Auxilliary Control Register" hidden="false">
       <field name="FIFO0_CLR" from="0" to="0" access="RW" resetVal="" desc="FIFO0 clear" hidden="false">
         <value name="E_FIFO_CLR_0" value="0" desc="Normal FIFO operation" />
         <value name="E_FIFO_CLR_1" value="1" desc="Clear FIFO state" />

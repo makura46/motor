@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 02/12/2018 22:48:57
+-- Generated: 02/13/2018 01:54:01
 -- PSoC Creator  4.1 Update 1
 
 ENTITY Design01 IS
@@ -175,108 +175,108 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE udbclken_assigned OF \UART_PS3:Net_9\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \UART_PS3:Net_9\ : SIGNAL IS true;
     SIGNAL \UART_PS3:Net_9_local\ : bit;
-    SIGNAL \motor1:PWMUDB:cmp1_less\ : bit;
-    SIGNAL \motor1:PWMUDB:control_0\ : bit;
-    SIGNAL \motor1:PWMUDB:control_1\ : bit;
-    SIGNAL \motor1:PWMUDB:control_2\ : bit;
-    SIGNAL \motor1:PWMUDB:control_3\ : bit;
-    SIGNAL \motor1:PWMUDB:control_4\ : bit;
-    SIGNAL \motor1:PWMUDB:control_5\ : bit;
-    SIGNAL \motor1:PWMUDB:control_6\ : bit;
-    SIGNAL \motor1:PWMUDB:control_7\ : bit;
-    SIGNAL \motor1:PWMUDB:db_csaddr_0\ : bit;
-    ATTRIBUTE placement_force OF \motor1:PWMUDB:db_csaddr_0\ : SIGNAL IS "U(3,0,A)0";
-    SIGNAL \motor1:PWMUDB:db_ph1_run_temp\ : bit;
-    ATTRIBUTE placement_force OF \motor1:PWMUDB:db_ph1_run_temp\ : SIGNAL IS "U(3,1,B)0";
-    SIGNAL \motor1:PWMUDB:db_ph2_run_temp\ : bit;
-    ATTRIBUTE placement_force OF \motor1:PWMUDB:db_ph2_run_temp\ : SIGNAL IS "U(3,1,A)1";
-    SIGNAL \motor1:PWMUDB:db_tc\ : bit;
-    SIGNAL \motor1:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \motor1:PWMUDB:prevCompare1\ : SIGNAL IS "U(2,3,B)1";
-    SIGNAL \motor1:PWMUDB:pwm_db_reg\ : bit;
-    ATTRIBUTE placement_force OF \motor1:PWMUDB:pwm_db_reg\ : SIGNAL IS "U(3,1,B)1";
-    SIGNAL \motor1:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \motor1:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,3,B)0";
-    SIGNAL \motor1:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \motor1:PWMUDB:status_0\ : SIGNAL IS "U(3,2,B)3";
-    SIGNAL \motor1:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \motor1:PWMUDB:status_2\ : SIGNAL IS "U(2,1,A)1";
-    SIGNAL \motor1:PWMUDB:status_3\ : bit;
-    SIGNAL \motor1:PWMUDB:tc_i\ : bit;
-    SIGNAL \motor2:PWMUDB:cmp1_less\ : bit;
-    SIGNAL \motor2:PWMUDB:control_0\ : bit;
-    SIGNAL \motor2:PWMUDB:control_1\ : bit;
-    SIGNAL \motor2:PWMUDB:control_2\ : bit;
-    SIGNAL \motor2:PWMUDB:control_3\ : bit;
-    SIGNAL \motor2:PWMUDB:control_4\ : bit;
-    SIGNAL \motor2:PWMUDB:control_5\ : bit;
-    SIGNAL \motor2:PWMUDB:control_6\ : bit;
-    SIGNAL \motor2:PWMUDB:control_7\ : bit;
-    SIGNAL \motor2:PWMUDB:db_csaddr_0\ : bit;
-    ATTRIBUTE placement_force OF \motor2:PWMUDB:db_csaddr_0\ : SIGNAL IS "U(1,2,A)2";
-    SIGNAL \motor2:PWMUDB:db_ph1_run_temp\ : bit;
-    ATTRIBUTE placement_force OF \motor2:PWMUDB:db_ph1_run_temp\ : SIGNAL IS "U(1,2,B)1";
-    SIGNAL \motor2:PWMUDB:db_ph2_run_temp\ : bit;
-    ATTRIBUTE placement_force OF \motor2:PWMUDB:db_ph2_run_temp\ : SIGNAL IS "U(1,1,B)3";
-    SIGNAL \motor2:PWMUDB:db_tc\ : bit;
-    SIGNAL \motor2:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \motor2:PWMUDB:prevCompare1\ : SIGNAL IS "U(1,2,B)0";
-    SIGNAL \motor2:PWMUDB:pwm_db_reg\ : bit;
-    ATTRIBUTE placement_force OF \motor2:PWMUDB:pwm_db_reg\ : SIGNAL IS "U(1,2,A)1";
-    SIGNAL \motor2:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \motor2:PWMUDB:runmode_enable\ : SIGNAL IS "U(1,1,B)1";
-    SIGNAL \motor2:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \motor2:PWMUDB:status_0\ : SIGNAL IS "U(1,1,B)0";
-    SIGNAL \motor2:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \motor2:PWMUDB:status_2\ : SIGNAL IS "U(2,0,A)2";
-    SIGNAL \motor2:PWMUDB:status_3\ : bit;
-    SIGNAL \motor2:PWMUDB:tc_i\ : bit;
-    SIGNAL \motor3:PWMUDB:cmp1_less\ : bit;
-    SIGNAL \motor3:PWMUDB:control_0\ : bit;
-    SIGNAL \motor3:PWMUDB:control_1\ : bit;
-    SIGNAL \motor3:PWMUDB:control_2\ : bit;
-    SIGNAL \motor3:PWMUDB:control_3\ : bit;
-    SIGNAL \motor3:PWMUDB:control_4\ : bit;
-    SIGNAL \motor3:PWMUDB:control_5\ : bit;
-    SIGNAL \motor3:PWMUDB:control_6\ : bit;
-    SIGNAL \motor3:PWMUDB:control_7\ : bit;
-    SIGNAL \motor3:PWMUDB:db_csaddr_0\ : bit;
-    ATTRIBUTE placement_force OF \motor3:PWMUDB:db_csaddr_0\ : SIGNAL IS "U(2,1,A)0";
-    SIGNAL \motor3:PWMUDB:db_ph1_run_temp\ : bit;
-    ATTRIBUTE placement_force OF \motor3:PWMUDB:db_ph1_run_temp\ : SIGNAL IS "U(2,2,A)1";
-    SIGNAL \motor3:PWMUDB:db_ph2_run_temp\ : bit;
-    ATTRIBUTE placement_force OF \motor3:PWMUDB:db_ph2_run_temp\ : SIGNAL IS "U(2,1,B)3";
-    SIGNAL \motor3:PWMUDB:db_tc\ : bit;
-    SIGNAL \motor3:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \motor3:PWMUDB:prevCompare1\ : SIGNAL IS "U(2,2,B)3";
-    SIGNAL \motor3:PWMUDB:pwm_db_reg\ : bit;
-    ATTRIBUTE placement_force OF \motor3:PWMUDB:pwm_db_reg\ : SIGNAL IS "U(2,2,B)2";
-    SIGNAL \motor3:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \motor3:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,2,B)1";
-    SIGNAL \motor3:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \motor3:PWMUDB:status_0\ : SIGNAL IS "U(2,2,A)0";
-    SIGNAL \motor3:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \motor3:PWMUDB:status_2\ : SIGNAL IS "U(2,2,B)0";
-    SIGNAL \motor3:PWMUDB:status_3\ : bit;
-    SIGNAL \motor3:PWMUDB:tc_i\ : bit;
-    SIGNAL \reverse_1:control_2\ : bit;
-    SIGNAL \reverse_1:control_3\ : bit;
-    SIGNAL \reverse_1:control_4\ : bit;
-    SIGNAL \reverse_1:control_5\ : bit;
-    SIGNAL \reverse_1:control_6\ : bit;
-    SIGNAL \reverse_1:control_7\ : bit;
-    SIGNAL \reverse_2:control_2\ : bit;
-    SIGNAL \reverse_2:control_3\ : bit;
-    SIGNAL \reverse_2:control_4\ : bit;
-    SIGNAL \reverse_2:control_5\ : bit;
-    SIGNAL \reverse_2:control_6\ : bit;
-    SIGNAL \reverse_2:control_7\ : bit;
-    SIGNAL \reverse_3:control_2\ : bit;
-    SIGNAL \reverse_3:control_3\ : bit;
-    SIGNAL \reverse_3:control_4\ : bit;
-    SIGNAL \reverse_3:control_5\ : bit;
-    SIGNAL \reverse_3:control_6\ : bit;
-    SIGNAL \reverse_3:control_7\ : bit;
+    SIGNAL \motorB:PWMUDB:cmp1_less\ : bit;
+    SIGNAL \motorB:PWMUDB:control_0\ : bit;
+    SIGNAL \motorB:PWMUDB:control_1\ : bit;
+    SIGNAL \motorB:PWMUDB:control_2\ : bit;
+    SIGNAL \motorB:PWMUDB:control_3\ : bit;
+    SIGNAL \motorB:PWMUDB:control_4\ : bit;
+    SIGNAL \motorB:PWMUDB:control_5\ : bit;
+    SIGNAL \motorB:PWMUDB:control_6\ : bit;
+    SIGNAL \motorB:PWMUDB:control_7\ : bit;
+    SIGNAL \motorB:PWMUDB:db_csaddr_0\ : bit;
+    ATTRIBUTE placement_force OF \motorB:PWMUDB:db_csaddr_0\ : SIGNAL IS "U(1,2,A)2";
+    SIGNAL \motorB:PWMUDB:db_ph1_run_temp\ : bit;
+    ATTRIBUTE placement_force OF \motorB:PWMUDB:db_ph1_run_temp\ : SIGNAL IS "U(1,2,B)1";
+    SIGNAL \motorB:PWMUDB:db_ph2_run_temp\ : bit;
+    ATTRIBUTE placement_force OF \motorB:PWMUDB:db_ph2_run_temp\ : SIGNAL IS "U(1,1,B)3";
+    SIGNAL \motorB:PWMUDB:db_tc\ : bit;
+    SIGNAL \motorB:PWMUDB:prevCompare1\ : bit;
+    ATTRIBUTE placement_force OF \motorB:PWMUDB:prevCompare1\ : SIGNAL IS "U(1,2,B)0";
+    SIGNAL \motorB:PWMUDB:pwm_db_reg\ : bit;
+    ATTRIBUTE placement_force OF \motorB:PWMUDB:pwm_db_reg\ : SIGNAL IS "U(1,2,A)1";
+    SIGNAL \motorB:PWMUDB:runmode_enable\ : bit;
+    ATTRIBUTE placement_force OF \motorB:PWMUDB:runmode_enable\ : SIGNAL IS "U(1,1,B)1";
+    SIGNAL \motorB:PWMUDB:status_0\ : bit;
+    ATTRIBUTE placement_force OF \motorB:PWMUDB:status_0\ : SIGNAL IS "U(1,1,B)0";
+    SIGNAL \motorB:PWMUDB:status_2\ : bit;
+    ATTRIBUTE placement_force OF \motorB:PWMUDB:status_2\ : SIGNAL IS "U(2,0,A)2";
+    SIGNAL \motorB:PWMUDB:status_3\ : bit;
+    SIGNAL \motorB:PWMUDB:tc_i\ : bit;
+    SIGNAL \motorC:PWMUDB:cmp1_less\ : bit;
+    SIGNAL \motorC:PWMUDB:control_0\ : bit;
+    SIGNAL \motorC:PWMUDB:control_1\ : bit;
+    SIGNAL \motorC:PWMUDB:control_2\ : bit;
+    SIGNAL \motorC:PWMUDB:control_3\ : bit;
+    SIGNAL \motorC:PWMUDB:control_4\ : bit;
+    SIGNAL \motorC:PWMUDB:control_5\ : bit;
+    SIGNAL \motorC:PWMUDB:control_6\ : bit;
+    SIGNAL \motorC:PWMUDB:control_7\ : bit;
+    SIGNAL \motorC:PWMUDB:db_csaddr_0\ : bit;
+    ATTRIBUTE placement_force OF \motorC:PWMUDB:db_csaddr_0\ : SIGNAL IS "U(2,1,A)0";
+    SIGNAL \motorC:PWMUDB:db_ph1_run_temp\ : bit;
+    ATTRIBUTE placement_force OF \motorC:PWMUDB:db_ph1_run_temp\ : SIGNAL IS "U(2,2,A)1";
+    SIGNAL \motorC:PWMUDB:db_ph2_run_temp\ : bit;
+    ATTRIBUTE placement_force OF \motorC:PWMUDB:db_ph2_run_temp\ : SIGNAL IS "U(2,1,B)3";
+    SIGNAL \motorC:PWMUDB:db_tc\ : bit;
+    SIGNAL \motorC:PWMUDB:prevCompare1\ : bit;
+    ATTRIBUTE placement_force OF \motorC:PWMUDB:prevCompare1\ : SIGNAL IS "U(2,2,B)3";
+    SIGNAL \motorC:PWMUDB:pwm_db_reg\ : bit;
+    ATTRIBUTE placement_force OF \motorC:PWMUDB:pwm_db_reg\ : SIGNAL IS "U(2,2,B)2";
+    SIGNAL \motorC:PWMUDB:runmode_enable\ : bit;
+    ATTRIBUTE placement_force OF \motorC:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,2,B)1";
+    SIGNAL \motorC:PWMUDB:status_0\ : bit;
+    ATTRIBUTE placement_force OF \motorC:PWMUDB:status_0\ : SIGNAL IS "U(2,2,A)0";
+    SIGNAL \motorC:PWMUDB:status_2\ : bit;
+    ATTRIBUTE placement_force OF \motorC:PWMUDB:status_2\ : SIGNAL IS "U(2,2,B)0";
+    SIGNAL \motorC:PWMUDB:status_3\ : bit;
+    SIGNAL \motorC:PWMUDB:tc_i\ : bit;
+    SIGNAL \motorD:PWMUDB:cmp1_less\ : bit;
+    SIGNAL \motorD:PWMUDB:control_0\ : bit;
+    SIGNAL \motorD:PWMUDB:control_1\ : bit;
+    SIGNAL \motorD:PWMUDB:control_2\ : bit;
+    SIGNAL \motorD:PWMUDB:control_3\ : bit;
+    SIGNAL \motorD:PWMUDB:control_4\ : bit;
+    SIGNAL \motorD:PWMUDB:control_5\ : bit;
+    SIGNAL \motorD:PWMUDB:control_6\ : bit;
+    SIGNAL \motorD:PWMUDB:control_7\ : bit;
+    SIGNAL \motorD:PWMUDB:db_csaddr_0\ : bit;
+    ATTRIBUTE placement_force OF \motorD:PWMUDB:db_csaddr_0\ : SIGNAL IS "U(3,0,A)0";
+    SIGNAL \motorD:PWMUDB:db_ph1_run_temp\ : bit;
+    ATTRIBUTE placement_force OF \motorD:PWMUDB:db_ph1_run_temp\ : SIGNAL IS "U(3,1,B)0";
+    SIGNAL \motorD:PWMUDB:db_ph2_run_temp\ : bit;
+    ATTRIBUTE placement_force OF \motorD:PWMUDB:db_ph2_run_temp\ : SIGNAL IS "U(3,1,A)1";
+    SIGNAL \motorD:PWMUDB:db_tc\ : bit;
+    SIGNAL \motorD:PWMUDB:prevCompare1\ : bit;
+    ATTRIBUTE placement_force OF \motorD:PWMUDB:prevCompare1\ : SIGNAL IS "U(2,3,B)1";
+    SIGNAL \motorD:PWMUDB:pwm_db_reg\ : bit;
+    ATTRIBUTE placement_force OF \motorD:PWMUDB:pwm_db_reg\ : SIGNAL IS "U(3,1,B)1";
+    SIGNAL \motorD:PWMUDB:runmode_enable\ : bit;
+    ATTRIBUTE placement_force OF \motorD:PWMUDB:runmode_enable\ : SIGNAL IS "U(2,3,B)0";
+    SIGNAL \motorD:PWMUDB:status_0\ : bit;
+    ATTRIBUTE placement_force OF \motorD:PWMUDB:status_0\ : SIGNAL IS "U(3,2,B)3";
+    SIGNAL \motorD:PWMUDB:status_2\ : bit;
+    ATTRIBUTE placement_force OF \motorD:PWMUDB:status_2\ : SIGNAL IS "U(2,1,A)1";
+    SIGNAL \motorD:PWMUDB:status_3\ : bit;
+    SIGNAL \motorD:PWMUDB:tc_i\ : bit;
+    SIGNAL \reverse_B:control_2\ : bit;
+    SIGNAL \reverse_B:control_3\ : bit;
+    SIGNAL \reverse_B:control_4\ : bit;
+    SIGNAL \reverse_B:control_5\ : bit;
+    SIGNAL \reverse_B:control_6\ : bit;
+    SIGNAL \reverse_B:control_7\ : bit;
+    SIGNAL \reverse_C:control_2\ : bit;
+    SIGNAL \reverse_C:control_3\ : bit;
+    SIGNAL \reverse_C:control_4\ : bit;
+    SIGNAL \reverse_C:control_5\ : bit;
+    SIGNAL \reverse_C:control_6\ : bit;
+    SIGNAL \reverse_C:control_7\ : bit;
+    SIGNAL \reverse_D:control_2\ : bit;
+    SIGNAL \reverse_D:control_3\ : bit;
+    SIGNAL \reverse_D:control_4\ : bit;
+    SIGNAL \reverse_D:control_5\ : bit;
+    SIGNAL \reverse_D:control_6\ : bit;
+    SIGNAL \reverse_D:control_7\ : bit;
     SIGNAL __ONE__ : bit;
     ATTRIBUTE POWER OF __ONE__ : SIGNAL IS true;
     SIGNAL __ZERO__ : bit;
@@ -329,10 +329,10 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE Location OF PS3_IN(0) : LABEL IS "P0[7]";
     ATTRIBUTE lib_model OF Tx_1(0) : LABEL IS "iocell15";
     ATTRIBUTE Location OF Tx_1(0) : LABEL IS "P3[3]";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:db_csaddr_0\ : LABEL IS "macrocell1";
-    ATTRIBUTE Location OF \motor1:PWMUDB:db_csaddr_0\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:status_2\ : LABEL IS "macrocell2";
-    ATTRIBUTE Location OF \motor1:PWMUDB:status_2\ : LABEL IS "U(2,1)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:db_csaddr_0\ : LABEL IS "macrocell1";
+    ATTRIBUTE Location OF \motorD:PWMUDB:db_csaddr_0\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:status_2\ : LABEL IS "macrocell2";
+    ATTRIBUTE Location OF \motorD:PWMUDB:status_2\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF Net_308 : LABEL IS "macrocell3";
     ATTRIBUTE Location OF Net_308 : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF Net_315 : LABEL IS "macrocell4";
@@ -341,10 +341,10 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE Location OF Net_507 : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF Net_521 : LABEL IS "macrocell6";
     ATTRIBUTE Location OF Net_521 : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:db_csaddr_0\ : LABEL IS "macrocell7";
-    ATTRIBUTE Location OF \motor2:PWMUDB:db_csaddr_0\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:status_2\ : LABEL IS "macrocell8";
-    ATTRIBUTE Location OF \motor2:PWMUDB:status_2\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:db_csaddr_0\ : LABEL IS "macrocell7";
+    ATTRIBUTE Location OF \motorB:PWMUDB:db_csaddr_0\ : LABEL IS "U(1,2)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:status_2\ : LABEL IS "macrocell8";
+    ATTRIBUTE Location OF \motorB:PWMUDB:status_2\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF Net_802 : LABEL IS "macrocell9";
     ATTRIBUTE Location OF Net_802 : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF Net_804 : LABEL IS "macrocell10";
@@ -353,10 +353,10 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE Location OF Net_801 : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF Net_803 : LABEL IS "macrocell12";
     ATTRIBUTE Location OF Net_803 : LABEL IS "U(1,1)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:db_csaddr_0\ : LABEL IS "macrocell13";
-    ATTRIBUTE Location OF \motor3:PWMUDB:db_csaddr_0\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:status_2\ : LABEL IS "macrocell14";
-    ATTRIBUTE Location OF \motor3:PWMUDB:status_2\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:db_csaddr_0\ : LABEL IS "macrocell13";
+    ATTRIBUTE Location OF \motorC:PWMUDB:db_csaddr_0\ : LABEL IS "U(2,1)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:status_2\ : LABEL IS "macrocell14";
+    ATTRIBUTE Location OF \motorC:PWMUDB:status_2\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF Net_869 : LABEL IS "macrocell15";
     ATTRIBUTE Location OF Net_869 : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF Net_871 : LABEL IS "macrocell16";
@@ -381,36 +381,36 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE Location OF \UART_1:BUART:tx_status_0\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \UART_1:BUART:tx_status_2\ : LABEL IS "macrocell26";
     ATTRIBUTE Location OF \UART_1:BUART:tx_status_2\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell1";
-    ATTRIBUTE Location OF \motor1:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(3,3)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "datapathcell1";
-    ATTRIBUTE Location OF \motor1:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell1";
-    ATTRIBUTE Location OF \motor1:PWMUDB:genblk8:stsreg\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell2";
-    ATTRIBUTE Location OF \motor1:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(3,3)";
-    ATTRIBUTE lib_model OF \reverse_1:Sync:ctrl_reg\ : LABEL IS "controlcell2";
-    ATTRIBUTE Location OF \reverse_1:Sync:ctrl_reg\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell3";
-    ATTRIBUTE Location OF \motor2:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(1,1)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "datapathcell3";
-    ATTRIBUTE Location OF \motor2:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell2";
-    ATTRIBUTE Location OF \motor2:PWMUDB:genblk8:stsreg\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell4";
-    ATTRIBUTE Location OF \motor2:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \reverse_2:Sync:ctrl_reg\ : LABEL IS "controlcell4";
-    ATTRIBUTE Location OF \reverse_2:Sync:ctrl_reg\ : LABEL IS "U(0,1)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell5";
-    ATTRIBUTE Location OF \motor3:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,2)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "datapathcell5";
-    ATTRIBUTE Location OF \motor3:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell3";
-    ATTRIBUTE Location OF \motor3:PWMUDB:genblk8:stsreg\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell6";
-    ATTRIBUTE Location OF \motor3:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(1,1)";
-    ATTRIBUTE lib_model OF \reverse_3:Sync:ctrl_reg\ : LABEL IS "controlcell6";
-    ATTRIBUTE Location OF \reverse_3:Sync:ctrl_reg\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell1";
+    ATTRIBUTE Location OF \motorD:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "datapathcell1";
+    ATTRIBUTE Location OF \motorD:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "U(3,0)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell1";
+    ATTRIBUTE Location OF \motorD:PWMUDB:genblk8:stsreg\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell2";
+    ATTRIBUTE Location OF \motorD:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(3,3)";
+    ATTRIBUTE lib_model OF \reverse_D:Sync:ctrl_reg\ : LABEL IS "controlcell2";
+    ATTRIBUTE Location OF \reverse_D:Sync:ctrl_reg\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell3";
+    ATTRIBUTE Location OF \motorB:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "datapathcell3";
+    ATTRIBUTE Location OF \motorB:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell2";
+    ATTRIBUTE Location OF \motorB:PWMUDB:genblk8:stsreg\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell4";
+    ATTRIBUTE Location OF \motorB:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(2,0)";
+    ATTRIBUTE lib_model OF \reverse_B:Sync:ctrl_reg\ : LABEL IS "controlcell4";
+    ATTRIBUTE Location OF \reverse_B:Sync:ctrl_reg\ : LABEL IS "U(0,1)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell5";
+    ATTRIBUTE Location OF \motorC:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,2)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "datapathcell5";
+    ATTRIBUTE Location OF \motorC:PWMUDB:sDB255:deadbandcounterdp:u0\ : LABEL IS "U(2,1)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell3";
+    ATTRIBUTE Location OF \motorC:PWMUDB:genblk8:stsreg\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "datapathcell6";
+    ATTRIBUTE Location OF \motorC:PWMUDB:sP8:pwmdp:u0\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \reverse_C:Sync:ctrl_reg\ : LABEL IS "controlcell6";
+    ATTRIBUTE Location OF \reverse_C:Sync:ctrl_reg\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \UART_PS3:BUART:sRX:RxShifter:u0\ : LABEL IS "datapathcell7";
     ATTRIBUTE Location OF \UART_PS3:BUART:sRX:RxShifter:u0\ : LABEL IS "U(3,2)";
     ATTRIBUTE Location OF \UART_PS3:BUART:sRX:RxBitCounter\ : LABEL IS "U(3,1)";
@@ -425,54 +425,54 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE lib_model OF \UART_1:BUART:sTX:TxSts\ : LABEL IS "statusicell5";
     ATTRIBUTE Location OF \UART_1:BUART:sTX:TxSts\ : LABEL IS "U(1,2)";
     ATTRIBUTE Location OF isr1 : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:runmode_enable\ : LABEL IS "macrocell27";
-    ATTRIBUTE Location OF \motor1:PWMUDB:runmode_enable\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:pwm_db_reg\ : LABEL IS "macrocell28";
-    ATTRIBUTE Location OF \motor1:PWMUDB:pwm_db_reg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:runmode_enable\ : LABEL IS "macrocell27";
+    ATTRIBUTE Location OF \motorD:PWMUDB:runmode_enable\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:pwm_db_reg\ : LABEL IS "macrocell28";
+    ATTRIBUTE Location OF \motorD:PWMUDB:pwm_db_reg\ : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF Net_106 : LABEL IS "macrocell29";
     ATTRIBUTE Location OF Net_106 : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF Net_309 : LABEL IS "macrocell30";
     ATTRIBUTE Location OF Net_309 : LABEL IS "U(3,0)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:db_ph1_run_temp\ : LABEL IS "macrocell31";
-    ATTRIBUTE Location OF \motor1:PWMUDB:db_ph1_run_temp\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:db_ph2_run_temp\ : LABEL IS "macrocell32";
-    ATTRIBUTE Location OF \motor1:PWMUDB:db_ph2_run_temp\ : LABEL IS "U(3,1)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:prevCompare1\ : LABEL IS "macrocell33";
-    ATTRIBUTE Location OF \motor1:PWMUDB:prevCompare1\ : LABEL IS "U(2,3)";
-    ATTRIBUTE lib_model OF \motor1:PWMUDB:status_0\ : LABEL IS "macrocell34";
-    ATTRIBUTE Location OF \motor1:PWMUDB:status_0\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:runmode_enable\ : LABEL IS "macrocell35";
-    ATTRIBUTE Location OF \motor2:PWMUDB:runmode_enable\ : LABEL IS "U(1,1)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:pwm_db_reg\ : LABEL IS "macrocell36";
-    ATTRIBUTE Location OF \motor2:PWMUDB:pwm_db_reg\ : LABEL IS "U(1,2)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:db_ph1_run_temp\ : LABEL IS "macrocell31";
+    ATTRIBUTE Location OF \motorD:PWMUDB:db_ph1_run_temp\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:db_ph2_run_temp\ : LABEL IS "macrocell32";
+    ATTRIBUTE Location OF \motorD:PWMUDB:db_ph2_run_temp\ : LABEL IS "U(3,1)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:prevCompare1\ : LABEL IS "macrocell33";
+    ATTRIBUTE Location OF \motorD:PWMUDB:prevCompare1\ : LABEL IS "U(2,3)";
+    ATTRIBUTE lib_model OF \motorD:PWMUDB:status_0\ : LABEL IS "macrocell34";
+    ATTRIBUTE Location OF \motorD:PWMUDB:status_0\ : LABEL IS "U(3,2)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:runmode_enable\ : LABEL IS "macrocell35";
+    ATTRIBUTE Location OF \motorB:PWMUDB:runmode_enable\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:pwm_db_reg\ : LABEL IS "macrocell36";
+    ATTRIBUTE Location OF \motorB:PWMUDB:pwm_db_reg\ : LABEL IS "U(1,2)";
     ATTRIBUTE lib_model OF Net_799 : LABEL IS "macrocell37";
     ATTRIBUTE Location OF Net_799 : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF Net_800 : LABEL IS "macrocell38";
     ATTRIBUTE Location OF Net_800 : LABEL IS "U(2,0)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:db_ph1_run_temp\ : LABEL IS "macrocell39";
-    ATTRIBUTE Location OF \motor2:PWMUDB:db_ph1_run_temp\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:db_ph2_run_temp\ : LABEL IS "macrocell40";
-    ATTRIBUTE Location OF \motor2:PWMUDB:db_ph2_run_temp\ : LABEL IS "U(1,1)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:prevCompare1\ : LABEL IS "macrocell41";
-    ATTRIBUTE Location OF \motor2:PWMUDB:prevCompare1\ : LABEL IS "U(1,2)";
-    ATTRIBUTE lib_model OF \motor2:PWMUDB:status_0\ : LABEL IS "macrocell42";
-    ATTRIBUTE Location OF \motor2:PWMUDB:status_0\ : LABEL IS "U(1,1)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:runmode_enable\ : LABEL IS "macrocell43";
-    ATTRIBUTE Location OF \motor3:PWMUDB:runmode_enable\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:pwm_db_reg\ : LABEL IS "macrocell44";
-    ATTRIBUTE Location OF \motor3:PWMUDB:pwm_db_reg\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:db_ph1_run_temp\ : LABEL IS "macrocell39";
+    ATTRIBUTE Location OF \motorB:PWMUDB:db_ph1_run_temp\ : LABEL IS "U(1,2)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:db_ph2_run_temp\ : LABEL IS "macrocell40";
+    ATTRIBUTE Location OF \motorB:PWMUDB:db_ph2_run_temp\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:prevCompare1\ : LABEL IS "macrocell41";
+    ATTRIBUTE Location OF \motorB:PWMUDB:prevCompare1\ : LABEL IS "U(1,2)";
+    ATTRIBUTE lib_model OF \motorB:PWMUDB:status_0\ : LABEL IS "macrocell42";
+    ATTRIBUTE Location OF \motorB:PWMUDB:status_0\ : LABEL IS "U(1,1)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:runmode_enable\ : LABEL IS "macrocell43";
+    ATTRIBUTE Location OF \motorC:PWMUDB:runmode_enable\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:pwm_db_reg\ : LABEL IS "macrocell44";
+    ATTRIBUTE Location OF \motorC:PWMUDB:pwm_db_reg\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF Net_866 : LABEL IS "macrocell45";
     ATTRIBUTE Location OF Net_866 : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF Net_867 : LABEL IS "macrocell46";
     ATTRIBUTE Location OF Net_867 : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:db_ph1_run_temp\ : LABEL IS "macrocell47";
-    ATTRIBUTE Location OF \motor3:PWMUDB:db_ph1_run_temp\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:db_ph2_run_temp\ : LABEL IS "macrocell48";
-    ATTRIBUTE Location OF \motor3:PWMUDB:db_ph2_run_temp\ : LABEL IS "U(2,1)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:prevCompare1\ : LABEL IS "macrocell49";
-    ATTRIBUTE Location OF \motor3:PWMUDB:prevCompare1\ : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF \motor3:PWMUDB:status_0\ : LABEL IS "macrocell50";
-    ATTRIBUTE Location OF \motor3:PWMUDB:status_0\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:db_ph1_run_temp\ : LABEL IS "macrocell47";
+    ATTRIBUTE Location OF \motorC:PWMUDB:db_ph1_run_temp\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:db_ph2_run_temp\ : LABEL IS "macrocell48";
+    ATTRIBUTE Location OF \motorC:PWMUDB:db_ph2_run_temp\ : LABEL IS "U(2,1)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:prevCompare1\ : LABEL IS "macrocell49";
+    ATTRIBUTE Location OF \motorC:PWMUDB:prevCompare1\ : LABEL IS "U(2,2)";
+    ATTRIBUTE lib_model OF \motorC:PWMUDB:status_0\ : LABEL IS "macrocell50";
+    ATTRIBUTE Location OF \motorC:PWMUDB:status_0\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \UART_PS3:BUART:rx_state_1\ : LABEL IS "macrocell51";
     ATTRIBUTE Location OF \UART_PS3:BUART:rx_state_1\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \UART_PS3:BUART:rx_state_0\ : LABEL IS "macrocell52";
@@ -2215,29 +2215,29 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    \motor1:PWMUDB:db_csaddr_0\:macrocell
+    \motorD:PWMUDB:db_csaddr_0\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * !main_1 * !main_2 * !main_4) + (main_0 * main_1 * !main_2 * !main_4 * main_5) + (!main_1 * !main_2 * !main_4 * !main_5) + (main_3)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => \motor1:PWMUDB:db_csaddr_0\,
-            main_0 => \motor1:PWMUDB:runmode_enable\,
-            main_1 => \motor1:PWMUDB:pwm_db_reg\,
-            main_2 => \motor1:PWMUDB:db_ph1_run_temp\,
-            main_3 => \motor1:PWMUDB:db_tc\,
-            main_4 => \motor1:PWMUDB:db_ph2_run_temp\,
-            main_5 => \motor1:PWMUDB:cmp1_less\);
+            q => \motorD:PWMUDB:db_csaddr_0\,
+            main_0 => \motorD:PWMUDB:runmode_enable\,
+            main_1 => \motorD:PWMUDB:pwm_db_reg\,
+            main_2 => \motorD:PWMUDB:db_ph1_run_temp\,
+            main_3 => \motorD:PWMUDB:db_tc\,
+            main_4 => \motorD:PWMUDB:db_ph2_run_temp\,
+            main_5 => \motorD:PWMUDB:cmp1_less\);
 
-    \motor1:PWMUDB:status_2\:macrocell
+    \motorD:PWMUDB:status_2\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => \motor1:PWMUDB:status_2\,
-            main_0 => \motor1:PWMUDB:runmode_enable\,
-            main_1 => \motor1:PWMUDB:tc_i\);
+            q => \motorD:PWMUDB:status_2\,
+            main_0 => \motorD:PWMUDB:runmode_enable\,
+            main_1 => \motorD:PWMUDB:tc_i\);
 
     Net_308:macrocell
         GENERIC MAP(
@@ -2283,29 +2283,29 @@ BEGIN
             main_0 => Net_106,
             main_1 => Net_310);
 
-    \motor2:PWMUDB:db_csaddr_0\:macrocell
+    \motorB:PWMUDB:db_csaddr_0\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * !main_1 * !main_2 * !main_4) + (main_0 * main_1 * !main_2 * !main_4 * main_5) + (!main_1 * !main_2 * !main_4 * !main_5) + (main_3)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => \motor2:PWMUDB:db_csaddr_0\,
-            main_0 => \motor2:PWMUDB:runmode_enable\,
-            main_1 => \motor2:PWMUDB:pwm_db_reg\,
-            main_2 => \motor2:PWMUDB:db_ph1_run_temp\,
-            main_3 => \motor2:PWMUDB:db_tc\,
-            main_4 => \motor2:PWMUDB:db_ph2_run_temp\,
-            main_5 => \motor2:PWMUDB:cmp1_less\);
+            q => \motorB:PWMUDB:db_csaddr_0\,
+            main_0 => \motorB:PWMUDB:runmode_enable\,
+            main_1 => \motorB:PWMUDB:pwm_db_reg\,
+            main_2 => \motorB:PWMUDB:db_ph1_run_temp\,
+            main_3 => \motorB:PWMUDB:db_tc\,
+            main_4 => \motorB:PWMUDB:db_ph2_run_temp\,
+            main_5 => \motorB:PWMUDB:cmp1_less\);
 
-    \motor2:PWMUDB:status_2\:macrocell
+    \motorB:PWMUDB:status_2\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => \motor2:PWMUDB:status_2\,
-            main_0 => \motor2:PWMUDB:runmode_enable\,
-            main_1 => \motor2:PWMUDB:tc_i\);
+            q => \motorB:PWMUDB:status_2\,
+            main_0 => \motorB:PWMUDB:runmode_enable\,
+            main_1 => \motorB:PWMUDB:tc_i\);
 
     Net_802:macrocell
         GENERIC MAP(
@@ -2351,29 +2351,29 @@ BEGIN
             main_0 => Net_799,
             main_1 => Net_807);
 
-    \motor3:PWMUDB:db_csaddr_0\:macrocell
+    \motorC:PWMUDB:db_csaddr_0\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * !main_1 * !main_2 * !main_4) + (main_0 * main_1 * !main_2 * !main_4 * main_5) + (!main_1 * !main_2 * !main_4 * !main_5) + (main_3)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => \motor3:PWMUDB:db_csaddr_0\,
-            main_0 => \motor3:PWMUDB:runmode_enable\,
-            main_1 => \motor3:PWMUDB:pwm_db_reg\,
-            main_2 => \motor3:PWMUDB:db_ph1_run_temp\,
-            main_3 => \motor3:PWMUDB:db_tc\,
-            main_4 => \motor3:PWMUDB:db_ph2_run_temp\,
-            main_5 => \motor3:PWMUDB:cmp1_less\);
+            q => \motorC:PWMUDB:db_csaddr_0\,
+            main_0 => \motorC:PWMUDB:runmode_enable\,
+            main_1 => \motorC:PWMUDB:pwm_db_reg\,
+            main_2 => \motorC:PWMUDB:db_ph1_run_temp\,
+            main_3 => \motorC:PWMUDB:db_tc\,
+            main_4 => \motorC:PWMUDB:db_ph2_run_temp\,
+            main_5 => \motorC:PWMUDB:cmp1_less\);
 
-    \motor3:PWMUDB:status_2\:macrocell
+    \motorC:PWMUDB:status_2\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
             regmode => 0,
             clken_mode => 1)
         PORT MAP(
-            q => \motor3:PWMUDB:status_2\,
-            main_0 => \motor3:PWMUDB:runmode_enable\,
-            main_1 => \motor3:PWMUDB:tc_i\);
+            q => \motorC:PWMUDB:status_2\,
+            main_0 => \motorC:PWMUDB:runmode_enable\,
+            main_1 => \motorC:PWMUDB:tc_i\);
 
     Net_869:macrocell
         GENERIC MAP(
@@ -2505,7 +2505,7 @@ BEGIN
             q => \UART_1:BUART:tx_status_2\,
             main_0 => \UART_1:BUART:tx_fifo_notfull\);
 
-    \motor1:PWMUDB:genblk1:ctrlreg\:controlcell
+    \motorD:PWMUDB:genblk1:ctrlreg\:controlcell
         GENERIC MAP(
             cy_ctrl_mode_0 => "11111111",
             cy_ctrl_mode_1 => "00000000",
@@ -2516,17 +2516,17 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_290,
-            control_7 => \motor1:PWMUDB:control_7\,
-            control_6 => \motor1:PWMUDB:control_6\,
-            control_5 => \motor1:PWMUDB:control_5\,
-            control_4 => \motor1:PWMUDB:control_4\,
-            control_3 => \motor1:PWMUDB:control_3\,
-            control_2 => \motor1:PWMUDB:control_2\,
-            control_1 => \motor1:PWMUDB:control_1\,
-            control_0 => \motor1:PWMUDB:control_0\,
+            control_7 => \motorD:PWMUDB:control_7\,
+            control_6 => \motorD:PWMUDB:control_6\,
+            control_5 => \motorD:PWMUDB:control_5\,
+            control_4 => \motorD:PWMUDB:control_4\,
+            control_3 => \motorD:PWMUDB:control_3\,
+            control_2 => \motorD:PWMUDB:control_2\,
+            control_1 => \motorD:PWMUDB:control_1\,
+            control_0 => \motorD:PWMUDB:control_0\,
             busclk => ClockBlock_BUS_CLK);
 
-    \motor1:PWMUDB:sDB255:deadbandcounterdp:u0\:datapathcell
+    \motorD:PWMUDB:sDB255:deadbandcounterdp:u0\:datapathcell
         GENERIC MAP(
             a0_init => "00000000",
             a1_init => "00000000",
@@ -2555,11 +2555,11 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_290,
-            cs_addr_0 => \motor1:PWMUDB:db_csaddr_0\,
-            z0_comb => \motor1:PWMUDB:db_tc\,
+            cs_addr_0 => \motorD:PWMUDB:db_csaddr_0\,
+            z0_comb => \motorD:PWMUDB:db_tc\,
             busclk => ClockBlock_BUS_CLK);
 
-    \motor1:PWMUDB:genblk8:stsreg\:statusicell
+    \motorD:PWMUDB:genblk8:stsreg\:statusicell
         GENERIC MAP(
             cy_force_order => 1,
             cy_int_mask => "1111111",
@@ -2571,12 +2571,12 @@ BEGIN
             status_6 => open,
             status_5 => open,
             status_4 => open,
-            status_3 => \motor1:PWMUDB:status_3\,
-            status_2 => \motor1:PWMUDB:status_2\,
+            status_3 => \motorD:PWMUDB:status_3\,
+            status_2 => \motorD:PWMUDB:status_2\,
             status_1 => open,
-            status_0 => \motor1:PWMUDB:status_0\);
+            status_0 => \motorD:PWMUDB:status_0\);
 
-    \motor1:PWMUDB:sP8:pwmdp:u0\:datapathcell
+    \motorD:PWMUDB:sP8:pwmdp:u0\:datapathcell
         GENERIC MAP(
             a0_init => "00000000",
             a1_init => "00000000",
@@ -2605,14 +2605,14 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_290,
-            cs_addr_2 => \motor1:PWMUDB:tc_i\,
-            cs_addr_1 => \motor1:PWMUDB:runmode_enable\,
-            cl0_comb => \motor1:PWMUDB:cmp1_less\,
-            z0_comb => \motor1:PWMUDB:tc_i\,
-            f1_blk_stat_comb => \motor1:PWMUDB:status_3\,
+            cs_addr_2 => \motorD:PWMUDB:tc_i\,
+            cs_addr_1 => \motorD:PWMUDB:runmode_enable\,
+            cl0_comb => \motorD:PWMUDB:cmp1_less\,
+            z0_comb => \motorD:PWMUDB:tc_i\,
+            f1_blk_stat_comb => \motorD:PWMUDB:status_3\,
             busclk => ClockBlock_BUS_CLK);
 
-    \reverse_1:Sync:ctrl_reg\:controlcell
+    \reverse_D:Sync:ctrl_reg\:controlcell
         GENERIC MAP(
             cy_ctrl_mode_0 => "00000000",
             cy_ctrl_mode_1 => "00000000",
@@ -2621,17 +2621,17 @@ BEGIN
             cy_init_value => "00000000",
             clken_mode => 1)
         PORT MAP(
-            control_7 => \reverse_1:control_7\,
-            control_6 => \reverse_1:control_6\,
-            control_5 => \reverse_1:control_5\,
-            control_4 => \reverse_1:control_4\,
-            control_3 => \reverse_1:control_3\,
-            control_2 => \reverse_1:control_2\,
+            control_7 => \reverse_D:control_7\,
+            control_6 => \reverse_D:control_6\,
+            control_5 => \reverse_D:control_5\,
+            control_4 => \reverse_D:control_4\,
+            control_3 => \reverse_D:control_3\,
+            control_2 => \reverse_D:control_2\,
             control_1 => Net_310,
             control_0 => Net_438,
             busclk => ClockBlock_BUS_CLK);
 
-    \motor2:PWMUDB:genblk1:ctrlreg\:controlcell
+    \motorB:PWMUDB:genblk1:ctrlreg\:controlcell
         GENERIC MAP(
             cy_ctrl_mode_0 => "11111111",
             cy_ctrl_mode_1 => "00000000",
@@ -2642,17 +2642,17 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_788,
-            control_7 => \motor2:PWMUDB:control_7\,
-            control_6 => \motor2:PWMUDB:control_6\,
-            control_5 => \motor2:PWMUDB:control_5\,
-            control_4 => \motor2:PWMUDB:control_4\,
-            control_3 => \motor2:PWMUDB:control_3\,
-            control_2 => \motor2:PWMUDB:control_2\,
-            control_1 => \motor2:PWMUDB:control_1\,
-            control_0 => \motor2:PWMUDB:control_0\,
+            control_7 => \motorB:PWMUDB:control_7\,
+            control_6 => \motorB:PWMUDB:control_6\,
+            control_5 => \motorB:PWMUDB:control_5\,
+            control_4 => \motorB:PWMUDB:control_4\,
+            control_3 => \motorB:PWMUDB:control_3\,
+            control_2 => \motorB:PWMUDB:control_2\,
+            control_1 => \motorB:PWMUDB:control_1\,
+            control_0 => \motorB:PWMUDB:control_0\,
             busclk => ClockBlock_BUS_CLK);
 
-    \motor2:PWMUDB:sDB255:deadbandcounterdp:u0\:datapathcell
+    \motorB:PWMUDB:sDB255:deadbandcounterdp:u0\:datapathcell
         GENERIC MAP(
             a0_init => "00000000",
             a1_init => "00000000",
@@ -2681,11 +2681,11 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_788,
-            cs_addr_0 => \motor2:PWMUDB:db_csaddr_0\,
-            z0_comb => \motor2:PWMUDB:db_tc\,
+            cs_addr_0 => \motorB:PWMUDB:db_csaddr_0\,
+            z0_comb => \motorB:PWMUDB:db_tc\,
             busclk => ClockBlock_BUS_CLK);
 
-    \motor2:PWMUDB:genblk8:stsreg\:statusicell
+    \motorB:PWMUDB:genblk8:stsreg\:statusicell
         GENERIC MAP(
             cy_force_order => 1,
             cy_int_mask => "1111111",
@@ -2697,12 +2697,12 @@ BEGIN
             status_6 => open,
             status_5 => open,
             status_4 => open,
-            status_3 => \motor2:PWMUDB:status_3\,
-            status_2 => \motor2:PWMUDB:status_2\,
+            status_3 => \motorB:PWMUDB:status_3\,
+            status_2 => \motorB:PWMUDB:status_2\,
             status_1 => open,
-            status_0 => \motor2:PWMUDB:status_0\);
+            status_0 => \motorB:PWMUDB:status_0\);
 
-    \motor2:PWMUDB:sP8:pwmdp:u0\:datapathcell
+    \motorB:PWMUDB:sP8:pwmdp:u0\:datapathcell
         GENERIC MAP(
             a0_init => "00000000",
             a1_init => "00000000",
@@ -2731,14 +2731,14 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_788,
-            cs_addr_2 => \motor2:PWMUDB:tc_i\,
-            cs_addr_1 => \motor2:PWMUDB:runmode_enable\,
-            cl0_comb => \motor2:PWMUDB:cmp1_less\,
-            z0_comb => \motor2:PWMUDB:tc_i\,
-            f1_blk_stat_comb => \motor2:PWMUDB:status_3\,
+            cs_addr_2 => \motorB:PWMUDB:tc_i\,
+            cs_addr_1 => \motorB:PWMUDB:runmode_enable\,
+            cl0_comb => \motorB:PWMUDB:cmp1_less\,
+            z0_comb => \motorB:PWMUDB:tc_i\,
+            f1_blk_stat_comb => \motorB:PWMUDB:status_3\,
             busclk => ClockBlock_BUS_CLK);
 
-    \reverse_2:Sync:ctrl_reg\:controlcell
+    \reverse_B:Sync:ctrl_reg\:controlcell
         GENERIC MAP(
             cy_ctrl_mode_0 => "00000000",
             cy_ctrl_mode_1 => "00000000",
@@ -2747,17 +2747,17 @@ BEGIN
             cy_init_value => "00000000",
             clken_mode => 1)
         PORT MAP(
-            control_7 => \reverse_2:control_7\,
-            control_6 => \reverse_2:control_6\,
-            control_5 => \reverse_2:control_5\,
-            control_4 => \reverse_2:control_4\,
-            control_3 => \reverse_2:control_3\,
-            control_2 => \reverse_2:control_2\,
+            control_7 => \reverse_B:control_7\,
+            control_6 => \reverse_B:control_6\,
+            control_5 => \reverse_B:control_5\,
+            control_4 => \reverse_B:control_4\,
+            control_3 => \reverse_B:control_3\,
+            control_2 => \reverse_B:control_2\,
             control_1 => Net_807,
             control_0 => Net_805,
             busclk => ClockBlock_BUS_CLK);
 
-    \motor3:PWMUDB:genblk1:ctrlreg\:controlcell
+    \motorC:PWMUDB:genblk1:ctrlreg\:controlcell
         GENERIC MAP(
             cy_ctrl_mode_0 => "11111111",
             cy_ctrl_mode_1 => "00000000",
@@ -2768,17 +2768,17 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_855,
-            control_7 => \motor3:PWMUDB:control_7\,
-            control_6 => \motor3:PWMUDB:control_6\,
-            control_5 => \motor3:PWMUDB:control_5\,
-            control_4 => \motor3:PWMUDB:control_4\,
-            control_3 => \motor3:PWMUDB:control_3\,
-            control_2 => \motor3:PWMUDB:control_2\,
-            control_1 => \motor3:PWMUDB:control_1\,
-            control_0 => \motor3:PWMUDB:control_0\,
+            control_7 => \motorC:PWMUDB:control_7\,
+            control_6 => \motorC:PWMUDB:control_6\,
+            control_5 => \motorC:PWMUDB:control_5\,
+            control_4 => \motorC:PWMUDB:control_4\,
+            control_3 => \motorC:PWMUDB:control_3\,
+            control_2 => \motorC:PWMUDB:control_2\,
+            control_1 => \motorC:PWMUDB:control_1\,
+            control_0 => \motorC:PWMUDB:control_0\,
             busclk => ClockBlock_BUS_CLK);
 
-    \motor3:PWMUDB:sDB255:deadbandcounterdp:u0\:datapathcell
+    \motorC:PWMUDB:sDB255:deadbandcounterdp:u0\:datapathcell
         GENERIC MAP(
             a0_init => "00000000",
             a1_init => "00000000",
@@ -2807,11 +2807,11 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_855,
-            cs_addr_0 => \motor3:PWMUDB:db_csaddr_0\,
-            z0_comb => \motor3:PWMUDB:db_tc\,
+            cs_addr_0 => \motorC:PWMUDB:db_csaddr_0\,
+            z0_comb => \motorC:PWMUDB:db_tc\,
             busclk => ClockBlock_BUS_CLK);
 
-    \motor3:PWMUDB:genblk8:stsreg\:statusicell
+    \motorC:PWMUDB:genblk8:stsreg\:statusicell
         GENERIC MAP(
             cy_force_order => 1,
             cy_int_mask => "1111111",
@@ -2823,12 +2823,12 @@ BEGIN
             status_6 => open,
             status_5 => open,
             status_4 => open,
-            status_3 => \motor3:PWMUDB:status_3\,
-            status_2 => \motor3:PWMUDB:status_2\,
+            status_3 => \motorC:PWMUDB:status_3\,
+            status_2 => \motorC:PWMUDB:status_2\,
             status_1 => open,
-            status_0 => \motor3:PWMUDB:status_0\);
+            status_0 => \motorC:PWMUDB:status_0\);
 
-    \motor3:PWMUDB:sP8:pwmdp:u0\:datapathcell
+    \motorC:PWMUDB:sP8:pwmdp:u0\:datapathcell
         GENERIC MAP(
             a0_init => "00000000",
             a1_init => "00000000",
@@ -2857,14 +2857,14 @@ BEGIN
             clken_mode => 1)
         PORT MAP(
             clock => Net_855,
-            cs_addr_2 => \motor3:PWMUDB:tc_i\,
-            cs_addr_1 => \motor3:PWMUDB:runmode_enable\,
-            cl0_comb => \motor3:PWMUDB:cmp1_less\,
-            z0_comb => \motor3:PWMUDB:tc_i\,
-            f1_blk_stat_comb => \motor3:PWMUDB:status_3\,
+            cs_addr_2 => \motorC:PWMUDB:tc_i\,
+            cs_addr_1 => \motorC:PWMUDB:runmode_enable\,
+            cl0_comb => \motorC:PWMUDB:cmp1_less\,
+            z0_comb => \motorC:PWMUDB:tc_i\,
+            f1_blk_stat_comb => \motorC:PWMUDB:status_3\,
             busclk => ClockBlock_BUS_CLK);
 
-    \reverse_3:Sync:ctrl_reg\:controlcell
+    \reverse_C:Sync:ctrl_reg\:controlcell
         GENERIC MAP(
             cy_ctrl_mode_0 => "00000000",
             cy_ctrl_mode_1 => "00000000",
@@ -2873,12 +2873,12 @@ BEGIN
             cy_init_value => "00000000",
             clken_mode => 1)
         PORT MAP(
-            control_7 => \reverse_3:control_7\,
-            control_6 => \reverse_3:control_6\,
-            control_5 => \reverse_3:control_5\,
-            control_4 => \reverse_3:control_4\,
-            control_3 => \reverse_3:control_3\,
-            control_2 => \reverse_3:control_2\,
+            control_7 => \reverse_C:control_7\,
+            control_6 => \reverse_C:control_6\,
+            control_5 => \reverse_C:control_5\,
+            control_4 => \reverse_C:control_4\,
+            control_3 => \reverse_C:control_3\,
+            control_2 => \reverse_C:control_2\,
             control_1 => Net_874,
             control_0 => Net_872,
             busclk => ClockBlock_BUS_CLK);
@@ -3080,28 +3080,28 @@ BEGIN
             interrupt => Net_924_local,
             clock => ClockBlock_BUS_CLK);
 
-    \motor1:PWMUDB:runmode_enable\:macrocell
+    \motorD:PWMUDB:runmode_enable\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor1:PWMUDB:runmode_enable\,
+            q => \motorD:PWMUDB:runmode_enable\,
             clock_0 => Net_290,
-            main_0 => \motor1:PWMUDB:control_7\);
+            main_0 => \motorD:PWMUDB:control_7\);
 
-    \motor1:PWMUDB:pwm_db_reg\:macrocell
+    \motorD:PWMUDB:pwm_db_reg\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor1:PWMUDB:pwm_db_reg\,
+            q => \motorD:PWMUDB:pwm_db_reg\,
             clock_0 => Net_290,
-            main_0 => \motor1:PWMUDB:runmode_enable\,
-            main_1 => \motor1:PWMUDB:cmp1_less\);
+            main_0 => \motorD:PWMUDB:runmode_enable\,
+            main_1 => \motorD:PWMUDB:cmp1_less\);
 
     Net_106:macrocell
         GENERIC MAP(
@@ -3112,10 +3112,10 @@ BEGIN
         PORT MAP(
             q => Net_106,
             clock_0 => Net_290,
-            main_0 => \motor1:PWMUDB:runmode_enable\,
-            main_1 => \motor1:PWMUDB:pwm_db_reg\,
-            main_2 => \motor1:PWMUDB:db_ph1_run_temp\,
-            main_3 => \motor1:PWMUDB:cmp1_less\);
+            main_0 => \motorD:PWMUDB:runmode_enable\,
+            main_1 => \motorD:PWMUDB:pwm_db_reg\,
+            main_2 => \motorD:PWMUDB:db_ph1_run_temp\,
+            main_3 => \motorD:PWMUDB:cmp1_less\);
 
     Net_309:macrocell
         GENERIC MAP(
@@ -3126,86 +3126,86 @@ BEGIN
         PORT MAP(
             q => Net_309,
             clock_0 => Net_290,
-            main_0 => \motor1:PWMUDB:runmode_enable\,
-            main_1 => \motor1:PWMUDB:pwm_db_reg\,
-            main_2 => \motor1:PWMUDB:db_ph2_run_temp\,
-            main_3 => \motor1:PWMUDB:cmp1_less\);
+            main_0 => \motorD:PWMUDB:runmode_enable\,
+            main_1 => \motorD:PWMUDB:pwm_db_reg\,
+            main_2 => \motorD:PWMUDB:db_ph2_run_temp\,
+            main_3 => \motorD:PWMUDB:cmp1_less\);
 
-    \motor1:PWMUDB:db_ph1_run_temp\:macrocell
+    \motorD:PWMUDB:db_ph1_run_temp\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * main_2) + (main_0 * !main_1 * main_4) + (main_1 * main_2 * !main_4) + (main_2 * !main_3)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor1:PWMUDB:db_ph1_run_temp\,
+            q => \motorD:PWMUDB:db_ph1_run_temp\,
             clock_0 => Net_290,
-            main_0 => \motor1:PWMUDB:runmode_enable\,
-            main_1 => \motor1:PWMUDB:pwm_db_reg\,
-            main_2 => \motor1:PWMUDB:db_ph1_run_temp\,
-            main_3 => \motor1:PWMUDB:db_tc\,
-            main_4 => \motor1:PWMUDB:cmp1_less\);
+            main_0 => \motorD:PWMUDB:runmode_enable\,
+            main_1 => \motorD:PWMUDB:pwm_db_reg\,
+            main_2 => \motorD:PWMUDB:db_ph1_run_temp\,
+            main_3 => \motorD:PWMUDB:db_tc\,
+            main_4 => \motorD:PWMUDB:cmp1_less\);
 
-    \motor1:PWMUDB:db_ph2_run_temp\:macrocell
+    \motorD:PWMUDB:db_ph2_run_temp\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1) + (main_0 * !main_1 * main_3 * main_4) + (main_1 * !main_4) + (!main_2 * main_3)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor1:PWMUDB:db_ph2_run_temp\,
+            q => \motorD:PWMUDB:db_ph2_run_temp\,
             clock_0 => Net_290,
-            main_0 => \motor1:PWMUDB:runmode_enable\,
-            main_1 => \motor1:PWMUDB:pwm_db_reg\,
-            main_2 => \motor1:PWMUDB:db_tc\,
-            main_3 => \motor1:PWMUDB:db_ph2_run_temp\,
-            main_4 => \motor1:PWMUDB:cmp1_less\);
+            main_0 => \motorD:PWMUDB:runmode_enable\,
+            main_1 => \motorD:PWMUDB:pwm_db_reg\,
+            main_2 => \motorD:PWMUDB:db_tc\,
+            main_3 => \motorD:PWMUDB:db_ph2_run_temp\,
+            main_4 => \motorD:PWMUDB:cmp1_less\);
 
-    \motor1:PWMUDB:prevCompare1\:macrocell
+    \motorD:PWMUDB:prevCompare1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor1:PWMUDB:prevCompare1\,
+            q => \motorD:PWMUDB:prevCompare1\,
             clock_0 => Net_290,
-            main_0 => \motor1:PWMUDB:cmp1_less\);
+            main_0 => \motorD:PWMUDB:cmp1_less\);
 
-    \motor1:PWMUDB:status_0\:macrocell
+    \motorD:PWMUDB:status_0\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor1:PWMUDB:status_0\,
+            q => \motorD:PWMUDB:status_0\,
             clock_0 => Net_290,
-            main_0 => \motor1:PWMUDB:prevCompare1\,
-            main_1 => \motor1:PWMUDB:cmp1_less\);
+            main_0 => \motorD:PWMUDB:prevCompare1\,
+            main_1 => \motorD:PWMUDB:cmp1_less\);
 
-    \motor2:PWMUDB:runmode_enable\:macrocell
+    \motorB:PWMUDB:runmode_enable\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor2:PWMUDB:runmode_enable\,
+            q => \motorB:PWMUDB:runmode_enable\,
             clock_0 => Net_788,
-            main_0 => \motor2:PWMUDB:control_7\);
+            main_0 => \motorB:PWMUDB:control_7\);
 
-    \motor2:PWMUDB:pwm_db_reg\:macrocell
+    \motorB:PWMUDB:pwm_db_reg\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor2:PWMUDB:pwm_db_reg\,
+            q => \motorB:PWMUDB:pwm_db_reg\,
             clock_0 => Net_788,
-            main_0 => \motor2:PWMUDB:runmode_enable\,
-            main_1 => \motor2:PWMUDB:cmp1_less\);
+            main_0 => \motorB:PWMUDB:runmode_enable\,
+            main_1 => \motorB:PWMUDB:cmp1_less\);
 
     Net_799:macrocell
         GENERIC MAP(
@@ -3216,10 +3216,10 @@ BEGIN
         PORT MAP(
             q => Net_799,
             clock_0 => Net_788,
-            main_0 => \motor2:PWMUDB:runmode_enable\,
-            main_1 => \motor2:PWMUDB:pwm_db_reg\,
-            main_2 => \motor2:PWMUDB:db_ph1_run_temp\,
-            main_3 => \motor2:PWMUDB:cmp1_less\);
+            main_0 => \motorB:PWMUDB:runmode_enable\,
+            main_1 => \motorB:PWMUDB:pwm_db_reg\,
+            main_2 => \motorB:PWMUDB:db_ph1_run_temp\,
+            main_3 => \motorB:PWMUDB:cmp1_less\);
 
     Net_800:macrocell
         GENERIC MAP(
@@ -3230,86 +3230,86 @@ BEGIN
         PORT MAP(
             q => Net_800,
             clock_0 => Net_788,
-            main_0 => \motor2:PWMUDB:runmode_enable\,
-            main_1 => \motor2:PWMUDB:pwm_db_reg\,
-            main_2 => \motor2:PWMUDB:db_ph2_run_temp\,
-            main_3 => \motor2:PWMUDB:cmp1_less\);
+            main_0 => \motorB:PWMUDB:runmode_enable\,
+            main_1 => \motorB:PWMUDB:pwm_db_reg\,
+            main_2 => \motorB:PWMUDB:db_ph2_run_temp\,
+            main_3 => \motorB:PWMUDB:cmp1_less\);
 
-    \motor2:PWMUDB:db_ph1_run_temp\:macrocell
+    \motorB:PWMUDB:db_ph1_run_temp\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * main_2) + (main_0 * !main_1 * main_4) + (main_1 * main_2 * !main_4) + (main_2 * !main_3)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor2:PWMUDB:db_ph1_run_temp\,
+            q => \motorB:PWMUDB:db_ph1_run_temp\,
             clock_0 => Net_788,
-            main_0 => \motor2:PWMUDB:runmode_enable\,
-            main_1 => \motor2:PWMUDB:pwm_db_reg\,
-            main_2 => \motor2:PWMUDB:db_ph1_run_temp\,
-            main_3 => \motor2:PWMUDB:db_tc\,
-            main_4 => \motor2:PWMUDB:cmp1_less\);
+            main_0 => \motorB:PWMUDB:runmode_enable\,
+            main_1 => \motorB:PWMUDB:pwm_db_reg\,
+            main_2 => \motorB:PWMUDB:db_ph1_run_temp\,
+            main_3 => \motorB:PWMUDB:db_tc\,
+            main_4 => \motorB:PWMUDB:cmp1_less\);
 
-    \motor2:PWMUDB:db_ph2_run_temp\:macrocell
+    \motorB:PWMUDB:db_ph2_run_temp\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1) + (main_0 * !main_1 * main_3 * main_4) + (main_1 * !main_4) + (!main_2 * main_3)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor2:PWMUDB:db_ph2_run_temp\,
+            q => \motorB:PWMUDB:db_ph2_run_temp\,
             clock_0 => Net_788,
-            main_0 => \motor2:PWMUDB:runmode_enable\,
-            main_1 => \motor2:PWMUDB:pwm_db_reg\,
-            main_2 => \motor2:PWMUDB:db_tc\,
-            main_3 => \motor2:PWMUDB:db_ph2_run_temp\,
-            main_4 => \motor2:PWMUDB:cmp1_less\);
+            main_0 => \motorB:PWMUDB:runmode_enable\,
+            main_1 => \motorB:PWMUDB:pwm_db_reg\,
+            main_2 => \motorB:PWMUDB:db_tc\,
+            main_3 => \motorB:PWMUDB:db_ph2_run_temp\,
+            main_4 => \motorB:PWMUDB:cmp1_less\);
 
-    \motor2:PWMUDB:prevCompare1\:macrocell
+    \motorB:PWMUDB:prevCompare1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor2:PWMUDB:prevCompare1\,
+            q => \motorB:PWMUDB:prevCompare1\,
             clock_0 => Net_788,
-            main_0 => \motor2:PWMUDB:cmp1_less\);
+            main_0 => \motorB:PWMUDB:cmp1_less\);
 
-    \motor2:PWMUDB:status_0\:macrocell
+    \motorB:PWMUDB:status_0\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor2:PWMUDB:status_0\,
+            q => \motorB:PWMUDB:status_0\,
             clock_0 => Net_788,
-            main_0 => \motor2:PWMUDB:prevCompare1\,
-            main_1 => \motor2:PWMUDB:cmp1_less\);
+            main_0 => \motorB:PWMUDB:prevCompare1\,
+            main_1 => \motorB:PWMUDB:cmp1_less\);
 
-    \motor3:PWMUDB:runmode_enable\:macrocell
+    \motorC:PWMUDB:runmode_enable\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor3:PWMUDB:runmode_enable\,
+            q => \motorC:PWMUDB:runmode_enable\,
             clock_0 => Net_855,
-            main_0 => \motor3:PWMUDB:control_7\);
+            main_0 => \motorC:PWMUDB:control_7\);
 
-    \motor3:PWMUDB:pwm_db_reg\:macrocell
+    \motorC:PWMUDB:pwm_db_reg\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0 * main_1)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor3:PWMUDB:pwm_db_reg\,
+            q => \motorC:PWMUDB:pwm_db_reg\,
             clock_0 => Net_855,
-            main_0 => \motor3:PWMUDB:runmode_enable\,
-            main_1 => \motor3:PWMUDB:cmp1_less\);
+            main_0 => \motorC:PWMUDB:runmode_enable\,
+            main_1 => \motorC:PWMUDB:cmp1_less\);
 
     Net_866:macrocell
         GENERIC MAP(
@@ -3320,10 +3320,10 @@ BEGIN
         PORT MAP(
             q => Net_866,
             clock_0 => Net_855,
-            main_0 => \motor3:PWMUDB:runmode_enable\,
-            main_1 => \motor3:PWMUDB:pwm_db_reg\,
-            main_2 => \motor3:PWMUDB:db_ph1_run_temp\,
-            main_3 => \motor3:PWMUDB:cmp1_less\);
+            main_0 => \motorC:PWMUDB:runmode_enable\,
+            main_1 => \motorC:PWMUDB:pwm_db_reg\,
+            main_2 => \motorC:PWMUDB:db_ph1_run_temp\,
+            main_3 => \motorC:PWMUDB:cmp1_less\);
 
     Net_867:macrocell
         GENERIC MAP(
@@ -3334,63 +3334,63 @@ BEGIN
         PORT MAP(
             q => Net_867,
             clock_0 => Net_855,
-            main_0 => \motor3:PWMUDB:runmode_enable\,
-            main_1 => \motor3:PWMUDB:pwm_db_reg\,
-            main_2 => \motor3:PWMUDB:db_ph2_run_temp\,
-            main_3 => \motor3:PWMUDB:cmp1_less\);
+            main_0 => \motorC:PWMUDB:runmode_enable\,
+            main_1 => \motorC:PWMUDB:pwm_db_reg\,
+            main_2 => \motorC:PWMUDB:db_ph2_run_temp\,
+            main_3 => \motorC:PWMUDB:cmp1_less\);
 
-    \motor3:PWMUDB:db_ph1_run_temp\:macrocell
+    \motorC:PWMUDB:db_ph1_run_temp\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1 * main_2) + (main_0 * !main_1 * main_4) + (main_1 * main_2 * !main_4) + (main_2 * !main_3)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor3:PWMUDB:db_ph1_run_temp\,
+            q => \motorC:PWMUDB:db_ph1_run_temp\,
             clock_0 => Net_855,
-            main_0 => \motor3:PWMUDB:runmode_enable\,
-            main_1 => \motor3:PWMUDB:pwm_db_reg\,
-            main_2 => \motor3:PWMUDB:db_ph1_run_temp\,
-            main_3 => \motor3:PWMUDB:db_tc\,
-            main_4 => \motor3:PWMUDB:cmp1_less\);
+            main_0 => \motorC:PWMUDB:runmode_enable\,
+            main_1 => \motorC:PWMUDB:pwm_db_reg\,
+            main_2 => \motorC:PWMUDB:db_ph1_run_temp\,
+            main_3 => \motorC:PWMUDB:db_tc\,
+            main_4 => \motorC:PWMUDB:cmp1_less\);
 
-    \motor3:PWMUDB:db_ph2_run_temp\:macrocell
+    \motorC:PWMUDB:db_ph2_run_temp\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1) + (main_0 * !main_1 * main_3 * main_4) + (main_1 * !main_4) + (!main_2 * main_3)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor3:PWMUDB:db_ph2_run_temp\,
+            q => \motorC:PWMUDB:db_ph2_run_temp\,
             clock_0 => Net_855,
-            main_0 => \motor3:PWMUDB:runmode_enable\,
-            main_1 => \motor3:PWMUDB:pwm_db_reg\,
-            main_2 => \motor3:PWMUDB:db_tc\,
-            main_3 => \motor3:PWMUDB:db_ph2_run_temp\,
-            main_4 => \motor3:PWMUDB:cmp1_less\);
+            main_0 => \motorC:PWMUDB:runmode_enable\,
+            main_1 => \motorC:PWMUDB:pwm_db_reg\,
+            main_2 => \motorC:PWMUDB:db_tc\,
+            main_3 => \motorC:PWMUDB:db_ph2_run_temp\,
+            main_4 => \motorC:PWMUDB:cmp1_less\);
 
-    \motor3:PWMUDB:prevCompare1\:macrocell
+    \motorC:PWMUDB:prevCompare1\:macrocell
         GENERIC MAP(
             eqn_main => "(main_0)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor3:PWMUDB:prevCompare1\,
+            q => \motorC:PWMUDB:prevCompare1\,
             clock_0 => Net_855,
-            main_0 => \motor3:PWMUDB:cmp1_less\);
+            main_0 => \motorC:PWMUDB:cmp1_less\);
 
-    \motor3:PWMUDB:status_0\:macrocell
+    \motorC:PWMUDB:status_0\:macrocell
         GENERIC MAP(
             eqn_main => "(!main_0 * main_1)",
             regmode => 1,
             clk_inv => '0',
             clken_mode => 1)
         PORT MAP(
-            q => \motor3:PWMUDB:status_0\,
+            q => \motorC:PWMUDB:status_0\,
             clock_0 => Net_855,
-            main_0 => \motor3:PWMUDB:prevCompare1\,
-            main_1 => \motor3:PWMUDB:cmp1_less\);
+            main_0 => \motorC:PWMUDB:prevCompare1\,
+            main_1 => \motorC:PWMUDB:cmp1_less\);
 
     \UART_PS3:BUART:rx_state_1\:macrocell
         GENERIC MAP(
