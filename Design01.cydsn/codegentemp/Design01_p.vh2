@@ -1,5 +1,5 @@
 -- Project:   Design01
--- Generated: 02/12/2018 00:03:38
+-- Generated: 02/12/2018 22:48:55
 -- PSoC Creator  4.1 Update 1
 
 ENTITY Design01 IS
@@ -239,7 +239,7 @@ ARCHITECTURE __DEFAULT__ OF Design01 IS
     ATTRIBUTE lib_model OF high1_2(0) : LABEL IS "iocell3";
     ATTRIBUTE Location OF high1_2(0) : LABEL IS "P1[5]";
     ATTRIBUTE lib_model OF low1_2(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF low1_2(0) : LABEL IS "P2[5]";
+    ATTRIBUTE Location OF low1_2(0) : LABEL IS "P1[4]";
     ATTRIBUTE lib_model OF led(0) : LABEL IS "iocell5";
     ATTRIBUTE Location OF led(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF high2_1(0) : LABEL IS "iocell6";

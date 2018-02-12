@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 1
 
 
    1              		.syntax unified
@@ -22,17 +22,16 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 1
   19              		.global	__aeabi_i2d
   20              		.global	__aeabi_dmul
   21              		.global	__aeabi_dadd
-  22              		.global	__aeabi_d2iz
-  23              		.global	__aeabi_d2uiz
-  24              		.section	.text.main,"ax",%progbits
-  25              		.align	2
-  26              		.global	main
-  27              		.thumb
-  28              		.thumb_func
-  29              		.type	main, %function
-  30              	main:
-  31              	.LFB64:
-  32              		.file 1 "main.c"
+  22              		.global	__aeabi_ddiv
+  23              		.section	.text.main,"ax",%progbits
+  24              		.align	2
+  25              		.global	main
+  26              		.thumb
+  27              		.thumb_func
+  28              		.type	main, %function
+  29              	main:
+  30              	.LFB64:
+  31              		.file 1 "main.c"
    1:main.c        **** /* ========================================
    2:main.c        ****  *
    3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
@@ -56,1546 +55,1694 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 1
   21:main.c        **** 
   22:main.c        **** int main(void)
   23:main.c        **** {
-  33              		.loc 1 23 0
-  34              		.cfi_startproc
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 2
+  32              		.loc 1 23 0
+  33              		.cfi_startproc
+  34              		@ args = 0, pretend = 0, frame = 128
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 2
 
 
-  35              		@ args = 0, pretend = 0, frame = 24
-  36              		@ frame_needed = 0, uses_anonymous_args = 0
-  37 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
-  38              		.cfi_def_cfa_offset 24
-  39              		.cfi_offset 4, -24
-  40              		.cfi_offset 5, -20
-  41              		.cfi_offset 6, -16
-  42              		.cfi_offset 7, -12
-  43              		.cfi_offset 8, -8
-  44              		.cfi_offset 14, -4
-  45 0004 86B0     		sub	sp, sp, #24
-  46              		.cfi_def_cfa_offset 48
+  35              		@ frame_needed = 0, uses_anonymous_args = 0
+  36 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+  37              		.cfi_def_cfa_offset 20
+  38              		.cfi_offset 4, -20
+  39              		.cfi_offset 5, -16
+  40              		.cfi_offset 6, -12
+  41              		.cfi_offset 7, -8
+  42              		.cfi_offset 14, -4
+  43 0002 A5B0     		sub	sp, sp, #148
+  44              		.cfi_def_cfa_offset 168
   24:main.c        ****  	PS3Controller ps3;
   25:main.c        ****     char i;
   26:main.c        **** 	int power;
   27:main.c        **** 	uint8 m[3] = {0};
-  47              		.loc 1 27 0
-  48 0006 0023     		movs	r3, #0
-  49 0008 ADF80C30 		strh	r3, [sp, #12]	@ movhi
-  50 000c 8DF80E30 		strb	r3, [sp, #14]
+  45              		.loc 1 27 0
+  46 0004 0021     		movs	r1, #0
+  47 0006 ADF88410 		strh	r1, [sp, #132]	@ movhi
+  48 000a 8DF88610 		strb	r1, [sp, #134]
   28:main.c        ****     char na[3] = {0};
-  51              		.loc 1 28 0
-  52 0010 ADF80830 		strh	r3, [sp, #8]	@ movhi
-  53 0014 8DF80A30 		strb	r3, [sp, #10]
+  49              		.loc 1 28 0
+  50 000e ADF88010 		strh	r1, [sp, #128]	@ movhi
+  51 0012 8DF88210 		strb	r1, [sp, #130]
   29:main.c        ****     double s;
   30:main.c        **** 	double x, y;
   31:main.c        ****     char output[100] = {0};   
+  52              		.loc 1 31 0
+  53 0016 6422     		movs	r2, #100
+  54 0018 07A8     		add	r0, sp, #28
+  55 001a FFF7FEFF 		bl	memset
+  56              	.LVL0:
   32:main.c        **** 
   33:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
-  54              		.loc 1 33 0
-  55              		.syntax unified
-  56              	@ 33 "main.c" 1
-  57 0018 62B6     		CPSIE   i
-  58              	@ 0 "" 2
+  57              		.loc 1 33 0
+  58              		.syntax unified
+  59              	@ 33 "main.c" 1
+  60 001e 62B6     		CPSIE   i
+  61              	@ 0 "" 2
   34:main.c        **** 
   35:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
   36:main.c        ****     motor1_Start();
-  59              		.loc 1 36 0
-  60              		.thumb
-  61              		.syntax unified
-  62 001a FFF7FEFF 		bl	motor1_Start
-  63              	.LVL0:
-  37:main.c        ****     motor2_Start();
-  64              		.loc 1 37 0
-  65 001e FFF7FEFF 		bl	motor2_Start
+  62              		.loc 1 36 0
+  63              		.thumb
+  64              		.syntax unified
+  65 0020 FFF7FEFF 		bl	motor1_Start
   66              	.LVL1:
-  38:main.c        ****     motor3_Start();
-  67              		.loc 1 38 0
-  68 0022 FFF7FEFF 		bl	motor3_Start
+  37:main.c        ****     motor2_Start();
+  67              		.loc 1 37 0
+  68 0024 FFF7FEFF 		bl	motor2_Start
   69              	.LVL2:
-  39:main.c        **** 	PS3_Start();
-  70              		.loc 1 39 0
-  71 0026 FFF7FEFF 		bl	PS3_Start
+  38:main.c        ****     motor3_Start();
+  70              		.loc 1 38 0
+  71 0028 FFF7FEFF 		bl	motor3_Start
   72              	.LVL3:
-  40:main.c        ****     UART_1_Start();
-  73              		.loc 1 40 0
-  74 002a FFF7FEFF 		bl	UART_1_Start
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 3
-
-
+  39:main.c        **** 	PS3_Start();
+  73              		.loc 1 39 0
+  74 002c FFF7FEFF 		bl	PS3_Start
   75              	.LVL4:
-  76              	.L10:
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 3
+
+
+  40:main.c        ****     UART_1_Start();
+  76              		.loc 1 40 0
+  77 0030 FFF7FEFF 		bl	UART_1_Start
+  78              	.LVL5:
+  79              	.L12:
   41:main.c        ****     
   42:main.c        ****     for(;;)
   43:main.c        ****     {
   44:main.c        **** 		ps3 = PS3_Controller_get();
-  77              		.loc 1 44 0
-  78 002e 6846     		mov	r0, sp
-  79 0030 FFF7FEFF 		bl	PS3_Controller_get
-  80              	.LVL5:
-  81 0034 0098     		ldr	r0, [sp]	@ unaligned
-  82 0036 0490     		str	r0, [sp, #16]	@ unaligned
-  83 0038 BDF80430 		ldrh	r3, [sp, #4]	@ unaligned
-  84 003c ADF81430 		strh	r3, [sp, #20]	@ unaligned
+  80              		.loc 1 44 0
+  81 0034 04A8     		add	r0, sp, #16
+  82 0036 FFF7FEFF 		bl	PS3_Controller_get
+  83              	.LVL6:
+  84 003a 0498     		ldr	r0, [sp, #16]	@ unaligned
+  85 003c 2290     		str	r0, [sp, #136]	@ unaligned
+  86 003e BDF81430 		ldrh	r3, [sp, #20]	@ unaligned
+  87 0042 ADF88C30 		strh	r3, [sp, #140]	@ unaligned
   45:main.c        ****         //sprintf(output, "%d %d\n", ps3.ANALOG_LX, ps3.ANALOG_LY);
   46:main.c        ****         //UART_1_PutString(output);
   47:main.c        **** 		x = ps3.ANALOG_LX - 64;
-  85              		.loc 1 47 0
-  86 0040 9DF81400 		ldrb	r0, [sp, #20]	@ zero_extendqisi2
-  87 0044 4038     		subs	r0, r0, #64
-  88 0046 FFF7FEFF 		bl	__aeabi_i2d
-  89              	.LVL6:
-  90 004a 0646     		mov	r6, r0
-  91 004c 0F46     		mov	r7, r1
+  88              		.loc 1 47 0
+  89 0046 9DF88C00 		ldrb	r0, [sp, #140]	@ zero_extendqisi2
+  90 004a 4038     		subs	r0, r0, #64
+  91 004c FFF7FEFF 		bl	__aeabi_i2d
   92              	.LVL7:
+  93 0050 0646     		mov	r6, r0
+  94 0052 0F46     		mov	r7, r1
+  95              	.LVL8:
   48:main.c        **** 		y = ps3.ANALOG_LY - 64;
-  93              		.loc 1 48 0
-  94 004e 9DF81500 		ldrb	r0, [sp, #21]	@ zero_extendqisi2
-  95 0052 4038     		subs	r0, r0, #64
-  96 0054 FFF7FEFF 		bl	__aeabi_i2d
-  97              	.LVL8:
-  98 0058 0446     		mov	r4, r0
-  99 005a 0D46     		mov	r5, r1
+  96              		.loc 1 48 0
+  97 0054 9DF88D00 		ldrb	r0, [sp, #141]	@ zero_extendqisi2
+  98 0058 4038     		subs	r0, r0, #64
+  99 005a FFF7FEFF 		bl	__aeabi_i2d
  100              	.LVL9:
+ 101 005e 0446     		mov	r4, r0
+ 102 0060 0D46     		mov	r5, r1
+ 103              	.LVL10:
   49:main.c        ****         
   50:main.c        ****         s = x*x + y*y;
- 101              		.loc 1 50 0
- 102 005c 3246     		mov	r2, r6
- 103 005e 3B46     		mov	r3, r7
- 104 0060 3046     		mov	r0, r6
- 105 0062 3946     		mov	r1, r7
- 106 0064 FFF7FEFF 		bl	__aeabi_dmul
- 107              	.LVL10:
- 108 0068 0646     		mov	r6, r0
- 109              	.LVL11:
- 110 006a 0F46     		mov	r7, r1
- 111 006c 2246     		mov	r2, r4
- 112 006e 2B46     		mov	r3, r5
- 113 0070 2046     		mov	r0, r4
- 114 0072 2946     		mov	r1, r5
- 115 0074 FFF7FEFF 		bl	__aeabi_dmul
- 116              	.LVL12:
- 117 0078 0246     		mov	r2, r0
- 118 007a 0B46     		mov	r3, r1
- 119 007c 3046     		mov	r0, r6
- 120 007e 3946     		mov	r1, r7
- 121 0080 FFF7FEFF 		bl	__aeabi_dadd
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 4
+ 104              		.loc 1 50 0
+ 105 0062 3246     		mov	r2, r6
+ 106 0064 3B46     		mov	r3, r7
+ 107 0066 3046     		mov	r0, r6
+ 108 0068 3946     		mov	r1, r7
+ 109 006a FFF7FEFF 		bl	__aeabi_dmul
+ 110              	.LVL11:
+ 111 006e 0646     		mov	r6, r0
+ 112              	.LVL12:
+ 113 0070 0F46     		mov	r7, r1
+ 114 0072 2246     		mov	r2, r4
+ 115 0074 2B46     		mov	r3, r5
+ 116 0076 2046     		mov	r0, r4
+ 117 0078 2946     		mov	r1, r5
+ 118 007a FFF7FEFF 		bl	__aeabi_dmul
+ 119              	.LVL13:
+ 120 007e 0246     		mov	r2, r0
+ 121 0080 0B46     		mov	r3, r1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 4
 
 
- 122              	.LVL13:
+ 122 0082 3046     		mov	r0, r6
+ 123 0084 3946     		mov	r1, r7
+ 124 0086 FFF7FEFF 		bl	__aeabi_dadd
+ 125              	.LVL14:
   51:main.c        **** 		//power = (uint8)(sqrt((double)x * x + y * y));
   52:main.c        ****         power = (int)(sqrt(s));
- 123              		.loc 1 52 0
- 124 0084 FFF7FEFF 		bl	sqrt
- 125              	.LVL14:
- 126 0088 FFF7FEFF 		bl	__aeabi_d2iz
- 127              	.LVL15:
- 128 008c 8046     		mov	r8, r0
- 129              	.LVL16:
+ 126              		.loc 1 52 0
+ 127 008a FFF7FEFF 		bl	sqrt
+ 128              	.LVL15:
   53:main.c        ****         
   54:main.c        **** 		matrix(&ps3, m, na);
- 130              		.loc 1 54 0
- 131 008e 02AA     		add	r2, sp, #8
- 132 0090 03A9     		add	r1, sp, #12
- 133 0092 04A8     		add	r0, sp, #16
- 134              	.LVL17:
- 135 0094 FFF7FEFF 		bl	matrix
- 136              	.LVL18:
-  55:main.c        **** 		if (na[0])
- 137              		.loc 1 55 0
- 138 0098 9DF80830 		ldrb	r3, [sp, #8]	@ zero_extendqisi2
- 139 009c 1BB1     		cbz	r3, .L2
+ 129              		.loc 1 54 0
+ 130 008e 20AA     		add	r2, sp, #128
+ 131 0090 21A9     		add	r1, sp, #132
+ 132 0092 22A8     		add	r0, sp, #136
+ 133 0094 FFF7FEFF 		bl	matrix
+ 134              	.LVL16:
+  55:main.c        **** 		if (na[0]) {
+ 135              		.loc 1 55 0
+ 136 0098 9DF88030 		ldrb	r3, [sp, #128]	@ zero_extendqisi2
+ 137 009c 1BB1     		cbz	r3, .L2
   56:main.c        **** 			reverse_1_Write(1);
- 140              		.loc 1 56 0
- 141 009e 0120     		movs	r0, #1
- 142 00a0 FFF7FEFF 		bl	reverse_1_Write
- 143              	.LVL19:
- 144 00a4 02E0     		b	.L3
- 145              	.L2:
-  57:main.c        **** 		else
+ 138              		.loc 1 56 0
+ 139 009e 0120     		movs	r0, #1
+ 140 00a0 FFF7FEFF 		bl	reverse_1_Write
+ 141              	.LVL17:
+ 142 00a4 02E0     		b	.L3
+ 143              	.L2:
+  57:main.c        **** 		} else {
   58:main.c        **** 			reverse_1_Write(2);
- 146              		.loc 1 58 0
- 147 00a6 0220     		movs	r0, #2
- 148 00a8 FFF7FEFF 		bl	reverse_1_Write
- 149              	.LVL20:
- 150              	.L3:
-  59:main.c        **** 		if (na[1])
- 151              		.loc 1 59 0
- 152 00ac 9DF80930 		ldrb	r3, [sp, #9]	@ zero_extendqisi2
- 153 00b0 1BB1     		cbz	r3, .L4
-  60:main.c        **** 			reverse_2_Write(1);
- 154              		.loc 1 60 0
- 155 00b2 0120     		movs	r0, #1
- 156 00b4 FFF7FEFF 		bl	reverse_2_Write
- 157              	.LVL21:
- 158 00b8 02E0     		b	.L5
- 159              	.L4:
-  61:main.c        **** 		else
-  62:main.c        **** 			reverse_2_Write(2);
- 160              		.loc 1 62 0
- 161 00ba 0220     		movs	r0, #2
- 162 00bc FFF7FEFF 		bl	reverse_2_Write
- 163              	.LVL22:
- 164              	.L5:
-  63:main.c        **** 		if (na[2])
- 165              		.loc 1 63 0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 5
+ 144              		.loc 1 58 0
+ 145 00a6 0220     		movs	r0, #2
+ 146 00a8 FFF7FEFF 		bl	reverse_1_Write
+ 147              	.LVL18:
+ 148              	.L3:
+  59:main.c        ****         }
+  60:main.c        **** 		if (na[1]) {
+ 149              		.loc 1 60 0
+ 150 00ac 9DF88130 		ldrb	r3, [sp, #129]	@ zero_extendqisi2
+ 151 00b0 1BB1     		cbz	r3, .L4
+  61:main.c        **** 			reverse_2_Write(1);
+ 152              		.loc 1 61 0
+ 153 00b2 0120     		movs	r0, #1
+ 154 00b4 FFF7FEFF 		bl	reverse_2_Write
+ 155              	.LVL19:
+ 156 00b8 02E0     		b	.L5
+ 157              	.L4:
+  62:main.c        **** 		} else {
+  63:main.c        **** 			reverse_2_Write(2);
+ 158              		.loc 1 63 0
+ 159 00ba 0220     		movs	r0, #2
+ 160 00bc FFF7FEFF 		bl	reverse_2_Write
+ 161              	.LVL20:
+ 162              	.L5:
+  64:main.c        ****         }
+  65:main.c        **** 		if (na[2]) {
+ 163              		.loc 1 65 0
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 5
 
 
- 166 00c0 9DF80A30 		ldrb	r3, [sp, #10]	@ zero_extendqisi2
- 167 00c4 23B1     		cbz	r3, .L6
-  64:main.c        **** 			reverse_3_Write(1);
- 168              		.loc 1 64 0
- 169 00c6 0120     		movs	r0, #1
- 170 00c8 FFF7FEFF 		bl	reverse_3_Write
- 171              	.LVL23:
- 172              	.L8:
+ 164 00c0 9DF88230 		ldrb	r3, [sp, #130]	@ zero_extendqisi2
+ 165 00c4 23B1     		cbz	r3, .L6
+  66:main.c        **** 			reverse_3_Write(1);
+ 166              		.loc 1 66 0
+ 167 00c6 0120     		movs	r0, #1
+ 168 00c8 FFF7FEFF 		bl	reverse_3_Write
+ 169              	.LVL21:
+ 170              	.L8:
   23:main.c        ****  	PS3Controller ps3;
- 173              		.loc 1 23 0 discriminator 1
- 174 00cc 0024     		movs	r4, #0
- 175              	.LVL24:
- 176 00ce 1DE0     		b	.L7
- 177              	.LVL25:
- 178              	.L6:
-  65:main.c        **** 		else
-  66:main.c        **** 			reverse_3_Write(2);
- 179              		.loc 1 66 0
- 180 00d0 0220     		movs	r0, #2
- 181 00d2 FFF7FEFF 		bl	reverse_3_Write
- 182              	.LVL26:
- 183 00d6 F9E7     		b	.L8
- 184              	.LVL27:
- 185              	.L9:
-  67:main.c        **** 
-  68:main.c        **** 		for (i = 0; i < 3; i++) {
-  69:main.c        **** 				m[i] *= MAX_POWER / (double)91 * (double)power;
- 186              		.loc 1 69 0 discriminator 3
- 187 00d8 4046     		mov	r0, r8
- 188 00da FFF7FEFF 		bl	__aeabi_i2d
- 189              	.LVL28:
- 190 00de 14A3     		adr	r3, .L12
- 191 00e0 D3E90023 		ldrd	r2, [r3]
- 192 00e4 FFF7FEFF 		bl	__aeabi_dmul
- 193              	.LVL29:
- 194 00e8 0646     		mov	r6, r0
- 195 00ea 0F46     		mov	r7, r1
- 196 00ec 06AB     		add	r3, sp, #24
- 197 00ee 1D19     		adds	r5, r3, r4
- 198 00f0 15F80C0C 		ldrb	r0, [r5, #-12]	@ zero_extendqisi2
- 199 00f4 FFF7FEFF 		bl	__aeabi_i2d
- 200              	.LVL30:
- 201 00f8 3246     		mov	r2, r6
- 202 00fa 3B46     		mov	r3, r7
- 203 00fc FFF7FEFF 		bl	__aeabi_dmul
- 204              	.LVL31:
- 205 0100 FFF7FEFF 		bl	__aeabi_d2uiz
- 206              	.LVL32:
- 207 0104 05F80C0C 		strb	r0, [r5, #-12]
-  68:main.c        **** 				m[i] *= MAX_POWER / (double)91 * (double)power;
- 208              		.loc 1 68 0 discriminator 3
- 209 0108 0134     		adds	r4, r4, #1
- 210              	.LVL33:
- 211 010a E4B2     		uxtb	r4, r4
- 212              	.LVL34:
- 213              	.L7:
-  68:main.c        **** 				m[i] *= MAX_POWER / (double)91 * (double)power;
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 6
-
-
- 214              		.loc 1 68 0 is_stmt 0 discriminator 1
- 215 010c 022C     		cmp	r4, #2
- 216 010e E3D9     		bls	.L9
-  70:main.c        **** 		}
-  71:main.c        ****             
-  72:main.c        **** 		motor1_WriteCompare(m[0]);
- 217              		.loc 1 72 0 is_stmt 1
- 218 0110 9DF80C00 		ldrb	r0, [sp, #12]	@ zero_extendqisi2
- 219 0114 FFF7FEFF 		bl	motor1_WriteCompare
- 220              	.LVL35:
-  73:main.c        **** 		motor2_WriteCompare(m[1]);
- 221              		.loc 1 73 0
- 222 0118 9DF80D00 		ldrb	r0, [sp, #13]	@ zero_extendqisi2
- 223 011c FFF7FEFF 		bl	motor2_WriteCompare
- 224              	.LVL36:
-  74:main.c        **** 		motor3_WriteCompare(m[2]);
- 225              		.loc 1 74 0
- 226 0120 9DF80E00 		ldrb	r0, [sp, #14]	@ zero_extendqisi2
- 227 0124 FFF7FEFF 		bl	motor3_WriteCompare
- 228              	.LVL37:
-  75:main.c        ****        
-  76:main.c        ****         //sprintf(output, "%d %d %d\n", m[0], m[1], m[2]);
-  77:main.c        ****         //UART_1_PutString(output);
+ 171              		.loc 1 23 0 discriminator 1
+ 172 00cc 0023     		movs	r3, #0
+ 173 00ce 0CE0     		b	.L7
+ 174              	.L6:
+  67:main.c        **** 		} else {
+  68:main.c        **** 			reverse_3_Write(2);
+ 175              		.loc 1 68 0
+ 176 00d0 0220     		movs	r0, #2
+ 177 00d2 FFF7FEFF 		bl	reverse_3_Write
+ 178              	.LVL22:
+ 179 00d6 F9E7     		b	.L8
+ 180              	.LVL23:
+ 181              	.L9:
+  69:main.c        ****         }
+  70:main.c        **** /*
+  71:main.c        **** 		for (i = 0; i < 3; i++) {
+  72:main.c        **** 				m[i] *= MAX_POWER / (double)91 * (double)power;
+  73:main.c        **** 		}
+  74:main.c        ****   */     
+  75:main.c        ****         for (i = 0; i < 3; i++) {
+  76:main.c        **** 	        m[i] *= 2;
+ 182              		.loc 1 76 0 discriminator 3
+ 183 00d8 24AA     		add	r2, sp, #144
+ 184 00da D118     		adds	r1, r2, r3
+ 185 00dc 11F80C2C 		ldrb	r2, [r1, #-12]	@ zero_extendqisi2
+ 186 00e0 5200     		lsls	r2, r2, #1
+ 187 00e2 01F80C2C 		strb	r2, [r1, #-12]
+  75:main.c        **** 	        m[i] *= 2;
+ 188              		.loc 1 75 0 discriminator 3
+ 189 00e6 0133     		adds	r3, r3, #1
+ 190              	.LVL24:
+ 191 00e8 DBB2     		uxtb	r3, r3
+ 192              	.LVL25:
+ 193              	.L7:
+  75:main.c        **** 	        m[i] *= 2;
+ 194              		.loc 1 75 0 is_stmt 0 discriminator 1
+ 195 00ea 022B     		cmp	r3, #2
+ 196 00ec F4D9     		bls	.L9
+  77:main.c        **** 		}
   78:main.c        ****         
-  79:main.c        ****         
-  80:main.c        ****         /* Place your application code here. */
-  81:main.c        ****     }
- 229              		.loc 1 81 0
- 230 0128 81E7     		b	.L10
- 231              	.L13:
- 232 012a 00BFAFF3 		.align	3
- 232      0080
- 233              	.L12:
- 234 0130 84433884 		.word	-2076687484
- 235 0134 43380440 		.word	1074018371
- 236              		.cfi_endproc
- 237              	.LFE64:
- 238              		.size	main, .-main
- 239              		.text
- 240              	.Letext0:
- 241              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
- 242              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
- 243              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
- 244              		.file 5 "PS3_Controller.h"
- 245              		.file 6 "Generated_Source\\PSoC5/motor1.h"
- 246              		.file 7 "Generated_Source\\PSoC5/motor2.h"
- 247              		.file 8 "Generated_Source\\PSoC5/motor3.h"
- 248              		.file 9 "Generated_Source\\PSoC5/UART_1.h"
- 249              		.file 10 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4
- 250              		.file 11 "matrix.h"
- 251              		.file 12 "Generated_Source\\PSoC5/reverse_1.h"
- 252              		.file 13 "Generated_Source\\PSoC5/reverse_2.h"
- 253              		.file 14 "Generated_Source\\PSoC5/reverse_3.h"
- 254              		.file 15 "Generated_Source\\PSoC5/core_cm3.h"
- 255              		.section	.debug_info,"",%progbits
- 256              	.Ldebug_info0:
- 257 0000 1F040000 		.4byte	0x41f
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 7
+  79:main.c        ****         if (m[0] > MAX_POWER || m[1] > MAX_POWER || m[2] > MAX_POWER) {
+ 197              		.loc 1 79 0 is_stmt 1
+ 198 00ee 9DF88430 		ldrb	r3, [sp, #132]	@ zero_extendqisi2
+ 199              	.LVL26:
+ 200 00f2 E62B     		cmp	r3, #230
+ 201 00f4 07D8     		bhi	.L10
+ 202              		.loc 1 79 0 is_stmt 0 discriminator 1
+ 203 00f6 9DF88530 		ldrb	r3, [sp, #133]	@ zero_extendqisi2
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 6
 
 
- 258 0004 0400     		.2byte	0x4
- 259 0006 00000000 		.4byte	.Ldebug_abbrev0
- 260 000a 04       		.byte	0x4
- 261 000b 01       		.uleb128 0x1
- 262 000c 42020000 		.4byte	.LASF46
- 263 0010 0C       		.byte	0xc
- 264 0011 A5010000 		.4byte	.LASF47
- 265 0015 48010000 		.4byte	.LASF48
- 266 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 267 001d 00000000 		.4byte	0
- 268 0021 00000000 		.4byte	.Ldebug_line0
- 269 0025 02       		.uleb128 0x2
- 270 0026 01       		.byte	0x1
- 271 0027 06       		.byte	0x6
- 272 0028 CB000000 		.4byte	.LASF0
- 273 002c 02       		.uleb128 0x2
- 274 002d 01       		.byte	0x1
- 275 002e 08       		.byte	0x8
- 276 002f BD000000 		.4byte	.LASF1
- 277 0033 02       		.uleb128 0x2
- 278 0034 02       		.byte	0x2
- 279 0035 05       		.byte	0x5
- 280 0036 0D000000 		.4byte	.LASF2
- 281 003a 02       		.uleb128 0x2
- 282 003b 02       		.byte	0x2
- 283 003c 07       		.byte	0x7
- 284 003d 1D010000 		.4byte	.LASF3
- 285 0041 03       		.uleb128 0x3
- 286 0042 EE010000 		.4byte	.LASF9
- 287 0046 02       		.byte	0x2
- 288 0047 3F       		.byte	0x3f
- 289 0048 4C000000 		.4byte	0x4c
- 290 004c 02       		.uleb128 0x2
- 291 004d 04       		.byte	0x4
- 292 004e 05       		.byte	0x5
- 293 004f 83000000 		.4byte	.LASF4
- 294 0053 02       		.uleb128 0x2
- 295 0054 04       		.byte	0x4
- 296 0055 07       		.byte	0x7
- 297 0056 AC010000 		.4byte	.LASF5
- 298 005a 02       		.uleb128 0x2
- 299 005b 08       		.byte	0x8
- 300 005c 05       		.byte	0x5
- 301 005d 75000000 		.4byte	.LASF6
- 302 0061 02       		.uleb128 0x2
- 303 0062 08       		.byte	0x8
- 304 0063 07       		.byte	0x7
- 305 0064 D7000000 		.4byte	.LASF7
- 306 0068 04       		.uleb128 0x4
- 307 0069 04       		.byte	0x4
- 308 006a 05       		.byte	0x5
- 309 006b 696E7400 		.ascii	"int\000"
- 310 006f 02       		.uleb128 0x2
- 311 0070 04       		.byte	0x4
- 312 0071 07       		.byte	0x7
- 313 0072 EE000000 		.4byte	.LASF8
- 314 0076 03       		.uleb128 0x3
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 8
+ 204 00fa E62B     		cmp	r3, #230
+ 205 00fc 03D8     		bhi	.L10
+ 206              		.loc 1 79 0 discriminator 2
+ 207 00fe 9DF88630 		ldrb	r3, [sp, #134]	@ zero_extendqisi2
+ 208 0102 E62B     		cmp	r3, #230
+ 209 0104 06D9     		bls	.L11
+ 210              	.L10:
+  80:main.c        ****             m[0] = 0;
+ 211              		.loc 1 80 0 is_stmt 1
+ 212 0106 0023     		movs	r3, #0
+ 213 0108 8DF88430 		strb	r3, [sp, #132]
+  81:main.c        ****             m[1] = 0;
+ 214              		.loc 1 81 0
+ 215 010c 8DF88530 		strb	r3, [sp, #133]
+  82:main.c        ****             m[2] = 0;
+ 216              		.loc 1 82 0
+ 217 0110 8DF88630 		strb	r3, [sp, #134]
+ 218              	.L11:
+  83:main.c        ****         }
+  84:main.c        ****         motor1_WriteCompare(m[0]);
+ 219              		.loc 1 84 0
+ 220 0114 9DF88400 		ldrb	r0, [sp, #132]	@ zero_extendqisi2
+ 221 0118 FFF7FEFF 		bl	motor1_WriteCompare
+ 222              	.LVL27:
+  85:main.c        **** 		motor2_WriteCompare(m[1]);
+ 223              		.loc 1 85 0
+ 224 011c 9DF88500 		ldrb	r0, [sp, #133]	@ zero_extendqisi2
+ 225 0120 FFF7FEFF 		bl	motor2_WriteCompare
+ 226              	.LVL28:
+  86:main.c        **** 		motor3_WriteCompare(m[2]);
+ 227              		.loc 1 86 0
+ 228 0124 9DF88600 		ldrb	r0, [sp, #134]	@ zero_extendqisi2
+ 229 0128 FFF7FEFF 		bl	motor3_WriteCompare
+ 230              	.LVL29:
+  87:main.c        ****        
+  88:main.c        ****         sprintf(output, "%f %f %f\n", m[0]/255.0, m[1]/255.0, m[2]/255.0);
+ 231              		.loc 1 88 0
+ 232 012c 9DF88560 		ldrb	r6, [sp, #133]	@ zero_extendqisi2
+ 233 0130 9DF88670 		ldrb	r7, [sp, #134]	@ zero_extendqisi2
+ 234 0134 9DF88400 		ldrb	r0, [sp, #132]	@ zero_extendqisi2
+ 235 0138 FFF7FEFF 		bl	__aeabi_i2d
+ 236              	.LVL30:
+ 237 013c 12A3     		adr	r3, .L14
+ 238 013e D3E90023 		ldrd	r2, [r3]
+ 239 0142 FFF7FEFF 		bl	__aeabi_ddiv
+ 240              	.LVL31:
+ 241 0146 0446     		mov	r4, r0
+ 242              	.LVL32:
+ 243 0148 0D46     		mov	r5, r1
+ 244 014a 3846     		mov	r0, r7
+ 245 014c FFF7FEFF 		bl	__aeabi_i2d
+ 246              	.LVL33:
+ 247 0150 0DA3     		adr	r3, .L14
+ 248 0152 D3E90023 		ldrd	r2, [r3]
+ 249 0156 FFF7FEFF 		bl	__aeabi_ddiv
+ 250              	.LVL34:
+ 251 015a CDE90201 		strd	r0, [sp, #8]
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 7
 
 
- 315 0077 3B010000 		.4byte	.LASF10
- 316 007b 03       		.byte	0x3
- 317 007c 2C       		.byte	0x2c
- 318 007d 41000000 		.4byte	0x41
- 319 0081 05       		.uleb128 0x5
- 320 0082 3F000000 		.4byte	.LASF11
- 321 0086 04       		.byte	0x4
- 322 0087 9201     		.2byte	0x192
- 323 0089 2C000000 		.4byte	0x2c
- 324 008d 02       		.uleb128 0x2
- 325 008e 04       		.byte	0x4
- 326 008f 04       		.byte	0x4
- 327 0090 62000000 		.4byte	.LASF12
- 328 0094 02       		.uleb128 0x2
- 329 0095 08       		.byte	0x8
- 330 0096 04       		.byte	0x4
- 331 0097 27020000 		.4byte	.LASF13
- 332 009b 02       		.uleb128 0x2
- 333 009c 01       		.byte	0x1
- 334 009d 08       		.byte	0x8
- 335 009e 36010000 		.4byte	.LASF14
- 336 00a2 02       		.uleb128 0x2
- 337 00a3 08       		.byte	0x8
- 338 00a4 04       		.byte	0x4
- 339 00a5 B1000000 		.4byte	.LASF15
- 340 00a9 02       		.uleb128 0x2
- 341 00aa 04       		.byte	0x4
- 342 00ab 07       		.byte	0x7
- 343 00ac 17000000 		.4byte	.LASF16
- 344 00b0 06       		.uleb128 0x6
- 345 00b1 06       		.byte	0x6
- 346 00b2 05       		.byte	0x5
- 347 00b3 08       		.byte	0x8
- 348 00b4 B6010000 		.4byte	0x1b6
- 349 00b8 07       		.uleb128 0x7
- 350 00b9 19020000 		.4byte	.LASF17
- 351 00bd 05       		.byte	0x5
- 352 00be 0A       		.byte	0xa
- 353 00bf 81000000 		.4byte	0x81
- 354 00c3 01       		.byte	0x1
- 355 00c4 01       		.byte	0x1
- 356 00c5 07       		.byte	0x7
- 357 00c6 00       		.byte	0
- 358 00c7 07       		.uleb128 0x7
- 359 00c8 30010000 		.4byte	.LASF18
- 360 00cc 05       		.byte	0x5
- 361 00cd 0B       		.byte	0xb
- 362 00ce 81000000 		.4byte	0x81
- 363 00d2 01       		.byte	0x1
- 364 00d3 01       		.byte	0x1
- 365 00d4 06       		.byte	0x6
- 366 00d5 00       		.byte	0
- 367 00d6 08       		.uleb128 0x8
- 368 00d7 555000   		.ascii	"UP\000"
- 369 00da 05       		.byte	0x5
- 370 00db 0C       		.byte	0xc
- 371 00dc 81000000 		.4byte	0x81
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 9
+ 252 015e 3046     		mov	r0, r6
+ 253 0160 FFF7FEFF 		bl	__aeabi_i2d
+ 254              	.LVL35:
+ 255 0164 08A3     		adr	r3, .L14
+ 256 0166 D3E90023 		ldrd	r2, [r3]
+ 257 016a FFF7FEFF 		bl	__aeabi_ddiv
+ 258              	.LVL36:
+ 259 016e CDE90001 		strd	r0, [sp]
+ 260 0172 2246     		mov	r2, r4
+ 261 0174 2B46     		mov	r3, r5
+ 262 0176 0649     		ldr	r1, .L14+8
+ 263 0178 07A8     		add	r0, sp, #28
+ 264 017a FFF7FEFF 		bl	sprintf
+ 265              	.LVL37:
+  89:main.c        ****         UART_1_PutString(output);
+ 266              		.loc 1 89 0
+ 267 017e 07A8     		add	r0, sp, #28
+ 268 0180 FFF7FEFF 		bl	UART_1_PutString
+ 269              	.LVL38:
+  90:main.c        ****         
+  91:main.c        ****         
+  92:main.c        ****         /* Place your application code here. */
+  93:main.c        ****     }
+ 270              		.loc 1 93 0
+ 271 0184 56E7     		b	.L12
+ 272              	.L15:
+ 273 0186 00BF     		.align	3
+ 274              	.L14:
+ 275 0188 00000000 		.word	0
+ 276 018c 00E06F40 		.word	1081073664
+ 277 0190 00000000 		.word	.LC0
+ 278              		.cfi_endproc
+ 279              	.LFE64:
+ 280              		.size	main, .-main
+ 281              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 282              		.align	2
+ 283              	.LC0:
+ 284 0000 25662025 		.ascii	"%f %f %f\012\000"
+ 284      66202566 
+ 284      0A00
+ 285              		.text
+ 286              	.Letext0:
+ 287              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 288              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 289              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 290              		.file 5 "PS3_Controller.h"
+ 291              		.file 6 "Generated_Source\\PSoC5/motor1.h"
+ 292              		.file 7 "Generated_Source\\PSoC5/motor2.h"
+ 293              		.file 8 "Generated_Source\\PSoC5/motor3.h"
+ 294              		.file 9 "Generated_Source\\PSoC5/UART_1.h"
+ 295              		.file 10 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4
+ 296              		.file 11 "matrix.h"
+ 297              		.file 12 "Generated_Source\\PSoC5/reverse_1.h"
+ 298              		.file 13 "Generated_Source\\PSoC5/reverse_2.h"
+ 299              		.file 14 "Generated_Source\\PSoC5/reverse_3.h"
+ 300              		.file 15 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4
+ 301              		.file 16 "Generated_Source\\PSoC5/core_cm3.h"
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 8
 
 
- 372 00e0 01       		.byte	0x1
- 373 00e1 01       		.byte	0x1
- 374 00e2 05       		.byte	0x5
- 375 00e3 00       		.byte	0
- 376 00e4 07       		.uleb128 0x7
- 377 00e5 07000000 		.4byte	.LASF19
- 378 00e9 05       		.byte	0x5
- 379 00ea 0D       		.byte	0xd
- 380 00eb 81000000 		.4byte	0x81
- 381 00ef 01       		.byte	0x1
- 382 00f0 01       		.byte	0x1
- 383 00f1 04       		.byte	0x4
- 384 00f2 00       		.byte	0
- 385 00f3 07       		.uleb128 0x7
- 386 00f4 43010000 		.4byte	.LASF20
- 387 00f8 05       		.byte	0x5
- 388 00f9 0E       		.byte	0xe
- 389 00fa 81000000 		.4byte	0x81
- 390 00fe 01       		.byte	0x1
- 391 00ff 01       		.byte	0x1
- 392 0100 03       		.byte	0x3
- 393 0101 00       		.byte	0
- 394 0102 07       		.uleb128 0x7
- 395 0103 96000000 		.4byte	.LASF21
- 396 0107 05       		.byte	0x5
- 397 0108 0F       		.byte	0xf
- 398 0109 81000000 		.4byte	0x81
- 399 010d 01       		.byte	0x1
- 400 010e 01       		.byte	0x1
- 401 010f 02       		.byte	0x2
- 402 0110 00       		.byte	0
- 403 0111 08       		.uleb128 0x8
- 404 0112 4C3200   		.ascii	"L2\000"
- 405 0115 05       		.byte	0x5
- 406 0116 10       		.byte	0x10
- 407 0117 81000000 		.4byte	0x81
- 408 011b 01       		.byte	0x1
- 409 011c 01       		.byte	0x1
- 410 011d 01       		.byte	0x1
- 411 011e 00       		.byte	0
- 412 011f 08       		.uleb128 0x8
- 413 0120 523200   		.ascii	"R2\000"
- 414 0123 05       		.byte	0x5
- 415 0124 11       		.byte	0x11
- 416 0125 81000000 		.4byte	0x81
- 417 0129 01       		.byte	0x1
- 418 012a 01       		.byte	0x1
- 419 012b 00       		.byte	0
- 420 012c 00       		.byte	0
- 421 012d 08       		.uleb128 0x8
- 422 012e 4C3100   		.ascii	"L1\000"
- 423 0131 05       		.byte	0x5
- 424 0132 12       		.byte	0x12
- 425 0133 81000000 		.4byte	0x81
- 426 0137 01       		.byte	0x1
- 427 0138 01       		.byte	0x1
- 428 0139 07       		.byte	0x7
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 10
+ 302              		.section	.debug_info,"",%progbits
+ 303              	.Ldebug_info0:
+ 304 0000 8E040000 		.4byte	0x48e
+ 305 0004 0400     		.2byte	0x4
+ 306 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 307 000a 04       		.byte	0x4
+ 308 000b 01       		.uleb128 0x1
+ 309 000c 62020000 		.4byte	.LASF48
+ 310 0010 0C       		.byte	0xc
+ 311 0011 BE010000 		.4byte	.LASF49
+ 312 0015 61010000 		.4byte	.LASF50
+ 313 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 314 001d 00000000 		.4byte	0
+ 315 0021 00000000 		.4byte	.Ldebug_line0
+ 316 0025 02       		.uleb128 0x2
+ 317 0026 01       		.byte	0x1
+ 318 0027 06       		.byte	0x6
+ 319 0028 E4000000 		.4byte	.LASF0
+ 320 002c 02       		.uleb128 0x2
+ 321 002d 01       		.byte	0x1
+ 322 002e 08       		.byte	0x8
+ 323 002f CE000000 		.4byte	.LASF1
+ 324 0033 02       		.uleb128 0x2
+ 325 0034 02       		.byte	0x2
+ 326 0035 05       		.byte	0x5
+ 327 0036 0D000000 		.4byte	.LASF2
+ 328 003a 02       		.uleb128 0x2
+ 329 003b 02       		.byte	0x2
+ 330 003c 07       		.byte	0x7
+ 331 003d 36010000 		.4byte	.LASF3
+ 332 0041 03       		.uleb128 0x3
+ 333 0042 0E020000 		.4byte	.LASF9
+ 334 0046 02       		.byte	0x2
+ 335 0047 3F       		.byte	0x3f
+ 336 0048 4C000000 		.4byte	0x4c
+ 337 004c 02       		.uleb128 0x2
+ 338 004d 04       		.byte	0x4
+ 339 004e 05       		.byte	0x5
+ 340 004f 94000000 		.4byte	.LASF4
+ 341 0053 02       		.uleb128 0x2
+ 342 0054 04       		.byte	0x4
+ 343 0055 07       		.byte	0x7
+ 344 0056 C5010000 		.4byte	.LASF5
+ 345 005a 02       		.uleb128 0x2
+ 346 005b 08       		.byte	0x8
+ 347 005c 05       		.byte	0x5
+ 348 005d 75000000 		.4byte	.LASF6
+ 349 0061 02       		.uleb128 0x2
+ 350 0062 08       		.byte	0x8
+ 351 0063 07       		.byte	0x7
+ 352 0064 F0000000 		.4byte	.LASF7
+ 353 0068 04       		.uleb128 0x4
+ 354 0069 04       		.byte	0x4
+ 355 006a 05       		.byte	0x5
+ 356 006b 696E7400 		.ascii	"int\000"
+ 357 006f 02       		.uleb128 0x2
+ 358 0070 04       		.byte	0x4
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 9
 
 
- 429 013a 01       		.byte	0x1
- 430 013b 08       		.uleb128 0x8
- 431 013c 523100   		.ascii	"R1\000"
- 432 013f 05       		.byte	0x5
- 433 0140 13       		.byte	0x13
- 434 0141 81000000 		.4byte	0x81
- 435 0145 01       		.byte	0x1
- 436 0146 01       		.byte	0x1
- 437 0147 06       		.byte	0x6
- 438 0148 01       		.byte	0x1
- 439 0149 07       		.uleb128 0x7
- 440 014a A8000000 		.4byte	.LASF22
- 441 014e 05       		.byte	0x5
- 442 014f 14       		.byte	0x14
- 443 0150 81000000 		.4byte	0x81
- 444 0154 01       		.byte	0x1
- 445 0155 01       		.byte	0x1
- 446 0156 05       		.byte	0x5
- 447 0157 01       		.byte	0x1
- 448 0158 07       		.uleb128 0x7
- 449 0159 00000000 		.4byte	.LASF23
- 450 015d 05       		.byte	0x5
- 451 015e 15       		.byte	0x15
- 452 015f 81000000 		.4byte	0x81
- 453 0163 01       		.byte	0x1
- 454 0164 01       		.byte	0x1
- 455 0165 04       		.byte	0x4
- 456 0166 01       		.byte	0x1
- 457 0167 07       		.uleb128 0x7
- 458 0168 34000000 		.4byte	.LASF24
- 459 016c 05       		.byte	0x5
- 460 016d 16       		.byte	0x16
- 461 016e 81000000 		.4byte	0x81
- 462 0172 01       		.byte	0x1
- 463 0173 01       		.byte	0x1
- 464 0174 03       		.byte	0x3
- 465 0175 01       		.byte	0x1
- 466 0176 07       		.uleb128 0x7
- 467 0177 D7010000 		.4byte	.LASF25
- 468 017b 05       		.byte	0x5
- 469 017c 17       		.byte	0x17
- 470 017d 81000000 		.4byte	0x81
- 471 0181 01       		.byte	0x1
- 472 0182 01       		.byte	0x1
- 473 0183 02       		.byte	0x2
- 474 0184 01       		.byte	0x1
- 475 0185 09       		.uleb128 0x9
- 476 0186 FB000000 		.4byte	.LASF26
- 477 018a 05       		.byte	0x5
- 478 018b 18       		.byte	0x18
- 479 018c 81000000 		.4byte	0x81
- 480 0190 02       		.byte	0x2
- 481 0191 09       		.uleb128 0x9
- 482 0192 05010000 		.4byte	.LASF27
- 483 0196 05       		.byte	0x5
- 484 0197 19       		.byte	0x19
- 485 0198 81000000 		.4byte	0x81
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 11
+ 359 0071 07       		.byte	0x7
+ 360 0072 07010000 		.4byte	.LASF8
+ 361 0076 03       		.uleb128 0x3
+ 362 0077 54010000 		.4byte	.LASF10
+ 363 007b 03       		.byte	0x3
+ 364 007c 2C       		.byte	0x2c
+ 365 007d 41000000 		.4byte	0x41
+ 366 0081 05       		.uleb128 0x5
+ 367 0082 3F000000 		.4byte	.LASF11
+ 368 0086 04       		.byte	0x4
+ 369 0087 9201     		.2byte	0x192
+ 370 0089 2C000000 		.4byte	0x2c
+ 371 008d 02       		.uleb128 0x2
+ 372 008e 04       		.byte	0x4
+ 373 008f 04       		.byte	0x4
+ 374 0090 62000000 		.4byte	.LASF12
+ 375 0094 02       		.uleb128 0x2
+ 376 0095 08       		.byte	0x8
+ 377 0096 04       		.byte	0x4
+ 378 0097 47020000 		.4byte	.LASF13
+ 379 009b 02       		.uleb128 0x2
+ 380 009c 01       		.byte	0x1
+ 381 009d 08       		.byte	0x8
+ 382 009e 4F010000 		.4byte	.LASF14
+ 383 00a2 02       		.uleb128 0x2
+ 384 00a3 08       		.byte	0x8
+ 385 00a4 04       		.byte	0x4
+ 386 00a5 C2000000 		.4byte	.LASF15
+ 387 00a9 02       		.uleb128 0x2
+ 388 00aa 04       		.byte	0x4
+ 389 00ab 07       		.byte	0x7
+ 390 00ac 17000000 		.4byte	.LASF16
+ 391 00b0 06       		.uleb128 0x6
+ 392 00b1 06       		.byte	0x6
+ 393 00b2 05       		.byte	0x5
+ 394 00b3 08       		.byte	0x8
+ 395 00b4 B6010000 		.4byte	0x1b6
+ 396 00b8 07       		.uleb128 0x7
+ 397 00b9 39020000 		.4byte	.LASF17
+ 398 00bd 05       		.byte	0x5
+ 399 00be 0A       		.byte	0xa
+ 400 00bf 81000000 		.4byte	0x81
+ 401 00c3 01       		.byte	0x1
+ 402 00c4 01       		.byte	0x1
+ 403 00c5 07       		.byte	0x7
+ 404 00c6 00       		.byte	0
+ 405 00c7 07       		.uleb128 0x7
+ 406 00c8 49010000 		.4byte	.LASF18
+ 407 00cc 05       		.byte	0x5
+ 408 00cd 0B       		.byte	0xb
+ 409 00ce 81000000 		.4byte	0x81
+ 410 00d2 01       		.byte	0x1
+ 411 00d3 01       		.byte	0x1
+ 412 00d4 06       		.byte	0x6
+ 413 00d5 00       		.byte	0
+ 414 00d6 08       		.uleb128 0x8
+ 415 00d7 555000   		.ascii	"UP\000"
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 10
 
 
- 486 019c 03       		.byte	0x3
- 487 019d 09       		.uleb128 0x9
- 488 019e BE010000 		.4byte	.LASF28
- 489 01a2 05       		.byte	0x5
- 490 01a3 1A       		.byte	0x1a
- 491 01a4 81000000 		.4byte	0x81
- 492 01a8 04       		.byte	0x4
- 493 01a9 09       		.uleb128 0x9
- 494 01aa C8010000 		.4byte	.LASF29
- 495 01ae 05       		.byte	0x5
- 496 01af 1B       		.byte	0x1b
- 497 01b0 81000000 		.4byte	0x81
- 498 01b4 05       		.byte	0x5
- 499 01b5 00       		.byte	0
- 500 01b6 03       		.uleb128 0x3
- 501 01b7 0F010000 		.4byte	.LASF30
- 502 01bb 05       		.byte	0x5
- 503 01bc 1C       		.byte	0x1c
- 504 01bd B0000000 		.4byte	0xb0
- 505 01c1 0A       		.uleb128 0xa
- 506 01c2 3A000000 		.4byte	.LASF49
- 507 01c6 01       		.byte	0x1
- 508 01c7 16       		.byte	0x16
- 509 01c8 68000000 		.4byte	0x68
- 510 01cc 00000000 		.4byte	.LFB64
- 511 01d0 38010000 		.4byte	.LFE64-.LFB64
- 512 01d4 01       		.uleb128 0x1
- 513 01d5 9C       		.byte	0x9c
- 514 01d6 47030000 		.4byte	0x347
- 515 01da 0B       		.uleb128 0xb
- 516 01db 70733300 		.ascii	"ps3\000"
- 517 01df 01       		.byte	0x1
- 518 01e0 18       		.byte	0x18
- 519 01e1 B6010000 		.4byte	0x1b6
- 520 01e5 02       		.uleb128 0x2
- 521 01e6 91       		.byte	0x91
- 522 01e7 60       		.sleb128 -32
- 523 01e8 0C       		.uleb128 0xc
- 524 01e9 6900     		.ascii	"i\000"
- 525 01eb 01       		.byte	0x1
- 526 01ec 19       		.byte	0x19
- 527 01ed 9B000000 		.4byte	0x9b
- 528 01f1 00000000 		.4byte	.LLST0
- 529 01f5 0D       		.uleb128 0xd
- 530 01f6 8F010000 		.4byte	.LASF31
- 531 01fa 01       		.byte	0x1
- 532 01fb 1A       		.byte	0x1a
- 533 01fc 68000000 		.4byte	0x68
- 534 0200 1E000000 		.4byte	.LLST1
- 535 0204 0B       		.uleb128 0xb
- 536 0205 6D00     		.ascii	"m\000"
- 537 0207 01       		.byte	0x1
- 538 0208 1B       		.byte	0x1b
- 539 0209 47030000 		.4byte	0x347
- 540 020d 02       		.uleb128 0x2
- 541 020e 91       		.byte	0x91
- 542 020f 5C       		.sleb128 -36
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 12
+ 416 00da 05       		.byte	0x5
+ 417 00db 0C       		.byte	0xc
+ 418 00dc 81000000 		.4byte	0x81
+ 419 00e0 01       		.byte	0x1
+ 420 00e1 01       		.byte	0x1
+ 421 00e2 05       		.byte	0x5
+ 422 00e3 00       		.byte	0
+ 423 00e4 07       		.uleb128 0x7
+ 424 00e5 07000000 		.4byte	.LASF19
+ 425 00e9 05       		.byte	0x5
+ 426 00ea 0D       		.byte	0xd
+ 427 00eb 81000000 		.4byte	0x81
+ 428 00ef 01       		.byte	0x1
+ 429 00f0 01       		.byte	0x1
+ 430 00f1 04       		.byte	0x4
+ 431 00f2 00       		.byte	0
+ 432 00f3 07       		.uleb128 0x7
+ 433 00f4 5C010000 		.4byte	.LASF20
+ 434 00f8 05       		.byte	0x5
+ 435 00f9 0E       		.byte	0xe
+ 436 00fa 81000000 		.4byte	0x81
+ 437 00fe 01       		.byte	0x1
+ 438 00ff 01       		.byte	0x1
+ 439 0100 03       		.byte	0x3
+ 440 0101 00       		.byte	0
+ 441 0102 07       		.uleb128 0x7
+ 442 0103 A7000000 		.4byte	.LASF21
+ 443 0107 05       		.byte	0x5
+ 444 0108 0F       		.byte	0xf
+ 445 0109 81000000 		.4byte	0x81
+ 446 010d 01       		.byte	0x1
+ 447 010e 01       		.byte	0x1
+ 448 010f 02       		.byte	0x2
+ 449 0110 00       		.byte	0
+ 450 0111 08       		.uleb128 0x8
+ 451 0112 4C3200   		.ascii	"L2\000"
+ 452 0115 05       		.byte	0x5
+ 453 0116 10       		.byte	0x10
+ 454 0117 81000000 		.4byte	0x81
+ 455 011b 01       		.byte	0x1
+ 456 011c 01       		.byte	0x1
+ 457 011d 01       		.byte	0x1
+ 458 011e 00       		.byte	0
+ 459 011f 08       		.uleb128 0x8
+ 460 0120 523200   		.ascii	"R2\000"
+ 461 0123 05       		.byte	0x5
+ 462 0124 11       		.byte	0x11
+ 463 0125 81000000 		.4byte	0x81
+ 464 0129 01       		.byte	0x1
+ 465 012a 01       		.byte	0x1
+ 466 012b 00       		.byte	0
+ 467 012c 00       		.byte	0
+ 468 012d 08       		.uleb128 0x8
+ 469 012e 4C3100   		.ascii	"L1\000"
+ 470 0131 05       		.byte	0x5
+ 471 0132 12       		.byte	0x12
+ 472 0133 81000000 		.4byte	0x81
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 11
 
 
- 543 0210 0B       		.uleb128 0xb
- 544 0211 6E6100   		.ascii	"na\000"
- 545 0214 01       		.byte	0x1
- 546 0215 1C       		.byte	0x1c
- 547 0216 57030000 		.4byte	0x357
- 548 021a 02       		.uleb128 0x2
- 549 021b 91       		.byte	0x91
- 550 021c 58       		.sleb128 -40
- 551 021d 0C       		.uleb128 0xc
- 552 021e 7300     		.ascii	"s\000"
- 553 0220 01       		.byte	0x1
- 554 0221 1D       		.byte	0x1d
- 555 0222 94000000 		.4byte	0x94
- 556 0226 3C000000 		.4byte	.LLST2
- 557 022a 0C       		.uleb128 0xc
- 558 022b 7800     		.ascii	"x\000"
- 559 022d 01       		.byte	0x1
- 560 022e 1E       		.byte	0x1e
- 561 022f 94000000 		.4byte	0x94
- 562 0233 54000000 		.4byte	.LLST3
- 563 0237 0C       		.uleb128 0xc
- 564 0238 7900     		.ascii	"y\000"
- 565 023a 01       		.byte	0x1
- 566 023b 1E       		.byte	0x1e
- 567 023c 94000000 		.4byte	0x94
- 568 0240 6C000000 		.4byte	.LLST4
- 569 0244 0E       		.uleb128 0xe
- 570 0245 20020000 		.4byte	.LASF50
- 571 0249 01       		.byte	0x1
- 572 024a 1F       		.byte	0x1f
- 573 024b 67030000 		.4byte	0x367
- 574 024f 0F       		.uleb128 0xf
- 575 0250 1E000000 		.4byte	.LVL0
- 576 0254 88030000 		.4byte	0x388
- 577 0258 0F       		.uleb128 0xf
- 578 0259 22000000 		.4byte	.LVL1
- 579 025d 93030000 		.4byte	0x393
- 580 0261 0F       		.uleb128 0xf
- 581 0262 26000000 		.4byte	.LVL2
- 582 0266 9E030000 		.4byte	0x39e
- 583 026a 0F       		.uleb128 0xf
- 584 026b 2A000000 		.4byte	.LVL3
- 585 026f A9030000 		.4byte	0x3a9
- 586 0273 0F       		.uleb128 0xf
- 587 0274 2E000000 		.4byte	.LVL4
- 588 0278 B4030000 		.4byte	0x3b4
- 589 027c 10       		.uleb128 0x10
- 590 027d 34000000 		.4byte	.LVL5
- 591 0281 BF030000 		.4byte	0x3bf
- 592 0285 90020000 		.4byte	0x290
- 593 0289 11       		.uleb128 0x11
- 594 028a 01       		.uleb128 0x1
- 595 028b 50       		.byte	0x50
- 596 028c 02       		.uleb128 0x2
- 597 028d 7D       		.byte	0x7d
- 598 028e 00       		.sleb128 0
- 599 028f 00       		.byte	0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 13
+ 473 0137 01       		.byte	0x1
+ 474 0138 01       		.byte	0x1
+ 475 0139 07       		.byte	0x7
+ 476 013a 01       		.byte	0x1
+ 477 013b 08       		.uleb128 0x8
+ 478 013c 523100   		.ascii	"R1\000"
+ 479 013f 05       		.byte	0x5
+ 480 0140 13       		.byte	0x13
+ 481 0141 81000000 		.4byte	0x81
+ 482 0145 01       		.byte	0x1
+ 483 0146 01       		.byte	0x1
+ 484 0147 06       		.byte	0x6
+ 485 0148 01       		.byte	0x1
+ 486 0149 07       		.uleb128 0x7
+ 487 014a B9000000 		.4byte	.LASF22
+ 488 014e 05       		.byte	0x5
+ 489 014f 14       		.byte	0x14
+ 490 0150 81000000 		.4byte	0x81
+ 491 0154 01       		.byte	0x1
+ 492 0155 01       		.byte	0x1
+ 493 0156 05       		.byte	0x5
+ 494 0157 01       		.byte	0x1
+ 495 0158 07       		.uleb128 0x7
+ 496 0159 00000000 		.4byte	.LASF23
+ 497 015d 05       		.byte	0x5
+ 498 015e 15       		.byte	0x15
+ 499 015f 81000000 		.4byte	0x81
+ 500 0163 01       		.byte	0x1
+ 501 0164 01       		.byte	0x1
+ 502 0165 04       		.byte	0x4
+ 503 0166 01       		.byte	0x1
+ 504 0167 07       		.uleb128 0x7
+ 505 0168 34000000 		.4byte	.LASF24
+ 506 016c 05       		.byte	0x5
+ 507 016d 16       		.byte	0x16
+ 508 016e 81000000 		.4byte	0x81
+ 509 0172 01       		.byte	0x1
+ 510 0173 01       		.byte	0x1
+ 511 0174 03       		.byte	0x3
+ 512 0175 01       		.byte	0x1
+ 513 0176 07       		.uleb128 0x7
+ 514 0177 F7010000 		.4byte	.LASF25
+ 515 017b 05       		.byte	0x5
+ 516 017c 17       		.byte	0x17
+ 517 017d 81000000 		.4byte	0x81
+ 518 0181 01       		.byte	0x1
+ 519 0182 01       		.byte	0x1
+ 520 0183 02       		.byte	0x2
+ 521 0184 01       		.byte	0x1
+ 522 0185 09       		.uleb128 0x9
+ 523 0186 14010000 		.4byte	.LASF26
+ 524 018a 05       		.byte	0x5
+ 525 018b 18       		.byte	0x18
+ 526 018c 81000000 		.4byte	0x81
+ 527 0190 02       		.byte	0x2
+ 528 0191 09       		.uleb128 0x9
+ 529 0192 1E010000 		.4byte	.LASF27
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 12
 
 
- 600 0290 0F       		.uleb128 0xf
- 601 0291 88000000 		.4byte	.LVL14
- 602 0295 CA030000 		.4byte	0x3ca
- 603 0299 10       		.uleb128 0x10
- 604 029a 98000000 		.4byte	.LVL18
- 605 029e D5030000 		.4byte	0x3d5
- 606 02a2 B9020000 		.4byte	0x2b9
- 607 02a6 11       		.uleb128 0x11
- 608 02a7 01       		.uleb128 0x1
- 609 02a8 50       		.byte	0x50
- 610 02a9 02       		.uleb128 0x2
- 611 02aa 91       		.byte	0x91
- 612 02ab 60       		.sleb128 -32
- 613 02ac 11       		.uleb128 0x11
- 614 02ad 01       		.uleb128 0x1
- 615 02ae 51       		.byte	0x51
- 616 02af 02       		.uleb128 0x2
- 617 02b0 91       		.byte	0x91
- 618 02b1 5C       		.sleb128 -36
- 619 02b2 11       		.uleb128 0x11
- 620 02b3 01       		.uleb128 0x1
- 621 02b4 52       		.byte	0x52
- 622 02b5 02       		.uleb128 0x2
- 623 02b6 91       		.byte	0x91
- 624 02b7 58       		.sleb128 -40
- 625 02b8 00       		.byte	0
- 626 02b9 10       		.uleb128 0x10
- 627 02ba A4000000 		.4byte	.LVL19
- 628 02be E0030000 		.4byte	0x3e0
- 629 02c2 CC020000 		.4byte	0x2cc
- 630 02c6 11       		.uleb128 0x11
- 631 02c7 01       		.uleb128 0x1
- 632 02c8 50       		.byte	0x50
- 633 02c9 01       		.uleb128 0x1
- 634 02ca 31       		.byte	0x31
- 635 02cb 00       		.byte	0
- 636 02cc 10       		.uleb128 0x10
- 637 02cd AC000000 		.4byte	.LVL20
- 638 02d1 E0030000 		.4byte	0x3e0
- 639 02d5 DF020000 		.4byte	0x2df
- 640 02d9 11       		.uleb128 0x11
- 641 02da 01       		.uleb128 0x1
- 642 02db 50       		.byte	0x50
- 643 02dc 01       		.uleb128 0x1
- 644 02dd 32       		.byte	0x32
- 645 02de 00       		.byte	0
- 646 02df 10       		.uleb128 0x10
- 647 02e0 B8000000 		.4byte	.LVL21
- 648 02e4 EB030000 		.4byte	0x3eb
- 649 02e8 F2020000 		.4byte	0x2f2
- 650 02ec 11       		.uleb128 0x11
- 651 02ed 01       		.uleb128 0x1
- 652 02ee 50       		.byte	0x50
- 653 02ef 01       		.uleb128 0x1
- 654 02f0 31       		.byte	0x31
- 655 02f1 00       		.byte	0
- 656 02f2 10       		.uleb128 0x10
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 14
+ 530 0196 05       		.byte	0x5
+ 531 0197 19       		.byte	0x19
+ 532 0198 81000000 		.4byte	0x81
+ 533 019c 03       		.byte	0x3
+ 534 019d 09       		.uleb128 0x9
+ 535 019e D7010000 		.4byte	.LASF28
+ 536 01a2 05       		.byte	0x5
+ 537 01a3 1A       		.byte	0x1a
+ 538 01a4 81000000 		.4byte	0x81
+ 539 01a8 04       		.byte	0x4
+ 540 01a9 09       		.uleb128 0x9
+ 541 01aa 83000000 		.4byte	.LASF29
+ 542 01ae 05       		.byte	0x5
+ 543 01af 1B       		.byte	0x1b
+ 544 01b0 81000000 		.4byte	0x81
+ 545 01b4 05       		.byte	0x5
+ 546 01b5 00       		.byte	0
+ 547 01b6 03       		.uleb128 0x3
+ 548 01b7 28010000 		.4byte	.LASF30
+ 549 01bb 05       		.byte	0x5
+ 550 01bc 1C       		.byte	0x1c
+ 551 01bd B0000000 		.4byte	0xb0
+ 552 01c1 0A       		.uleb128 0xa
+ 553 01c2 3A000000 		.4byte	.LASF51
+ 554 01c6 01       		.byte	0x1
+ 555 01c7 16       		.byte	0x16
+ 556 01c8 68000000 		.4byte	0x68
+ 557 01cc 00000000 		.4byte	.LFB64
+ 558 01d0 94010000 		.4byte	.LFE64-.LFB64
+ 559 01d4 01       		.uleb128 0x1
+ 560 01d5 9C       		.byte	0x9c
+ 561 01d6 97030000 		.4byte	0x397
+ 562 01da 0B       		.uleb128 0xb
+ 563 01db 70733300 		.ascii	"ps3\000"
+ 564 01df 01       		.byte	0x1
+ 565 01e0 18       		.byte	0x18
+ 566 01e1 B6010000 		.4byte	0x1b6
+ 567 01e5 02       		.uleb128 0x2
+ 568 01e6 91       		.byte	0x91
+ 569 01e7 60       		.sleb128 -32
+ 570 01e8 0C       		.uleb128 0xc
+ 571 01e9 6900     		.ascii	"i\000"
+ 572 01eb 01       		.byte	0x1
+ 573 01ec 19       		.byte	0x19
+ 574 01ed 9B000000 		.4byte	0x9b
+ 575 01f1 00000000 		.4byte	.LLST0
+ 576 01f5 0D       		.uleb128 0xd
+ 577 01f6 A8010000 		.4byte	.LASF52
+ 578 01fa 01       		.byte	0x1
+ 579 01fb 1A       		.byte	0x1a
+ 580 01fc 68000000 		.4byte	0x68
+ 581 0200 0B       		.uleb128 0xb
+ 582 0201 6D00     		.ascii	"m\000"
+ 583 0203 01       		.byte	0x1
+ 584 0204 1B       		.byte	0x1b
+ 585 0205 97030000 		.4byte	0x397
+ 586 0209 02       		.uleb128 0x2
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 13
 
 
- 657 02f3 C0000000 		.4byte	.LVL22
- 658 02f7 EB030000 		.4byte	0x3eb
- 659 02fb 05030000 		.4byte	0x305
- 660 02ff 11       		.uleb128 0x11
- 661 0300 01       		.uleb128 0x1
- 662 0301 50       		.byte	0x50
- 663 0302 01       		.uleb128 0x1
- 664 0303 32       		.byte	0x32
- 665 0304 00       		.byte	0
- 666 0305 10       		.uleb128 0x10
- 667 0306 CC000000 		.4byte	.LVL23
- 668 030a F6030000 		.4byte	0x3f6
- 669 030e 18030000 		.4byte	0x318
- 670 0312 11       		.uleb128 0x11
- 671 0313 01       		.uleb128 0x1
- 672 0314 50       		.byte	0x50
- 673 0315 01       		.uleb128 0x1
- 674 0316 31       		.byte	0x31
- 675 0317 00       		.byte	0
- 676 0318 10       		.uleb128 0x10
- 677 0319 D6000000 		.4byte	.LVL26
- 678 031d F6030000 		.4byte	0x3f6
- 679 0321 2B030000 		.4byte	0x32b
- 680 0325 11       		.uleb128 0x11
- 681 0326 01       		.uleb128 0x1
- 682 0327 50       		.byte	0x50
- 683 0328 01       		.uleb128 0x1
- 684 0329 32       		.byte	0x32
- 685 032a 00       		.byte	0
- 686 032b 0F       		.uleb128 0xf
- 687 032c 18010000 		.4byte	.LVL35
- 688 0330 01040000 		.4byte	0x401
- 689 0334 0F       		.uleb128 0xf
- 690 0335 20010000 		.4byte	.LVL36
- 691 0339 0C040000 		.4byte	0x40c
- 692 033d 0F       		.uleb128 0xf
- 693 033e 28010000 		.4byte	.LVL37
- 694 0342 17040000 		.4byte	0x417
- 695 0346 00       		.byte	0
- 696 0347 12       		.uleb128 0x12
- 697 0348 81000000 		.4byte	0x81
- 698 034c 57030000 		.4byte	0x357
- 699 0350 13       		.uleb128 0x13
- 700 0351 A9000000 		.4byte	0xa9
- 701 0355 02       		.byte	0x2
- 702 0356 00       		.byte	0
- 703 0357 12       		.uleb128 0x12
- 704 0358 9B000000 		.4byte	0x9b
- 705 035c 67030000 		.4byte	0x367
- 706 0360 13       		.uleb128 0x13
- 707 0361 A9000000 		.4byte	0xa9
- 708 0365 02       		.byte	0x2
- 709 0366 00       		.byte	0
- 710 0367 12       		.uleb128 0x12
- 711 0368 9B000000 		.4byte	0x9b
- 712 036c 77030000 		.4byte	0x377
- 713 0370 13       		.uleb128 0x13
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 15
+ 587 020a 91       		.byte	0x91
+ 588 020b 5C       		.sleb128 -36
+ 589 020c 0B       		.uleb128 0xb
+ 590 020d 6E6100   		.ascii	"na\000"
+ 591 0210 01       		.byte	0x1
+ 592 0211 1C       		.byte	0x1c
+ 593 0212 A7030000 		.4byte	0x3a7
+ 594 0216 02       		.uleb128 0x2
+ 595 0217 91       		.byte	0x91
+ 596 0218 58       		.sleb128 -40
+ 597 0219 0C       		.uleb128 0xc
+ 598 021a 7300     		.ascii	"s\000"
+ 599 021c 01       		.byte	0x1
+ 600 021d 1D       		.byte	0x1d
+ 601 021e 94000000 		.4byte	0x94
+ 602 0222 1E000000 		.4byte	.LLST1
+ 603 0226 0C       		.uleb128 0xc
+ 604 0227 7800     		.ascii	"x\000"
+ 605 0229 01       		.byte	0x1
+ 606 022a 1E       		.byte	0x1e
+ 607 022b 94000000 		.4byte	0x94
+ 608 022f 36000000 		.4byte	.LLST2
+ 609 0233 0C       		.uleb128 0xc
+ 610 0234 7900     		.ascii	"y\000"
+ 611 0236 01       		.byte	0x1
+ 612 0237 1E       		.byte	0x1e
+ 613 0238 94000000 		.4byte	0x94
+ 614 023c 4E000000 		.4byte	.LLST3
+ 615 0240 0E       		.uleb128 0xe
+ 616 0241 40020000 		.4byte	.LASF31
+ 617 0245 01       		.byte	0x1
+ 618 0246 1F       		.byte	0x1f
+ 619 0247 B7030000 		.4byte	0x3b7
+ 620 024b 03       		.uleb128 0x3
+ 621 024c 91       		.byte	0x91
+ 622 024d F47E     		.sleb128 -140
+ 623 024f 0F       		.uleb128 0xf
+ 624 0250 1E000000 		.4byte	.LVL0
+ 625 0254 D8030000 		.4byte	0x3d8
+ 626 0258 6F020000 		.4byte	0x26f
+ 627 025c 10       		.uleb128 0x10
+ 628 025d 01       		.uleb128 0x1
+ 629 025e 50       		.byte	0x50
+ 630 025f 03       		.uleb128 0x3
+ 631 0260 91       		.byte	0x91
+ 632 0261 F47E     		.sleb128 -140
+ 633 0263 10       		.uleb128 0x10
+ 634 0264 01       		.uleb128 0x1
+ 635 0265 51       		.byte	0x51
+ 636 0266 01       		.uleb128 0x1
+ 637 0267 30       		.byte	0x30
+ 638 0268 10       		.uleb128 0x10
+ 639 0269 01       		.uleb128 0x1
+ 640 026a 52       		.byte	0x52
+ 641 026b 02       		.uleb128 0x2
+ 642 026c 08       		.byte	0x8
+ 643 026d 64       		.byte	0x64
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 14
 
 
- 714 0371 A9000000 		.4byte	0xa9
- 715 0375 63       		.byte	0x63
- 716 0376 00       		.byte	0
- 717 0377 14       		.uleb128 0x14
- 718 0378 35020000 		.4byte	.LASF51
- 719 037c 0F       		.byte	0xf
- 720 037d 1207     		.2byte	0x712
- 721 037f 83030000 		.4byte	0x383
- 722 0383 15       		.uleb128 0x15
- 723 0384 76000000 		.4byte	0x76
- 724 0388 16       		.uleb128 0x16
- 725 0389 68000000 		.4byte	.LASF32
- 726 038d 68000000 		.4byte	.LASF32
- 727 0391 06       		.byte	0x6
- 728 0392 92       		.byte	0x92
- 729 0393 16       		.uleb128 0x16
- 730 0394 0C020000 		.4byte	.LASF33
- 731 0398 0C020000 		.4byte	.LASF33
- 732 039c 07       		.byte	0x7
- 733 039d 92       		.byte	0x92
- 734 039e 16       		.uleb128 0x16
- 735 039f 9B000000 		.4byte	.LASF34
- 736 03a3 9B000000 		.4byte	.LASF34
- 737 03a7 08       		.byte	0x8
- 738 03a8 92       		.byte	0x92
- 739 03a9 16       		.uleb128 0x16
- 740 03aa 8C000000 		.4byte	.LASF35
- 741 03ae 8C000000 		.4byte	.LASF35
- 742 03b2 05       		.byte	0x5
- 743 03b3 1E       		.byte	0x1e
- 744 03b4 16       		.uleb128 0x16
- 745 03b5 55000000 		.4byte	.LASF36
- 746 03b9 55000000 		.4byte	.LASF36
- 747 03bd 09       		.byte	0x9
- 748 03be 54       		.byte	0x54
- 749 03bf 16       		.uleb128 0x16
- 750 03c0 7C010000 		.4byte	.LASF37
- 751 03c4 7C010000 		.4byte	.LASF37
- 752 03c8 05       		.byte	0x5
- 753 03c9 20       		.byte	0x20
- 754 03ca 16       		.uleb128 0x16
- 755 03cb D2010000 		.4byte	.LASF38
- 756 03cf D2010000 		.4byte	.LASF38
- 757 03d3 0A       		.byte	0xa
- 758 03d4 87       		.byte	0x87
- 759 03d5 16       		.uleb128 0x16
- 760 03d6 2E020000 		.4byte	.LASF39
- 761 03da 2E020000 		.4byte	.LASF39
- 762 03de 0B       		.byte	0xb
- 763 03df 06       		.byte	0x6
- 764 03e0 16       		.uleb128 0x16
- 765 03e1 95010000 		.4byte	.LASF40
- 766 03e5 95010000 		.4byte	.LASF40
- 767 03e9 0C       		.byte	0xc
- 768 03ea 2F       		.byte	0x2f
- 769 03eb 16       		.uleb128 0x16
- 770 03ec 45000000 		.4byte	.LASF41
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 16
+ 644 026e 00       		.byte	0
+ 645 026f 11       		.uleb128 0x11
+ 646 0270 24000000 		.4byte	.LVL1
+ 647 0274 E1030000 		.4byte	0x3e1
+ 648 0278 11       		.uleb128 0x11
+ 649 0279 28000000 		.4byte	.LVL2
+ 650 027d EC030000 		.4byte	0x3ec
+ 651 0281 11       		.uleb128 0x11
+ 652 0282 2C000000 		.4byte	.LVL3
+ 653 0286 F7030000 		.4byte	0x3f7
+ 654 028a 11       		.uleb128 0x11
+ 655 028b 30000000 		.4byte	.LVL4
+ 656 028f 02040000 		.4byte	0x402
+ 657 0293 11       		.uleb128 0x11
+ 658 0294 34000000 		.4byte	.LVL5
+ 659 0298 0D040000 		.4byte	0x40d
+ 660 029c 0F       		.uleb128 0xf
+ 661 029d 3A000000 		.4byte	.LVL6
+ 662 02a1 18040000 		.4byte	0x418
+ 663 02a5 B1020000 		.4byte	0x2b1
+ 664 02a9 10       		.uleb128 0x10
+ 665 02aa 01       		.uleb128 0x1
+ 666 02ab 50       		.byte	0x50
+ 667 02ac 03       		.uleb128 0x3
+ 668 02ad 91       		.byte	0x91
+ 669 02ae E87E     		.sleb128 -152
+ 670 02b0 00       		.byte	0
+ 671 02b1 11       		.uleb128 0x11
+ 672 02b2 8E000000 		.4byte	.LVL15
+ 673 02b6 23040000 		.4byte	0x423
+ 674 02ba 0F       		.uleb128 0xf
+ 675 02bb 98000000 		.4byte	.LVL16
+ 676 02bf 2E040000 		.4byte	0x42e
+ 677 02c3 DA020000 		.4byte	0x2da
+ 678 02c7 10       		.uleb128 0x10
+ 679 02c8 01       		.uleb128 0x1
+ 680 02c9 50       		.byte	0x50
+ 681 02ca 02       		.uleb128 0x2
+ 682 02cb 91       		.byte	0x91
+ 683 02cc 60       		.sleb128 -32
+ 684 02cd 10       		.uleb128 0x10
+ 685 02ce 01       		.uleb128 0x1
+ 686 02cf 51       		.byte	0x51
+ 687 02d0 02       		.uleb128 0x2
+ 688 02d1 91       		.byte	0x91
+ 689 02d2 5C       		.sleb128 -36
+ 690 02d3 10       		.uleb128 0x10
+ 691 02d4 01       		.uleb128 0x1
+ 692 02d5 52       		.byte	0x52
+ 693 02d6 02       		.uleb128 0x2
+ 694 02d7 91       		.byte	0x91
+ 695 02d8 58       		.sleb128 -40
+ 696 02d9 00       		.byte	0
+ 697 02da 0F       		.uleb128 0xf
+ 698 02db A4000000 		.4byte	.LVL17
+ 699 02df 39040000 		.4byte	0x439
+ 700 02e3 ED020000 		.4byte	0x2ed
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 15
 
 
- 771 03f0 45000000 		.4byte	.LASF41
- 772 03f4 0D       		.byte	0xd
- 773 03f5 2F       		.byte	0x2f
- 774 03f6 16       		.uleb128 0x16
- 775 03f7 DE010000 		.4byte	.LASF42
- 776 03fb DE010000 		.4byte	.LASF42
- 777 03ff 0E       		.byte	0xe
- 778 0400 2F       		.byte	0x2f
- 779 0401 16       		.uleb128 0x16
- 780 0402 20000000 		.4byte	.LASF43
- 781 0406 20000000 		.4byte	.LASF43
- 782 040a 06       		.byte	0x6
- 783 040b C3       		.byte	0xc3
- 784 040c 16       		.uleb128 0x16
- 785 040d D0020000 		.4byte	.LASF44
- 786 0411 D0020000 		.4byte	.LASF44
- 787 0415 07       		.byte	0x7
- 788 0416 C3       		.byte	0xc3
- 789 0417 16       		.uleb128 0x16
- 790 0418 F8010000 		.4byte	.LASF45
- 791 041c F8010000 		.4byte	.LASF45
- 792 0420 08       		.byte	0x8
- 793 0421 C3       		.byte	0xc3
- 794 0422 00       		.byte	0
- 795              		.section	.debug_abbrev,"",%progbits
- 796              	.Ldebug_abbrev0:
- 797 0000 01       		.uleb128 0x1
- 798 0001 11       		.uleb128 0x11
- 799 0002 01       		.byte	0x1
- 800 0003 25       		.uleb128 0x25
- 801 0004 0E       		.uleb128 0xe
- 802 0005 13       		.uleb128 0x13
- 803 0006 0B       		.uleb128 0xb
- 804 0007 03       		.uleb128 0x3
- 805 0008 0E       		.uleb128 0xe
- 806 0009 1B       		.uleb128 0x1b
- 807 000a 0E       		.uleb128 0xe
- 808 000b 55       		.uleb128 0x55
- 809 000c 17       		.uleb128 0x17
- 810 000d 11       		.uleb128 0x11
- 811 000e 01       		.uleb128 0x1
- 812 000f 10       		.uleb128 0x10
- 813 0010 17       		.uleb128 0x17
- 814 0011 00       		.byte	0
- 815 0012 00       		.byte	0
- 816 0013 02       		.uleb128 0x2
- 817 0014 24       		.uleb128 0x24
- 818 0015 00       		.byte	0
- 819 0016 0B       		.uleb128 0xb
- 820 0017 0B       		.uleb128 0xb
- 821 0018 3E       		.uleb128 0x3e
- 822 0019 0B       		.uleb128 0xb
- 823 001a 03       		.uleb128 0x3
- 824 001b 0E       		.uleb128 0xe
- 825 001c 00       		.byte	0
- 826 001d 00       		.byte	0
- 827 001e 03       		.uleb128 0x3
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 17
+ 701 02e7 10       		.uleb128 0x10
+ 702 02e8 01       		.uleb128 0x1
+ 703 02e9 50       		.byte	0x50
+ 704 02ea 01       		.uleb128 0x1
+ 705 02eb 31       		.byte	0x31
+ 706 02ec 00       		.byte	0
+ 707 02ed 0F       		.uleb128 0xf
+ 708 02ee AC000000 		.4byte	.LVL18
+ 709 02f2 39040000 		.4byte	0x439
+ 710 02f6 00030000 		.4byte	0x300
+ 711 02fa 10       		.uleb128 0x10
+ 712 02fb 01       		.uleb128 0x1
+ 713 02fc 50       		.byte	0x50
+ 714 02fd 01       		.uleb128 0x1
+ 715 02fe 32       		.byte	0x32
+ 716 02ff 00       		.byte	0
+ 717 0300 0F       		.uleb128 0xf
+ 718 0301 B8000000 		.4byte	.LVL19
+ 719 0305 44040000 		.4byte	0x444
+ 720 0309 13030000 		.4byte	0x313
+ 721 030d 10       		.uleb128 0x10
+ 722 030e 01       		.uleb128 0x1
+ 723 030f 50       		.byte	0x50
+ 724 0310 01       		.uleb128 0x1
+ 725 0311 31       		.byte	0x31
+ 726 0312 00       		.byte	0
+ 727 0313 0F       		.uleb128 0xf
+ 728 0314 C0000000 		.4byte	.LVL20
+ 729 0318 44040000 		.4byte	0x444
+ 730 031c 26030000 		.4byte	0x326
+ 731 0320 10       		.uleb128 0x10
+ 732 0321 01       		.uleb128 0x1
+ 733 0322 50       		.byte	0x50
+ 734 0323 01       		.uleb128 0x1
+ 735 0324 32       		.byte	0x32
+ 736 0325 00       		.byte	0
+ 737 0326 0F       		.uleb128 0xf
+ 738 0327 CC000000 		.4byte	.LVL21
+ 739 032b 4F040000 		.4byte	0x44f
+ 740 032f 39030000 		.4byte	0x339
+ 741 0333 10       		.uleb128 0x10
+ 742 0334 01       		.uleb128 0x1
+ 743 0335 50       		.byte	0x50
+ 744 0336 01       		.uleb128 0x1
+ 745 0337 31       		.byte	0x31
+ 746 0338 00       		.byte	0
+ 747 0339 0F       		.uleb128 0xf
+ 748 033a D6000000 		.4byte	.LVL22
+ 749 033e 4F040000 		.4byte	0x44f
+ 750 0342 4C030000 		.4byte	0x34c
+ 751 0346 10       		.uleb128 0x10
+ 752 0347 01       		.uleb128 0x1
+ 753 0348 50       		.byte	0x50
+ 754 0349 01       		.uleb128 0x1
+ 755 034a 32       		.byte	0x32
+ 756 034b 00       		.byte	0
+ 757 034c 11       		.uleb128 0x11
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 16
 
 
- 828 001f 16       		.uleb128 0x16
- 829 0020 00       		.byte	0
- 830 0021 03       		.uleb128 0x3
- 831 0022 0E       		.uleb128 0xe
- 832 0023 3A       		.uleb128 0x3a
- 833 0024 0B       		.uleb128 0xb
- 834 0025 3B       		.uleb128 0x3b
- 835 0026 0B       		.uleb128 0xb
- 836 0027 49       		.uleb128 0x49
- 837 0028 13       		.uleb128 0x13
- 838 0029 00       		.byte	0
- 839 002a 00       		.byte	0
- 840 002b 04       		.uleb128 0x4
- 841 002c 24       		.uleb128 0x24
- 842 002d 00       		.byte	0
- 843 002e 0B       		.uleb128 0xb
- 844 002f 0B       		.uleb128 0xb
- 845 0030 3E       		.uleb128 0x3e
- 846 0031 0B       		.uleb128 0xb
- 847 0032 03       		.uleb128 0x3
- 848 0033 08       		.uleb128 0x8
- 849 0034 00       		.byte	0
- 850 0035 00       		.byte	0
- 851 0036 05       		.uleb128 0x5
- 852 0037 16       		.uleb128 0x16
- 853 0038 00       		.byte	0
- 854 0039 03       		.uleb128 0x3
- 855 003a 0E       		.uleb128 0xe
- 856 003b 3A       		.uleb128 0x3a
- 857 003c 0B       		.uleb128 0xb
- 858 003d 3B       		.uleb128 0x3b
- 859 003e 05       		.uleb128 0x5
- 860 003f 49       		.uleb128 0x49
- 861 0040 13       		.uleb128 0x13
- 862 0041 00       		.byte	0
- 863 0042 00       		.byte	0
- 864 0043 06       		.uleb128 0x6
- 865 0044 13       		.uleb128 0x13
- 866 0045 01       		.byte	0x1
- 867 0046 0B       		.uleb128 0xb
- 868 0047 0B       		.uleb128 0xb
- 869 0048 3A       		.uleb128 0x3a
- 870 0049 0B       		.uleb128 0xb
- 871 004a 3B       		.uleb128 0x3b
- 872 004b 0B       		.uleb128 0xb
- 873 004c 01       		.uleb128 0x1
- 874 004d 13       		.uleb128 0x13
- 875 004e 00       		.byte	0
- 876 004f 00       		.byte	0
- 877 0050 07       		.uleb128 0x7
- 878 0051 0D       		.uleb128 0xd
- 879 0052 00       		.byte	0
- 880 0053 03       		.uleb128 0x3
- 881 0054 0E       		.uleb128 0xe
- 882 0055 3A       		.uleb128 0x3a
- 883 0056 0B       		.uleb128 0xb
- 884 0057 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 18
+ 758 034d 1C010000 		.4byte	.LVL27
+ 759 0351 5A040000 		.4byte	0x45a
+ 760 0355 11       		.uleb128 0x11
+ 761 0356 24010000 		.4byte	.LVL28
+ 762 035a 65040000 		.4byte	0x465
+ 763 035e 11       		.uleb128 0x11
+ 764 035f 2C010000 		.4byte	.LVL29
+ 765 0363 70040000 		.4byte	0x470
+ 766 0367 0F       		.uleb128 0xf
+ 767 0368 7E010000 		.4byte	.LVL37
+ 768 036c 7B040000 		.4byte	0x47b
+ 769 0370 85030000 		.4byte	0x385
+ 770 0374 10       		.uleb128 0x10
+ 771 0375 01       		.uleb128 0x1
+ 772 0376 50       		.byte	0x50
+ 773 0377 03       		.uleb128 0x3
+ 774 0378 91       		.byte	0x91
+ 775 0379 F47E     		.sleb128 -140
+ 776 037b 10       		.uleb128 0x10
+ 777 037c 01       		.uleb128 0x1
+ 778 037d 51       		.byte	0x51
+ 779 037e 05       		.uleb128 0x5
+ 780 037f 03       		.byte	0x3
+ 781 0380 00000000 		.4byte	.LC0
+ 782 0384 00       		.byte	0
+ 783 0385 12       		.uleb128 0x12
+ 784 0386 84010000 		.4byte	.LVL38
+ 785 038a 86040000 		.4byte	0x486
+ 786 038e 10       		.uleb128 0x10
+ 787 038f 01       		.uleb128 0x1
+ 788 0390 50       		.byte	0x50
+ 789 0391 03       		.uleb128 0x3
+ 790 0392 91       		.byte	0x91
+ 791 0393 F47E     		.sleb128 -140
+ 792 0395 00       		.byte	0
+ 793 0396 00       		.byte	0
+ 794 0397 13       		.uleb128 0x13
+ 795 0398 81000000 		.4byte	0x81
+ 796 039c A7030000 		.4byte	0x3a7
+ 797 03a0 14       		.uleb128 0x14
+ 798 03a1 A9000000 		.4byte	0xa9
+ 799 03a5 02       		.byte	0x2
+ 800 03a6 00       		.byte	0
+ 801 03a7 13       		.uleb128 0x13
+ 802 03a8 9B000000 		.4byte	0x9b
+ 803 03ac B7030000 		.4byte	0x3b7
+ 804 03b0 14       		.uleb128 0x14
+ 805 03b1 A9000000 		.4byte	0xa9
+ 806 03b5 02       		.byte	0x2
+ 807 03b6 00       		.byte	0
+ 808 03b7 13       		.uleb128 0x13
+ 809 03b8 9B000000 		.4byte	0x9b
+ 810 03bc C7030000 		.4byte	0x3c7
+ 811 03c0 14       		.uleb128 0x14
+ 812 03c1 A9000000 		.4byte	0xa9
+ 813 03c5 63       		.byte	0x63
+ 814 03c6 00       		.byte	0
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 17
 
 
- 885 0058 0B       		.uleb128 0xb
- 886 0059 49       		.uleb128 0x49
- 887 005a 13       		.uleb128 0x13
- 888 005b 0B       		.uleb128 0xb
- 889 005c 0B       		.uleb128 0xb
- 890 005d 0D       		.uleb128 0xd
- 891 005e 0B       		.uleb128 0xb
- 892 005f 0C       		.uleb128 0xc
- 893 0060 0B       		.uleb128 0xb
- 894 0061 38       		.uleb128 0x38
- 895 0062 0B       		.uleb128 0xb
- 896 0063 00       		.byte	0
- 897 0064 00       		.byte	0
- 898 0065 08       		.uleb128 0x8
- 899 0066 0D       		.uleb128 0xd
- 900 0067 00       		.byte	0
- 901 0068 03       		.uleb128 0x3
- 902 0069 08       		.uleb128 0x8
- 903 006a 3A       		.uleb128 0x3a
- 904 006b 0B       		.uleb128 0xb
- 905 006c 3B       		.uleb128 0x3b
- 906 006d 0B       		.uleb128 0xb
- 907 006e 49       		.uleb128 0x49
- 908 006f 13       		.uleb128 0x13
- 909 0070 0B       		.uleb128 0xb
- 910 0071 0B       		.uleb128 0xb
- 911 0072 0D       		.uleb128 0xd
- 912 0073 0B       		.uleb128 0xb
- 913 0074 0C       		.uleb128 0xc
- 914 0075 0B       		.uleb128 0xb
- 915 0076 38       		.uleb128 0x38
- 916 0077 0B       		.uleb128 0xb
- 917 0078 00       		.byte	0
- 918 0079 00       		.byte	0
- 919 007a 09       		.uleb128 0x9
- 920 007b 0D       		.uleb128 0xd
- 921 007c 00       		.byte	0
- 922 007d 03       		.uleb128 0x3
- 923 007e 0E       		.uleb128 0xe
- 924 007f 3A       		.uleb128 0x3a
- 925 0080 0B       		.uleb128 0xb
- 926 0081 3B       		.uleb128 0x3b
- 927 0082 0B       		.uleb128 0xb
- 928 0083 49       		.uleb128 0x49
- 929 0084 13       		.uleb128 0x13
- 930 0085 38       		.uleb128 0x38
- 931 0086 0B       		.uleb128 0xb
- 932 0087 00       		.byte	0
- 933 0088 00       		.byte	0
- 934 0089 0A       		.uleb128 0xa
- 935 008a 2E       		.uleb128 0x2e
- 936 008b 01       		.byte	0x1
- 937 008c 3F       		.uleb128 0x3f
- 938 008d 19       		.uleb128 0x19
- 939 008e 03       		.uleb128 0x3
- 940 008f 0E       		.uleb128 0xe
- 941 0090 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 19
+ 815 03c7 15       		.uleb128 0x15
+ 816 03c8 55020000 		.4byte	.LASF53
+ 817 03cc 10       		.byte	0x10
+ 818 03cd 1207     		.2byte	0x712
+ 819 03cf D3030000 		.4byte	0x3d3
+ 820 03d3 16       		.uleb128 0x16
+ 821 03d4 76000000 		.4byte	0x76
+ 822 03d8 17       		.uleb128 0x17
+ 823 03d9 8D000000 		.4byte	.LASF54
+ 824 03dd 8D000000 		.4byte	.LASF54
+ 825 03e1 18       		.uleb128 0x18
+ 826 03e2 68000000 		.4byte	.LASF32
+ 827 03e6 68000000 		.4byte	.LASF32
+ 828 03ea 06       		.byte	0x6
+ 829 03eb 92       		.byte	0x92
+ 830 03ec 18       		.uleb128 0x18
+ 831 03ed 2C020000 		.4byte	.LASF33
+ 832 03f1 2C020000 		.4byte	.LASF33
+ 833 03f5 07       		.byte	0x7
+ 834 03f6 92       		.byte	0x92
+ 835 03f7 18       		.uleb128 0x18
+ 836 03f8 AC000000 		.4byte	.LASF34
+ 837 03fc AC000000 		.4byte	.LASF34
+ 838 0400 08       		.byte	0x8
+ 839 0401 92       		.byte	0x92
+ 840 0402 18       		.uleb128 0x18
+ 841 0403 9D000000 		.4byte	.LASF35
+ 842 0407 9D000000 		.4byte	.LASF35
+ 843 040b 05       		.byte	0x5
+ 844 040c 1E       		.byte	0x1e
+ 845 040d 18       		.uleb128 0x18
+ 846 040e 55000000 		.4byte	.LASF36
+ 847 0412 55000000 		.4byte	.LASF36
+ 848 0416 09       		.byte	0x9
+ 849 0417 54       		.byte	0x54
+ 850 0418 18       		.uleb128 0x18
+ 851 0419 95010000 		.4byte	.LASF37
+ 852 041d 95010000 		.4byte	.LASF37
+ 853 0421 05       		.byte	0x5
+ 854 0422 20       		.byte	0x20
+ 855 0423 18       		.uleb128 0x18
+ 856 0424 F2010000 		.4byte	.LASF38
+ 857 0428 F2010000 		.4byte	.LASF38
+ 858 042c 0A       		.byte	0xa
+ 859 042d 87       		.byte	0x87
+ 860 042e 18       		.uleb128 0x18
+ 861 042f 4E020000 		.4byte	.LASF39
+ 862 0433 4E020000 		.4byte	.LASF39
+ 863 0437 0B       		.byte	0xb
+ 864 0438 06       		.byte	0x6
+ 865 0439 18       		.uleb128 0x18
+ 866 043a AE010000 		.4byte	.LASF40
+ 867 043e AE010000 		.4byte	.LASF40
+ 868 0442 0C       		.byte	0xc
+ 869 0443 2F       		.byte	0x2f
+ 870 0444 18       		.uleb128 0x18
+ 871 0445 45000000 		.4byte	.LASF41
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 18
 
 
- 942 0091 0B       		.uleb128 0xb
- 943 0092 3B       		.uleb128 0x3b
- 944 0093 0B       		.uleb128 0xb
- 945 0094 27       		.uleb128 0x27
- 946 0095 19       		.uleb128 0x19
- 947 0096 49       		.uleb128 0x49
- 948 0097 13       		.uleb128 0x13
- 949 0098 8701     		.uleb128 0x87
- 950 009a 19       		.uleb128 0x19
- 951 009b 11       		.uleb128 0x11
- 952 009c 01       		.uleb128 0x1
- 953 009d 12       		.uleb128 0x12
- 954 009e 06       		.uleb128 0x6
- 955 009f 40       		.uleb128 0x40
- 956 00a0 18       		.uleb128 0x18
- 957 00a1 9642     		.uleb128 0x2116
- 958 00a3 19       		.uleb128 0x19
- 959 00a4 01       		.uleb128 0x1
- 960 00a5 13       		.uleb128 0x13
- 961 00a6 00       		.byte	0
- 962 00a7 00       		.byte	0
- 963 00a8 0B       		.uleb128 0xb
- 964 00a9 34       		.uleb128 0x34
- 965 00aa 00       		.byte	0
- 966 00ab 03       		.uleb128 0x3
- 967 00ac 08       		.uleb128 0x8
- 968 00ad 3A       		.uleb128 0x3a
- 969 00ae 0B       		.uleb128 0xb
- 970 00af 3B       		.uleb128 0x3b
- 971 00b0 0B       		.uleb128 0xb
- 972 00b1 49       		.uleb128 0x49
- 973 00b2 13       		.uleb128 0x13
- 974 00b3 02       		.uleb128 0x2
- 975 00b4 18       		.uleb128 0x18
- 976 00b5 00       		.byte	0
- 977 00b6 00       		.byte	0
- 978 00b7 0C       		.uleb128 0xc
- 979 00b8 34       		.uleb128 0x34
- 980 00b9 00       		.byte	0
- 981 00ba 03       		.uleb128 0x3
- 982 00bb 08       		.uleb128 0x8
- 983 00bc 3A       		.uleb128 0x3a
- 984 00bd 0B       		.uleb128 0xb
- 985 00be 3B       		.uleb128 0x3b
- 986 00bf 0B       		.uleb128 0xb
- 987 00c0 49       		.uleb128 0x49
- 988 00c1 13       		.uleb128 0x13
- 989 00c2 02       		.uleb128 0x2
- 990 00c3 17       		.uleb128 0x17
- 991 00c4 00       		.byte	0
- 992 00c5 00       		.byte	0
- 993 00c6 0D       		.uleb128 0xd
- 994 00c7 34       		.uleb128 0x34
- 995 00c8 00       		.byte	0
- 996 00c9 03       		.uleb128 0x3
- 997 00ca 0E       		.uleb128 0xe
- 998 00cb 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 20
+ 872 0449 45000000 		.4byte	.LASF41
+ 873 044d 0D       		.byte	0xd
+ 874 044e 2F       		.byte	0x2f
+ 875 044f 18       		.uleb128 0x18
+ 876 0450 FE010000 		.4byte	.LASF42
+ 877 0454 FE010000 		.4byte	.LASF42
+ 878 0458 0E       		.byte	0xe
+ 879 0459 2F       		.byte	0x2f
+ 880 045a 18       		.uleb128 0x18
+ 881 045b 20000000 		.4byte	.LASF43
+ 882 045f 20000000 		.4byte	.LASF43
+ 883 0463 06       		.byte	0x6
+ 884 0464 C3       		.byte	0xc3
+ 885 0465 18       		.uleb128 0x18
+ 886 0466 F0020000 		.4byte	.LASF44
+ 887 046a F0020000 		.4byte	.LASF44
+ 888 046e 07       		.byte	0x7
+ 889 046f C3       		.byte	0xc3
+ 890 0470 18       		.uleb128 0x18
+ 891 0471 18020000 		.4byte	.LASF45
+ 892 0475 18020000 		.4byte	.LASF45
+ 893 0479 08       		.byte	0x8
+ 894 047a C3       		.byte	0xc3
+ 895 047b 18       		.uleb128 0x18
+ 896 047c DC000000 		.4byte	.LASF46
+ 897 0480 DC000000 		.4byte	.LASF46
+ 898 0484 0F       		.byte	0xf
+ 899 0485 E7       		.byte	0xe7
+ 900 0486 18       		.uleb128 0x18
+ 901 0487 E1010000 		.4byte	.LASF47
+ 902 048b E1010000 		.4byte	.LASF47
+ 903 048f 09       		.byte	0x9
+ 904 0490 8B       		.byte	0x8b
+ 905 0491 00       		.byte	0
+ 906              		.section	.debug_abbrev,"",%progbits
+ 907              	.Ldebug_abbrev0:
+ 908 0000 01       		.uleb128 0x1
+ 909 0001 11       		.uleb128 0x11
+ 910 0002 01       		.byte	0x1
+ 911 0003 25       		.uleb128 0x25
+ 912 0004 0E       		.uleb128 0xe
+ 913 0005 13       		.uleb128 0x13
+ 914 0006 0B       		.uleb128 0xb
+ 915 0007 03       		.uleb128 0x3
+ 916 0008 0E       		.uleb128 0xe
+ 917 0009 1B       		.uleb128 0x1b
+ 918 000a 0E       		.uleb128 0xe
+ 919 000b 55       		.uleb128 0x55
+ 920 000c 17       		.uleb128 0x17
+ 921 000d 11       		.uleb128 0x11
+ 922 000e 01       		.uleb128 0x1
+ 923 000f 10       		.uleb128 0x10
+ 924 0010 17       		.uleb128 0x17
+ 925 0011 00       		.byte	0
+ 926 0012 00       		.byte	0
+ 927 0013 02       		.uleb128 0x2
+ 928 0014 24       		.uleb128 0x24
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 19
 
 
- 999 00cc 0B       		.uleb128 0xb
- 1000 00cd 3B       		.uleb128 0x3b
- 1001 00ce 0B       		.uleb128 0xb
- 1002 00cf 49       		.uleb128 0x49
- 1003 00d0 13       		.uleb128 0x13
- 1004 00d1 02       		.uleb128 0x2
- 1005 00d2 17       		.uleb128 0x17
- 1006 00d3 00       		.byte	0
- 1007 00d4 00       		.byte	0
- 1008 00d5 0E       		.uleb128 0xe
- 1009 00d6 34       		.uleb128 0x34
- 1010 00d7 00       		.byte	0
- 1011 00d8 03       		.uleb128 0x3
- 1012 00d9 0E       		.uleb128 0xe
- 1013 00da 3A       		.uleb128 0x3a
- 1014 00db 0B       		.uleb128 0xb
- 1015 00dc 3B       		.uleb128 0x3b
- 1016 00dd 0B       		.uleb128 0xb
- 1017 00de 49       		.uleb128 0x49
- 1018 00df 13       		.uleb128 0x13
- 1019 00e0 00       		.byte	0
- 1020 00e1 00       		.byte	0
- 1021 00e2 0F       		.uleb128 0xf
- 1022 00e3 898201   		.uleb128 0x4109
- 1023 00e6 00       		.byte	0
- 1024 00e7 11       		.uleb128 0x11
- 1025 00e8 01       		.uleb128 0x1
- 1026 00e9 31       		.uleb128 0x31
- 1027 00ea 13       		.uleb128 0x13
- 1028 00eb 00       		.byte	0
- 1029 00ec 00       		.byte	0
- 1030 00ed 10       		.uleb128 0x10
- 1031 00ee 898201   		.uleb128 0x4109
- 1032 00f1 01       		.byte	0x1
- 1033 00f2 11       		.uleb128 0x11
- 1034 00f3 01       		.uleb128 0x1
- 1035 00f4 31       		.uleb128 0x31
- 1036 00f5 13       		.uleb128 0x13
- 1037 00f6 01       		.uleb128 0x1
- 1038 00f7 13       		.uleb128 0x13
- 1039 00f8 00       		.byte	0
- 1040 00f9 00       		.byte	0
- 1041 00fa 11       		.uleb128 0x11
- 1042 00fb 8A8201   		.uleb128 0x410a
- 1043 00fe 00       		.byte	0
- 1044 00ff 02       		.uleb128 0x2
- 1045 0100 18       		.uleb128 0x18
- 1046 0101 9142     		.uleb128 0x2111
- 1047 0103 18       		.uleb128 0x18
- 1048 0104 00       		.byte	0
- 1049 0105 00       		.byte	0
- 1050 0106 12       		.uleb128 0x12
- 1051 0107 01       		.uleb128 0x1
- 1052 0108 01       		.byte	0x1
- 1053 0109 49       		.uleb128 0x49
- 1054 010a 13       		.uleb128 0x13
- 1055 010b 01       		.uleb128 0x1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 21
+ 929 0015 00       		.byte	0
+ 930 0016 0B       		.uleb128 0xb
+ 931 0017 0B       		.uleb128 0xb
+ 932 0018 3E       		.uleb128 0x3e
+ 933 0019 0B       		.uleb128 0xb
+ 934 001a 03       		.uleb128 0x3
+ 935 001b 0E       		.uleb128 0xe
+ 936 001c 00       		.byte	0
+ 937 001d 00       		.byte	0
+ 938 001e 03       		.uleb128 0x3
+ 939 001f 16       		.uleb128 0x16
+ 940 0020 00       		.byte	0
+ 941 0021 03       		.uleb128 0x3
+ 942 0022 0E       		.uleb128 0xe
+ 943 0023 3A       		.uleb128 0x3a
+ 944 0024 0B       		.uleb128 0xb
+ 945 0025 3B       		.uleb128 0x3b
+ 946 0026 0B       		.uleb128 0xb
+ 947 0027 49       		.uleb128 0x49
+ 948 0028 13       		.uleb128 0x13
+ 949 0029 00       		.byte	0
+ 950 002a 00       		.byte	0
+ 951 002b 04       		.uleb128 0x4
+ 952 002c 24       		.uleb128 0x24
+ 953 002d 00       		.byte	0
+ 954 002e 0B       		.uleb128 0xb
+ 955 002f 0B       		.uleb128 0xb
+ 956 0030 3E       		.uleb128 0x3e
+ 957 0031 0B       		.uleb128 0xb
+ 958 0032 03       		.uleb128 0x3
+ 959 0033 08       		.uleb128 0x8
+ 960 0034 00       		.byte	0
+ 961 0035 00       		.byte	0
+ 962 0036 05       		.uleb128 0x5
+ 963 0037 16       		.uleb128 0x16
+ 964 0038 00       		.byte	0
+ 965 0039 03       		.uleb128 0x3
+ 966 003a 0E       		.uleb128 0xe
+ 967 003b 3A       		.uleb128 0x3a
+ 968 003c 0B       		.uleb128 0xb
+ 969 003d 3B       		.uleb128 0x3b
+ 970 003e 05       		.uleb128 0x5
+ 971 003f 49       		.uleb128 0x49
+ 972 0040 13       		.uleb128 0x13
+ 973 0041 00       		.byte	0
+ 974 0042 00       		.byte	0
+ 975 0043 06       		.uleb128 0x6
+ 976 0044 13       		.uleb128 0x13
+ 977 0045 01       		.byte	0x1
+ 978 0046 0B       		.uleb128 0xb
+ 979 0047 0B       		.uleb128 0xb
+ 980 0048 3A       		.uleb128 0x3a
+ 981 0049 0B       		.uleb128 0xb
+ 982 004a 3B       		.uleb128 0x3b
+ 983 004b 0B       		.uleb128 0xb
+ 984 004c 01       		.uleb128 0x1
+ 985 004d 13       		.uleb128 0x13
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 20
 
 
- 1056 010c 13       		.uleb128 0x13
- 1057 010d 00       		.byte	0
- 1058 010e 00       		.byte	0
- 1059 010f 13       		.uleb128 0x13
- 1060 0110 21       		.uleb128 0x21
- 1061 0111 00       		.byte	0
- 1062 0112 49       		.uleb128 0x49
- 1063 0113 13       		.uleb128 0x13
- 1064 0114 2F       		.uleb128 0x2f
- 1065 0115 0B       		.uleb128 0xb
- 1066 0116 00       		.byte	0
- 1067 0117 00       		.byte	0
- 1068 0118 14       		.uleb128 0x14
- 1069 0119 34       		.uleb128 0x34
- 1070 011a 00       		.byte	0
- 1071 011b 03       		.uleb128 0x3
- 1072 011c 0E       		.uleb128 0xe
- 1073 011d 3A       		.uleb128 0x3a
- 1074 011e 0B       		.uleb128 0xb
- 1075 011f 3B       		.uleb128 0x3b
- 1076 0120 05       		.uleb128 0x5
- 1077 0121 49       		.uleb128 0x49
- 1078 0122 13       		.uleb128 0x13
- 1079 0123 3F       		.uleb128 0x3f
- 1080 0124 19       		.uleb128 0x19
- 1081 0125 3C       		.uleb128 0x3c
- 1082 0126 19       		.uleb128 0x19
- 1083 0127 00       		.byte	0
- 1084 0128 00       		.byte	0
- 1085 0129 15       		.uleb128 0x15
- 1086 012a 35       		.uleb128 0x35
- 1087 012b 00       		.byte	0
- 1088 012c 49       		.uleb128 0x49
- 1089 012d 13       		.uleb128 0x13
- 1090 012e 00       		.byte	0
- 1091 012f 00       		.byte	0
- 1092 0130 16       		.uleb128 0x16
- 1093 0131 2E       		.uleb128 0x2e
- 1094 0132 00       		.byte	0
- 1095 0133 3F       		.uleb128 0x3f
- 1096 0134 19       		.uleb128 0x19
- 1097 0135 3C       		.uleb128 0x3c
- 1098 0136 19       		.uleb128 0x19
- 1099 0137 6E       		.uleb128 0x6e
- 1100 0138 0E       		.uleb128 0xe
- 1101 0139 03       		.uleb128 0x3
- 1102 013a 0E       		.uleb128 0xe
- 1103 013b 3A       		.uleb128 0x3a
- 1104 013c 0B       		.uleb128 0xb
- 1105 013d 3B       		.uleb128 0x3b
- 1106 013e 0B       		.uleb128 0xb
- 1107 013f 00       		.byte	0
- 1108 0140 00       		.byte	0
- 1109 0141 00       		.byte	0
- 1110              		.section	.debug_loc,"",%progbits
- 1111              	.Ldebug_loc0:
- 1112              	.LLST0:
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 22
+ 986 004e 00       		.byte	0
+ 987 004f 00       		.byte	0
+ 988 0050 07       		.uleb128 0x7
+ 989 0051 0D       		.uleb128 0xd
+ 990 0052 00       		.byte	0
+ 991 0053 03       		.uleb128 0x3
+ 992 0054 0E       		.uleb128 0xe
+ 993 0055 3A       		.uleb128 0x3a
+ 994 0056 0B       		.uleb128 0xb
+ 995 0057 3B       		.uleb128 0x3b
+ 996 0058 0B       		.uleb128 0xb
+ 997 0059 49       		.uleb128 0x49
+ 998 005a 13       		.uleb128 0x13
+ 999 005b 0B       		.uleb128 0xb
+ 1000 005c 0B       		.uleb128 0xb
+ 1001 005d 0D       		.uleb128 0xd
+ 1002 005e 0B       		.uleb128 0xb
+ 1003 005f 0C       		.uleb128 0xc
+ 1004 0060 0B       		.uleb128 0xb
+ 1005 0061 38       		.uleb128 0x38
+ 1006 0062 0B       		.uleb128 0xb
+ 1007 0063 00       		.byte	0
+ 1008 0064 00       		.byte	0
+ 1009 0065 08       		.uleb128 0x8
+ 1010 0066 0D       		.uleb128 0xd
+ 1011 0067 00       		.byte	0
+ 1012 0068 03       		.uleb128 0x3
+ 1013 0069 08       		.uleb128 0x8
+ 1014 006a 3A       		.uleb128 0x3a
+ 1015 006b 0B       		.uleb128 0xb
+ 1016 006c 3B       		.uleb128 0x3b
+ 1017 006d 0B       		.uleb128 0xb
+ 1018 006e 49       		.uleb128 0x49
+ 1019 006f 13       		.uleb128 0x13
+ 1020 0070 0B       		.uleb128 0xb
+ 1021 0071 0B       		.uleb128 0xb
+ 1022 0072 0D       		.uleb128 0xd
+ 1023 0073 0B       		.uleb128 0xb
+ 1024 0074 0C       		.uleb128 0xc
+ 1025 0075 0B       		.uleb128 0xb
+ 1026 0076 38       		.uleb128 0x38
+ 1027 0077 0B       		.uleb128 0xb
+ 1028 0078 00       		.byte	0
+ 1029 0079 00       		.byte	0
+ 1030 007a 09       		.uleb128 0x9
+ 1031 007b 0D       		.uleb128 0xd
+ 1032 007c 00       		.byte	0
+ 1033 007d 03       		.uleb128 0x3
+ 1034 007e 0E       		.uleb128 0xe
+ 1035 007f 3A       		.uleb128 0x3a
+ 1036 0080 0B       		.uleb128 0xb
+ 1037 0081 3B       		.uleb128 0x3b
+ 1038 0082 0B       		.uleb128 0xb
+ 1039 0083 49       		.uleb128 0x49
+ 1040 0084 13       		.uleb128 0x13
+ 1041 0085 38       		.uleb128 0x38
+ 1042 0086 0B       		.uleb128 0xb
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 21
 
 
- 1113 0000 D8000000 		.4byte	.LVL27
- 1114 0004 0A010000 		.4byte	.LVL33
- 1115 0008 0100     		.2byte	0x1
- 1116 000a 54       		.byte	0x54
- 1117 000b 0C010000 		.4byte	.LVL34
- 1118 000f 38010000 		.4byte	.LFE64
- 1119 0013 0100     		.2byte	0x1
- 1120 0015 54       		.byte	0x54
- 1121 0016 00000000 		.4byte	0
- 1122 001a 00000000 		.4byte	0
- 1123              	.LLST1:
- 1124 001e 8E000000 		.4byte	.LVL16
- 1125 0022 94000000 		.4byte	.LVL17
- 1126 0026 0100     		.2byte	0x1
- 1127 0028 50       		.byte	0x50
- 1128 0029 94000000 		.4byte	.LVL17
- 1129 002d 38010000 		.4byte	.LFE64
- 1130 0031 0100     		.2byte	0x1
- 1131 0033 58       		.byte	0x58
- 1132 0034 00000000 		.4byte	0
- 1133 0038 00000000 		.4byte	0
- 1134              	.LLST2:
- 1135 003c 84000000 		.4byte	.LVL13
- 1136 0040 87000000 		.4byte	.LVL14-1
- 1137 0044 0600     		.2byte	0x6
- 1138 0046 50       		.byte	0x50
- 1139 0047 93       		.byte	0x93
- 1140 0048 04       		.uleb128 0x4
- 1141 0049 51       		.byte	0x51
- 1142 004a 93       		.byte	0x93
- 1143 004b 04       		.uleb128 0x4
- 1144 004c 00000000 		.4byte	0
- 1145 0050 00000000 		.4byte	0
- 1146              	.LLST3:
- 1147 0054 4E000000 		.4byte	.LVL7
- 1148 0058 6A000000 		.4byte	.LVL11
- 1149 005c 0600     		.2byte	0x6
- 1150 005e 56       		.byte	0x56
- 1151 005f 93       		.byte	0x93
- 1152 0060 04       		.uleb128 0x4
- 1153 0061 57       		.byte	0x57
- 1154 0062 93       		.byte	0x93
- 1155 0063 04       		.uleb128 0x4
- 1156 0064 00000000 		.4byte	0
- 1157 0068 00000000 		.4byte	0
- 1158              	.LLST4:
- 1159 006c 5C000000 		.4byte	.LVL9
- 1160 0070 CE000000 		.4byte	.LVL24
- 1161 0074 0600     		.2byte	0x6
- 1162 0076 54       		.byte	0x54
- 1163 0077 93       		.byte	0x93
- 1164 0078 04       		.uleb128 0x4
- 1165 0079 55       		.byte	0x55
- 1166 007a 93       		.byte	0x93
- 1167 007b 04       		.uleb128 0x4
- 1168 007c D0000000 		.4byte	.LVL25
- 1169 0080 D8000000 		.4byte	.LVL27
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 23
+ 1043 0087 00       		.byte	0
+ 1044 0088 00       		.byte	0
+ 1045 0089 0A       		.uleb128 0xa
+ 1046 008a 2E       		.uleb128 0x2e
+ 1047 008b 01       		.byte	0x1
+ 1048 008c 3F       		.uleb128 0x3f
+ 1049 008d 19       		.uleb128 0x19
+ 1050 008e 03       		.uleb128 0x3
+ 1051 008f 0E       		.uleb128 0xe
+ 1052 0090 3A       		.uleb128 0x3a
+ 1053 0091 0B       		.uleb128 0xb
+ 1054 0092 3B       		.uleb128 0x3b
+ 1055 0093 0B       		.uleb128 0xb
+ 1056 0094 27       		.uleb128 0x27
+ 1057 0095 19       		.uleb128 0x19
+ 1058 0096 49       		.uleb128 0x49
+ 1059 0097 13       		.uleb128 0x13
+ 1060 0098 8701     		.uleb128 0x87
+ 1061 009a 19       		.uleb128 0x19
+ 1062 009b 11       		.uleb128 0x11
+ 1063 009c 01       		.uleb128 0x1
+ 1064 009d 12       		.uleb128 0x12
+ 1065 009e 06       		.uleb128 0x6
+ 1066 009f 40       		.uleb128 0x40
+ 1067 00a0 18       		.uleb128 0x18
+ 1068 00a1 9642     		.uleb128 0x2116
+ 1069 00a3 19       		.uleb128 0x19
+ 1070 00a4 01       		.uleb128 0x1
+ 1071 00a5 13       		.uleb128 0x13
+ 1072 00a6 00       		.byte	0
+ 1073 00a7 00       		.byte	0
+ 1074 00a8 0B       		.uleb128 0xb
+ 1075 00a9 34       		.uleb128 0x34
+ 1076 00aa 00       		.byte	0
+ 1077 00ab 03       		.uleb128 0x3
+ 1078 00ac 08       		.uleb128 0x8
+ 1079 00ad 3A       		.uleb128 0x3a
+ 1080 00ae 0B       		.uleb128 0xb
+ 1081 00af 3B       		.uleb128 0x3b
+ 1082 00b0 0B       		.uleb128 0xb
+ 1083 00b1 49       		.uleb128 0x49
+ 1084 00b2 13       		.uleb128 0x13
+ 1085 00b3 02       		.uleb128 0x2
+ 1086 00b4 18       		.uleb128 0x18
+ 1087 00b5 00       		.byte	0
+ 1088 00b6 00       		.byte	0
+ 1089 00b7 0C       		.uleb128 0xc
+ 1090 00b8 34       		.uleb128 0x34
+ 1091 00b9 00       		.byte	0
+ 1092 00ba 03       		.uleb128 0x3
+ 1093 00bb 08       		.uleb128 0x8
+ 1094 00bc 3A       		.uleb128 0x3a
+ 1095 00bd 0B       		.uleb128 0xb
+ 1096 00be 3B       		.uleb128 0x3b
+ 1097 00bf 0B       		.uleb128 0xb
+ 1098 00c0 49       		.uleb128 0x49
+ 1099 00c1 13       		.uleb128 0x13
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 22
 
 
- 1170 0084 0600     		.2byte	0x6
- 1171 0086 54       		.byte	0x54
- 1172 0087 93       		.byte	0x93
- 1173 0088 04       		.uleb128 0x4
- 1174 0089 55       		.byte	0x55
- 1175 008a 93       		.byte	0x93
- 1176 008b 04       		.uleb128 0x4
- 1177 008c 00000000 		.4byte	0
- 1178 0090 00000000 		.4byte	0
- 1179              		.section	.debug_aranges,"",%progbits
- 1180 0000 1C000000 		.4byte	0x1c
- 1181 0004 0200     		.2byte	0x2
- 1182 0006 00000000 		.4byte	.Ldebug_info0
- 1183 000a 04       		.byte	0x4
- 1184 000b 00       		.byte	0
- 1185 000c 0000     		.2byte	0
- 1186 000e 0000     		.2byte	0
- 1187 0010 00000000 		.4byte	.LFB64
- 1188 0014 38010000 		.4byte	.LFE64-.LFB64
- 1189 0018 00000000 		.4byte	0
- 1190 001c 00000000 		.4byte	0
- 1191              		.section	.debug_ranges,"",%progbits
- 1192              	.Ldebug_ranges0:
- 1193 0000 00000000 		.4byte	.LFB64
- 1194 0004 38010000 		.4byte	.LFE64
- 1195 0008 00000000 		.4byte	0
- 1196 000c 00000000 		.4byte	0
- 1197              		.section	.debug_line,"",%progbits
- 1198              	.Ldebug_line0:
- 1199 0000 87020000 		.section	.debug_str,"MS",%progbits,1
- 1199      02003B02 
- 1199      00000201 
- 1199      FB0E0D00 
- 1199      01010101 
- 1200              	.LASF23:
- 1201 0000 43495243 		.ascii	"CIRCLE\000"
- 1201      4C4500
- 1202              	.LASF19:
- 1203 0007 52494748 		.ascii	"RIGHT\000"
- 1203      5400
- 1204              	.LASF2:
- 1205 000d 73686F72 		.ascii	"short int\000"
- 1205      7420696E 
- 1205      7400
- 1206              	.LASF16:
- 1207 0017 73697A65 		.ascii	"sizetype\000"
- 1207      74797065 
- 1207      00
- 1208              	.LASF43:
- 1209 0020 6D6F746F 		.ascii	"motor1_WriteCompare\000"
- 1209      72315F57 
- 1209      72697465 
- 1209      436F6D70 
- 1209      61726500 
- 1210              	.LASF24:
- 1211 0034 43524F53 		.ascii	"CROSS\000"
- 1211      5300
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 24
+ 1100 00c2 02       		.uleb128 0x2
+ 1101 00c3 17       		.uleb128 0x17
+ 1102 00c4 00       		.byte	0
+ 1103 00c5 00       		.byte	0
+ 1104 00c6 0D       		.uleb128 0xd
+ 1105 00c7 34       		.uleb128 0x34
+ 1106 00c8 00       		.byte	0
+ 1107 00c9 03       		.uleb128 0x3
+ 1108 00ca 0E       		.uleb128 0xe
+ 1109 00cb 3A       		.uleb128 0x3a
+ 1110 00cc 0B       		.uleb128 0xb
+ 1111 00cd 3B       		.uleb128 0x3b
+ 1112 00ce 0B       		.uleb128 0xb
+ 1113 00cf 49       		.uleb128 0x49
+ 1114 00d0 13       		.uleb128 0x13
+ 1115 00d1 00       		.byte	0
+ 1116 00d2 00       		.byte	0
+ 1117 00d3 0E       		.uleb128 0xe
+ 1118 00d4 34       		.uleb128 0x34
+ 1119 00d5 00       		.byte	0
+ 1120 00d6 03       		.uleb128 0x3
+ 1121 00d7 0E       		.uleb128 0xe
+ 1122 00d8 3A       		.uleb128 0x3a
+ 1123 00d9 0B       		.uleb128 0xb
+ 1124 00da 3B       		.uleb128 0x3b
+ 1125 00db 0B       		.uleb128 0xb
+ 1126 00dc 49       		.uleb128 0x49
+ 1127 00dd 13       		.uleb128 0x13
+ 1128 00de 02       		.uleb128 0x2
+ 1129 00df 18       		.uleb128 0x18
+ 1130 00e0 00       		.byte	0
+ 1131 00e1 00       		.byte	0
+ 1132 00e2 0F       		.uleb128 0xf
+ 1133 00e3 898201   		.uleb128 0x4109
+ 1134 00e6 01       		.byte	0x1
+ 1135 00e7 11       		.uleb128 0x11
+ 1136 00e8 01       		.uleb128 0x1
+ 1137 00e9 31       		.uleb128 0x31
+ 1138 00ea 13       		.uleb128 0x13
+ 1139 00eb 01       		.uleb128 0x1
+ 1140 00ec 13       		.uleb128 0x13
+ 1141 00ed 00       		.byte	0
+ 1142 00ee 00       		.byte	0
+ 1143 00ef 10       		.uleb128 0x10
+ 1144 00f0 8A8201   		.uleb128 0x410a
+ 1145 00f3 00       		.byte	0
+ 1146 00f4 02       		.uleb128 0x2
+ 1147 00f5 18       		.uleb128 0x18
+ 1148 00f6 9142     		.uleb128 0x2111
+ 1149 00f8 18       		.uleb128 0x18
+ 1150 00f9 00       		.byte	0
+ 1151 00fa 00       		.byte	0
+ 1152 00fb 11       		.uleb128 0x11
+ 1153 00fc 898201   		.uleb128 0x4109
+ 1154 00ff 00       		.byte	0
+ 1155 0100 11       		.uleb128 0x11
+ 1156 0101 01       		.uleb128 0x1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 23
 
 
- 1212              	.LASF49:
- 1213 003a 6D61696E 		.ascii	"main\000"
- 1213      00
- 1214              	.LASF11:
- 1215 003f 75696E74 		.ascii	"uint8\000"
- 1215      3800
- 1216              	.LASF41:
- 1217 0045 72657665 		.ascii	"reverse_2_Write\000"
- 1217      7273655F 
- 1217      325F5772 
- 1217      69746500 
- 1218              	.LASF36:
- 1219 0055 55415254 		.ascii	"UART_1_Start\000"
- 1219      5F315F53 
- 1219      74617274 
- 1219      00
- 1220              	.LASF12:
- 1221 0062 666C6F61 		.ascii	"float\000"
- 1221      7400
- 1222              	.LASF32:
- 1223 0068 6D6F746F 		.ascii	"motor1_Start\000"
- 1223      72315F53 
- 1223      74617274 
- 1223      00
- 1224              	.LASF6:
- 1225 0075 6C6F6E67 		.ascii	"long long int\000"
- 1225      206C6F6E 
- 1225      6720696E 
- 1225      7400
- 1226              	.LASF4:
- 1227 0083 6C6F6E67 		.ascii	"long int\000"
- 1227      20696E74 
- 1227      00
- 1228              	.LASF35:
- 1229 008c 5053335F 		.ascii	"PS3_Start\000"
- 1229      53746172 
- 1229      7400
- 1230              	.LASF21:
- 1231 0096 4C454654 		.ascii	"LEFT\000"
- 1231      00
- 1232              	.LASF34:
- 1233 009b 6D6F746F 		.ascii	"motor3_Start\000"
- 1233      72335F53 
- 1233      74617274 
- 1233      00
- 1234              	.LASF22:
- 1235 00a8 54524941 		.ascii	"TRIANGLE\000"
- 1235      4E474C45 
- 1235      00
- 1236              	.LASF15:
- 1237 00b1 6C6F6E67 		.ascii	"long double\000"
- 1237      20646F75 
- 1237      626C6500 
- 1238              	.LASF1:
- 1239 00bd 756E7369 		.ascii	"unsigned char\000"
- 1239      676E6564 
- 1239      20636861 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 25
+ 1157 0102 31       		.uleb128 0x31
+ 1158 0103 13       		.uleb128 0x13
+ 1159 0104 00       		.byte	0
+ 1160 0105 00       		.byte	0
+ 1161 0106 12       		.uleb128 0x12
+ 1162 0107 898201   		.uleb128 0x4109
+ 1163 010a 01       		.byte	0x1
+ 1164 010b 11       		.uleb128 0x11
+ 1165 010c 01       		.uleb128 0x1
+ 1166 010d 31       		.uleb128 0x31
+ 1167 010e 13       		.uleb128 0x13
+ 1168 010f 00       		.byte	0
+ 1169 0110 00       		.byte	0
+ 1170 0111 13       		.uleb128 0x13
+ 1171 0112 01       		.uleb128 0x1
+ 1172 0113 01       		.byte	0x1
+ 1173 0114 49       		.uleb128 0x49
+ 1174 0115 13       		.uleb128 0x13
+ 1175 0116 01       		.uleb128 0x1
+ 1176 0117 13       		.uleb128 0x13
+ 1177 0118 00       		.byte	0
+ 1178 0119 00       		.byte	0
+ 1179 011a 14       		.uleb128 0x14
+ 1180 011b 21       		.uleb128 0x21
+ 1181 011c 00       		.byte	0
+ 1182 011d 49       		.uleb128 0x49
+ 1183 011e 13       		.uleb128 0x13
+ 1184 011f 2F       		.uleb128 0x2f
+ 1185 0120 0B       		.uleb128 0xb
+ 1186 0121 00       		.byte	0
+ 1187 0122 00       		.byte	0
+ 1188 0123 15       		.uleb128 0x15
+ 1189 0124 34       		.uleb128 0x34
+ 1190 0125 00       		.byte	0
+ 1191 0126 03       		.uleb128 0x3
+ 1192 0127 0E       		.uleb128 0xe
+ 1193 0128 3A       		.uleb128 0x3a
+ 1194 0129 0B       		.uleb128 0xb
+ 1195 012a 3B       		.uleb128 0x3b
+ 1196 012b 05       		.uleb128 0x5
+ 1197 012c 49       		.uleb128 0x49
+ 1198 012d 13       		.uleb128 0x13
+ 1199 012e 3F       		.uleb128 0x3f
+ 1200 012f 19       		.uleb128 0x19
+ 1201 0130 3C       		.uleb128 0x3c
+ 1202 0131 19       		.uleb128 0x19
+ 1203 0132 00       		.byte	0
+ 1204 0133 00       		.byte	0
+ 1205 0134 16       		.uleb128 0x16
+ 1206 0135 35       		.uleb128 0x35
+ 1207 0136 00       		.byte	0
+ 1208 0137 49       		.uleb128 0x49
+ 1209 0138 13       		.uleb128 0x13
+ 1210 0139 00       		.byte	0
+ 1211 013a 00       		.byte	0
+ 1212 013b 17       		.uleb128 0x17
+ 1213 013c 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 24
 
 
- 1239      7200
- 1240              	.LASF0:
- 1241 00cb 7369676E 		.ascii	"signed char\000"
- 1241      65642063 
- 1241      68617200 
- 1242              	.LASF7:
- 1243 00d7 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1243      206C6F6E 
- 1243      6720756E 
- 1243      7369676E 
- 1243      65642069 
- 1244              	.LASF8:
- 1245 00ee 756E7369 		.ascii	"unsigned int\000"
- 1245      676E6564 
- 1245      20696E74 
- 1245      00
- 1246              	.LASF26:
- 1247 00fb 414E414C 		.ascii	"ANALOG_RX\000"
- 1247      4F475F52 
- 1247      5800
- 1248              	.LASF27:
- 1249 0105 414E414C 		.ascii	"ANALOG_RY\000"
- 1249      4F475F52 
- 1249      5900
- 1250              	.LASF30:
- 1251 010f 50533343 		.ascii	"PS3Controller\000"
- 1251      6F6E7472 
- 1251      6F6C6C65 
- 1251      7200
- 1252              	.LASF3:
- 1253 011d 73686F72 		.ascii	"short unsigned int\000"
- 1253      7420756E 
- 1253      7369676E 
- 1253      65642069 
- 1253      6E7400
- 1254              	.LASF18:
- 1255 0130 53544152 		.ascii	"START\000"
- 1255      5400
- 1256              	.LASF14:
- 1257 0136 63686172 		.ascii	"char\000"
- 1257      00
- 1258              	.LASF10:
- 1259 013b 696E7433 		.ascii	"int32_t\000"
- 1259      325F7400 
- 1260              	.LASF20:
- 1261 0143 444F574E 		.ascii	"DOWN\000"
- 1261      00
- 1262              	.LASF48:
- 1263 0148 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\motor_yao\\Design01."
- 1263      73657273 
- 1263      5C746574 
- 1263      73757961 
- 1263      5C446F63 
- 1264 0176 63796473 		.ascii	"cydsn\000"
- 1264      6E00
- 1265              	.LASF37:
- 1266 017c 5053335F 		.ascii	"PS3_Controller_get\000"
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 26
+ 1214 013d 00       		.byte	0
+ 1215 013e 3F       		.uleb128 0x3f
+ 1216 013f 19       		.uleb128 0x19
+ 1217 0140 3C       		.uleb128 0x3c
+ 1218 0141 19       		.uleb128 0x19
+ 1219 0142 6E       		.uleb128 0x6e
+ 1220 0143 0E       		.uleb128 0xe
+ 1221 0144 03       		.uleb128 0x3
+ 1222 0145 0E       		.uleb128 0xe
+ 1223 0146 00       		.byte	0
+ 1224 0147 00       		.byte	0
+ 1225 0148 18       		.uleb128 0x18
+ 1226 0149 2E       		.uleb128 0x2e
+ 1227 014a 00       		.byte	0
+ 1228 014b 3F       		.uleb128 0x3f
+ 1229 014c 19       		.uleb128 0x19
+ 1230 014d 3C       		.uleb128 0x3c
+ 1231 014e 19       		.uleb128 0x19
+ 1232 014f 6E       		.uleb128 0x6e
+ 1233 0150 0E       		.uleb128 0xe
+ 1234 0151 03       		.uleb128 0x3
+ 1235 0152 0E       		.uleb128 0xe
+ 1236 0153 3A       		.uleb128 0x3a
+ 1237 0154 0B       		.uleb128 0xb
+ 1238 0155 3B       		.uleb128 0x3b
+ 1239 0156 0B       		.uleb128 0xb
+ 1240 0157 00       		.byte	0
+ 1241 0158 00       		.byte	0
+ 1242 0159 00       		.byte	0
+ 1243              		.section	.debug_loc,"",%progbits
+ 1244              	.Ldebug_loc0:
+ 1245              	.LLST0:
+ 1246 0000 D8000000 		.4byte	.LVL23
+ 1247 0004 E8000000 		.4byte	.LVL24
+ 1248 0008 0100     		.2byte	0x1
+ 1249 000a 53       		.byte	0x53
+ 1250 000b EA000000 		.4byte	.LVL25
+ 1251 000f F2000000 		.4byte	.LVL26
+ 1252 0013 0100     		.2byte	0x1
+ 1253 0015 53       		.byte	0x53
+ 1254 0016 00000000 		.4byte	0
+ 1255 001a 00000000 		.4byte	0
+ 1256              	.LLST1:
+ 1257 001e 8A000000 		.4byte	.LVL14
+ 1258 0022 8D000000 		.4byte	.LVL15-1
+ 1259 0026 0600     		.2byte	0x6
+ 1260 0028 50       		.byte	0x50
+ 1261 0029 93       		.byte	0x93
+ 1262 002a 04       		.uleb128 0x4
+ 1263 002b 51       		.byte	0x51
+ 1264 002c 93       		.byte	0x93
+ 1265 002d 04       		.uleb128 0x4
+ 1266 002e 00000000 		.4byte	0
+ 1267 0032 00000000 		.4byte	0
+ 1268              	.LLST2:
+ 1269 0036 54000000 		.4byte	.LVL8
+ 1270 003a 70000000 		.4byte	.LVL12
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 25
 
 
- 1266      436F6E74 
- 1266      726F6C6C 
- 1266      65725F67 
- 1266      657400
- 1267              	.LASF31:
- 1268 018f 706F7765 		.ascii	"power\000"
- 1268      7200
- 1269              	.LASF40:
- 1270 0195 72657665 		.ascii	"reverse_1_Write\000"
- 1270      7273655F 
- 1270      315F5772 
- 1270      69746500 
- 1271              	.LASF47:
- 1272 01a5 6D61696E 		.ascii	"main.c\000"
- 1272      2E6300
- 1273              	.LASF5:
- 1274 01ac 6C6F6E67 		.ascii	"long unsigned int\000"
- 1274      20756E73 
- 1274      69676E65 
- 1274      6420696E 
- 1274      7400
- 1275              	.LASF28:
- 1276 01be 414E414C 		.ascii	"ANALOG_LX\000"
- 1276      4F475F4C 
- 1276      5800
- 1277              	.LASF29:
- 1278 01c8 414E414C 		.ascii	"ANALOG_LY\000"
- 1278      4F475F4C 
- 1278      5900
- 1279              	.LASF38:
- 1280 01d2 73717274 		.ascii	"sqrt\000"
- 1280      00
- 1281              	.LASF25:
- 1282 01d7 53515541 		.ascii	"SQUARE\000"
- 1282      524500
- 1283              	.LASF42:
- 1284 01de 72657665 		.ascii	"reverse_3_Write\000"
- 1284      7273655F 
- 1284      335F5772 
- 1284      69746500 
- 1285              	.LASF9:
- 1286 01ee 5F5F696E 		.ascii	"__int32_t\000"
- 1286      7433325F 
- 1286      7400
- 1287              	.LASF45:
- 1288 01f8 6D6F746F 		.ascii	"motor3_WriteCompare\000"
- 1288      72335F57 
- 1288      72697465 
- 1288      436F6D70 
- 1288      61726500 
- 1289              	.LASF33:
- 1290 020c 6D6F746F 		.ascii	"motor2_Start\000"
- 1290      72325F53 
- 1290      74617274 
- 1290      00
- 1291              	.LASF17:
- 1292 0219 53454C45 		.ascii	"SELECT\000"
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbZCUeV.s 			page 27
+ 1271 003e 0600     		.2byte	0x6
+ 1272 0040 56       		.byte	0x56
+ 1273 0041 93       		.byte	0x93
+ 1274 0042 04       		.uleb128 0x4
+ 1275 0043 57       		.byte	0x57
+ 1276 0044 93       		.byte	0x93
+ 1277 0045 04       		.uleb128 0x4
+ 1278 0046 00000000 		.4byte	0
+ 1279 004a 00000000 		.4byte	0
+ 1280              	.LLST3:
+ 1281 004e 62000000 		.4byte	.LVL10
+ 1282 0052 48010000 		.4byte	.LVL32
+ 1283 0056 0600     		.2byte	0x6
+ 1284 0058 54       		.byte	0x54
+ 1285 0059 93       		.byte	0x93
+ 1286 005a 04       		.uleb128 0x4
+ 1287 005b 55       		.byte	0x55
+ 1288 005c 93       		.byte	0x93
+ 1289 005d 04       		.uleb128 0x4
+ 1290 005e 00000000 		.4byte	0
+ 1291 0062 00000000 		.4byte	0
+ 1292              		.section	.debug_aranges,"",%progbits
+ 1293 0000 1C000000 		.4byte	0x1c
+ 1294 0004 0200     		.2byte	0x2
+ 1295 0006 00000000 		.4byte	.Ldebug_info0
+ 1296 000a 04       		.byte	0x4
+ 1297 000b 00       		.byte	0
+ 1298 000c 0000     		.2byte	0
+ 1299 000e 0000     		.2byte	0
+ 1300 0010 00000000 		.4byte	.LFB64
+ 1301 0014 94010000 		.4byte	.LFE64-.LFB64
+ 1302 0018 00000000 		.4byte	0
+ 1303 001c 00000000 		.4byte	0
+ 1304              		.section	.debug_ranges,"",%progbits
+ 1305              	.Ldebug_ranges0:
+ 1306 0000 00000000 		.4byte	.LFB64
+ 1307 0004 94010000 		.4byte	.LFE64
+ 1308 0008 00000000 		.4byte	0
+ 1309 000c 00000000 		.4byte	0
+ 1310              		.section	.debug_line,"",%progbits
+ 1311              	.Ldebug_line0:
+ 1312 0000 A6020000 		.section	.debug_str,"MS",%progbits,1
+ 1312      02004602 
+ 1312      00000201 
+ 1312      FB0E0D00 
+ 1312      01010101 
+ 1313              	.LASF23:
+ 1314 0000 43495243 		.ascii	"CIRCLE\000"
+ 1314      4C4500
+ 1315              	.LASF19:
+ 1316 0007 52494748 		.ascii	"RIGHT\000"
+ 1316      5400
+ 1317              	.LASF2:
+ 1318 000d 73686F72 		.ascii	"short int\000"
+ 1318      7420696E 
+ 1318      7400
+ 1319              	.LASF16:
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 26
 
 
- 1292      435400
- 1293              	.LASF50:
- 1294 0220 6F757470 		.ascii	"output\000"
- 1294      757400
- 1295              	.LASF13:
- 1296 0227 646F7562 		.ascii	"double\000"
- 1296      6C6500
- 1297              	.LASF39:
- 1298 022e 6D617472 		.ascii	"matrix\000"
- 1298      697800
- 1299              	.LASF51:
- 1300 0235 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1300      52784275 
- 1300      66666572 
- 1300      00
- 1301              	.LASF46:
- 1302 0242 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1302      43313120 
- 1302      352E342E 
- 1302      31203230 
- 1302      31363036 
- 1303 0275 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1303      20726576 
- 1303      6973696F 
- 1303      6E203233 
- 1303      37373135 
- 1304 02a8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1304      66756E63 
- 1304      74696F6E 
- 1304      2D736563 
- 1304      74696F6E 
- 1305              	.LASF44:
- 1306 02d0 6D6F746F 		.ascii	"motor2_WriteCompare\000"
- 1306      72325F57 
- 1306      72697465 
- 1306      436F6D70 
- 1306      61726500 
- 1307              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1320 0017 73697A65 		.ascii	"sizetype\000"
+ 1320      74797065 
+ 1320      00
+ 1321              	.LASF43:
+ 1322 0020 6D6F746F 		.ascii	"motor1_WriteCompare\000"
+ 1322      72315F57 
+ 1322      72697465 
+ 1322      436F6D70 
+ 1322      61726500 
+ 1323              	.LASF24:
+ 1324 0034 43524F53 		.ascii	"CROSS\000"
+ 1324      5300
+ 1325              	.LASF51:
+ 1326 003a 6D61696E 		.ascii	"main\000"
+ 1326      00
+ 1327              	.LASF11:
+ 1328 003f 75696E74 		.ascii	"uint8\000"
+ 1328      3800
+ 1329              	.LASF41:
+ 1330 0045 72657665 		.ascii	"reverse_2_Write\000"
+ 1330      7273655F 
+ 1330      325F5772 
+ 1330      69746500 
+ 1331              	.LASF36:
+ 1332 0055 55415254 		.ascii	"UART_1_Start\000"
+ 1332      5F315F53 
+ 1332      74617274 
+ 1332      00
+ 1333              	.LASF12:
+ 1334 0062 666C6F61 		.ascii	"float\000"
+ 1334      7400
+ 1335              	.LASF32:
+ 1336 0068 6D6F746F 		.ascii	"motor1_Start\000"
+ 1336      72315F53 
+ 1336      74617274 
+ 1336      00
+ 1337              	.LASF6:
+ 1338 0075 6C6F6E67 		.ascii	"long long int\000"
+ 1338      206C6F6E 
+ 1338      6720696E 
+ 1338      7400
+ 1339              	.LASF29:
+ 1340 0083 414E414C 		.ascii	"ANALOG_LY\000"
+ 1340      4F475F4C 
+ 1340      5900
+ 1341              	.LASF54:
+ 1342 008d 6D656D73 		.ascii	"memset\000"
+ 1342      657400
+ 1343              	.LASF4:
+ 1344 0094 6C6F6E67 		.ascii	"long int\000"
+ 1344      20696E74 
+ 1344      00
+ 1345              	.LASF35:
+ 1346 009d 5053335F 		.ascii	"PS3_Start\000"
+ 1346      53746172 
+ 1346      7400
+ 1347              	.LASF21:
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 27
+
+
+ 1348 00a7 4C454654 		.ascii	"LEFT\000"
+ 1348      00
+ 1349              	.LASF34:
+ 1350 00ac 6D6F746F 		.ascii	"motor3_Start\000"
+ 1350      72335F53 
+ 1350      74617274 
+ 1350      00
+ 1351              	.LASF22:
+ 1352 00b9 54524941 		.ascii	"TRIANGLE\000"
+ 1352      4E474C45 
+ 1352      00
+ 1353              	.LASF15:
+ 1354 00c2 6C6F6E67 		.ascii	"long double\000"
+ 1354      20646F75 
+ 1354      626C6500 
+ 1355              	.LASF1:
+ 1356 00ce 756E7369 		.ascii	"unsigned char\000"
+ 1356      676E6564 
+ 1356      20636861 
+ 1356      7200
+ 1357              	.LASF46:
+ 1358 00dc 73707269 		.ascii	"sprintf\000"
+ 1358      6E746600 
+ 1359              	.LASF0:
+ 1360 00e4 7369676E 		.ascii	"signed char\000"
+ 1360      65642063 
+ 1360      68617200 
+ 1361              	.LASF7:
+ 1362 00f0 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1362      206C6F6E 
+ 1362      6720756E 
+ 1362      7369676E 
+ 1362      65642069 
+ 1363              	.LASF8:
+ 1364 0107 756E7369 		.ascii	"unsigned int\000"
+ 1364      676E6564 
+ 1364      20696E74 
+ 1364      00
+ 1365              	.LASF26:
+ 1366 0114 414E414C 		.ascii	"ANALOG_RX\000"
+ 1366      4F475F52 
+ 1366      5800
+ 1367              	.LASF27:
+ 1368 011e 414E414C 		.ascii	"ANALOG_RY\000"
+ 1368      4F475F52 
+ 1368      5900
+ 1369              	.LASF30:
+ 1370 0128 50533343 		.ascii	"PS3Controller\000"
+ 1370      6F6E7472 
+ 1370      6F6C6C65 
+ 1370      7200
+ 1371              	.LASF3:
+ 1372 0136 73686F72 		.ascii	"short unsigned int\000"
+ 1372      7420756E 
+ 1372      7369676E 
+ 1372      65642069 
+ 1372      6E7400
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 28
+
+
+ 1373              	.LASF18:
+ 1374 0149 53544152 		.ascii	"START\000"
+ 1374      5400
+ 1375              	.LASF14:
+ 1376 014f 63686172 		.ascii	"char\000"
+ 1376      00
+ 1377              	.LASF10:
+ 1378 0154 696E7433 		.ascii	"int32_t\000"
+ 1378      325F7400 
+ 1379              	.LASF20:
+ 1380 015c 444F574E 		.ascii	"DOWN\000"
+ 1380      00
+ 1381              	.LASF50:
+ 1382 0161 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\motor_yao\\Design01."
+ 1382      73657273 
+ 1382      5C746574 
+ 1382      73757961 
+ 1382      5C446F63 
+ 1383 018f 63796473 		.ascii	"cydsn\000"
+ 1383      6E00
+ 1384              	.LASF37:
+ 1385 0195 5053335F 		.ascii	"PS3_Controller_get\000"
+ 1385      436F6E74 
+ 1385      726F6C6C 
+ 1385      65725F67 
+ 1385      657400
+ 1386              	.LASF52:
+ 1387 01a8 706F7765 		.ascii	"power\000"
+ 1387      7200
+ 1388              	.LASF40:
+ 1389 01ae 72657665 		.ascii	"reverse_1_Write\000"
+ 1389      7273655F 
+ 1389      315F5772 
+ 1389      69746500 
+ 1390              	.LASF49:
+ 1391 01be 6D61696E 		.ascii	"main.c\000"
+ 1391      2E6300
+ 1392              	.LASF5:
+ 1393 01c5 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1393      20756E73 
+ 1393      69676E65 
+ 1393      6420696E 
+ 1393      7400
+ 1394              	.LASF28:
+ 1395 01d7 414E414C 		.ascii	"ANALOG_LX\000"
+ 1395      4F475F4C 
+ 1395      5800
+ 1396              	.LASF47:
+ 1397 01e1 55415254 		.ascii	"UART_1_PutString\000"
+ 1397      5F315F50 
+ 1397      75745374 
+ 1397      72696E67 
+ 1397      00
+ 1398              	.LASF38:
+ 1399 01f2 73717274 		.ascii	"sqrt\000"
+ 1399      00
+ 1400              	.LASF25:
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 29
+
+
+ 1401 01f7 53515541 		.ascii	"SQUARE\000"
+ 1401      524500
+ 1402              	.LASF42:
+ 1403 01fe 72657665 		.ascii	"reverse_3_Write\000"
+ 1403      7273655F 
+ 1403      335F5772 
+ 1403      69746500 
+ 1404              	.LASF9:
+ 1405 020e 5F5F696E 		.ascii	"__int32_t\000"
+ 1405      7433325F 
+ 1405      7400
+ 1406              	.LASF45:
+ 1407 0218 6D6F746F 		.ascii	"motor3_WriteCompare\000"
+ 1407      72335F57 
+ 1407      72697465 
+ 1407      436F6D70 
+ 1407      61726500 
+ 1408              	.LASF33:
+ 1409 022c 6D6F746F 		.ascii	"motor2_Start\000"
+ 1409      72325F53 
+ 1409      74617274 
+ 1409      00
+ 1410              	.LASF17:
+ 1411 0239 53454C45 		.ascii	"SELECT\000"
+ 1411      435400
+ 1412              	.LASF31:
+ 1413 0240 6F757470 		.ascii	"output\000"
+ 1413      757400
+ 1414              	.LASF13:
+ 1415 0247 646F7562 		.ascii	"double\000"
+ 1415      6C6500
+ 1416              	.LASF39:
+ 1417 024e 6D617472 		.ascii	"matrix\000"
+ 1417      697800
+ 1418              	.LASF53:
+ 1419 0255 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1419      52784275 
+ 1419      66666572 
+ 1419      00
+ 1420              	.LASF48:
+ 1421 0262 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1421      43313120 
+ 1421      352E342E 
+ 1421      31203230 
+ 1421      31363036 
+ 1422 0295 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1422      20726576 
+ 1422      6973696F 
+ 1422      6E203233 
+ 1422      37373135 
+ 1423 02c8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1423      66756E63 
+ 1423      74696F6E 
+ 1423      2D736563 
+ 1423      74696F6E 
+ 1424              	.LASF44:
+ 1425 02f0 6D6F746F 		.ascii	"motor2_WriteCompare\000"
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccUpdKXU.s 			page 30
+
+
+ 1425      72325F57 
+ 1425      72697465 
+ 1425      436F6D70 
+ 1425      61726500 
+ 1426              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

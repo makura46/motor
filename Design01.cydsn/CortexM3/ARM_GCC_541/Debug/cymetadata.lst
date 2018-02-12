@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
 
 
    1              		.syntax unified
@@ -27,7 +27,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 1
   24              		.section	.cyconfigecc,"a",%progbits
   25              		.align	2
   26              		.type	cy_meta_configecc, %object
-  27              		.size	cy_meta_configecc, 2404
+  27              		.size	cy_meta_configecc, 2320
   28              	cy_meta_configecc:
   29 0000 08       		.byte	8
   30 0001 52       		.byte	82
@@ -41,2993 +41,2906 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 1
   38 0009 65       		.byte	101
   39 000a 00       		.byte	0
   40 000b 40       		.byte	64
-  41 000c 67       		.byte	103
+  41 000c 12       		.byte	18
   42 000d 04       		.byte	4
   43 000e 01       		.byte	1
   44 000f 40       		.byte	64
-  45 0010 37       		.byte	55
+  45 0010 34       		.byte	52
   46 0011 05       		.byte	5
   47 0012 01       		.byte	1
   48 0013 40       		.byte	64
-  49 0014 3F       		.byte	63
+  49 0014 60       		.byte	96
   50 0015 06       		.byte	6
   51 0016 01       		.byte	1
   52 0017 40       		.byte	64
-  53 0018 48       		.byte	72
+  53 0018 46       		.byte	70
   54 0019 07       		.byte	7
   55 001a 01       		.byte	1
   56 001b 40       		.byte	64
-  57 001c 5D       		.byte	93
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 2
+  57 001c 62       		.byte	98
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 2
 
 
   58 001d 08       		.byte	8
   59 001e 01       		.byte	1
   60 001f 40       		.byte	64
-  61 0020 43       		.byte	67
+  61 0020 39       		.byte	57
   62 0021 09       		.byte	9
   63 0022 01       		.byte	1
   64 0023 40       		.byte	64
-  65 0024 02       		.byte	2
-  66 0025 0B       		.byte	11
+  65 0024 61       		.byte	97
+  66 0025 14       		.byte	20
   67 0026 01       		.byte	1
   68 0027 40       		.byte	64
-  69 0028 62       		.byte	98
-  70 0029 14       		.byte	20
+  69 0028 4F       		.byte	79
+  70 0029 15       		.byte	21
   71 002a 01       		.byte	1
   72 002b 40       		.byte	64
-  73 002c 55       		.byte	85
-  74 002d 15       		.byte	21
+  73 002c 58       		.byte	88
+  74 002d 16       		.byte	22
   75 002e 01       		.byte	1
   76 002f 40       		.byte	64
-  77 0030 61       		.byte	97
-  78 0031 16       		.byte	22
+  77 0030 4E       		.byte	78
+  78 0031 17       		.byte	23
   79 0032 01       		.byte	1
   80 0033 40       		.byte	64
-  81 0034 51       		.byte	81
-  82 0035 17       		.byte	23
+  81 0034 55       		.byte	85
+  82 0035 18       		.byte	24
   83 0036 01       		.byte	1
   84 0037 40       		.byte	64
-  85 0038 62       		.byte	98
-  86 0039 18       		.byte	24
+  85 0038 4B       		.byte	75
+  86 0039 19       		.byte	25
   87 003a 01       		.byte	1
   88 003b 40       		.byte	64
-  89 003c 4D       		.byte	77
-  90 003d 19       		.byte	25
+  89 003c 0C       		.byte	12
+  90 003d 1B       		.byte	27
   91 003e 01       		.byte	1
   92 003f 40       		.byte	64
-  93 0040 0C       		.byte	12
-  94 0041 1B       		.byte	27
+  93 0040 03       		.byte	3
+  94 0041 40       		.byte	64
   95 0042 01       		.byte	1
   96 0043 40       		.byte	64
-  97 0044 03       		.byte	3
-  98 0045 40       		.byte	64
+  97 0044 05       		.byte	5
+  98 0045 41       		.byte	65
   99 0046 01       		.byte	1
  100 0047 40       		.byte	64
- 101 0048 05       		.byte	5
- 102 0049 41       		.byte	65
+ 101 0048 0B       		.byte	11
+ 102 0049 42       		.byte	66
  103 004a 01       		.byte	1
  104 004b 40       		.byte	64
- 105 004c 08       		.byte	8
- 106 004d 42       		.byte	66
+ 105 004c 05       		.byte	5
+ 106 004d 43       		.byte	67
  107 004e 01       		.byte	1
  108 004f 40       		.byte	64
- 109 0050 06       		.byte	6
- 110 0051 43       		.byte	67
+ 109 0050 04       		.byte	4
+ 110 0051 44       		.byte	68
  111 0052 01       		.byte	1
  112 0053 40       		.byte	64
  113 0054 04       		.byte	4
- 114 0055 44       		.byte	68
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 3
+ 114 0055 45       		.byte	69
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 3
 
 
  115 0056 01       		.byte	1
  116 0057 40       		.byte	64
- 117 0058 05       		.byte	5
- 118 0059 45       		.byte	69
+ 117 0058 03       		.byte	3
+ 118 0059 46       		.byte	70
  119 005a 01       		.byte	1
  120 005b 40       		.byte	64
- 121 005c 03       		.byte	3
- 122 005d 46       		.byte	70
+ 121 005c 04       		.byte	4
+ 122 005d 47       		.byte	71
  123 005e 01       		.byte	1
  124 005f 40       		.byte	64
- 125 0060 05       		.byte	5
- 126 0061 47       		.byte	71
+ 125 0060 03       		.byte	3
+ 126 0061 48       		.byte	72
  127 0062 01       		.byte	1
  128 0063 40       		.byte	64
- 129 0064 08       		.byte	8
- 130 0065 48       		.byte	72
+ 129 0064 13       		.byte	19
+ 130 0065 49       		.byte	73
  131 0066 01       		.byte	1
  132 0067 40       		.byte	64
- 133 0068 14       		.byte	20
- 134 0069 49       		.byte	73
+ 133 0068 0C       		.byte	12
+ 134 0069 4C       		.byte	76
  135 006a 01       		.byte	1
  136 006b 40       		.byte	64
- 137 006c 0D       		.byte	13
- 138 006d 4C       		.byte	76
+ 137 006c 0C       		.byte	12
+ 138 006d 4D       		.byte	77
  139 006e 01       		.byte	1
  140 006f 40       		.byte	64
- 141 0070 0A       		.byte	10
- 142 0071 4D       		.byte	77
+ 141 0070 09       		.byte	9
+ 142 0071 50       		.byte	80
  143 0072 01       		.byte	1
  144 0073 40       		.byte	64
- 145 0074 0A       		.byte	10
- 146 0075 50       		.byte	80
+ 145 0074 01       		.byte	1
+ 146 0075 51       		.byte	81
  147 0076 01       		.byte	1
  148 0077 40       		.byte	64
- 149 0078 01       		.byte	1
- 150 0079 51       		.byte	81
- 151 007a 01       		.byte	1
- 152 007b 40       		.byte	64
- 153 007c 04       		.byte	4
- 154 007d 80       		.byte	-128
- 155 007e 08       		.byte	8
- 156 007f 20       		.byte	32
- 157 0080 09       		.byte	9
- 158 0081 04       		.byte	4
- 159 0082 10       		.byte	16
- 160 0083 20       		.byte	32
- 161 0084 11       		.byte	17
- 162 0085 A0       		.byte	-96
- 163 0086 19       		.byte	25
- 164 0087 08       		.byte	8
- 165 0088 60       		.byte	96
- 166 0089 59       		.byte	89
- 167 008a 61       		.byte	97
- 168 008b 3C       		.byte	60
- 169 008c 85       		.byte	-123
- 170 008d 0D       		.byte	13
- 171 008e 86       		.byte	-122
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 4
+ 149 0078 04       		.byte	4
+ 150 0079 80       		.byte	-128
+ 151 007a 08       		.byte	8
+ 152 007b 10       		.byte	16
+ 153 007c 09       		.byte	9
+ 154 007d 14       		.byte	20
+ 155 007e 11       		.byte	17
+ 156 007f 80       		.byte	-128
+ 157 0080 18       		.byte	24
+ 158 0081 08       		.byte	8
+ 159 0082 19       		.byte	25
+ 160 0083 08       		.byte	8
+ 161 0084 60       		.byte	96
+ 162 0085 C3       		.byte	-61
+ 163 0086 61       		.byte	97
+ 164 0087 66       		.byte	102
+ 165 0088 86       		.byte	-122
+ 166 0089 0D       		.byte	13
+ 167 008a 87       		.byte	-121
+ 168 008b 0D       		.byte	13
+ 169 008c 88       		.byte	-120
+ 170 008d 0F       		.byte	15
+ 171 008e 84       		.byte	-124
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 4
 
 
- 172 008f 72       		.byte	114
- 173 0090 87       		.byte	-121
- 174 0091 0D       		.byte	13
- 175 0092 84       		.byte	-124
- 176 0093 0F       		.byte	15
- 177 0094 85       		.byte	-123
- 178 0095 38       		.byte	56
- 179 0096 87       		.byte	-121
- 180 0097 0D       		.byte	13
- 181 0098 06       		.byte	6
- 182 0099 20       		.byte	32
- 183 009a 07       		.byte	7
- 184 009b 0D       		.byte	13
- 185 009c 08       		.byte	8
- 186 009d 08       		.byte	8
- 187 009e 09       		.byte	9
- 188 009f 22       		.byte	34
- 189 00a0 0A       		.byte	10
+ 172 008f 0D       		.byte	13
+ 173 0090 85       		.byte	-123
+ 174 0091 38       		.byte	56
+ 175 0092 86       		.byte	-122
+ 176 0093 72       		.byte	114
+ 177 0094 0A       		.byte	10
+ 178 0095 05       		.byte	5
+ 179 0096 0F       		.byte	15
+ 180 0097 01       		.byte	1
+ 181 0098 16       		.byte	22
+ 182 0099 0A       		.byte	10
+ 183 009a 2A       		.byte	42
+ 184 009b 09       		.byte	9
+ 185 009c 2E       		.byte	46
+ 186 009d 06       		.byte	6
+ 187 009e 2F       		.byte	47
+ 188 009f 02       		.byte	2
+ 189 00a0 30       		.byte	48
  190 00a1 04       		.byte	4
- 191 00a2 0B       		.byte	11
- 192 00a3 55       		.byte	85
- 193 00a4 0C       		.byte	12
- 194 00a5 0A       		.byte	10
- 195 00a6 0E       		.byte	14
- 196 00a7 04       		.byte	4
- 197 00a8 0F       		.byte	15
- 198 00a9 A0       		.byte	-96
- 199 00aa 12       		.byte	18
- 200 00ab 01       		.byte	1
- 201 00ac 15       		.byte	21
- 202 00ad 88       		.byte	-120
- 203 00ae 16       		.byte	22
- 204 00af 20       		.byte	32
- 205 00b0 18       		.byte	24
- 206 00b1 0E       		.byte	14
- 207 00b2 19       		.byte	25
- 208 00b3 11       		.byte	17
- 209 00b4 1B       		.byte	27
- 210 00b5 22       		.byte	34
- 211 00b6 1C       		.byte	28
- 212 00b7 02       		.byte	2
- 213 00b8 1E       		.byte	30
- 214 00b9 04       		.byte	4
- 215 00ba 20       		.byte	32
- 216 00bb 0E       		.byte	14
- 217 00bc 26       		.byte	38
- 218 00bd 01       		.byte	1
- 219 00be 29       		.byte	41
- 220 00bf 44       		.byte	68
- 221 00c0 2A       		.byte	42
- 222 00c1 10       		.byte	16
- 223 00c2 2B       		.byte	43
- 224 00c3 22       		.byte	34
- 225 00c4 30       		.byte	48
- 226 00c5 01       		.byte	1
- 227 00c6 31       		.byte	49
- 228 00c7 F0       		.byte	-16
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 5
+ 191 00a2 32       		.byte	50
+ 192 00a3 0C       		.byte	12
+ 193 00a4 33       		.byte	51
+ 194 00a5 01       		.byte	1
+ 195 00a6 34       		.byte	52
+ 196 00a7 01       		.byte	1
+ 197 00a8 35       		.byte	53
+ 198 00a9 02       		.byte	2
+ 199 00aa 36       		.byte	54
+ 200 00ab 03       		.byte	3
+ 201 00ac 3E       		.byte	62
+ 202 00ad 55       		.byte	85
+ 203 00ae 58       		.byte	88
+ 204 00af 04       		.byte	4
+ 205 00b0 59       		.byte	89
+ 206 00b1 04       		.byte	4
+ 207 00b2 5B       		.byte	91
+ 208 00b3 04       		.byte	4
+ 209 00b4 5C       		.byte	92
+ 210 00b5 10       		.byte	16
+ 211 00b6 5F       		.byte	95
+ 212 00b7 01       		.byte	1
+ 213 00b8 02       		.byte	2
+ 214 00b9 08       		.byte	8
+ 215 00ba 05       		.byte	5
+ 216 00bb 20       		.byte	32
+ 217 00bc 07       		.byte	7
+ 218 00bd A0       		.byte	-96
+ 219 00be 0A       		.byte	10
+ 220 00bf 20       		.byte	32
+ 221 00c0 0E       		.byte	14
+ 222 00c1 59       		.byte	89
+ 223 00c2 10       		.byte	16
+ 224 00c3 08       		.byte	8
+ 225 00c4 11       		.byte	17
+ 226 00c5 40       		.byte	64
+ 227 00c6 14       		.byte	20
+ 228 00c7 10       		.byte	16
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 5
 
 
- 229 00c8 32       		.byte	50
- 230 00c9 20       		.byte	32
- 231 00ca 33       		.byte	51
- 232 00cb 0F       		.byte	15
- 233 00cc 34       		.byte	52
- 234 00cd 1E       		.byte	30
- 235 00ce 38       		.byte	56
+ 229 00c8 16       		.byte	22
+ 230 00c9 82       		.byte	-126
+ 231 00ca 17       		.byte	23
+ 232 00cb 11       		.byte	17
+ 233 00cc 18       		.byte	24
+ 234 00cd 91       		.byte	-111
+ 235 00ce 1B       		.byte	27
  236 00cf 20       		.byte	32
- 237 00d0 3E       		.byte	62
- 238 00d1 14       		.byte	20
- 239 00d2 40       		.byte	64
- 240 00d3 02       		.byte	2
- 241 00d4 47       		.byte	71
+ 237 00d0 1D       		.byte	29
+ 238 00d1 20       		.byte	32
+ 239 00d2 1E       		.byte	30
+ 240 00d3 2A       		.byte	42
+ 241 00d4 1F       		.byte	31
  242 00d5 02       		.byte	2
- 243 00d6 48       		.byte	72
- 244 00d7 10       		.byte	16
- 245 00d8 49       		.byte	73
- 246 00d9 FF       		.byte	-1
- 247 00da 4A       		.byte	74
- 248 00db FF       		.byte	-1
- 249 00dc 4B       		.byte	75
- 250 00dd FF       		.byte	-1
- 251 00de 4D       		.byte	77
- 252 00df A0       		.byte	-96
- 253 00e0 50       		.byte	80
- 254 00e1 08       		.byte	8
- 255 00e2 52       		.byte	82
- 256 00e3 80       		.byte	-128
- 257 00e4 58       		.byte	88
- 258 00e5 04       		.byte	4
- 259 00e6 59       		.byte	89
- 260 00e7 04       		.byte	4
- 261 00e8 5A       		.byte	90
- 262 00e9 04       		.byte	4
- 263 00ea 5B       		.byte	91
+ 243 00d6 22       		.byte	34
+ 244 00d7 20       		.byte	32
+ 245 00d8 23       		.byte	35
+ 246 00d9 10       		.byte	16
+ 247 00da 25       		.byte	37
+ 248 00db 14       		.byte	20
+ 249 00dc 26       		.byte	38
+ 250 00dd 02       		.byte	2
+ 251 00de 27       		.byte	39
+ 252 00df 50       		.byte	80
+ 253 00e0 2B       		.byte	43
+ 254 00e1 01       		.byte	1
+ 255 00e2 2C       		.byte	44
+ 256 00e3 10       		.byte	16
+ 257 00e4 2D       		.byte	45
+ 258 00e5 20       		.byte	32
+ 259 00e6 2E       		.byte	46
+ 260 00e7 06       		.byte	6
+ 261 00e8 2F       		.byte	47
+ 262 00e9 02       		.byte	2
+ 263 00ea 36       		.byte	54
  264 00eb 04       		.byte	4
- 265 00ec 5C       		.byte	92
- 266 00ed 01       		.byte	1
- 267 00ee 5D       		.byte	93
- 268 00ef 02       		.byte	2
- 269 00f0 5F       		.byte	95
- 270 00f1 01       		.byte	1
- 271 00f2 60       		.byte	96
+ 265 00ec 37       		.byte	55
+ 266 00ed A1       		.byte	-95
+ 267 00ee 3A       		.byte	58
+ 268 00ef 48       		.byte	72
+ 269 00f0 3B       		.byte	59
+ 270 00f1 04       		.byte	4
+ 271 00f2 3C       		.byte	60
  272 00f3 80       		.byte	-128
- 273 00f4 62       		.byte	98
- 274 00f5 40       		.byte	64
- 275 00f6 63       		.byte	99
- 276 00f7 40       		.byte	64
- 277 00f8 64       		.byte	100
- 278 00f9 40       		.byte	64
- 279 00fa 66       		.byte	102
- 280 00fb 40       		.byte	64
- 281 00fc 68       		.byte	104
- 282 00fd 40       		.byte	64
- 283 00fe 6A       		.byte	106
- 284 00ff 40       		.byte	64
- 285 0100 6C       		.byte	108
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 6
+ 273 00f4 3D       		.byte	61
+ 274 00f5 08       		.byte	8
+ 275 00f6 3E       		.byte	62
+ 276 00f7 51       		.byte	81
+ 277 00f8 46       		.byte	70
+ 278 00f9 08       		.byte	8
+ 279 00fa 4D       		.byte	77
+ 280 00fb 01       		.byte	1
+ 281 00fc 4F       		.byte	79
+ 282 00fd 14       		.byte	20
+ 283 00fe 57       		.byte	87
+ 284 00ff 01       		.byte	1
+ 285 0100 68       		.byte	104
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 6
 
 
- 286 0101 40       		.byte	64
- 287 0102 6E       		.byte	110
+ 286 0101 08       		.byte	8
+ 287 0102 69       		.byte	105
  288 0103 40       		.byte	64
- 289 0104 80       		.byte	-128
- 290 0105 02       		.byte	2
- 291 0106 82       		.byte	-126
- 292 0107 15       		.byte	21
- 293 0108 84       		.byte	-124
- 294 0109 67       		.byte	103
- 295 010a 88       		.byte	-120
- 296 010b 67       		.byte	103
- 297 010c 95       		.byte	-107
- 298 010d 01       		.byte	1
- 299 010e 98       		.byte	-104
- 300 010f 44       		.byte	68
- 301 0110 9A       		.byte	-102
- 302 0111 2A       		.byte	42
- 303 0112 9B       		.byte	-101
- 304 0113 02       		.byte	2
- 305 0114 A7       		.byte	-89
- 306 0115 07       		.byte	7
- 307 0116 AC       		.byte	-84
- 308 0117 21       		.byte	33
- 309 0118 AE       		.byte	-82
- 310 0119 CA       		.byte	-54
- 311 011a B0       		.byte	-80
- 312 011b 07       		.byte	7
- 313 011c B2       		.byte	-78
- 314 011d 80       		.byte	-128
- 315 011e B3       		.byte	-77
- 316 011f 02       		.byte	2
- 317 0120 B4       		.byte	-76
- 318 0121 60       		.byte	96
- 319 0122 B5       		.byte	-75
- 320 0123 04       		.byte	4
- 321 0124 B6       		.byte	-74
- 322 0125 18       		.byte	24
- 323 0126 B7       		.byte	-73
- 324 0127 01       		.byte	1
- 325 0128 BE       		.byte	-66
- 326 0129 40       		.byte	64
- 327 012a C0       		.byte	-64
- 328 012b 62       		.byte	98
- 329 012c C1       		.byte	-63
- 330 012d 05       		.byte	5
- 331 012e C2       		.byte	-62
- 332 012f 04       		.byte	4
- 333 0130 C4       		.byte	-60
+ 289 0104 76       		.byte	118
+ 290 0105 40       		.byte	64
+ 291 0106 80       		.byte	-128
+ 292 0107 10       		.byte	16
+ 293 0108 8C       		.byte	-116
+ 294 0109 40       		.byte	64
+ 295 010a 9B       		.byte	-101
+ 296 010b 80       		.byte	-128
+ 297 010c AB       		.byte	-85
+ 298 010d 80       		.byte	-128
+ 299 010e C0       		.byte	-64
+ 300 010f 72       		.byte	114
+ 301 0110 C2       		.byte	-62
+ 302 0111 F4       		.byte	-12
+ 303 0112 C4       		.byte	-60
+ 304 0113 F3       		.byte	-13
+ 305 0114 CA       		.byte	-54
+ 306 0115 F8       		.byte	-8
+ 307 0116 CC       		.byte	-52
+ 308 0117 F0       		.byte	-16
+ 309 0118 CE       		.byte	-50
+ 310 0119 F8       		.byte	-8
+ 311 011a D0       		.byte	-48
+ 312 011b 20       		.byte	32
+ 313 011c D2       		.byte	-46
+ 314 011d 20       		.byte	32
+ 315 011e E6       		.byte	-26
+ 316 011f 10       		.byte	16
+ 317 0120 00       		.byte	0
+ 318 0121 02       		.byte	2
+ 319 0122 02       		.byte	2
+ 320 0123 15       		.byte	21
+ 321 0124 03       		.byte	3
+ 322 0125 02       		.byte	2
+ 323 0126 08       		.byte	8
+ 324 0127 E7       		.byte	-25
+ 325 0128 10       		.byte	16
+ 326 0129 80       		.byte	-128
+ 327 012a 18       		.byte	24
+ 328 012b 44       		.byte	68
+ 329 012c 19       		.byte	25
+ 330 012d 02       		.byte	2
+ 331 012e 1A       		.byte	26
+ 332 012f 2A       		.byte	42
+ 333 0130 1F       		.byte	31
  334 0131 01       		.byte	1
- 335 0132 C5       		.byte	-59
- 336 0133 EC       		.byte	-20
- 337 0134 C8       		.byte	-56
- 338 0135 03       		.byte	3
- 339 0136 C9       		.byte	-55
- 340 0137 FF       		.byte	-1
- 341 0138 CA       		.byte	-54
- 342 0139 FF       		.byte	-1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 7
+ 335 0132 27       		.byte	39
+ 336 0133 01       		.byte	1
+ 337 0134 28       		.byte	40
+ 338 0135 E7       		.byte	-25
+ 339 0136 2C       		.byte	44
+ 340 0137 21       		.byte	33
+ 341 0138 2E       		.byte	46
+ 342 0139 4A       		.byte	74
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 7
 
 
- 343 013a CB       		.byte	-53
- 344 013b FF       		.byte	-1
- 345 013c CC       		.byte	-52
- 346 013d 62       		.byte	98
- 347 013e CD       		.byte	-51
- 348 013f A0       		.byte	-96
- 349 0140 CE       		.byte	-50
- 350 0141 F0       		.byte	-16
- 351 0142 CF       		.byte	-49
- 352 0143 41       		.byte	65
- 353 0144 D0       		.byte	-48
- 354 0145 0C       		.byte	12
- 355 0146 D4       		.byte	-44
- 356 0147 05       		.byte	5
- 357 0148 D8       		.byte	-40
- 358 0149 04       		.byte	4
- 359 014a D9       		.byte	-39
- 360 014b 04       		.byte	4
- 361 014c DA       		.byte	-38
+ 343 013a 30       		.byte	48
+ 344 013b 07       		.byte	7
+ 345 013c 31       		.byte	49
+ 346 013d 02       		.byte	2
+ 347 013e 32       		.byte	50
+ 348 013f 80       		.byte	-128
+ 349 0140 34       		.byte	52
+ 350 0141 60       		.byte	96
+ 351 0142 36       		.byte	54
+ 352 0143 18       		.byte	24
+ 353 0144 37       		.byte	55
+ 354 0145 01       		.byte	1
+ 355 0146 3E       		.byte	62
+ 356 0147 40       		.byte	64
+ 357 0148 3F       		.byte	63
+ 358 0149 40       		.byte	64
+ 359 014a 40       		.byte	64
+ 360 014b 23       		.byte	35
+ 361 014c 41       		.byte	65
  362 014d 04       		.byte	4
- 363 014e DB       		.byte	-37
- 364 014f 04       		.byte	4
- 365 0150 DC       		.byte	-36
- 366 0151 04       		.byte	4
- 367 0152 DD       		.byte	-35
- 368 0153 04       		.byte	4
- 369 0154 DF       		.byte	-33
- 370 0155 01       		.byte	1
- 371 0156 E6       		.byte	-26
- 372 0157 40       		.byte	64
- 373 0158 E7       		.byte	-25
- 374 0159 02       		.byte	2
- 375 015a E9       		.byte	-23
- 376 015b 10       		.byte	16
- 377 015c EA       		.byte	-22
- 378 015d 30       		.byte	48
- 379 015e EB       		.byte	-21
- 380 015f 10       		.byte	16
- 381 0160 ED       		.byte	-19
- 382 0161 10       		.byte	16
- 383 0162 EE       		.byte	-18
- 384 0163 10       		.byte	16
- 385 0164 EF       		.byte	-17
- 386 0165 12       		.byte	18
- 387 0166 01       		.byte	1
- 388 0167 84       		.byte	-124
- 389 0168 03       		.byte	3
- 390 0169 08       		.byte	8
- 391 016a 05       		.byte	5
- 392 016b 01       		.byte	1
- 393 016c 07       		.byte	7
- 394 016d 14       		.byte	20
- 395 016e 08       		.byte	8
- 396 016f A0       		.byte	-96
- 397 0170 0A       		.byte	10
- 398 0171 20       		.byte	32
- 399 0172 0B       		.byte	11
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 8
+ 363 014e 42       		.byte	66
+ 364 014f 05       		.byte	5
+ 365 0150 44       		.byte	68
+ 366 0151 01       		.byte	1
+ 367 0152 46       		.byte	70
+ 368 0153 C0       		.byte	-64
+ 369 0154 47       		.byte	71
+ 370 0155 E0       		.byte	-32
+ 371 0156 48       		.byte	72
+ 372 0157 28       		.byte	40
+ 373 0158 49       		.byte	73
+ 374 0159 FF       		.byte	-1
+ 375 015a 4A       		.byte	74
+ 376 015b FF       		.byte	-1
+ 377 015c 4B       		.byte	75
+ 378 015d FF       		.byte	-1
+ 379 015e 4C       		.byte	76
+ 380 015f 62       		.byte	98
+ 381 0160 4D       		.byte	77
+ 382 0161 A0       		.byte	-96
+ 383 0162 4E       		.byte	78
+ 384 0163 F0       		.byte	-16
+ 385 0164 4F       		.byte	79
+ 386 0165 41       		.byte	65
+ 387 0166 50       		.byte	80
+ 388 0167 0C       		.byte	12
+ 389 0168 54       		.byte	84
+ 390 0169 05       		.byte	5
+ 391 016a 58       		.byte	88
+ 392 016b 04       		.byte	4
+ 393 016c 59       		.byte	89
+ 394 016d 04       		.byte	4
+ 395 016e 5A       		.byte	90
+ 396 016f 04       		.byte	4
+ 397 0170 5B       		.byte	91
+ 398 0171 04       		.byte	4
+ 399 0172 5C       		.byte	92
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 8
 
 
- 400 0173 80       		.byte	-128
- 401 0174 0E       		.byte	14
- 402 0175 04       		.byte	4
- 403 0176 10       		.byte	16
- 404 0177 98       		.byte	-104
- 405 0178 17       		.byte	23
- 406 0179 80       		.byte	-128
- 407 017a 18       		.byte	24
- 408 017b 84       		.byte	-124
- 409 017c 19       		.byte	25
- 410 017d 08       		.byte	8
- 411 017e 1C       		.byte	28
- 412 017f A0       		.byte	-96
- 413 0180 1D       		.byte	29
- 414 0181 81       		.byte	-127
- 415 0182 1E       		.byte	30
- 416 0183 0C       		.byte	12
- 417 0184 20       		.byte	32
- 418 0185 40       		.byte	64
- 419 0186 21       		.byte	33
- 420 0187 04       		.byte	4
- 421 0188 24       		.byte	36
- 422 0189 10       		.byte	16
- 423 018a 25       		.byte	37
- 424 018b 08       		.byte	8
- 425 018c 27       		.byte	39
- 426 018d 09       		.byte	9
- 427 018e 2B       		.byte	43
- 428 018f 04       		.byte	4
- 429 0190 2F       		.byte	47
- 430 0191 20       		.byte	32
- 431 0192 31       		.byte	49
+ 400 0173 14       		.byte	20
+ 401 0174 5D       		.byte	93
+ 402 0175 14       		.byte	20
+ 403 0176 5F       		.byte	95
+ 404 0177 01       		.byte	1
+ 405 0178 66       		.byte	102
+ 406 0179 40       		.byte	64
+ 407 017a 67       		.byte	103
+ 408 017b 02       		.byte	2
+ 409 017c 69       		.byte	105
+ 410 017d 10       		.byte	16
+ 411 017e 6A       		.byte	106
+ 412 017f 30       		.byte	48
+ 413 0180 6B       		.byte	107
+ 414 0181 10       		.byte	16
+ 415 0182 6D       		.byte	109
+ 416 0183 10       		.byte	16
+ 417 0184 6E       		.byte	110
+ 418 0185 10       		.byte	16
+ 419 0186 6F       		.byte	111
+ 420 0187 12       		.byte	18
+ 421 0188 83       		.byte	-125
+ 422 0189 02       		.byte	2
+ 423 018a 84       		.byte	-124
+ 424 018b 01       		.byte	1
+ 425 018c 87       		.byte	-121
+ 426 018d 0C       		.byte	12
+ 427 018e 8A       		.byte	-118
+ 428 018f 1A       		.byte	26
+ 429 0190 8C       		.byte	-116
+ 430 0191 02       		.byte	2
+ 431 0192 8E       		.byte	-114
  432 0193 04       		.byte	4
- 433 0194 32       		.byte	50
- 434 0195 30       		.byte	48
- 435 0196 36       		.byte	54
- 436 0197 20       		.byte	32
- 437 0198 37       		.byte	55
- 438 0199 08       		.byte	8
- 439 019a 38       		.byte	56
- 440 019b 50       		.byte	80
- 441 019c 39       		.byte	57
- 442 019d 08       		.byte	8
- 443 019e 40       		.byte	64
- 444 019f 04       		.byte	4
- 445 01a0 42       		.byte	66
- 446 01a1 40       		.byte	64
- 447 01a2 43       		.byte	67
+ 433 0194 90       		.byte	-112
+ 434 0195 04       		.byte	4
+ 435 0196 92       		.byte	-110
+ 436 0197 0A       		.byte	10
+ 437 0198 93       		.byte	-109
+ 438 0199 05       		.byte	5
+ 439 019a A4       		.byte	-92
+ 440 019b 08       		.byte	8
+ 441 019c A6       		.byte	-90
+ 442 019d 05       		.byte	5
+ 443 019e A7       		.byte	-89
+ 444 019f 01       		.byte	1
+ 445 01a0 AC       		.byte	-84
+ 446 01a1 10       		.byte	16
+ 447 01a2 B0       		.byte	-80
  448 01a3 01       		.byte	1
- 449 01a4 45       		.byte	69
- 450 01a5 A1       		.byte	-95
- 451 01a6 4E       		.byte	78
- 452 01a7 8A       		.byte	-118
- 453 01a8 4F       		.byte	79
- 454 01a9 04       		.byte	4
- 455 01aa 50       		.byte	80
+ 449 01a4 B1       		.byte	-79
+ 450 01a5 02       		.byte	2
+ 451 01a6 B2       		.byte	-78
+ 452 01a7 1E       		.byte	30
+ 453 01a8 B3       		.byte	-77
+ 454 01a9 01       		.byte	1
+ 455 01aa B5       		.byte	-75
  456 01ab 08       		.byte	8
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 9
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 9
 
 
- 457 01ac 5D       		.byte	93
- 458 01ad 08       		.byte	8
- 459 01ae 5E       		.byte	94
- 460 01af 40       		.byte	64
- 461 01b0 5F       		.byte	95
- 462 01b1 01       		.byte	1
- 463 01b2 72       		.byte	114
- 464 01b3 80       		.byte	-128
- 465 01b4 82       		.byte	-126
- 466 01b5 04       		.byte	4
- 467 01b6 83       		.byte	-125
- 468 01b7 01       		.byte	1
- 469 01b8 8C       		.byte	-116
- 470 01b9 08       		.byte	8
- 471 01ba 9B       		.byte	-101
- 472 01bb 80       		.byte	-128
- 473 01bc A0       		.byte	-96
- 474 01bd 20       		.byte	32
- 475 01be A8       		.byte	-88
- 476 01bf 20       		.byte	32
- 477 01c0 AB       		.byte	-85
- 478 01c1 80       		.byte	-128
- 479 01c2 C0       		.byte	-64
- 480 01c3 77       		.byte	119
- 481 01c4 C2       		.byte	-62
- 482 01c5 4F       		.byte	79
- 483 01c6 C4       		.byte	-60
- 484 01c7 8E       		.byte	-114
- 485 01c8 CA       		.byte	-54
- 486 01c9 44       		.byte	68
- 487 01ca CC       		.byte	-52
- 488 01cb 66       		.byte	102
- 489 01cc CE       		.byte	-50
- 490 01cd 0E       		.byte	14
- 491 01ce D0       		.byte	-48
- 492 01cf B4       		.byte	-76
- 493 01d0 D2       		.byte	-46
- 494 01d1 30       		.byte	48
- 495 01d2 D6       		.byte	-42
- 496 01d3 D0       		.byte	-48
- 497 01d4 01       		.byte	1
- 498 01d5 08       		.byte	8
- 499 01d6 05       		.byte	5
- 500 01d7 04       		.byte	4
- 501 01d8 0D       		.byte	13
- 502 01d9 C3       		.byte	-61
- 503 01da 11       		.byte	17
- 504 01db FF       		.byte	-1
- 505 01dc 15       		.byte	21
- 506 01dd F3       		.byte	-13
- 507 01de 17       		.byte	23
- 508 01df 0C       		.byte	12
- 509 01e0 19       		.byte	25
- 510 01e1 1F       		.byte	31
- 511 01e2 1B       		.byte	27
- 512 01e3 E0       		.byte	-32
- 513 01e4 1D       		.byte	29
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 10
+ 457 01ac B7       		.byte	-73
+ 458 01ad 04       		.byte	4
+ 459 01ae BF       		.byte	-65
+ 460 01af 04       		.byte	4
+ 461 01b0 C0       		.byte	-64
+ 462 01b1 03       		.byte	3
+ 463 01b2 C5       		.byte	-59
+ 464 01b3 02       		.byte	2
+ 465 01b4 C8       		.byte	-56
+ 466 01b5 01       		.byte	1
+ 467 01b6 C9       		.byte	-55
+ 468 01b7 FF       		.byte	-1
+ 469 01b8 CA       		.byte	-54
+ 470 01b9 FF       		.byte	-1
+ 471 01ba CB       		.byte	-53
+ 472 01bb FF       		.byte	-1
+ 473 01bc CD       		.byte	-51
+ 474 01bd A0       		.byte	-96
+ 475 01be D0       		.byte	-48
+ 476 01bf 08       		.byte	8
+ 477 01c0 D4       		.byte	-44
+ 478 01c1 05       		.byte	5
+ 479 01c2 D8       		.byte	-40
+ 480 01c3 04       		.byte	4
+ 481 01c4 D9       		.byte	-39
+ 482 01c5 04       		.byte	4
+ 483 01c6 DA       		.byte	-38
+ 484 01c7 04       		.byte	4
+ 485 01c8 DB       		.byte	-37
+ 486 01c9 04       		.byte	4
+ 487 01ca DD       		.byte	-35
+ 488 01cb 02       		.byte	2
+ 489 01cc DF       		.byte	-33
+ 490 01cd 01       		.byte	1
+ 491 01ce E0       		.byte	-32
+ 492 01cf 80       		.byte	-128
+ 493 01d0 E2       		.byte	-30
+ 494 01d1 40       		.byte	64
+ 495 01d2 E3       		.byte	-29
+ 496 01d3 40       		.byte	64
+ 497 01d4 E4       		.byte	-28
+ 498 01d5 40       		.byte	64
+ 499 01d6 E6       		.byte	-26
+ 500 01d7 40       		.byte	64
+ 501 01d8 E8       		.byte	-24
+ 502 01d9 40       		.byte	64
+ 503 01da EA       		.byte	-22
+ 504 01db 40       		.byte	64
+ 505 01dc EC       		.byte	-20
+ 506 01dd 40       		.byte	64
+ 507 01de EE       		.byte	-18
+ 508 01df 40       		.byte	64
+ 509 01e0 00       		.byte	0
+ 510 01e1 14       		.byte	20
+ 511 01e2 02       		.byte	2
+ 512 01e3 C0       		.byte	-64
+ 513 01e4 03       		.byte	3
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 10
 
 
- 514 01e5 3C       		.byte	60
- 515 01e6 1F       		.byte	31
- 516 01e7 C3       		.byte	-61
- 517 01e8 23       		.byte	35
- 518 01e9 E3       		.byte	-29
- 519 01ea 24       		.byte	36
- 520 01eb 01       		.byte	1
- 521 01ec 25       		.byte	37
- 522 01ed 41       		.byte	65
- 523 01ee 28       		.byte	40
- 524 01ef 01       		.byte	1
- 525 01f0 29       		.byte	41
- 526 01f1 0C       		.byte	12
- 527 01f2 2C       		.byte	44
- 528 01f3 01       		.byte	1
- 529 01f4 2D       		.byte	45
- 530 01f5 82       		.byte	-126
- 531 01f6 31       		.byte	49
- 532 01f7 2C       		.byte	44
- 533 01f8 33       		.byte	51
- 534 01f9 0F       		.byte	15
- 535 01fa 34       		.byte	52
- 536 01fb 01       		.byte	1
- 537 01fc 35       		.byte	53
- 538 01fd 10       		.byte	16
- 539 01fe 37       		.byte	55
- 540 01ff C0       		.byte	-64
- 541 0200 3B       		.byte	59
- 542 0201 08       		.byte	8
- 543 0202 3F       		.byte	63
- 544 0203 10       		.byte	16
- 545 0204 56       		.byte	86
- 546 0205 02       		.byte	2
- 547 0206 57       		.byte	87
- 548 0207 12       		.byte	18
- 549 0208 58       		.byte	88
- 550 0209 04       		.byte	4
- 551 020a 59       		.byte	89
- 552 020b 04       		.byte	4
- 553 020c 5B       		.byte	91
- 554 020d 04       		.byte	4
- 555 020e 5C       		.byte	92
- 556 020f 44       		.byte	68
- 557 0210 5D       		.byte	93
- 558 0211 40       		.byte	64
- 559 0212 5F       		.byte	95
- 560 0213 01       		.byte	1
- 561 0214 85       		.byte	-123
- 562 0215 87       		.byte	-121
- 563 0216 8A       		.byte	-118
- 564 0217 02       		.byte	2
- 565 0218 8B       		.byte	-117
- 566 0219 40       		.byte	64
- 567 021a 8D       		.byte	-115
- 568 021b 37       		.byte	55
- 569 021c 8E       		.byte	-114
- 570 021d 01       		.byte	1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 11
+ 514 01e5 01       		.byte	1
+ 515 01e6 04       		.byte	4
+ 516 01e7 20       		.byte	32
+ 517 01e8 05       		.byte	5
+ 518 01e9 01       		.byte	1
+ 519 01ea 06       		.byte	6
+ 520 01eb 80       		.byte	-128
+ 521 01ec 08       		.byte	8
+ 522 01ed 80       		.byte	-128
+ 523 01ee 0A       		.byte	10
+ 524 01ef 81       		.byte	-127
+ 525 01f0 0E       		.byte	14
+ 526 01f1 84       		.byte	-124
+ 527 01f2 10       		.byte	16
+ 528 01f3 02       		.byte	2
+ 529 01f4 11       		.byte	17
+ 530 01f5 04       		.byte	4
+ 531 01f6 15       		.byte	21
+ 532 01f7 10       		.byte	16
+ 533 01f8 17       		.byte	23
+ 534 01f9 80       		.byte	-128
+ 535 01fa 18       		.byte	24
+ 536 01fb 10       		.byte	16
+ 537 01fc 1A       		.byte	26
+ 538 01fd 40       		.byte	64
+ 539 01fe 1D       		.byte	29
+ 540 01ff 89       		.byte	-119
+ 541 0200 1E       		.byte	30
+ 542 0201 14       		.byte	20
+ 543 0202 20       		.byte	32
+ 544 0203 04       		.byte	4
+ 545 0204 22       		.byte	34
+ 546 0205 45       		.byte	69
+ 547 0206 24       		.byte	36
+ 548 0207 40       		.byte	64
+ 549 0208 26       		.byte	38
+ 550 0209 80       		.byte	-128
+ 551 020a 28       		.byte	40
+ 552 020b 20       		.byte	32
+ 553 020c 2F       		.byte	47
+ 554 020d 20       		.byte	32
+ 555 020e 32       		.byte	50
+ 556 020f 01       		.byte	1
+ 557 0210 33       		.byte	51
+ 558 0211 01       		.byte	1
+ 559 0212 36       		.byte	54
+ 560 0213 20       		.byte	32
+ 561 0214 37       		.byte	55
+ 562 0215 40       		.byte	64
+ 563 0216 39       		.byte	57
+ 564 0217 04       		.byte	4
+ 565 0218 3A       		.byte	58
+ 566 0219 09       		.byte	9
+ 567 021a 3F       		.byte	63
+ 568 021b 02       		.byte	2
+ 569 021c 42       		.byte	66
+ 570 021d 20       		.byte	32
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 11
 
 
- 571 021e 92       		.byte	-110
- 572 021f 01       		.byte	1
- 573 0220 93       		.byte	-109
- 574 0221 40       		.byte	64
- 575 0222 95       		.byte	-107
- 576 0223 35       		.byte	53
- 577 0224 97       		.byte	-105
- 578 0225 82       		.byte	-126
- 579 0226 99       		.byte	-103
- 580 0227 11       		.byte	17
- 581 0228 9B       		.byte	-101
- 582 0229 82       		.byte	-126
- 583 022a 9E       		.byte	-98
+ 571 021e 44       		.byte	68
+ 572 021f 80       		.byte	-128
+ 573 0220 45       		.byte	69
+ 574 0221 A8       		.byte	-88
+ 575 0222 48       		.byte	72
+ 576 0223 10       		.byte	16
+ 577 0224 4E       		.byte	78
+ 578 0225 02       		.byte	2
+ 579 0226 56       		.byte	86
+ 580 0227 02       		.byte	2
+ 581 0228 57       		.byte	87
+ 582 0229 20       		.byte	32
+ 583 022a 58       		.byte	88
  584 022b 02       		.byte	2
- 585 022c A7       		.byte	-89
- 586 022d 08       		.byte	8
- 587 022e A9       		.byte	-87
- 588 022f 24       		.byte	36
- 589 0230 AB       		.byte	-85
- 590 0231 82       		.byte	-126
- 591 0232 B1       		.byte	-79
- 592 0233 80       		.byte	-128
- 593 0234 B2       		.byte	-78
+ 585 022c 5A       		.byte	90
+ 586 022d 48       		.byte	72
+ 587 022e 5C       		.byte	92
+ 588 022f 40       		.byte	64
+ 589 0230 5D       		.byte	93
+ 590 0231 09       		.byte	9
+ 591 0232 6F       		.byte	111
+ 592 0233 0E       		.byte	14
+ 593 0234 82       		.byte	-126
  594 0235 01       		.byte	1
- 595 0236 B3       		.byte	-77
- 596 0237 30       		.byte	48
- 597 0238 B5       		.byte	-75
- 598 0239 40       		.byte	64
- 599 023a B6       		.byte	-74
- 600 023b 02       		.byte	2
- 601 023c B7       		.byte	-73
- 602 023d 0F       		.byte	15
- 603 023e B9       		.byte	-71
- 604 023f 80       		.byte	-128
- 605 0240 BE       		.byte	-66
- 606 0241 04       		.byte	4
- 607 0242 BF       		.byte	-65
- 608 0243 50       		.byte	80
- 609 0244 D4       		.byte	-44
- 610 0245 05       		.byte	5
- 611 0246 D8       		.byte	-40
- 612 0247 04       		.byte	4
- 613 0248 D9       		.byte	-39
- 614 0249 04       		.byte	4
- 615 024a DB       		.byte	-37
- 616 024b 04       		.byte	4
- 617 024c DC       		.byte	-36
- 618 024d 02       		.byte	2
- 619 024e DD       		.byte	-35
- 620 024f 20       		.byte	32
- 621 0250 DF       		.byte	-33
- 622 0251 01       		.byte	1
- 623 0252 03       		.byte	3
- 624 0253 09       		.byte	9
- 625 0254 08       		.byte	8
- 626 0255 80       		.byte	-128
- 627 0256 0B       		.byte	11
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 12
+ 595 0236 91       		.byte	-111
+ 596 0237 01       		.byte	1
+ 597 0238 93       		.byte	-109
+ 598 0239 14       		.byte	20
+ 599 023a 96       		.byte	-106
+ 600 023b 35       		.byte	53
+ 601 023c 9B       		.byte	-101
+ 602 023d C0       		.byte	-64
+ 603 023e 9D       		.byte	-99
+ 604 023f 20       		.byte	32
+ 605 0240 9E       		.byte	-98
+ 606 0241 80       		.byte	-128
+ 607 0242 9F       		.byte	-97
+ 608 0243 20       		.byte	32
+ 609 0244 A1       		.byte	-95
+ 610 0245 34       		.byte	52
+ 611 0246 A2       		.byte	-94
+ 612 0247 37       		.byte	55
+ 613 0248 A3       		.byte	-93
+ 614 0249 01       		.byte	1
+ 615 024a A4       		.byte	-92
+ 616 024b 40       		.byte	64
+ 617 024c A6       		.byte	-90
+ 618 024d 08       		.byte	8
+ 619 024e AE       		.byte	-82
+ 620 024f 12       		.byte	18
+ 621 0250 B3       		.byte	-77
+ 622 0251 20       		.byte	32
+ 623 0252 B4       		.byte	-76
+ 624 0253 01       		.byte	1
+ 625 0254 C0       		.byte	-64
+ 626 0255 57       		.byte	87
+ 627 0256 C2       		.byte	-62
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 12
 
 
- 628 0257 40       		.byte	64
- 629 0258 15       		.byte	21
- 630 0259 40       		.byte	64
- 631 025a 17       		.byte	23
- 632 025b 14       		.byte	20
- 633 025c 18       		.byte	24
- 634 025d 10       		.byte	16
- 635 025e 19       		.byte	25
- 636 025f 80       		.byte	-128
- 637 0260 1D       		.byte	29
- 638 0261 20       		.byte	32
- 639 0262 20       		.byte	32
- 640 0263 06       		.byte	6
- 641 0264 22       		.byte	34
- 642 0265 01       		.byte	1
- 643 0266 23       		.byte	35
- 644 0267 60       		.byte	96
- 645 0268 25       		.byte	37
- 646 0269 81       		.byte	-127
- 647 026a 26       		.byte	38
- 648 026b 08       		.byte	8
- 649 026c 27       		.byte	39
- 650 026d 08       		.byte	8
- 651 026e 29       		.byte	41
- 652 026f 04       		.byte	4
- 653 0270 2B       		.byte	43
- 654 0271 04       		.byte	4
- 655 0272 2C       		.byte	44
- 656 0273 20       		.byte	32
- 657 0274 2D       		.byte	45
- 658 0275 01       		.byte	1
- 659 0276 2E       		.byte	46
- 660 0277 20       		.byte	32
- 661 0278 2F       		.byte	47
- 662 0279 01       		.byte	1
- 663 027a 31       		.byte	49
- 664 027b 08       		.byte	8
- 665 027c 32       		.byte	50
- 666 027d 11       		.byte	17
- 667 027e 36       		.byte	54
- 668 027f 6A       		.byte	106
- 669 0280 38       		.byte	56
- 670 0281 40       		.byte	64
- 671 0282 39       		.byte	57
- 672 0283 18       		.byte	24
- 673 0284 3C       		.byte	60
- 674 0285 80       		.byte	-128
- 675 0286 3E       		.byte	62
+ 628 0257 58       		.byte	88
+ 629 0258 C4       		.byte	-60
+ 630 0259 C5       		.byte	-59
+ 631 025a CA       		.byte	-54
+ 632 025b 42       		.byte	66
+ 633 025c CC       		.byte	-52
+ 634 025d 31       		.byte	49
+ 635 025e CE       		.byte	-50
+ 636 025f 83       		.byte	-125
+ 637 0260 D0       		.byte	-48
+ 638 0261 F2       		.byte	-14
+ 639 0262 D2       		.byte	-46
+ 640 0263 10       		.byte	16
+ 641 0264 D6       		.byte	-42
+ 642 0265 DB       		.byte	-37
+ 643 0266 E2       		.byte	-30
+ 644 0267 04       		.byte	4
+ 645 0268 EA       		.byte	-22
+ 646 0269 80       		.byte	-128
+ 647 026a EE       		.byte	-18
+ 648 026b 80       		.byte	-128
+ 649 026c 02       		.byte	2
+ 650 026d 10       		.byte	16
+ 651 026e 04       		.byte	4
+ 652 026f 0E       		.byte	14
+ 653 0270 05       		.byte	5
+ 654 0271 08       		.byte	8
+ 655 0272 07       		.byte	7
+ 656 0273 05       		.byte	5
+ 657 0274 0D       		.byte	13
+ 658 0275 20       		.byte	32
+ 659 0276 11       		.byte	17
+ 660 0277 02       		.byte	2
+ 661 0278 13       		.byte	19
+ 662 0279 04       		.byte	4
+ 663 027a 14       		.byte	20
+ 664 027b 0A       		.byte	10
+ 665 027c 15       		.byte	21
+ 666 027d 10       		.byte	16
+ 667 027e 16       		.byte	22
+ 668 027f 04       		.byte	4
+ 669 0280 18       		.byte	24
+ 670 0281 08       		.byte	8
+ 671 0282 19       		.byte	25
+ 672 0283 04       		.byte	4
+ 673 0284 1A       		.byte	26
+ 674 0285 05       		.byte	5
+ 675 0286 1B       		.byte	27
  676 0287 0A       		.byte	10
- 677 0288 40       		.byte	64
+ 677 0288 1C       		.byte	28
  678 0289 02       		.byte	2
- 679 028a 41       		.byte	65
- 680 028b 80       		.byte	-128
- 681 028c 59       		.byte	89
- 682 028d 09       		.byte	9
- 683 028e 5B       		.byte	91
- 684 028f 40       		.byte	64
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 13
+ 679 028a 1E       		.byte	30
+ 680 028b 05       		.byte	5
+ 681 028c 1F       		.byte	31
+ 682 028d 1A       		.byte	26
+ 683 028e 2C       		.byte	44
+ 684 028f 0E       		.byte	14
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 13
 
 
- 685 0290 5F       		.byte	95
- 686 0291 08       		.byte	8
- 687 0292 69       		.byte	105
- 688 0293 10       		.byte	16
- 689 0294 6B       		.byte	107
+ 685 0290 30       		.byte	48
+ 686 0291 1E       		.byte	30
+ 687 0292 31       		.byte	49
+ 688 0293 1E       		.byte	30
+ 689 0294 32       		.byte	50
  690 0295 01       		.byte	1
- 691 0296 6D       		.byte	109
- 692 0297 40       		.byte	64
- 693 0298 6F       		.byte	111
- 694 0299 14       		.byte	20
- 695 029a 76       		.byte	118
- 696 029b 2A       		.byte	42
- 697 029c 81       		.byte	-127
- 698 029d 08       		.byte	8
- 699 029e 83       		.byte	-125
- 700 029f 20       		.byte	32
- 701 02a0 87       		.byte	-121
- 702 02a1 01       		.byte	1
- 703 02a2 88       		.byte	-120
- 704 02a3 80       		.byte	-128
- 705 02a4 89       		.byte	-119
- 706 02a5 10       		.byte	16
- 707 02a6 8A       		.byte	-118
- 708 02a7 01       		.byte	1
- 709 02a8 8C       		.byte	-116
- 710 02a9 04       		.byte	4
- 711 02aa 8F       		.byte	-113
- 712 02ab 08       		.byte	8
- 713 02ac 90       		.byte	-112
- 714 02ad C0       		.byte	-64
- 715 02ae 91       		.byte	-111
- 716 02af 08       		.byte	8
- 717 02b0 93       		.byte	-109
- 718 02b1 06       		.byte	6
- 719 02b2 95       		.byte	-107
- 720 02b3 04       		.byte	4
- 721 02b4 96       		.byte	-106
- 722 02b5 20       		.byte	32
- 723 02b6 97       		.byte	-105
- 724 02b7 81       		.byte	-127
- 725 02b8 9A       		.byte	-102
- 726 02b9 80       		.byte	-128
- 727 02ba 9C       		.byte	-100
- 728 02bb B0       		.byte	-80
- 729 02bc 9D       		.byte	-99
- 730 02bd 84       		.byte	-124
- 731 02be 9F       		.byte	-97
- 732 02bf 14       		.byte	20
- 733 02c0 A0       		.byte	-96
- 734 02c1 70       		.byte	112
- 735 02c2 A1       		.byte	-95
- 736 02c3 08       		.byte	8
- 737 02c4 A2       		.byte	-94
- 738 02c5 80       		.byte	-128
- 739 02c6 A4       		.byte	-92
- 740 02c7 80       		.byte	-128
- 741 02c8 A5       		.byte	-91
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 14
+ 691 0296 33       		.byte	51
+ 692 0297 01       		.byte	1
+ 693 0298 35       		.byte	53
+ 694 0299 20       		.byte	32
+ 695 029a 38       		.byte	56
+ 696 029b 02       		.byte	2
+ 697 029c 3E       		.byte	62
+ 698 029d 01       		.byte	1
+ 699 029e 3F       		.byte	63
+ 700 029f 10       		.byte	16
+ 701 02a0 40       		.byte	64
+ 702 02a1 61       		.byte	97
+ 703 02a2 41       		.byte	65
+ 704 02a3 03       		.byte	3
+ 705 02a4 45       		.byte	69
+ 706 02a5 0C       		.byte	12
+ 707 02a6 46       		.byte	70
+ 708 02a7 BE       		.byte	-66
+ 709 02a8 48       		.byte	72
+ 710 02a9 0D       		.byte	13
+ 711 02aa 49       		.byte	73
+ 712 02ab FF       		.byte	-1
+ 713 02ac 4A       		.byte	74
+ 714 02ad FF       		.byte	-1
+ 715 02ae 4B       		.byte	75
+ 716 02af FF       		.byte	-1
+ 717 02b0 4E       		.byte	78
+ 718 02b1 F0       		.byte	-16
+ 719 02b2 4F       		.byte	79
+ 720 02b3 44       		.byte	68
+ 721 02b4 50       		.byte	80
+ 722 02b5 0C       		.byte	12
+ 723 02b6 54       		.byte	84
+ 724 02b7 01       		.byte	1
+ 725 02b8 56       		.byte	86
+ 726 02b9 04       		.byte	4
+ 727 02ba 58       		.byte	88
+ 728 02bb 04       		.byte	4
+ 729 02bc 59       		.byte	89
+ 730 02bd 04       		.byte	4
+ 731 02be 5A       		.byte	90
+ 732 02bf 04       		.byte	4
+ 733 02c0 5B       		.byte	91
+ 734 02c1 04       		.byte	4
+ 735 02c2 5C       		.byte	92
+ 736 02c3 22       		.byte	34
+ 737 02c4 5D       		.byte	93
+ 738 02c5 33       		.byte	51
+ 739 02c6 5F       		.byte	95
+ 740 02c7 01       		.byte	1
+ 741 02c8 66       		.byte	102
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 14
 
 
- 742 02c9 21       		.byte	33
- 743 02ca A6       		.byte	-90
- 744 02cb 0A       		.byte	10
- 745 02cc A7       		.byte	-89
- 746 02cd 2C       		.byte	44
- 747 02ce C0       		.byte	-64
- 748 02cf 03       		.byte	3
- 749 02d0 C2       		.byte	-62
- 750 02d1 09       		.byte	9
- 751 02d2 C4       		.byte	-60
- 752 02d3 E0       		.byte	-32
- 753 02d4 CA       		.byte	-54
- 754 02d5 F6       		.byte	-10
- 755 02d6 CC       		.byte	-52
- 756 02d7 F7       		.byte	-9
- 757 02d8 CE       		.byte	-50
- 758 02d9 DE       		.byte	-34
- 759 02da D6       		.byte	-42
- 760 02db 4B       		.byte	75
- 761 02dc E0       		.byte	-32
- 762 02dd 03       		.byte	3
- 763 02de E6       		.byte	-26
- 764 02df 44       		.byte	68
- 765 02e0 EE       		.byte	-18
- 766 02e1 01       		.byte	1
- 767 02e2 04       		.byte	4
- 768 02e3 C2       		.byte	-62
- 769 02e4 05       		.byte	5
- 770 02e5 13       		.byte	19
- 771 02e6 06       		.byte	6
- 772 02e7 05       		.byte	5
- 773 02e8 07       		.byte	7
- 774 02e9 04       		.byte	4
- 775 02ea 08       		.byte	8
- 776 02eb 84       		.byte	-124
- 777 02ec 0A       		.byte	10
- 778 02ed 02       		.byte	2
- 779 02ee 0B       		.byte	11
- 780 02ef 20       		.byte	32
- 781 02f0 0E       		.byte	14
- 782 02f1 20       		.byte	32
- 783 02f2 14       		.byte	20
- 784 02f3 C0       		.byte	-64
- 785 02f4 16       		.byte	22
- 786 02f5 0A       		.byte	10
- 787 02f6 17       		.byte	23
- 788 02f7 20       		.byte	32
- 789 02f8 18       		.byte	24
- 790 02f9 08       		.byte	8
- 791 02fa 1B       		.byte	27
- 792 02fb 08       		.byte	8
- 793 02fc 1D       		.byte	29
- 794 02fd 13       		.byte	19
- 795 02fe 1E       		.byte	30
- 796 02ff 20       		.byte	32
- 797 0300 1F       		.byte	31
- 798 0301 0C       		.byte	12
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 15
+ 742 02c9 C0       		.byte	-64
+ 743 02ca 6A       		.byte	106
+ 744 02cb 40       		.byte	64
+ 745 02cc 6B       		.byte	107
+ 746 02cd 02       		.byte	2
+ 747 02ce 84       		.byte	-124
+ 748 02cf 1C       		.byte	28
+ 749 02d0 85       		.byte	-123
+ 750 02d1 6C       		.byte	108
+ 751 02d2 86       		.byte	-122
+ 752 02d3 02       		.byte	2
+ 753 02d4 87       		.byte	-121
+ 754 02d5 03       		.byte	3
+ 755 02d6 88       		.byte	-120
+ 756 02d7 10       		.byte	16
+ 757 02d8 89       		.byte	-119
+ 758 02d9 31       		.byte	49
+ 759 02da 8B       		.byte	-117
+ 760 02db 0E       		.byte	14
+ 761 02dc 8F       		.byte	-113
+ 762 02dd 13       		.byte	19
+ 763 02de 90       		.byte	-112
+ 764 02df 09       		.byte	9
+ 765 02e0 92       		.byte	-110
+ 766 02e1 10       		.byte	16
+ 767 02e2 94       		.byte	-108
+ 768 02e3 0C       		.byte	12
+ 769 02e4 96       		.byte	-106
+ 770 02e5 11       		.byte	17
+ 771 02e6 9E       		.byte	-98
+ 772 02e7 03       		.byte	3
+ 773 02e8 9F       		.byte	-97
+ 774 02e9 4C       		.byte	76
+ 775 02ea A4       		.byte	-92
+ 776 02eb 14       		.byte	20
+ 777 02ec A7       		.byte	-89
+ 778 02ed 08       		.byte	8
+ 779 02ee A8       		.byte	-88
+ 780 02ef 10       		.byte	16
+ 781 02f0 A9       		.byte	-87
+ 782 02f1 31       		.byte	49
+ 783 02f2 AA       		.byte	-86
+ 784 02f3 0C       		.byte	12
+ 785 02f4 AB       		.byte	-85
+ 786 02f5 46       		.byte	70
+ 787 02f6 B1       		.byte	-79
+ 788 02f7 30       		.byte	48
+ 789 02f8 B3       		.byte	-77
+ 790 02f9 4A       		.byte	74
+ 791 02fa B5       		.byte	-75
+ 792 02fb 0F       		.byte	15
+ 793 02fc B6       		.byte	-74
+ 794 02fd 1F       		.byte	31
+ 795 02fe B9       		.byte	-71
+ 796 02ff 02       		.byte	2
+ 797 0300 BB       		.byte	-69
+ 798 0301 28       		.byte	40
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 15
 
 
- 799 0302 22       		.byte	34
- 800 0303 10       		.byte	16
- 801 0304 23       		.byte	35
- 802 0305 15       		.byte	21
- 803 0306 24       		.byte	36
- 804 0307 41       		.byte	65
- 805 0308 25       		.byte	37
- 806 0309 0A       		.byte	10
- 807 030a 26       		.byte	38
- 808 030b 02       		.byte	2
- 809 030c 27       		.byte	39
- 810 030d 14       		.byte	20
- 811 030e 29       		.byte	41
- 812 030f 03       		.byte	3
- 813 0310 2B       		.byte	43
- 814 0311 14       		.byte	20
- 815 0312 2E       		.byte	46
- 816 0313 10       		.byte	16
- 817 0314 31       		.byte	49
- 818 0315 0F       		.byte	15
- 819 0316 32       		.byte	50
- 820 0317 0F       		.byte	15
- 821 0318 33       		.byte	51
- 822 0319 20       		.byte	32
- 823 031a 34       		.byte	52
- 824 031b C0       		.byte	-64
- 825 031c 36       		.byte	54
- 826 031d 30       		.byte	48
- 827 031e 37       		.byte	55
- 828 031f 10       		.byte	16
- 829 0320 3B       		.byte	59
- 830 0321 02       		.byte	2
- 831 0322 3E       		.byte	62
- 832 0323 40       		.byte	64
- 833 0324 3F       		.byte	63
- 834 0325 44       		.byte	68
- 835 0326 40       		.byte	64
- 836 0327 30       		.byte	48
- 837 0328 41       		.byte	65
- 838 0329 06       		.byte	6
- 839 032a 45       		.byte	69
- 840 032b 0D       		.byte	13
- 841 032c 46       		.byte	70
- 842 032d 20       		.byte	32
- 843 032e 47       		.byte	71
- 844 032f 01       		.byte	1
- 845 0330 48       		.byte	72
- 846 0331 19       		.byte	25
- 847 0332 49       		.byte	73
- 848 0333 FF       		.byte	-1
- 849 0334 4A       		.byte	74
- 850 0335 FF       		.byte	-1
- 851 0336 4B       		.byte	75
- 852 0337 FF       		.byte	-1
- 853 0338 4D       		.byte	77
- 854 0339 A0       		.byte	-96
- 855 033a 4F       		.byte	79
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 16
+ 799 0302 BF       		.byte	-65
+ 800 0303 01       		.byte	1
+ 801 0304 C0       		.byte	-64
+ 802 0305 04       		.byte	4
+ 803 0306 C5       		.byte	-59
+ 804 0307 04       		.byte	4
+ 805 0308 C9       		.byte	-55
+ 806 0309 FF       		.byte	-1
+ 807 030a CA       		.byte	-54
+ 808 030b 07       		.byte	7
+ 809 030c CB       		.byte	-53
+ 810 030d FF       		.byte	-1
+ 811 030e CC       		.byte	-52
+ 812 030f 40       		.byte	64
+ 813 0310 CD       		.byte	-51
+ 814 0311 20       		.byte	32
+ 815 0312 CE       		.byte	-50
+ 816 0313 F0       		.byte	-16
+ 817 0314 CF       		.byte	-49
+ 818 0315 05       		.byte	5
+ 819 0316 D0       		.byte	-48
+ 820 0317 08       		.byte	8
+ 821 0318 D2       		.byte	-46
+ 822 0319 80       		.byte	-128
+ 823 031a D8       		.byte	-40
+ 824 031b 04       		.byte	4
+ 825 031c D9       		.byte	-39
+ 826 031d 04       		.byte	4
+ 827 031e DA       		.byte	-38
+ 828 031f 04       		.byte	4
+ 829 0320 DB       		.byte	-37
+ 830 0321 04       		.byte	4
+ 831 0322 DC       		.byte	-36
+ 832 0323 33       		.byte	51
+ 833 0324 DD       		.byte	-35
+ 834 0325 03       		.byte	3
+ 835 0326 DF       		.byte	-33
+ 836 0327 01       		.byte	1
+ 837 0328 E0       		.byte	-32
+ 838 0329 40       		.byte	64
+ 839 032a E1       		.byte	-31
+ 840 032b A8       		.byte	-88
+ 841 032c E2       		.byte	-30
+ 842 032d 40       		.byte	64
+ 843 032e E3       		.byte	-29
+ 844 032f 20       		.byte	32
+ 845 0330 00       		.byte	0
+ 846 0331 24       		.byte	36
+ 847 0332 06       		.byte	6
+ 848 0333 40       		.byte	64
+ 849 0334 07       		.byte	7
+ 850 0335 20       		.byte	32
+ 851 0336 09       		.byte	9
+ 852 0337 08       		.byte	8
+ 853 0338 0A       		.byte	10
+ 854 0339 81       		.byte	-127
+ 855 033a 0E       		.byte	14
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 16
 
 
- 856 033b 04       		.byte	4
- 857 033c 50       		.byte	80
- 858 033d 18       		.byte	24
- 859 033e 58       		.byte	88
- 860 033f 04       		.byte	4
- 861 0340 59       		.byte	89
- 862 0341 04       		.byte	4
- 863 0342 5A       		.byte	90
- 864 0343 04       		.byte	4
- 865 0344 5C       		.byte	92
- 866 0345 32       		.byte	50
- 867 0346 5D       		.byte	93
- 868 0347 02       		.byte	2
- 869 0348 5F       		.byte	95
- 870 0349 01       		.byte	1
- 871 034a 60       		.byte	96
- 872 034b 40       		.byte	64
- 873 034c 62       		.byte	98
- 874 034d C0       		.byte	-64
- 875 034e 64       		.byte	100
+ 856 033b 22       		.byte	34
+ 857 033c 0F       		.byte	15
+ 858 033d 04       		.byte	4
+ 859 033e 10       		.byte	16
+ 860 033f 24       		.byte	36
+ 861 0340 17       		.byte	23
+ 862 0341 40       		.byte	64
+ 863 0342 1A       		.byte	26
+ 864 0343 01       		.byte	1
+ 865 0344 1D       		.byte	29
+ 866 0345 01       		.byte	1
+ 867 0346 1E       		.byte	30
+ 868 0347 20       		.byte	32
+ 869 0348 1F       		.byte	31
+ 870 0349 04       		.byte	4
+ 871 034a 20       		.byte	32
+ 872 034b 14       		.byte	20
+ 873 034c 21       		.byte	33
+ 874 034d 09       		.byte	9
+ 875 034e 24       		.byte	36
  876 034f 40       		.byte	64
- 877 0350 65       		.byte	101
- 878 0351 40       		.byte	64
- 879 0352 66       		.byte	102
- 880 0353 C0       		.byte	-64
- 881 0354 68       		.byte	104
- 882 0355 C0       		.byte	-64
- 883 0356 6A       		.byte	106
- 884 0357 C0       		.byte	-64
- 885 0358 6C       		.byte	108
- 886 0359 C0       		.byte	-64
- 887 035a 6E       		.byte	110
- 888 035b C0       		.byte	-64
- 889 035c 82       		.byte	-126
- 890 035d 01       		.byte	1
- 891 035e 83       		.byte	-125
- 892 035f 20       		.byte	32
- 893 0360 86       		.byte	-122
- 894 0361 01       		.byte	1
- 895 0362 87       		.byte	-121
- 896 0363 40       		.byte	64
- 897 0364 8B       		.byte	-117
- 898 0365 02       		.byte	2
- 899 0366 8F       		.byte	-113
- 900 0367 40       		.byte	64
- 901 0368 92       		.byte	-110
- 902 0369 02       		.byte	2
- 903 036a 95       		.byte	-107
- 904 036b 08       		.byte	8
- 905 036c 97       		.byte	-105
- 906 036d 03       		.byte	3
- 907 036e 9A       		.byte	-102
- 908 036f 02       		.byte	2
- 909 0370 9B       		.byte	-101
- 910 0371 06       		.byte	6
- 911 0372 9D       		.byte	-99
- 912 0373 08       		.byte	8
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 17
+ 877 0350 25       		.byte	37
+ 878 0351 04       		.byte	4
+ 879 0352 27       		.byte	39
+ 880 0353 48       		.byte	72
+ 881 0354 28       		.byte	40
+ 882 0355 04       		.byte	4
+ 883 0356 29       		.byte	41
+ 884 0357 26       		.byte	38
+ 885 0358 2B       		.byte	43
+ 886 0359 40       		.byte	64
+ 887 035a 32       		.byte	50
+ 888 035b 40       		.byte	64
+ 889 035c 36       		.byte	54
+ 890 035d 19       		.byte	25
+ 891 035e 37       		.byte	55
+ 892 035f 40       		.byte	64
+ 893 0360 38       		.byte	56
+ 894 0361 94       		.byte	-108
+ 895 0362 3C       		.byte	60
+ 896 0363 80       		.byte	-128
+ 897 0364 3F       		.byte	63
+ 898 0365 04       		.byte	4
+ 899 0366 41       		.byte	65
+ 900 0367 01       		.byte	1
+ 901 0368 45       		.byte	69
+ 902 0369 88       		.byte	-120
+ 903 036a 48       		.byte	72
+ 904 036b 10       		.byte	16
+ 905 036c 49       		.byte	73
+ 906 036d 04       		.byte	4
+ 907 036e 4D       		.byte	77
+ 908 036f 20       		.byte	32
+ 909 0370 4F       		.byte	79
+ 910 0371 08       		.byte	8
+ 911 0372 50       		.byte	80
+ 912 0373 40       		.byte	64
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 17
 
 
- 913 0374 9F       		.byte	-97
- 914 0375 05       		.byte	5
- 915 0376 A1       		.byte	-95
- 916 0377 10       		.byte	16
- 917 0378 A3       		.byte	-93
- 918 0379 01       		.byte	1
- 919 037a A5       		.byte	-91
- 920 037b 06       		.byte	6
- 921 037c A7       		.byte	-89
- 922 037d 09       		.byte	9
- 923 037e AB       		.byte	-85
- 924 037f 20       		.byte	32
- 925 0380 B1       		.byte	-79
- 926 0381 60       		.byte	96
- 927 0382 B2       		.byte	-78
- 928 0383 03       		.byte	3
- 929 0384 B3       		.byte	-77
- 930 0385 07       		.byte	7
- 931 0386 B5       		.byte	-75
- 932 0387 18       		.byte	24
- 933 0388 B9       		.byte	-71
- 934 0389 20       		.byte	32
- 935 038a BA       		.byte	-70
- 936 038b 20       		.byte	32
- 937 038c BB       		.byte	-69
- 938 038d 08       		.byte	8
- 939 038e BE       		.byte	-66
- 940 038f 04       		.byte	4
- 941 0390 BF       		.byte	-65
- 942 0391 01       		.byte	1
- 943 0392 D8       		.byte	-40
- 944 0393 04       		.byte	4
- 945 0394 D9       		.byte	-39
- 946 0395 04       		.byte	4
- 947 0396 DB       		.byte	-37
- 948 0397 04       		.byte	4
- 949 0398 DC       		.byte	-36
- 950 0399 34       		.byte	52
- 951 039a DF       		.byte	-33
- 952 039b 01       		.byte	1
- 953 039c 00       		.byte	0
- 954 039d 08       		.byte	8
- 955 039e 02       		.byte	2
- 956 039f 80       		.byte	-128
- 957 03a0 06       		.byte	6
- 958 03a1 0A       		.byte	10
- 959 03a2 07       		.byte	7
- 960 03a3 10       		.byte	16
- 961 03a4 08       		.byte	8
+ 913 0374 51       		.byte	81
+ 914 0375 80       		.byte	-128
+ 915 0376 54       		.byte	84
+ 916 0377 60       		.byte	96
+ 917 0378 57       		.byte	87
+ 918 0379 40       		.byte	64
+ 919 037a 5C       		.byte	92
+ 920 037b A0       		.byte	-96
+ 921 037c 5D       		.byte	93
+ 922 037d 02       		.byte	2
+ 923 037e 5F       		.byte	95
+ 924 037f 08       		.byte	8
+ 925 0380 67       		.byte	103
+ 926 0381 80       		.byte	-128
+ 927 0382 72       		.byte	114
+ 928 0383 40       		.byte	64
+ 929 0384 82       		.byte	-126
+ 930 0385 40       		.byte	64
+ 931 0386 97       		.byte	-105
+ 932 0387 80       		.byte	-128
+ 933 0388 B3       		.byte	-77
+ 934 0389 40       		.byte	64
+ 935 038a C0       		.byte	-64
+ 936 038b 36       		.byte	54
+ 937 038c C2       		.byte	-62
+ 938 038d ED       		.byte	-19
+ 939 038e C4       		.byte	-60
+ 940 038f 86       		.byte	-122
+ 941 0390 CA       		.byte	-54
+ 942 0391 06       		.byte	6
+ 943 0392 CC       		.byte	-52
+ 944 0393 F8       		.byte	-8
+ 945 0394 CE       		.byte	-50
+ 946 0395 5E       		.byte	94
+ 947 0396 D0       		.byte	-48
+ 948 0397 51       		.byte	81
+ 949 0398 D2       		.byte	-46
+ 950 0399 20       		.byte	32
+ 951 039a D6       		.byte	-42
+ 952 039b F0       		.byte	-16
+ 953 039c D8       		.byte	-40
+ 954 039d 80       		.byte	-128
+ 955 039e EC       		.byte	-20
+ 956 039f 10       		.byte	16
+ 957 03a0 EE       		.byte	-18
+ 958 03a1 80       		.byte	-128
+ 959 03a2 06       		.byte	6
+ 960 03a3 01       		.byte	1
+ 961 03a4 09       		.byte	9
  962 03a5 02       		.byte	2
- 963 03a6 09       		.byte	9
- 964 03a7 20       		.byte	32
- 965 03a8 0A       		.byte	10
- 966 03a9 80       		.byte	-128
- 967 03aa 0C       		.byte	12
- 968 03ab 20       		.byte	32
- 969 03ac 0D       		.byte	13
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 18
+ 963 03a6 0A       		.byte	10
+ 964 03a7 04       		.byte	4
+ 965 03a8 0E       		.byte	14
+ 966 03a9 01       		.byte	1
+ 967 03aa 12       		.byte	18
+ 968 03ab 04       		.byte	4
+ 969 03ac 15       		.byte	21
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 18
 
 
- 970 03ad 40       		.byte	64
- 971 03ae 0E       		.byte	14
- 972 03af 10       		.byte	16
- 973 03b0 14       		.byte	20
- 974 03b1 81       		.byte	-127
- 975 03b2 17       		.byte	23
- 976 03b3 04       		.byte	4
- 977 03b4 19       		.byte	25
- 978 03b5 04       		.byte	4
- 979 03b6 1A       		.byte	26
- 980 03b7 04       		.byte	4
- 981 03b8 1C       		.byte	28
- 982 03b9 20       		.byte	32
- 983 03ba 1D       		.byte	29
- 984 03bb 20       		.byte	32
- 985 03bc 1E       		.byte	30
- 986 03bd 12       		.byte	18
- 987 03be 20       		.byte	32
- 988 03bf 80       		.byte	-128
- 989 03c0 21       		.byte	33
- 990 03c1 04       		.byte	4
- 991 03c2 22       		.byte	34
- 992 03c3 38       		.byte	56
- 993 03c4 26       		.byte	38
- 994 03c5 04       		.byte	4
- 995 03c6 27       		.byte	39
- 996 03c7 41       		.byte	65
- 997 03c8 28       		.byte	40
- 998 03c9 40       		.byte	64
- 999 03ca 29       		.byte	41
- 1000 03cb 28       		.byte	40
- 1001 03cc 2C       		.byte	44
- 1002 03cd 80       		.byte	-128
- 1003 03ce 2D       		.byte	45
- 1004 03cf 08       		.byte	8
- 1005 03d0 2F       		.byte	47
- 1006 03d1 08       		.byte	8
- 1007 03d2 32       		.byte	50
+ 970 03ad 03       		.byte	3
+ 971 03ae 1A       		.byte	26
+ 972 03af 02       		.byte	2
+ 973 03b0 1E       		.byte	30
+ 974 03b1 02       		.byte	2
+ 975 03b2 21       		.byte	33
+ 976 03b3 03       		.byte	3
+ 977 03b4 29       		.byte	41
+ 978 03b5 01       		.byte	1
+ 979 03b6 30       		.byte	48
+ 980 03b7 03       		.byte	3
+ 981 03b8 32       		.byte	50
+ 982 03b9 04       		.byte	4
+ 983 03ba 33       		.byte	51
+ 984 03bb 03       		.byte	3
+ 985 03bc 3E       		.byte	62
+ 986 03bd 05       		.byte	5
+ 987 03be 40       		.byte	64
+ 988 03bf 60       		.byte	96
+ 989 03c0 41       		.byte	65
+ 990 03c1 03       		.byte	3
+ 991 03c2 45       		.byte	69
+ 992 03c3 D2       		.byte	-46
+ 993 03c4 46       		.byte	70
+ 994 03c5 10       		.byte	16
+ 995 03c6 48       		.byte	72
+ 996 03c7 0B       		.byte	11
+ 997 03c8 49       		.byte	73
+ 998 03c9 FF       		.byte	-1
+ 999 03ca 4A       		.byte	74
+ 1000 03cb FF       		.byte	-1
+ 1001 03cc 4B       		.byte	75
+ 1002 03cd FF       		.byte	-1
+ 1003 03ce 4D       		.byte	77
+ 1004 03cf A0       		.byte	-96
+ 1005 03d0 4F       		.byte	79
+ 1006 03d1 04       		.byte	4
+ 1007 03d2 50       		.byte	80
  1008 03d3 18       		.byte	24
- 1009 03d4 33       		.byte	51
- 1010 03d5 40       		.byte	64
- 1011 03d6 36       		.byte	54
- 1012 03d7 20       		.byte	32
- 1013 03d8 37       		.byte	55
- 1014 03d9 44       		.byte	68
- 1015 03da 39       		.byte	57
- 1016 03db 80       		.byte	-128
- 1017 03dc 3A       		.byte	58
- 1018 03dd 02       		.byte	2
- 1019 03de 3B       		.byte	59
- 1020 03df 24       		.byte	36
- 1021 03e0 3D       		.byte	61
- 1022 03e1 04       		.byte	4
- 1023 03e2 3F       		.byte	63
- 1024 03e3 20       		.byte	32
- 1025 03e4 47       		.byte	71
- 1026 03e5 04       		.byte	4
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 19
+ 1009 03d4 54       		.byte	84
+ 1010 03d5 05       		.byte	5
+ 1011 03d6 58       		.byte	88
+ 1012 03d7 04       		.byte	4
+ 1013 03d8 59       		.byte	89
+ 1014 03d9 04       		.byte	4
+ 1015 03da 5A       		.byte	90
+ 1016 03db 04       		.byte	4
+ 1017 03dc 5B       		.byte	91
+ 1018 03dd 04       		.byte	4
+ 1019 03de 5C       		.byte	92
+ 1020 03df 20       		.byte	32
+ 1021 03e0 5D       		.byte	93
+ 1022 03e1 22       		.byte	34
+ 1023 03e2 5F       		.byte	95
+ 1024 03e3 01       		.byte	1
+ 1025 03e4 60       		.byte	96
+ 1026 03e5 40       		.byte	64
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 19
 
 
- 1027 03e6 4C       		.byte	76
- 1028 03e7 10       		.byte	16
- 1029 03e8 4F       		.byte	79
- 1030 03e9 20       		.byte	32
- 1031 03ea 56       		.byte	86
- 1032 03eb 08       		.byte	8
- 1033 03ec 57       		.byte	87
- 1034 03ed 10       		.byte	16
+ 1027 03e6 62       		.byte	98
+ 1028 03e7 C0       		.byte	-64
+ 1029 03e8 64       		.byte	100
+ 1030 03e9 40       		.byte	64
+ 1031 03ea 65       		.byte	101
+ 1032 03eb 40       		.byte	64
+ 1033 03ec 66       		.byte	102
+ 1034 03ed C0       		.byte	-64
  1035 03ee 68       		.byte	104
- 1036 03ef 04       		.byte	4
- 1037 03f0 69       		.byte	105
- 1038 03f1 10       		.byte	16
- 1039 03f2 6A       		.byte	106
- 1040 03f3 80       		.byte	-128
- 1041 03f4 79       		.byte	121
- 1042 03f5 0C       		.byte	12
+ 1036 03ef C0       		.byte	-64
+ 1037 03f0 6A       		.byte	106
+ 1038 03f1 C0       		.byte	-64
+ 1039 03f2 6C       		.byte	108
+ 1040 03f3 C0       		.byte	-64
+ 1041 03f4 6E       		.byte	110
+ 1042 03f5 C0       		.byte	-64
  1043 03f6 81       		.byte	-127
- 1044 03f7 40       		.byte	64
+ 1044 03f7 01       		.byte	1
  1045 03f8 82       		.byte	-126
- 1046 03f9 04       		.byte	4
+ 1046 03f9 08       		.byte	8
  1047 03fa 84       		.byte	-124
- 1048 03fb 01       		.byte	1
- 1049 03fc 87       		.byte	-121
- 1050 03fd 04       		.byte	4
- 1051 03fe 88       		.byte	-120
- 1052 03ff D0       		.byte	-48
- 1053 0400 89       		.byte	-119
- 1054 0401 20       		.byte	32
- 1055 0402 8A       		.byte	-118
- 1056 0403 02       		.byte	2
- 1057 0404 8E       		.byte	-114
- 1058 0405 08       		.byte	8
- 1059 0406 A0       		.byte	-96
- 1060 0407 20       		.byte	32
- 1061 0408 A6       		.byte	-90
- 1062 0409 01       		.byte	1
- 1063 040a AA       		.byte	-86
+ 1048 03fb 35       		.byte	53
+ 1049 03fc 86       		.byte	-122
+ 1050 03fd 02       		.byte	2
+ 1051 03fe 87       		.byte	-121
+ 1052 03ff 01       		.byte	1
+ 1053 0400 8C       		.byte	-116
+ 1054 0401 37       		.byte	55
+ 1055 0402 8F       		.byte	-113
+ 1056 0403 14       		.byte	20
+ 1057 0404 94       		.byte	-108
+ 1058 0405 11       		.byte	17
+ 1059 0406 95       		.byte	-107
+ 1060 0407 01       		.byte	1
+ 1061 0408 96       		.byte	-106
+ 1062 0409 02       		.byte	2
+ 1063 040a 9B       		.byte	-101
  1064 040b 01       		.byte	1
- 1065 040c C0       		.byte	-64
- 1066 040d EC       		.byte	-20
- 1067 040e C2       		.byte	-62
- 1068 040f EA       		.byte	-22
- 1069 0410 C4       		.byte	-60
- 1070 0411 B0       		.byte	-80
- 1071 0412 CA       		.byte	-54
- 1072 0413 E7       		.byte	-25
- 1073 0414 CC       		.byte	-52
- 1074 0415 7E       		.byte	126
- 1075 0416 CE       		.byte	-50
- 1076 0417 6F       		.byte	111
- 1077 0418 D0       		.byte	-48
- 1078 0419 40       		.byte	64
- 1079 041a D2       		.byte	-46
- 1080 041b 20       		.byte	32
- 1081 041c E0       		.byte	-32
- 1082 041d A0       		.byte	-96
- 1083 041e E2       		.byte	-30
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 20
+ 1065 040c 9C       		.byte	-100
+ 1066 040d 24       		.byte	36
+ 1067 040e 9E       		.byte	-98
+ 1068 040f 02       		.byte	2
+ 1069 0410 9F       		.byte	-97
+ 1070 0411 02       		.byte	2
+ 1071 0412 A3       		.byte	-93
+ 1072 0413 02       		.byte	2
+ 1073 0414 A4       		.byte	-92
+ 1074 0415 07       		.byte	7
+ 1075 0416 A7       		.byte	-89
+ 1076 0417 28       		.byte	40
+ 1077 0418 AB       		.byte	-85
+ 1078 0419 24       		.byte	36
+ 1079 041a AF       		.byte	-81
+ 1080 041b 18       		.byte	24
+ 1081 041c B0       		.byte	-80
+ 1082 041d 0F       		.byte	15
+ 1083 041e B1       		.byte	-79
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 20
 
 
- 1084 041f 10       		.byte	16
- 1085 0420 E6       		.byte	-26
- 1086 0421 80       		.byte	-128
- 1087 0422 8C       		.byte	-116
- 1088 0423 20       		.byte	32
- 1089 0424 E4       		.byte	-28
- 1090 0425 10       		.byte	16
- 1091 0426 02       		.byte	2
- 1092 0427 0D       		.byte	13
- 1093 0428 0B       		.byte	11
- 1094 0429 12       		.byte	18
- 1095 042a 0C       		.byte	12
- 1096 042b 32       		.byte	50
- 1097 042c 0E       		.byte	14
- 1098 042d 05       		.byte	5
- 1099 042e 0F       		.byte	15
- 1100 042f 0C       		.byte	12
- 1101 0430 10       		.byte	16
- 1102 0431 24       		.byte	36
- 1103 0432 12       		.byte	18
+ 1084 041f 01       		.byte	1
+ 1085 0420 B3       		.byte	-77
+ 1086 0421 02       		.byte	2
+ 1087 0422 B4       		.byte	-76
+ 1088 0423 30       		.byte	48
+ 1089 0424 B5       		.byte	-75
+ 1090 0425 30       		.byte	48
+ 1091 0426 B7       		.byte	-73
+ 1092 0427 0C       		.byte	12
+ 1093 0428 B8       		.byte	-72
+ 1094 0429 02       		.byte	2
+ 1095 042a B9       		.byte	-71
+ 1096 042b 02       		.byte	2
+ 1097 042c BE       		.byte	-66
+ 1098 042d 01       		.byte	1
+ 1099 042e BF       		.byte	-65
+ 1100 042f 54       		.byte	84
+ 1101 0430 C0       		.byte	-64
+ 1102 0431 04       		.byte	4
+ 1103 0432 C6       		.byte	-58
  1104 0433 02       		.byte	2
- 1105 0434 18       		.byte	24
- 1106 0435 11       		.byte	17
- 1107 0436 1A       		.byte	26
- 1108 0437 02       		.byte	2
- 1109 0438 1B       		.byte	27
- 1110 0439 14       		.byte	20
- 1111 043a 1C       		.byte	28
- 1112 043b 30       		.byte	48
- 1113 043c 20       		.byte	32
- 1114 043d 08       		.byte	8
- 1115 043e 23       		.byte	35
- 1116 043f 0A       		.byte	10
- 1117 0440 2D       		.byte	45
- 1118 0441 01       		.byte	1
- 1119 0442 31       		.byte	49
- 1120 0443 06       		.byte	6
- 1121 0444 33       		.byte	51
- 1122 0445 01       		.byte	1
- 1123 0446 34       		.byte	52
- 1124 0447 30       		.byte	48
- 1125 0448 35       		.byte	53
- 1126 0449 18       		.byte	24
- 1127 044a 36       		.byte	54
- 1128 044b 0F       		.byte	15
- 1129 044c 3F       		.byte	63
- 1130 044d 15       		.byte	21
- 1131 044e 40       		.byte	64
- 1132 044f 05       		.byte	5
- 1133 0450 45       		.byte	69
- 1134 0451 02       		.byte	2
- 1135 0452 48       		.byte	72
- 1136 0453 01       		.byte	1
- 1137 0454 49       		.byte	73
- 1138 0455 FF       		.byte	-1
- 1139 0456 4A       		.byte	74
- 1140 0457 FF       		.byte	-1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 21
+ 1105 0434 C8       		.byte	-56
+ 1106 0435 04       		.byte	4
+ 1107 0436 C9       		.byte	-55
+ 1108 0437 FF       		.byte	-1
+ 1109 0438 CA       		.byte	-54
+ 1110 0439 FF       		.byte	-1
+ 1111 043a CB       		.byte	-53
+ 1112 043b FF       		.byte	-1
+ 1113 043c CD       		.byte	-51
+ 1114 043d A0       		.byte	-96
+ 1115 043e D0       		.byte	-48
+ 1116 043f 08       		.byte	8
+ 1117 0440 D4       		.byte	-44
+ 1118 0441 18       		.byte	24
+ 1119 0442 D6       		.byte	-42
+ 1120 0443 04       		.byte	4
+ 1121 0444 D8       		.byte	-40
+ 1122 0445 04       		.byte	4
+ 1123 0446 D9       		.byte	-39
+ 1124 0447 04       		.byte	4
+ 1125 0448 DA       		.byte	-38
+ 1126 0449 04       		.byte	4
+ 1127 044a DB       		.byte	-37
+ 1128 044b 04       		.byte	4
+ 1129 044c DC       		.byte	-36
+ 1130 044d 41       		.byte	65
+ 1131 044e DD       		.byte	-35
+ 1132 044f 41       		.byte	65
+ 1133 0450 DF       		.byte	-33
+ 1134 0451 01       		.byte	1
+ 1135 0452 E0       		.byte	-32
+ 1136 0453 80       		.byte	-128
+ 1137 0454 E2       		.byte	-30
+ 1138 0455 40       		.byte	64
+ 1139 0456 E3       		.byte	-29
+ 1140 0457 40       		.byte	64
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 21
 
 
- 1141 0458 4B       		.byte	75
- 1142 0459 FF       		.byte	-1
- 1143 045a 4D       		.byte	77
- 1144 045b A0       		.byte	-96
- 1145 045c 50       		.byte	80
- 1146 045d 08       		.byte	8
- 1147 045e 54       		.byte	84
- 1148 045f 01       		.byte	1
- 1149 0460 56       		.byte	86
- 1150 0461 04       		.byte	4
- 1151 0462 58       		.byte	88
- 1152 0463 04       		.byte	4
- 1153 0464 59       		.byte	89
- 1154 0465 04       		.byte	4
- 1155 0466 5A       		.byte	90
- 1156 0467 04       		.byte	4
- 1157 0468 5B       		.byte	91
- 1158 0469 04       		.byte	4
- 1159 046a 5C       		.byte	92
- 1160 046b 01       		.byte	1
- 1161 046c 5D       		.byte	93
- 1162 046d 30       		.byte	48
- 1163 046e 5F       		.byte	95
+ 1141 0458 E4       		.byte	-28
+ 1142 0459 40       		.byte	64
+ 1143 045a E6       		.byte	-26
+ 1144 045b 40       		.byte	64
+ 1145 045c E8       		.byte	-24
+ 1146 045d 40       		.byte	64
+ 1147 045e EA       		.byte	-22
+ 1148 045f 40       		.byte	64
+ 1149 0460 EC       		.byte	-20
+ 1150 0461 40       		.byte	64
+ 1151 0462 EE       		.byte	-18
+ 1152 0463 40       		.byte	64
+ 1153 0464 00       		.byte	0
+ 1154 0465 30       		.byte	48
+ 1155 0466 01       		.byte	1
+ 1156 0467 84       		.byte	-124
+ 1157 0468 05       		.byte	5
+ 1158 0469 40       		.byte	64
+ 1159 046a 06       		.byte	6
+ 1160 046b 80       		.byte	-128
+ 1161 046c 07       		.byte	7
+ 1162 046d 10       		.byte	16
+ 1163 046e 09       		.byte	9
  1164 046f 01       		.byte	1
- 1165 0470 60       		.byte	96
- 1166 0471 80       		.byte	-128
- 1167 0472 62       		.byte	98
- 1168 0473 40       		.byte	64
- 1169 0474 63       		.byte	99
- 1170 0475 40       		.byte	64
- 1171 0476 64       		.byte	100
- 1172 0477 40       		.byte	64
- 1173 0478 66       		.byte	102
- 1174 0479 40       		.byte	64
- 1175 047a 68       		.byte	104
- 1176 047b 40       		.byte	64
- 1177 047c 6A       		.byte	106
+ 1165 0470 0A       		.byte	10
+ 1166 0471 08       		.byte	8
+ 1167 0472 0B       		.byte	11
+ 1168 0473 02       		.byte	2
+ 1169 0474 0F       		.byte	15
+ 1170 0475 12       		.byte	18
+ 1171 0476 14       		.byte	20
+ 1172 0477 04       		.byte	4
+ 1173 0478 17       		.byte	23
+ 1174 0479 28       		.byte	40
+ 1175 047a 19       		.byte	25
+ 1176 047b 04       		.byte	4
+ 1177 047c 1A       		.byte	26
  1178 047d 40       		.byte	64
- 1179 047e 6C       		.byte	108
- 1180 047f 40       		.byte	64
- 1181 0480 6E       		.byte	110
- 1182 0481 40       		.byte	64
- 1183 0482 80       		.byte	-128
- 1184 0483 07       		.byte	7
- 1185 0484 83       		.byte	-125
+ 1179 047e 1D       		.byte	29
+ 1180 047f 02       		.byte	2
+ 1181 0480 1E       		.byte	30
+ 1182 0481 04       		.byte	4
+ 1183 0482 21       		.byte	33
+ 1184 0483 04       		.byte	4
+ 1185 0484 22       		.byte	34
  1186 0485 04       		.byte	4
- 1187 0486 87       		.byte	-121
- 1188 0487 04       		.byte	4
- 1189 0488 8C       		.byte	-116
- 1190 0489 25       		.byte	37
- 1191 048a 8E       		.byte	-114
- 1192 048b 52       		.byte	82
- 1193 048c 90       		.byte	-112
- 1194 048d 07       		.byte	7
- 1195 048e 92       		.byte	-110
- 1196 048f A0       		.byte	-96
- 1197 0490 93       		.byte	-109
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 22
+ 1187 0486 25       		.byte	37
+ 1188 0487 10       		.byte	16
+ 1189 0488 26       		.byte	38
+ 1190 0489 80       		.byte	-128
+ 1191 048a 27       		.byte	39
+ 1192 048b 60       		.byte	96
+ 1193 048c 28       		.byte	40
+ 1194 048d 40       		.byte	64
+ 1195 048e 29       		.byte	41
+ 1196 048f 20       		.byte	32
+ 1197 0490 2E       		.byte	46
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 22
 
 
- 1198 0491 08       		.byte	8
- 1199 0492 94       		.byte	-108
- 1200 0493 11       		.byte	17
- 1201 0494 96       		.byte	-106
- 1202 0495 22       		.byte	34
- 1203 0496 98       		.byte	-104
- 1204 0497 80       		.byte	-128
- 1205 0498 99       		.byte	-103
- 1206 0499 02       		.byte	2
- 1207 049a 9A       		.byte	-102
- 1208 049b 08       		.byte	8
- 1209 049c 9F       		.byte	-97
- 1210 049d 08       		.byte	8
- 1211 049e AB       		.byte	-85
- 1212 049f 03       		.byte	3
- 1213 04a0 AC       		.byte	-84
- 1214 04a1 44       		.byte	68
- 1215 04a2 AE       		.byte	-82
- 1216 04a3 22       		.byte	34
- 1217 04a4 B0       		.byte	-80
- 1218 04a5 F0       		.byte	-16
- 1219 04a6 B1       		.byte	-79
- 1220 04a7 02       		.byte	2
- 1221 04a8 B3       		.byte	-77
- 1222 04a9 08       		.byte	8
- 1223 04aa B4       		.byte	-76
- 1224 04ab 0F       		.byte	15
- 1225 04ac B5       		.byte	-75
- 1226 04ad 01       		.byte	1
- 1227 04ae B7       		.byte	-73
- 1228 04af 04       		.byte	4
- 1229 04b0 B8       		.byte	-72
- 1230 04b1 20       		.byte	32
- 1231 04b2 BE       		.byte	-66
- 1232 04b3 10       		.byte	16
- 1233 04b4 BF       		.byte	-65
- 1234 04b5 44       		.byte	68
- 1235 04b6 C0       		.byte	-64
- 1236 04b7 02       		.byte	2
- 1237 04b8 C5       		.byte	-59
- 1238 04b9 22       		.byte	34
- 1239 04ba C8       		.byte	-56
- 1240 04bb 03       		.byte	3
- 1241 04bc C9       		.byte	-55
- 1242 04bd FF       		.byte	-1
- 1243 04be CA       		.byte	-54
- 1244 04bf FF       		.byte	-1
- 1245 04c0 CB       		.byte	-53
- 1246 04c1 FF       		.byte	-1
- 1247 04c2 CD       		.byte	-51
- 1248 04c3 A0       		.byte	-96
- 1249 04c4 D0       		.byte	-48
- 1250 04c5 08       		.byte	8
- 1251 04c6 D4       		.byte	-44
- 1252 04c7 18       		.byte	24
- 1253 04c8 D6       		.byte	-42
- 1254 04c9 04       		.byte	4
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 23
+ 1198 0491 06       		.byte	6
+ 1199 0492 2F       		.byte	47
+ 1200 0493 0A       		.byte	10
+ 1201 0494 31       		.byte	49
+ 1202 0495 08       		.byte	8
+ 1203 0496 36       		.byte	54
+ 1204 0497 14       		.byte	20
+ 1205 0498 37       		.byte	55
+ 1206 0499 40       		.byte	64
+ 1207 049a 39       		.byte	57
+ 1208 049b 20       		.byte	32
+ 1209 049c 3D       		.byte	61
+ 1210 049d 88       		.byte	-120
+ 1211 049e 3E       		.byte	62
+ 1212 049f 01       		.byte	1
+ 1213 04a0 40       		.byte	64
+ 1214 04a1 10       		.byte	16
+ 1215 04a2 45       		.byte	69
+ 1216 04a3 02       		.byte	2
+ 1217 04a4 48       		.byte	72
+ 1218 04a5 10       		.byte	16
+ 1219 04a6 49       		.byte	73
+ 1220 04a7 21       		.byte	33
+ 1221 04a8 51       		.byte	81
+ 1222 04a9 10       		.byte	16
+ 1223 04aa 56       		.byte	86
+ 1224 04ab 80       		.byte	-128
+ 1225 04ac 58       		.byte	88
+ 1226 04ad 80       		.byte	-128
+ 1227 04ae 59       		.byte	89
+ 1228 04af 05       		.byte	5
+ 1229 04b0 5F       		.byte	95
+ 1230 04b1 01       		.byte	1
+ 1231 04b2 64       		.byte	100
+ 1232 04b3 04       		.byte	4
+ 1233 04b4 66       		.byte	102
+ 1234 04b5 41       		.byte	65
+ 1235 04b6 81       		.byte	-127
+ 1236 04b7 31       		.byte	49
+ 1237 04b8 82       		.byte	-126
+ 1238 04b9 01       		.byte	1
+ 1239 04ba 85       		.byte	-123
+ 1240 04bb 10       		.byte	16
+ 1241 04bc 8A       		.byte	-118
+ 1242 04bd 80       		.byte	-128
+ 1243 04be 8E       		.byte	-114
+ 1244 04bf 40       		.byte	64
+ 1245 04c0 91       		.byte	-111
+ 1246 04c1 04       		.byte	4
+ 1247 04c2 92       		.byte	-110
+ 1248 04c3 01       		.byte	1
+ 1249 04c4 93       		.byte	-109
+ 1250 04c5 13       		.byte	19
+ 1251 04c6 95       		.byte	-107
+ 1252 04c7 08       		.byte	8
+ 1253 04c8 98       		.byte	-104
+ 1254 04c9 C0       		.byte	-64
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 23
 
 
- 1255 04ca D8       		.byte	-40
- 1256 04cb 04       		.byte	4
- 1257 04cc D9       		.byte	-39
- 1258 04cd 04       		.byte	4
- 1259 04ce DA       		.byte	-38
- 1260 04cf 04       		.byte	4
- 1261 04d0 DB       		.byte	-37
- 1262 04d1 04       		.byte	4
- 1263 04d2 DC       		.byte	-36
- 1264 04d3 21       		.byte	33
- 1265 04d4 DD       		.byte	-35
- 1266 04d5 41       		.byte	65
- 1267 04d6 DF       		.byte	-33
- 1268 04d7 01       		.byte	1
- 1269 04d8 E0       		.byte	-32
+ 1255 04ca 99       		.byte	-103
+ 1256 04cb C0       		.byte	-64
+ 1257 04cc 9A       		.byte	-102
+ 1258 04cd 42       		.byte	66
+ 1259 04ce 9B       		.byte	-101
+ 1260 04cf 18       		.byte	24
+ 1261 04d0 9E       		.byte	-98
+ 1262 04d1 80       		.byte	-128
+ 1263 04d2 A1       		.byte	-95
+ 1264 04d3 4C       		.byte	76
+ 1265 04d4 A2       		.byte	-94
+ 1266 04d5 14       		.byte	20
+ 1267 04d6 A3       		.byte	-93
+ 1268 04d7 0B       		.byte	11
+ 1269 04d8 A9       		.byte	-87
  1270 04d9 80       		.byte	-128
- 1271 04da E2       		.byte	-30
- 1272 04db 40       		.byte	64
- 1273 04dc E3       		.byte	-29
- 1274 04dd 40       		.byte	64
- 1275 04de E4       		.byte	-28
- 1276 04df 40       		.byte	64
- 1277 04e0 E6       		.byte	-26
- 1278 04e1 40       		.byte	64
- 1279 04e2 E8       		.byte	-24
- 1280 04e3 40       		.byte	64
- 1281 04e4 EA       		.byte	-22
- 1282 04e5 40       		.byte	64
- 1283 04e6 EC       		.byte	-20
- 1284 04e7 40       		.byte	64
- 1285 04e8 EE       		.byte	-18
- 1286 04e9 40       		.byte	64
- 1287 04ea 01       		.byte	1
- 1288 04eb 80       		.byte	-128
- 1289 04ec 02       		.byte	2
- 1290 04ed 40       		.byte	64
- 1291 04ee 04       		.byte	4
- 1292 04ef 82       		.byte	-126
- 1293 04f0 05       		.byte	5
- 1294 04f1 80       		.byte	-128
- 1295 04f2 06       		.byte	6
- 1296 04f3 40       		.byte	64
- 1297 04f4 0A       		.byte	10
- 1298 04f5 04       		.byte	4
- 1299 04f6 0B       		.byte	11
- 1300 04f7 82       		.byte	-126
- 1301 04f8 0E       		.byte	14
- 1302 04f9 80       		.byte	-128
- 1303 04fa 0F       		.byte	15
- 1304 04fb 28       		.byte	40
- 1305 04fc 10       		.byte	16
- 1306 04fd 80       		.byte	-128
- 1307 04fe 15       		.byte	21
- 1308 04ff 80       		.byte	-128
- 1309 0500 18       		.byte	24
- 1310 0501 02       		.byte	2
- 1311 0502 1B       		.byte	27
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 24
+ 1271 04da AC       		.byte	-84
+ 1272 04db 04       		.byte	4
+ 1273 04dc AE       		.byte	-82
+ 1274 04dd 08       		.byte	8
+ 1275 04de B0       		.byte	-80
+ 1276 04df 10       		.byte	16
+ 1277 04e0 B2       		.byte	-78
+ 1278 04e1 01       		.byte	1
+ 1279 04e2 B3       		.byte	-77
+ 1280 04e3 20       		.byte	32
+ 1281 04e4 C0       		.byte	-64
+ 1282 04e5 B7       		.byte	-73
+ 1283 04e6 C2       		.byte	-62
+ 1284 04e7 AB       		.byte	-85
+ 1285 04e8 C4       		.byte	-60
+ 1286 04e9 20       		.byte	32
+ 1287 04ea CA       		.byte	-54
+ 1288 04eb F5       		.byte	-11
+ 1289 04ec CC       		.byte	-52
+ 1290 04ed 72       		.byte	114
+ 1291 04ee CE       		.byte	-50
+ 1292 04ef D4       		.byte	-44
+ 1293 04f0 D0       		.byte	-48
+ 1294 04f1 82       		.byte	-126
+ 1295 04f2 D2       		.byte	-46
+ 1296 04f3 04       		.byte	4
+ 1297 04f4 D6       		.byte	-42
+ 1298 04f5 8B       		.byte	-117
+ 1299 04f6 D8       		.byte	-40
+ 1300 04f7 B0       		.byte	-80
+ 1301 04f8 E0       		.byte	-32
+ 1302 04f9 03       		.byte	3
+ 1303 04fa E2       		.byte	-30
+ 1304 04fb 80       		.byte	-128
+ 1305 04fc E6       		.byte	-26
+ 1306 04fd 01       		.byte	1
+ 1307 04fe EA       		.byte	-22
+ 1308 04ff 04       		.byte	4
+ 1309 0500 EE       		.byte	-18
+ 1310 0501 0A       		.byte	10
+ 1311 0502 00       		.byte	0
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 24
 
 
- 1312 0503 20       		.byte	32
- 1313 0504 1D       		.byte	29
- 1314 0505 20       		.byte	32
- 1315 0506 1E       		.byte	30
- 1316 0507 80       		.byte	-128
- 1317 0508 1F       		.byte	31
+ 1312 0503 10       		.byte	16
+ 1313 0504 01       		.byte	1
+ 1314 0505 04       		.byte	4
+ 1315 0506 03       		.byte	3
+ 1316 0507 32       		.byte	50
+ 1317 0508 09       		.byte	9
  1318 0509 01       		.byte	1
- 1319 050a 21       		.byte	33
- 1320 050b 02       		.byte	2
- 1321 050c 22       		.byte	34
- 1322 050d 04       		.byte	4
- 1323 050e 23       		.byte	35
- 1324 050f 08       		.byte	8
- 1325 0510 25       		.byte	37
- 1326 0511 08       		.byte	8
- 1327 0512 26       		.byte	38
- 1328 0513 20       		.byte	32
- 1329 0514 27       		.byte	39
- 1330 0515 41       		.byte	65
- 1331 0516 28       		.byte	40
- 1332 0517 01       		.byte	1
- 1333 0518 29       		.byte	41
- 1334 0519 40       		.byte	64
- 1335 051a 2B       		.byte	43
- 1336 051b 80       		.byte	-128
- 1337 051c 2F       		.byte	47
- 1338 051d 08       		.byte	8
- 1339 051e 33       		.byte	51
- 1340 051f 20       		.byte	32
- 1341 0520 36       		.byte	54
- 1342 0521 A2       		.byte	-94
- 1343 0522 39       		.byte	57
- 1344 0523 50       		.byte	80
- 1345 0524 3D       		.byte	61
- 1346 0525 02       		.byte	2
- 1347 0526 3F       		.byte	63
- 1348 0527 04       		.byte	4
- 1349 0528 45       		.byte	69
- 1350 0529 28       		.byte	40
- 1351 052a 46       		.byte	70
- 1352 052b A0       		.byte	-96
- 1353 052c 47       		.byte	71
- 1354 052d 01       		.byte	1
- 1355 052e 48       		.byte	72
- 1356 052f 01       		.byte	1
- 1357 0530 49       		.byte	73
- 1358 0531 04       		.byte	4
- 1359 0532 4C       		.byte	76
- 1360 0533 80       		.byte	-128
- 1361 0534 4F       		.byte	79
- 1362 0535 08       		.byte	8
- 1363 0536 58       		.byte	88
- 1364 0537 01       		.byte	1
- 1365 0538 59       		.byte	89
- 1366 0539 20       		.byte	32
- 1367 053a 5A       		.byte	90
- 1368 053b 08       		.byte	8
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 25
+ 1319 050a 0B       		.byte	11
+ 1320 050b 32       		.byte	50
+ 1321 050c 0E       		.byte	14
+ 1322 050d 14       		.byte	20
+ 1323 050e 14       		.byte	20
+ 1324 050f 02       		.byte	2
+ 1325 0510 15       		.byte	21
+ 1326 0511 20       		.byte	32
+ 1327 0512 16       		.byte	22
+ 1328 0513 04       		.byte	4
+ 1329 0514 17       		.byte	23
+ 1330 0515 0D       		.byte	13
+ 1331 0516 19       		.byte	25
+ 1332 0517 02       		.byte	2
+ 1333 0518 1B       		.byte	27
+ 1334 0519 25       		.byte	37
+ 1335 051a 1C       		.byte	28
+ 1336 051b 08       		.byte	8
+ 1337 051c 1E       		.byte	30
+ 1338 051d 04       		.byte	4
+ 1339 051e 22       		.byte	34
+ 1340 051f 01       		.byte	1
+ 1341 0520 26       		.byte	38
+ 1342 0521 01       		.byte	1
+ 1343 0522 28       		.byte	40
+ 1344 0523 04       		.byte	4
+ 1345 0524 2A       		.byte	42
+ 1346 0525 0A       		.byte	10
+ 1347 0526 2D       		.byte	45
+ 1348 0527 08       		.byte	8
+ 1349 0528 33       		.byte	51
+ 1350 0529 10       		.byte	16
+ 1351 052a 34       		.byte	52
+ 1352 052b 01       		.byte	1
+ 1353 052c 35       		.byte	53
+ 1354 052d 0F       		.byte	15
+ 1355 052e 36       		.byte	54
+ 1356 052f 1E       		.byte	30
+ 1357 0530 37       		.byte	55
+ 1358 0531 20       		.byte	32
+ 1359 0532 3E       		.byte	62
+ 1360 0533 10       		.byte	16
+ 1361 0534 56       		.byte	86
+ 1362 0535 02       		.byte	2
+ 1363 0536 57       		.byte	87
+ 1364 0537 13       		.byte	19
+ 1365 0538 58       		.byte	88
+ 1366 0539 04       		.byte	4
+ 1367 053a 59       		.byte	89
+ 1368 053b 04       		.byte	4
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 25
 
 
  1369 053c 5B       		.byte	91
- 1370 053d 80       		.byte	-128
+ 1370 053d 04       		.byte	4
  1371 053e 5C       		.byte	92
- 1372 053f 02       		.byte	2
- 1373 0540 63       		.byte	99
+ 1372 053f 11       		.byte	17
+ 1373 0540 5D       		.byte	93
  1374 0541 40       		.byte	64
- 1375 0542 64       		.byte	100
- 1376 0543 80       		.byte	-128
- 1377 0544 66       		.byte	102
- 1378 0545 A0       		.byte	-96
- 1379 0546 68       		.byte	104
- 1380 0547 08       		.byte	8
- 1381 0548 69       		.byte	105
- 1382 0549 50       		.byte	80
- 1383 054a 80       		.byte	-128
- 1384 054b 80       		.byte	-128
- 1385 054c 81       		.byte	-127
- 1386 054d 02       		.byte	2
- 1387 054e 85       		.byte	-123
- 1388 054f 60       		.byte	96
- 1389 0550 87       		.byte	-121
- 1390 0551 08       		.byte	8
- 1391 0552 8B       		.byte	-117
- 1392 0553 C0       		.byte	-64
- 1393 0554 90       		.byte	-112
- 1394 0555 80       		.byte	-128
- 1395 0556 91       		.byte	-111
- 1396 0557 80       		.byte	-128
+ 1375 0542 5F       		.byte	95
+ 1376 0543 01       		.byte	1
+ 1377 0544 84       		.byte	-124
+ 1378 0545 04       		.byte	4
+ 1379 0546 85       		.byte	-123
+ 1380 0547 44       		.byte	68
+ 1381 0548 86       		.byte	-122
+ 1382 0549 02       		.byte	2
+ 1383 054a 87       		.byte	-121
+ 1384 054b 21       		.byte	33
+ 1385 054c 88       		.byte	-120
+ 1386 054d 07       		.byte	7
+ 1387 054e 89       		.byte	-119
+ 1388 054f 01       		.byte	1
+ 1389 0550 8C       		.byte	-116
+ 1390 0551 07       		.byte	7
+ 1391 0552 8D       		.byte	-115
+ 1392 0553 06       		.byte	6
+ 1393 0554 8F       		.byte	-113
+ 1394 0555 A0       		.byte	-96
+ 1395 0556 90       		.byte	-112
+ 1396 0557 05       		.byte	5
  1397 0558 92       		.byte	-110
- 1398 0559 04       		.byte	4
+ 1398 0559 02       		.byte	2
  1399 055a 93       		.byte	-109
- 1400 055b 84       		.byte	-124
- 1401 055c 95       		.byte	-107
- 1402 055d 40       		.byte	64
- 1403 055e 98       		.byte	-104
+ 1400 055b 08       		.byte	8
+ 1401 055c 9C       		.byte	-100
+ 1402 055d 01       		.byte	1
+ 1403 055e 9E       		.byte	-98
  1404 055f 02       		.byte	2
- 1405 0560 9D       		.byte	-99
- 1406 0561 04       		.byte	4
- 1407 0562 9E       		.byte	-98
- 1408 0563 40       		.byte	64
- 1409 0564 9F       		.byte	-97
- 1410 0565 40       		.byte	64
- 1411 0566 A0       		.byte	-96
- 1412 0567 01       		.byte	1
- 1413 0568 A1       		.byte	-95
- 1414 0569 01       		.byte	1
- 1415 056a A2       		.byte	-94
- 1416 056b 82       		.byte	-126
- 1417 056c A3       		.byte	-93
- 1418 056d 98       		.byte	-104
- 1419 056e A4       		.byte	-92
+ 1405 0560 9F       		.byte	-97
+ 1406 0561 08       		.byte	8
+ 1407 0562 A1       		.byte	-95
+ 1408 0563 80       		.byte	-128
+ 1409 0564 A5       		.byte	-91
+ 1410 0565 12       		.byte	18
+ 1411 0566 A6       		.byte	-90
+ 1412 0567 10       		.byte	16
+ 1413 0568 A7       		.byte	-89
+ 1414 0569 21       		.byte	33
+ 1415 056a AA       		.byte	-86
+ 1416 056b 10       		.byte	16
+ 1417 056c AD       		.byte	-83
+ 1418 056d 26       		.byte	38
+ 1419 056e AE       		.byte	-82
  1420 056f 08       		.byte	8
- 1421 0570 A8       		.byte	-88
- 1422 0571 20       		.byte	32
- 1423 0572 AC       		.byte	-84
- 1424 0573 80       		.byte	-128
- 1425 0574 AD       		.byte	-83
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 26
+ 1421 0570 AF       		.byte	-81
+ 1422 0571 51       		.byte	81
+ 1423 0572 B1       		.byte	-79
+ 1424 0573 F0       		.byte	-16
+ 1425 0574 B2       		.byte	-78
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 26
 
 
- 1426 0575 08       		.byte	8
- 1427 0576 C0       		.byte	-64
- 1428 0577 99       		.byte	-103
- 1429 0578 C2       		.byte	-62
- 1430 0579 7B       		.byte	123
- 1431 057a C4       		.byte	-60
- 1432 057b 88       		.byte	-120
- 1433 057c CA       		.byte	-54
- 1434 057d 29       		.byte	41
- 1435 057e CC       		.byte	-52
- 1436 057f B4       		.byte	-76
- 1437 0580 CE       		.byte	-50
- 1438 0581 CC       		.byte	-52
- 1439 0582 D0       		.byte	-48
- 1440 0583 20       		.byte	32
- 1441 0584 D2       		.byte	-46
- 1442 0585 08       		.byte	8
- 1443 0586 D6       		.byte	-42
- 1444 0587 8F       		.byte	-113
- 1445 0588 D8       		.byte	-40
- 1446 0589 B1       		.byte	-79
- 1447 058a E0       		.byte	-32
- 1448 058b 08       		.byte	8
- 1449 058c E2       		.byte	-30
- 1450 058d 20       		.byte	32
- 1451 058e E6       		.byte	-26
- 1452 058f 0A       		.byte	10
- 1453 0590 EC       		.byte	-20
- 1454 0591 08       		.byte	8
- 1455 0592 EE       		.byte	-18
- 1456 0593 06       		.byte	6
- 1457 0594 00       		.byte	0
- 1458 0595 01       		.byte	1
- 1459 0596 01       		.byte	1
- 1460 0597 10       		.byte	16
- 1461 0598 05       		.byte	5
- 1462 0599 08       		.byte	8
- 1463 059a 0B       		.byte	11
+ 1426 0575 10       		.byte	16
+ 1427 0576 B3       		.byte	-77
+ 1428 0577 01       		.byte	1
+ 1429 0578 B4       		.byte	-76
+ 1430 0579 0F       		.byte	15
+ 1431 057a B5       		.byte	-75
+ 1432 057b 06       		.byte	6
+ 1433 057c B7       		.byte	-73
+ 1434 057d 08       		.byte	8
+ 1435 057e B8       		.byte	-72
+ 1436 057f 20       		.byte	32
+ 1437 0580 BA       		.byte	-70
+ 1438 0581 80       		.byte	-128
+ 1439 0582 BE       		.byte	-66
+ 1440 0583 14       		.byte	20
+ 1441 0584 BF       		.byte	-65
+ 1442 0585 40       		.byte	64
+ 1443 0586 C0       		.byte	-64
+ 1444 0587 02       		.byte	2
+ 1445 0588 C7       		.byte	-57
+ 1446 0589 20       		.byte	32
+ 1447 058a C8       		.byte	-56
+ 1448 058b 20       		.byte	32
+ 1449 058c C9       		.byte	-55
+ 1450 058d FF       		.byte	-1
+ 1451 058e CA       		.byte	-54
+ 1452 058f FF       		.byte	-1
+ 1453 0590 CB       		.byte	-53
+ 1454 0591 FF       		.byte	-1
+ 1455 0592 CD       		.byte	-51
+ 1456 0593 A0       		.byte	-96
+ 1457 0594 D0       		.byte	-48
+ 1458 0595 08       		.byte	8
+ 1459 0596 D8       		.byte	-40
+ 1460 0597 04       		.byte	4
+ 1461 0598 D9       		.byte	-39
+ 1462 0599 04       		.byte	4
+ 1463 059a DA       		.byte	-38
  1464 059b 04       		.byte	4
- 1465 059c 0D       		.byte	13
- 1466 059d 7F       		.byte	127
- 1467 059e 0E       		.byte	14
+ 1465 059c DC       		.byte	-36
+ 1466 059d 04       		.byte	4
+ 1467 059e DF       		.byte	-33
  1468 059f 01       		.byte	1
- 1469 05a0 15       		.byte	21
- 1470 05a1 67       		.byte	103
- 1471 05a2 16       		.byte	22
- 1472 05a3 01       		.byte	1
- 1473 05a4 17       		.byte	23
- 1474 05a5 18       		.byte	24
- 1475 05a6 19       		.byte	25
- 1476 05a7 1C       		.byte	28
- 1477 05a8 1B       		.byte	27
- 1478 05a9 61       		.byte	97
- 1479 05aa 1D       		.byte	29
- 1480 05ab 1C       		.byte	28
- 1481 05ac 1F       		.byte	31
- 1482 05ad 62       		.byte	98
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 27
+ 1469 05a0 E0       		.byte	-32
+ 1470 05a1 80       		.byte	-128
+ 1471 05a2 E2       		.byte	-30
+ 1472 05a3 40       		.byte	64
+ 1473 05a4 E3       		.byte	-29
+ 1474 05a5 40       		.byte	64
+ 1475 05a6 E4       		.byte	-28
+ 1476 05a7 40       		.byte	64
+ 1477 05a8 E6       		.byte	-26
+ 1478 05a9 40       		.byte	64
+ 1479 05aa E8       		.byte	-24
+ 1480 05ab 40       		.byte	64
+ 1481 05ac EA       		.byte	-22
+ 1482 05ad 40       		.byte	64
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 27
 
 
- 1483 05ae 23       		.byte	35
- 1484 05af 23       		.byte	35
- 1485 05b0 25       		.byte	37
- 1486 05b1 04       		.byte	4
- 1487 05b2 29       		.byte	41
- 1488 05b3 18       		.byte	24
- 1489 05b4 2E       		.byte	46
- 1490 05b5 01       		.byte	1
- 1491 05b6 31       		.byte	49
- 1492 05b7 40       		.byte	64
- 1493 05b8 35       		.byte	53
- 1494 05b9 38       		.byte	56
- 1495 05ba 36       		.byte	54
- 1496 05bb 01       		.byte	1
- 1497 05bc 37       		.byte	55
- 1498 05bd 1F       		.byte	31
- 1499 05be 39       		.byte	57
+ 1483 05ae EC       		.byte	-20
+ 1484 05af 40       		.byte	64
+ 1485 05b0 EE       		.byte	-18
+ 1486 05b1 40       		.byte	64
+ 1487 05b2 00       		.byte	0
+ 1488 05b3 58       		.byte	88
+ 1489 05b4 05       		.byte	5
+ 1490 05b5 40       		.byte	64
+ 1491 05b6 06       		.byte	6
+ 1492 05b7 80       		.byte	-128
+ 1493 05b8 08       		.byte	8
+ 1494 05b9 01       		.byte	1
+ 1495 05ba 0A       		.byte	10
+ 1496 05bb 82       		.byte	-126
+ 1497 05bc 0F       		.byte	15
+ 1498 05bd 12       		.byte	18
+ 1499 05be 10       		.byte	16
  1500 05bf 02       		.byte	2
- 1501 05c0 3B       		.byte	59
- 1502 05c1 A0       		.byte	-96
- 1503 05c2 40       		.byte	64
- 1504 05c3 30       		.byte	48
- 1505 05c4 41       		.byte	65
- 1506 05c5 02       		.byte	2
- 1507 05c6 45       		.byte	69
- 1508 05c7 D2       		.byte	-46
- 1509 05c8 46       		.byte	70
- 1510 05c9 10       		.byte	16
- 1511 05ca 47       		.byte	71
- 1512 05cb 01       		.byte	1
- 1513 05cc 48       		.byte	72
- 1514 05cd 1B       		.byte	27
- 1515 05ce 49       		.byte	73
- 1516 05cf FF       		.byte	-1
- 1517 05d0 4A       		.byte	74
- 1518 05d1 FF       		.byte	-1
- 1519 05d2 4B       		.byte	75
- 1520 05d3 FF       		.byte	-1
- 1521 05d4 4D       		.byte	77
- 1522 05d5 A0       		.byte	-96
- 1523 05d6 4F       		.byte	79
- 1524 05d7 04       		.byte	4
- 1525 05d8 50       		.byte	80
- 1526 05d9 18       		.byte	24
- 1527 05da 58       		.byte	88
- 1528 05db 04       		.byte	4
- 1529 05dc 59       		.byte	89
- 1530 05dd 04       		.byte	4
- 1531 05de 5A       		.byte	90
- 1532 05df 04       		.byte	4
- 1533 05e0 5C       		.byte	92
- 1534 05e1 41       		.byte	65
- 1535 05e2 5F       		.byte	95
- 1536 05e3 01       		.byte	1
- 1537 05e4 60       		.byte	96
- 1538 05e5 40       		.byte	64
- 1539 05e6 62       		.byte	98
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 28
+ 1501 05c0 13       		.byte	19
+ 1502 05c1 14       		.byte	20
+ 1503 05c2 17       		.byte	23
+ 1504 05c3 16       		.byte	22
+ 1505 05c4 18       		.byte	24
+ 1506 05c5 04       		.byte	4
+ 1507 05c6 19       		.byte	25
+ 1508 05c7 08       		.byte	8
+ 1509 05c8 1A       		.byte	26
+ 1510 05c9 01       		.byte	1
+ 1511 05ca 1D       		.byte	29
+ 1512 05cb 40       		.byte	64
+ 1513 05cc 1F       		.byte	31
+ 1514 05cd 20       		.byte	32
+ 1515 05ce 20       		.byte	32
+ 1516 05cf 40       		.byte	64
+ 1517 05d0 22       		.byte	34
+ 1518 05d1 98       		.byte	-104
+ 1519 05d2 25       		.byte	37
+ 1520 05d3 C0       		.byte	-64
+ 1521 05d4 27       		.byte	39
+ 1522 05d5 1A       		.byte	26
+ 1523 05d6 28       		.byte	40
+ 1524 05d7 11       		.byte	17
+ 1525 05d8 2A       		.byte	42
+ 1526 05d9 01       		.byte	1
+ 1527 05da 2E       		.byte	46
+ 1528 05db 80       		.byte	-128
+ 1529 05dc 31       		.byte	49
+ 1530 05dd 80       		.byte	-128
+ 1531 05de 33       		.byte	51
+ 1532 05df 02       		.byte	2
+ 1533 05e0 37       		.byte	55
+ 1534 05e1 18       		.byte	24
+ 1535 05e2 38       		.byte	56
+ 1536 05e3 50       		.byte	80
+ 1537 05e4 3A       		.byte	58
+ 1538 05e5 08       		.byte	8
+ 1539 05e6 3F       		.byte	63
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 28
 
 
- 1540 05e7 C0       		.byte	-64
- 1541 05e8 64       		.byte	100
- 1542 05e9 40       		.byte	64
- 1543 05ea 65       		.byte	101
- 1544 05eb 40       		.byte	64
- 1545 05ec 66       		.byte	102
- 1546 05ed C0       		.byte	-64
- 1547 05ee 68       		.byte	104
- 1548 05ef C0       		.byte	-64
- 1549 05f0 6A       		.byte	106
- 1550 05f1 C0       		.byte	-64
- 1551 05f2 6C       		.byte	108
- 1552 05f3 C0       		.byte	-64
+ 1540 05e7 12       		.byte	18
+ 1541 05e8 40       		.byte	64
+ 1542 05e9 04       		.byte	4
+ 1543 05ea 50       		.byte	80
+ 1544 05eb 02       		.byte	2
+ 1545 05ec 52       		.byte	82
+ 1546 05ed 01       		.byte	1
+ 1547 05ee 5E       		.byte	94
+ 1548 05ef 02       		.byte	2
+ 1549 05f0 6C       		.byte	108
+ 1550 05f1 10       		.byte	16
+ 1551 05f2 6D       		.byte	109
+ 1552 05f3 10       		.byte	16
  1553 05f4 6E       		.byte	110
- 1554 05f5 C0       		.byte	-64
- 1555 05f6 80       		.byte	-128
- 1556 05f7 01       		.byte	1
- 1557 05f8 8B       		.byte	-117
- 1558 05f9 04       		.byte	4
- 1559 05fa 8E       		.byte	-114
- 1560 05fb 08       		.byte	8
- 1561 05fc 8F       		.byte	-113
+ 1554 05f5 80       		.byte	-128
+ 1555 05f6 74       		.byte	116
+ 1556 05f7 40       		.byte	64
+ 1557 05f8 75       		.byte	117
+ 1558 05f9 20       		.byte	32
+ 1559 05fa 77       		.byte	119
+ 1560 05fb 20       		.byte	32
+ 1561 05fc 80       		.byte	-128
  1562 05fd 02       		.byte	2
- 1563 05fe 92       		.byte	-110
- 1564 05ff 03       		.byte	3
- 1565 0600 97       		.byte	-105
- 1566 0601 01       		.byte	1
- 1567 0602 9E       		.byte	-98
- 1568 0603 08       		.byte	8
- 1569 0604 9F       		.byte	-97
- 1570 0605 01       		.byte	1
- 1571 0606 A7       		.byte	-89
+ 1563 05fe 83       		.byte	-125
+ 1564 05ff 01       		.byte	1
+ 1565 0600 85       		.byte	-123
+ 1566 0601 0C       		.byte	12
+ 1567 0602 86       		.byte	-122
+ 1568 0603 80       		.byte	-128
+ 1569 0604 88       		.byte	-120
+ 1570 0605 A0       		.byte	-96
+ 1571 0606 89       		.byte	-119
  1572 0607 04       		.byte	4
- 1573 0608 AE       		.byte	-82
- 1574 0609 04       		.byte	4
- 1575 060a B0       		.byte	-80
+ 1573 0608 8D       		.byte	-115
+ 1574 0609 10       		.byte	16
+ 1575 060a 8F       		.byte	-113
  1576 060b 01       		.byte	1
- 1577 060c B1       		.byte	-79
- 1578 060d 01       		.byte	1
- 1579 060e B2       		.byte	-78
- 1580 060f 08       		.byte	8
- 1581 0610 B3       		.byte	-77
- 1582 0611 04       		.byte	4
- 1583 0612 B4       		.byte	-76
- 1584 0613 04       		.byte	4
- 1585 0614 B5       		.byte	-75
- 1586 0615 02       		.byte	2
- 1587 0616 B6       		.byte	-74
- 1588 0617 02       		.byte	2
- 1589 0618 BE       		.byte	-66
- 1590 0619 04       		.byte	4
- 1591 061a BF       		.byte	-65
- 1592 061b 05       		.byte	5
- 1593 061c C0       		.byte	-64
- 1594 061d 20       		.byte	32
- 1595 061e C1       		.byte	-63
- 1596 061f 06       		.byte	6
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 29
+ 1577 060c 90       		.byte	-112
+ 1578 060d 10       		.byte	16
+ 1579 060e 92       		.byte	-110
+ 1580 060f 82       		.byte	-126
+ 1581 0610 93       		.byte	-109
+ 1582 0611 14       		.byte	20
+ 1583 0612 94       		.byte	-108
+ 1584 0613 20       		.byte	32
+ 1585 0614 95       		.byte	-107
+ 1586 0615 10       		.byte	16
+ 1587 0616 96       		.byte	-106
+ 1588 0617 21       		.byte	33
+ 1589 0618 98       		.byte	-104
+ 1590 0619 40       		.byte	64
+ 1591 061a 9A       		.byte	-102
+ 1592 061b 42       		.byte	66
+ 1593 061c 9B       		.byte	-101
+ 1594 061d 04       		.byte	4
+ 1595 061e 9C       		.byte	-100
+ 1596 061f 22       		.byte	34
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 29
 
 
- 1597 0620 C5       		.byte	-59
- 1598 0621 D0       		.byte	-48
- 1599 0622 C6       		.byte	-58
- 1600 0623 21       		.byte	33
- 1601 0624 C8       		.byte	-56
- 1602 0625 0E       		.byte	14
- 1603 0626 C9       		.byte	-55
- 1604 0627 FF       		.byte	-1
- 1605 0628 CA       		.byte	-54
- 1606 0629 FF       		.byte	-1
- 1607 062a CB       		.byte	-53
- 1608 062b FF       		.byte	-1
- 1609 062c CD       		.byte	-51
- 1610 062d A0       		.byte	-96
- 1611 062e CF       		.byte	-49
- 1612 062f 04       		.byte	4
- 1613 0630 D0       		.byte	-48
- 1614 0631 18       		.byte	24
- 1615 0632 D2       		.byte	-46
- 1616 0633 80       		.byte	-128
- 1617 0634 D4       		.byte	-44
- 1618 0635 05       		.byte	5
- 1619 0636 D8       		.byte	-40
- 1620 0637 04       		.byte	4
- 1621 0638 D9       		.byte	-39
- 1622 0639 04       		.byte	4
- 1623 063a DA       		.byte	-38
- 1624 063b 04       		.byte	4
- 1625 063c DB       		.byte	-37
- 1626 063d 04       		.byte	4
- 1627 063e DC       		.byte	-36
- 1628 063f 01       		.byte	1
- 1629 0640 DD       		.byte	-35
- 1630 0641 11       		.byte	17
- 1631 0642 DF       		.byte	-33
- 1632 0643 01       		.byte	1
- 1633 0644 E0       		.byte	-32
- 1634 0645 40       		.byte	64
+ 1597 0620 9D       		.byte	-99
+ 1598 0621 28       		.byte	40
+ 1599 0622 9E       		.byte	-98
+ 1600 0623 08       		.byte	8
+ 1601 0624 9F       		.byte	-97
+ 1602 0625 20       		.byte	32
+ 1603 0626 A1       		.byte	-95
+ 1604 0627 14       		.byte	20
+ 1605 0628 A2       		.byte	-94
+ 1606 0629 15       		.byte	21
+ 1607 062a A3       		.byte	-93
+ 1608 062b 0B       		.byte	11
+ 1609 062c A4       		.byte	-92
+ 1610 062d 42       		.byte	66
+ 1611 062e A6       		.byte	-90
+ 1612 062f 48       		.byte	72
+ 1613 0630 AC       		.byte	-84
+ 1614 0631 40       		.byte	64
+ 1615 0632 B0       		.byte	-80
+ 1616 0633 10       		.byte	16
+ 1617 0634 B6       		.byte	-74
+ 1618 0635 20       		.byte	32
+ 1619 0636 C0       		.byte	-64
+ 1620 0637 97       		.byte	-105
+ 1621 0638 C2       		.byte	-62
+ 1622 0639 A9       		.byte	-87
+ 1623 063a C4       		.byte	-60
+ 1624 063b 77       		.byte	119
+ 1625 063c CA       		.byte	-54
+ 1626 063d 1B       		.byte	27
+ 1627 063e CC       		.byte	-52
+ 1628 063f 69       		.byte	105
+ 1629 0640 CE       		.byte	-50
+ 1630 0641 AE       		.byte	-82
+ 1631 0642 D0       		.byte	-48
+ 1632 0643 04       		.byte	4
+ 1633 0644 D6       		.byte	-42
+ 1634 0645 80       		.byte	-128
  1635 0646 E2       		.byte	-30
- 1636 0647 C0       		.byte	-64
+ 1636 0647 02       		.byte	2
  1637 0648 E4       		.byte	-28
- 1638 0649 40       		.byte	64
- 1639 064a E5       		.byte	-27
- 1640 064b 40       		.byte	64
- 1641 064c E6       		.byte	-26
- 1642 064d C0       		.byte	-64
- 1643 064e E8       		.byte	-24
- 1644 064f C0       		.byte	-64
- 1645 0650 EA       		.byte	-22
- 1646 0651 C0       		.byte	-64
- 1647 0652 EC       		.byte	-20
- 1648 0653 C0       		.byte	-64
- 1649 0654 EE       		.byte	-18
- 1650 0655 C0       		.byte	-64
- 1651 0656 00       		.byte	0
- 1652 0657 01       		.byte	1
- 1653 0658 01       		.byte	1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 30
+ 1638 0649 08       		.byte	8
+ 1639 064a E6       		.byte	-26
+ 1640 064b 07       		.byte	7
+ 1641 064c EE       		.byte	-18
+ 1642 064d 08       		.byte	8
+ 1643 064e 02       		.byte	2
+ 1644 064f 08       		.byte	8
+ 1645 0650 05       		.byte	5
+ 1646 0651 01       		.byte	1
+ 1647 0652 06       		.byte	6
+ 1648 0653 02       		.byte	2
+ 1649 0654 08       		.byte	8
+ 1650 0655 02       		.byte	2
+ 1651 0656 0D       		.byte	13
+ 1652 0657 04       		.byte	4
+ 1653 0658 0E       		.byte	14
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 30
 
 
- 1654 0659 40       		.byte	64
- 1655 065a 04       		.byte	4
- 1656 065b 80       		.byte	-128
- 1657 065c 06       		.byte	6
- 1658 065d 40       		.byte	64
- 1659 065e 09       		.byte	9
- 1660 065f 80       		.byte	-128
- 1661 0660 0B       		.byte	11
- 1662 0661 80       		.byte	-128
- 1663 0662 0F       		.byte	15
- 1664 0663 20       		.byte	32
- 1665 0664 13       		.byte	19
- 1666 0665 40       		.byte	64
- 1667 0666 15       		.byte	21
- 1668 0667 80       		.byte	-128
- 1669 0668 18       		.byte	24
- 1670 0669 01       		.byte	1
- 1671 066a 19       		.byte	25
+ 1654 0659 02       		.byte	2
+ 1655 065a 11       		.byte	17
+ 1656 065b 20       		.byte	32
+ 1657 065c 12       		.byte	18
+ 1658 065d 08       		.byte	8
+ 1659 065e 13       		.byte	19
+ 1660 065f 15       		.byte	21
+ 1661 0660 14       		.byte	20
+ 1662 0661 02       		.byte	2
+ 1663 0662 15       		.byte	21
+ 1664 0663 40       		.byte	64
+ 1665 0664 1A       		.byte	26
+ 1666 0665 02       		.byte	2
+ 1667 0666 1B       		.byte	27
+ 1668 0667 50       		.byte	80
+ 1669 0668 1C       		.byte	28
+ 1670 0669 04       		.byte	4
+ 1671 066a 21       		.byte	33
  1672 066b 08       		.byte	8
- 1673 066c 1A       		.byte	26
- 1674 066d 44       		.byte	68
- 1675 066e 1B       		.byte	27
- 1676 066f 10       		.byte	16
- 1677 0670 1D       		.byte	29
- 1678 0671 80       		.byte	-128
- 1679 0672 1F       		.byte	31
- 1680 0673 80       		.byte	-128
- 1681 0674 21       		.byte	33
- 1682 0675 02       		.byte	2
- 1683 0676 22       		.byte	34
- 1684 0677 14       		.byte	20
- 1685 0678 23       		.byte	35
- 1686 0679 08       		.byte	8
- 1687 067a 26       		.byte	38
- 1688 067b 62       		.byte	98
- 1689 067c 28       		.byte	40
- 1690 067d 10       		.byte	16
- 1691 067e 2B       		.byte	43
- 1692 067f 10       		.byte	16
- 1693 0680 2C       		.byte	44
- 1694 0681 20       		.byte	32
- 1695 0682 2D       		.byte	45
+ 1673 066c 22       		.byte	34
+ 1674 066d 01       		.byte	1
+ 1675 066e 23       		.byte	35
+ 1676 066f 14       		.byte	20
+ 1677 0670 26       		.byte	38
+ 1678 0671 01       		.byte	1
+ 1679 0672 29       		.byte	41
+ 1680 0673 10       		.byte	16
+ 1681 0674 2B       		.byte	43
+ 1682 0675 2C       		.byte	44
+ 1683 0676 2F       		.byte	47
+ 1684 0677 02       		.byte	2
+ 1685 0678 30       		.byte	48
+ 1686 0679 01       		.byte	1
+ 1687 067a 31       		.byte	49
+ 1688 067b 02       		.byte	2
+ 1689 067c 32       		.byte	50
+ 1690 067d 09       		.byte	9
+ 1691 067e 33       		.byte	51
+ 1692 067f 78       		.byte	120
+ 1693 0680 34       		.byte	52
+ 1694 0681 04       		.byte	4
+ 1695 0682 35       		.byte	53
  1696 0683 01       		.byte	1
- 1697 0684 2E       		.byte	46
- 1698 0685 20       		.byte	32
- 1699 0686 30       		.byte	48
- 1700 0687 08       		.byte	8
- 1701 0688 31       		.byte	49
- 1702 0689 80       		.byte	-128
- 1703 068a 36       		.byte	54
- 1704 068b 68       		.byte	104
- 1705 068c 38       		.byte	56
- 1706 068d 20       		.byte	32
- 1707 068e 39       		.byte	57
- 1708 068f 04       		.byte	4
- 1709 0690 3A       		.byte	58
- 1710 0691 84       		.byte	-124
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 31
+ 1697 0684 36       		.byte	54
+ 1698 0685 02       		.byte	2
+ 1699 0686 37       		.byte	55
+ 1700 0687 04       		.byte	4
+ 1701 0688 3E       		.byte	62
+ 1702 0689 55       		.byte	85
+ 1703 068a 40       		.byte	64
+ 1704 068b 20       		.byte	32
+ 1705 068c 41       		.byte	65
+ 1706 068d 01       		.byte	1
+ 1707 068e 46       		.byte	70
+ 1708 068f D0       		.byte	-48
+ 1709 0690 47       		.byte	71
+ 1710 0691 21       		.byte	33
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 31
 
 
- 1711 0692 3C       		.byte	60
- 1712 0693 20       		.byte	32
- 1713 0694 3D       		.byte	61
- 1714 0695 80       		.byte	-128
- 1715 0696 3E       		.byte	62
- 1716 0697 0A       		.byte	10
- 1717 0698 42       		.byte	66
- 1718 0699 04       		.byte	4
- 1719 069a 46       		.byte	70
- 1720 069b 04       		.byte	4
- 1721 069c 47       		.byte	71
- 1722 069d 08       		.byte	8
- 1723 069e 49       		.byte	73
- 1724 069f 01       		.byte	1
- 1725 06a0 4B       		.byte	75
- 1726 06a1 20       		.byte	32
- 1727 06a2 4D       		.byte	77
+ 1711 0692 48       		.byte	72
+ 1712 0693 38       		.byte	56
+ 1713 0694 49       		.byte	73
+ 1714 0695 FF       		.byte	-1
+ 1715 0696 4A       		.byte	74
+ 1716 0697 FF       		.byte	-1
+ 1717 0698 4B       		.byte	75
+ 1718 0699 FF       		.byte	-1
+ 1719 069a 4D       		.byte	77
+ 1720 069b A0       		.byte	-96
+ 1721 069c 4F       		.byte	79
+ 1722 069d 04       		.byte	4
+ 1723 069e 50       		.byte	80
+ 1724 069f 18       		.byte	24
+ 1725 06a0 52       		.byte	82
+ 1726 06a1 80       		.byte	-128
+ 1727 06a2 58       		.byte	88
  1728 06a3 04       		.byte	4
- 1729 06a4 4F       		.byte	79
- 1730 06a5 01       		.byte	1
- 1731 06a6 50       		.byte	80
- 1732 06a7 10       		.byte	16
- 1733 06a8 51       		.byte	81
- 1734 06a9 40       		.byte	64
- 1735 06aa 53       		.byte	83
- 1736 06ab 50       		.byte	80
- 1737 06ac 57       		.byte	87
- 1738 06ad 24       		.byte	36
- 1739 06ae 59       		.byte	89
+ 1729 06a4 59       		.byte	89
+ 1730 06a5 04       		.byte	4
+ 1731 06a6 5A       		.byte	90
+ 1732 06a7 04       		.byte	4
+ 1733 06a8 5B       		.byte	91
+ 1734 06a9 04       		.byte	4
+ 1735 06aa 5C       		.byte	92
+ 1736 06ab 20       		.byte	32
+ 1737 06ac 5D       		.byte	93
+ 1738 06ad 20       		.byte	32
+ 1739 06ae 5F       		.byte	95
  1740 06af 01       		.byte	1
- 1741 06b0 5A       		.byte	90
- 1742 06b1 48       		.byte	72
- 1743 06b2 73       		.byte	115
- 1744 06b3 40       		.byte	64
- 1745 06b4 8D       		.byte	-115
- 1746 06b5 02       		.byte	2
- 1747 06b6 90       		.byte	-112
- 1748 06b7 80       		.byte	-128
- 1749 06b8 91       		.byte	-111
- 1750 06b9 01       		.byte	1
- 1751 06ba 93       		.byte	-109
- 1752 06bb 04       		.byte	4
- 1753 06bc 95       		.byte	-107
- 1754 06bd 04       		.byte	4
- 1755 06be 96       		.byte	-106
- 1756 06bf 20       		.byte	32
- 1757 06c0 97       		.byte	-105
- 1758 06c1 81       		.byte	-127
- 1759 06c2 98       		.byte	-104
- 1760 06c3 02       		.byte	2
- 1761 06c4 9A       		.byte	-102
- 1762 06c5 AA       		.byte	-86
- 1763 06c6 9C       		.byte	-100
- 1764 06c7 B0       		.byte	-80
- 1765 06c8 9D       		.byte	-99
- 1766 06c9 04       		.byte	4
- 1767 06ca 9F       		.byte	-97
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 32
+ 1741 06b0 60       		.byte	96
+ 1742 06b1 40       		.byte	64
+ 1743 06b2 62       		.byte	98
+ 1744 06b3 C0       		.byte	-64
+ 1745 06b4 64       		.byte	100
+ 1746 06b5 40       		.byte	64
+ 1747 06b6 65       		.byte	101
+ 1748 06b7 40       		.byte	64
+ 1749 06b8 66       		.byte	102
+ 1750 06b9 C0       		.byte	-64
+ 1751 06ba 68       		.byte	104
+ 1752 06bb C0       		.byte	-64
+ 1753 06bc 6A       		.byte	106
+ 1754 06bd C0       		.byte	-64
+ 1755 06be 6C       		.byte	108
+ 1756 06bf C0       		.byte	-64
+ 1757 06c0 6E       		.byte	110
+ 1758 06c1 C0       		.byte	-64
+ 1759 06c2 84       		.byte	-124
+ 1760 06c3 14       		.byte	20
+ 1761 06c4 86       		.byte	-122
+ 1762 06c5 08       		.byte	8
+ 1763 06c6 87       		.byte	-121
+ 1764 06c7 01       		.byte	1
+ 1765 06c8 88       		.byte	-120
+ 1766 06c9 06       		.byte	6
+ 1767 06ca 8A       		.byte	-118
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 32
 
 
- 1768 06cb 40       		.byte	64
- 1769 06cc A0       		.byte	-96
- 1770 06cd 31       		.byte	49
- 1771 06ce A1       		.byte	-95
- 1772 06cf 41       		.byte	65
- 1773 06d0 A2       		.byte	-94
- 1774 06d1 88       		.byte	-120
- 1775 06d2 A3       		.byte	-93
- 1776 06d3 08       		.byte	8
- 1777 06d4 A6       		.byte	-90
- 1778 06d5 60       		.byte	96
- 1779 06d6 A7       		.byte	-89
- 1780 06d7 24       		.byte	36
- 1781 06d8 A8       		.byte	-88
- 1782 06d9 10       		.byte	16
- 1783 06da A9       		.byte	-87
- 1784 06db 01       		.byte	1
- 1785 06dc AD       		.byte	-83
- 1786 06dd 61       		.byte	97
- 1787 06de AE       		.byte	-82
- 1788 06df 02       		.byte	2
- 1789 06e0 B5       		.byte	-75
- 1790 06e1 80       		.byte	-128
- 1791 06e2 C0       		.byte	-64
- 1792 06e3 99       		.byte	-103
- 1793 06e4 C2       		.byte	-62
- 1794 06e5 29       		.byte	41
- 1795 06e6 C4       		.byte	-60
- 1796 06e7 81       		.byte	-127
- 1797 06e8 CA       		.byte	-54
- 1798 06e9 E2       		.byte	-30
- 1799 06ea CC       		.byte	-52
- 1800 06eb 7A       		.byte	122
- 1801 06ec CE       		.byte	-50
- 1802 06ed FC       		.byte	-4
- 1803 06ee D0       		.byte	-48
- 1804 06ef 64       		.byte	100
- 1805 06f0 D2       		.byte	-46
+ 1768 06cb 18       		.byte	24
+ 1769 06cc 8D       		.byte	-115
+ 1770 06cd 02       		.byte	2
+ 1771 06ce 8E       		.byte	-114
+ 1772 06cf 0A       		.byte	10
+ 1773 06d0 92       		.byte	-110
+ 1774 06d1 10       		.byte	16
+ 1775 06d2 94       		.byte	-108
+ 1776 06d3 06       		.byte	6
+ 1777 06d4 95       		.byte	-107
+ 1778 06d5 01       		.byte	1
+ 1779 06d6 96       		.byte	-106
+ 1780 06d7 08       		.byte	8
+ 1781 06d8 A2       		.byte	-94
+ 1782 06d9 01       		.byte	1
+ 1783 06da A4       		.byte	-92
+ 1784 06db 06       		.byte	6
+ 1785 06dc A6       		.byte	-90
+ 1786 06dd 08       		.byte	8
+ 1787 06de A9       		.byte	-87
+ 1788 06df 01       		.byte	1
+ 1789 06e0 AE       		.byte	-82
+ 1790 06e1 01       		.byte	1
+ 1791 06e2 B0       		.byte	-80
+ 1792 06e3 01       		.byte	1
+ 1793 06e4 B4       		.byte	-76
+ 1794 06e5 1E       		.byte	30
+ 1795 06e6 B7       		.byte	-73
+ 1796 06e7 03       		.byte	3
+ 1797 06e8 B9       		.byte	-71
+ 1798 06e9 80       		.byte	-128
+ 1799 06ea BA       		.byte	-70
+ 1800 06eb 20       		.byte	32
+ 1801 06ec BE       		.byte	-66
+ 1802 06ed 01       		.byte	1
+ 1803 06ee D8       		.byte	-40
+ 1804 06ef 04       		.byte	4
+ 1805 06f0 D9       		.byte	-39
  1806 06f1 04       		.byte	4
- 1807 06f2 D6       		.byte	-42
- 1808 06f3 0B       		.byte	11
- 1809 06f4 E6       		.byte	-26
- 1810 06f5 01       		.byte	1
- 1811 06f6 EA       		.byte	-22
- 1812 06f7 06       		.byte	6
+ 1807 06f2 DB       		.byte	-37
+ 1808 06f3 04       		.byte	4
+ 1809 06f4 DC       		.byte	-36
+ 1810 06f5 33       		.byte	51
+ 1811 06f6 DF       		.byte	-33
+ 1812 06f7 01       		.byte	1
  1813 06f8 00       		.byte	0
- 1814 06f9 70       		.byte	112
- 1815 06fa 02       		.byte	2
- 1816 06fb 0C       		.byte	12
+ 1814 06f9 04       		.byte	4
+ 1815 06fa 01       		.byte	1
+ 1816 06fb A0       		.byte	-96
  1817 06fc 04       		.byte	4
- 1818 06fd 5C       		.byte	92
+ 1818 06fd 84       		.byte	-124
  1819 06fe 05       		.byte	5
- 1820 06ff 20       		.byte	32
+ 1820 06ff A0       		.byte	-96
  1821 0700 06       		.byte	6
- 1822 0701 02       		.byte	2
- 1823 0702 07       		.byte	7
- 1824 0703 14       		.byte	20
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 33
+ 1822 0701 40       		.byte	64
+ 1823 0702 08       		.byte	8
+ 1824 0703 80       		.byte	-128
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 33
 
 
- 1825 0704 0A       		.byte	10
- 1826 0705 03       		.byte	3
- 1827 0706 0D       		.byte	13
- 1828 0707 10       		.byte	16
- 1829 0708 0F       		.byte	15
- 1830 0709 2C       		.byte	44
- 1831 070a 12       		.byte	18
- 1832 070b 80       		.byte	-128
- 1833 070c 13       		.byte	19
- 1834 070d 01       		.byte	1
- 1835 070e 14       		.byte	20
- 1836 070f 09       		.byte	9
- 1837 0710 16       		.byte	22
- 1838 0711 10       		.byte	16
- 1839 0712 18       		.byte	24
- 1840 0713 14       		.byte	20
- 1841 0714 19       		.byte	25
- 1842 0715 08       		.byte	8
- 1843 0716 1B       		.byte	27
- 1844 0717 14       		.byte	20
- 1845 0718 1E       		.byte	30
- 1846 0719 20       		.byte	32
- 1847 071a 22       		.byte	34
- 1848 071b 80       		.byte	-128
- 1849 071c 24       		.byte	36
- 1850 071d 6C       		.byte	108
- 1851 071e 25       		.byte	37
- 1852 071f 40       		.byte	64
- 1853 0720 26       		.byte	38
- 1854 0721 11       		.byte	17
- 1855 0722 28       		.byte	40
- 1856 0723 10       		.byte	16
- 1857 0724 29       		.byte	41
- 1858 0725 02       		.byte	2
- 1859 0726 2D       		.byte	45
- 1860 0727 04       		.byte	4
- 1861 0728 2F       		.byte	47
- 1862 0729 68       		.byte	104
- 1863 072a 31       		.byte	49
- 1864 072b 02       		.byte	2
- 1865 072c 32       		.byte	50
- 1866 072d 60       		.byte	96
- 1867 072e 33       		.byte	51
- 1868 072f 78       		.byte	120
- 1869 0730 34       		.byte	52
- 1870 0731 1F       		.byte	31
- 1871 0732 35       		.byte	53
- 1872 0733 01       		.byte	1
- 1873 0734 36       		.byte	54
- 1874 0735 80       		.byte	-128
- 1875 0736 37       		.byte	55
- 1876 0737 04       		.byte	4
- 1877 0738 38       		.byte	56
- 1878 0739 08       		.byte	8
- 1879 073a 3E       		.byte	62
- 1880 073b 44       		.byte	68
- 1881 073c 3F       		.byte	63
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 34
+ 1825 0704 09       		.byte	9
+ 1826 0705 88       		.byte	-120
+ 1827 0706 0A       		.byte	10
+ 1828 0707 80       		.byte	-128
+ 1829 0708 0C       		.byte	12
+ 1830 0709 11       		.byte	17
+ 1831 070a 0D       		.byte	13
+ 1832 070b 08       		.byte	8
+ 1833 070c 0E       		.byte	14
+ 1834 070d 41       		.byte	65
+ 1835 070e 0F       		.byte	15
+ 1836 070f 08       		.byte	8
+ 1837 0710 10       		.byte	16
+ 1838 0711 11       		.byte	17
+ 1839 0712 13       		.byte	19
+ 1840 0713 02       		.byte	2
+ 1841 0714 17       		.byte	23
+ 1842 0715 06       		.byte	6
+ 1843 0716 19       		.byte	25
+ 1844 0717 20       		.byte	32
+ 1845 0718 1B       		.byte	27
+ 1846 0719 02       		.byte	2
+ 1847 071a 1C       		.byte	28
+ 1848 071b 10       		.byte	16
+ 1849 071c 1D       		.byte	29
+ 1850 071d 80       		.byte	-128
+ 1851 071e 1F       		.byte	31
+ 1852 071f 21       		.byte	33
+ 1853 0720 22       		.byte	34
+ 1854 0721 40       		.byte	64
+ 1855 0722 26       		.byte	38
+ 1856 0723 21       		.byte	33
+ 1857 0724 27       		.byte	39
+ 1858 0725 22       		.byte	34
+ 1859 0726 29       		.byte	41
+ 1860 0727 20       		.byte	32
+ 1861 0728 2E       		.byte	46
+ 1862 0729 80       		.byte	-128
+ 1863 072a 2F       		.byte	47
+ 1864 072b 44       		.byte	68
+ 1865 072c 31       		.byte	49
+ 1866 072d 08       		.byte	8
+ 1867 072e 36       		.byte	54
+ 1868 072f 0A       		.byte	10
+ 1869 0730 37       		.byte	55
+ 1870 0731 20       		.byte	32
+ 1871 0732 38       		.byte	56
+ 1872 0733 84       		.byte	-124
+ 1873 0734 3C       		.byte	60
+ 1874 0735 40       		.byte	64
+ 1875 0736 3D       		.byte	61
+ 1876 0737 08       		.byte	8
+ 1877 0738 46       		.byte	70
+ 1878 0739 0A       		.byte	10
+ 1879 073a 4A       		.byte	74
+ 1880 073b 01       		.byte	1
+ 1881 073c 4B       		.byte	75
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 34
 
 
- 1882 073d 01       		.byte	1
- 1883 073e 40       		.byte	64
- 1884 073f 14       		.byte	20
- 1885 0740 41       		.byte	65
- 1886 0741 06       		.byte	6
- 1887 0742 45       		.byte	69
- 1888 0743 EB       		.byte	-21
- 1889 0744 47       		.byte	71
- 1890 0745 0C       		.byte	12
- 1891 0746 48       		.byte	72
- 1892 0747 13       		.byte	19
- 1893 0748 49       		.byte	73
- 1894 0749 FF       		.byte	-1
- 1895 074a 4A       		.byte	74
- 1896 074b FF       		.byte	-1
- 1897 074c 4B       		.byte	75
- 1898 074d FF       		.byte	-1
- 1899 074e 4E       		.byte	78
- 1900 074f F0       		.byte	-16
- 1901 0750 4F       		.byte	79
- 1902 0751 44       		.byte	68
- 1903 0752 50       		.byte	80
- 1904 0753 0C       		.byte	12
- 1905 0754 52       		.byte	82
- 1906 0755 80       		.byte	-128
- 1907 0756 58       		.byte	88
- 1908 0757 04       		.byte	4
- 1909 0758 59       		.byte	89
- 1910 0759 04       		.byte	4
- 1911 075a 5A       		.byte	90
- 1912 075b 04       		.byte	4
- 1913 075c 5B       		.byte	91
- 1914 075d 04       		.byte	4
- 1915 075e 5C       		.byte	92
- 1916 075f 23       		.byte	35
- 1917 0760 5D       		.byte	93
- 1918 0761 23       		.byte	35
- 1919 0762 5F       		.byte	95
- 1920 0763 01       		.byte	1
- 1921 0764 66       		.byte	102
- 1922 0765 C0       		.byte	-64
- 1923 0766 6A       		.byte	106
- 1924 0767 40       		.byte	64
- 1925 0768 6B       		.byte	107
- 1926 0769 02       		.byte	2
- 1927 076a 80       		.byte	-128
- 1928 076b 01       		.byte	1
- 1929 076c 82       		.byte	-126
- 1930 076d 06       		.byte	6
- 1931 076e 84       		.byte	-124
- 1932 076f 0C       		.byte	12
- 1933 0770 86       		.byte	-122
- 1934 0771 03       		.byte	3
- 1935 0772 8A       		.byte	-118
- 1936 0773 08       		.byte	8
- 1937 0774 8B       		.byte	-117
- 1938 0775 02       		.byte	2
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 35
+ 1882 073d 80       		.byte	-128
+ 1883 073e 56       		.byte	86
+ 1884 073f 02       		.byte	2
+ 1885 0740 57       		.byte	87
+ 1886 0741 19       		.byte	25
+ 1887 0742 6A       		.byte	106
+ 1888 0743 60       		.byte	96
+ 1889 0744 6B       		.byte	107
+ 1890 0745 04       		.byte	4
+ 1891 0746 76       		.byte	118
+ 1892 0747 80       		.byte	-128
+ 1893 0748 82       		.byte	-126
+ 1894 0749 10       		.byte	16
+ 1895 074a 83       		.byte	-125
+ 1896 074b 10       		.byte	16
+ 1897 074c 87       		.byte	-121
+ 1898 074d 22       		.byte	34
+ 1899 074e 8A       		.byte	-118
+ 1900 074f 60       		.byte	96
+ 1901 0750 8B       		.byte	-117
+ 1902 0751 01       		.byte	1
+ 1903 0752 8C       		.byte	-116
+ 1904 0753 10       		.byte	16
+ 1905 0754 8F       		.byte	-113
+ 1906 0755 01       		.byte	1
+ 1907 0756 90       		.byte	-112
+ 1908 0757 C4       		.byte	-60
+ 1909 0758 92       		.byte	-110
+ 1910 0759 01       		.byte	1
+ 1911 075a 93       		.byte	-109
+ 1912 075b 08       		.byte	8
+ 1913 075c 96       		.byte	-106
+ 1914 075d 80       		.byte	-128
+ 1915 075e 97       		.byte	-105
+ 1916 075f 04       		.byte	4
+ 1917 0760 9C       		.byte	-100
+ 1918 0761 80       		.byte	-128
+ 1919 0762 9D       		.byte	-99
+ 1920 0763 20       		.byte	32
+ 1921 0764 9F       		.byte	-97
+ 1922 0765 20       		.byte	32
+ 1923 0766 A1       		.byte	-95
+ 1924 0767 0C       		.byte	12
+ 1925 0768 A2       		.byte	-94
+ 1926 0769 08       		.byte	8
+ 1927 076a A3       		.byte	-93
+ 1928 076b 04       		.byte	4
+ 1929 076c A6       		.byte	-90
+ 1930 076d 01       		.byte	1
+ 1931 076e A8       		.byte	-88
+ 1932 076f 20       		.byte	32
+ 1933 0770 AB       		.byte	-85
+ 1934 0771 04       		.byte	4
+ 1935 0772 AE       		.byte	-82
+ 1936 0773 10       		.byte	16
+ 1937 0774 B2       		.byte	-78
+ 1938 0775 48       		.byte	72
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 35
 
 
- 1939 0776 96       		.byte	-106
- 1940 0777 0C       		.byte	12
- 1941 0778 9B       		.byte	-101
- 1942 0779 02       		.byte	2
- 1943 077a 9E       		.byte	-98
- 1944 077b 10       		.byte	16
- 1945 077c 9F       		.byte	-97
- 1946 077d 01       		.byte	1
- 1947 077e A2       		.byte	-94
- 1948 077f 03       		.byte	3
- 1949 0780 A4       		.byte	-92
- 1950 0781 01       		.byte	1
- 1951 0782 A6       		.byte	-90
- 1952 0783 0E       		.byte	14
- 1953 0784 AA       		.byte	-86
- 1954 0785 10       		.byte	16
- 1955 0786 AF       		.byte	-81
- 1956 0787 01       		.byte	1
- 1957 0788 B2       		.byte	-78
- 1958 0789 0F       		.byte	15
- 1959 078a B4       		.byte	-76
- 1960 078b 10       		.byte	16
- 1961 078c B5       		.byte	-75
- 1962 078d 03       		.byte	3
- 1963 078e BA       		.byte	-70
- 1964 078f 08       		.byte	8
- 1965 0790 BE       		.byte	-66
- 1966 0791 10       		.byte	16
- 1967 0792 BF       		.byte	-65
- 1968 0793 10       		.byte	16
- 1969 0794 C0       		.byte	-64
- 1970 0795 03       		.byte	3
- 1971 0796 C6       		.byte	-58
- 1972 0797 40       		.byte	64
- 1973 0798 C9       		.byte	-55
- 1974 0799 FF       		.byte	-1
- 1975 079a CA       		.byte	-54
- 1976 079b 07       		.byte	7
- 1977 079c CB       		.byte	-53
- 1978 079d FF       		.byte	-1
- 1979 079e CC       		.byte	-52
- 1980 079f 40       		.byte	64
- 1981 07a0 CD       		.byte	-51
- 1982 07a1 20       		.byte	32
- 1983 07a2 CE       		.byte	-50
- 1984 07a3 F0       		.byte	-16
- 1985 07a4 CF       		.byte	-49
- 1986 07a5 05       		.byte	5
- 1987 07a6 D0       		.byte	-48
- 1988 07a7 08       		.byte	8
- 1989 07a8 D8       		.byte	-40
- 1990 07a9 04       		.byte	4
- 1991 07aa D9       		.byte	-39
- 1992 07ab 04       		.byte	4
- 1993 07ac DA       		.byte	-38
- 1994 07ad 04       		.byte	4
- 1995 07ae DC       		.byte	-36
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 36
+ 1939 0776 B5       		.byte	-75
+ 1940 0777 01       		.byte	1
+ 1941 0778 C0       		.byte	-64
+ 1942 0779 F7       		.byte	-9
+ 1943 077a C2       		.byte	-62
+ 1944 077b FC       		.byte	-4
+ 1945 077c C4       		.byte	-60
+ 1946 077d 3D       		.byte	61
+ 1947 077e CA       		.byte	-54
+ 1948 077f B4       		.byte	-76
+ 1949 0780 CC       		.byte	-52
+ 1950 0781 E2       		.byte	-30
+ 1951 0782 CE       		.byte	-50
+ 1952 0783 5A       		.byte	90
+ 1953 0784 D0       		.byte	-48
+ 1954 0785 30       		.byte	48
+ 1955 0786 E2       		.byte	-30
+ 1956 0787 A0       		.byte	-96
+ 1957 0788 E4       		.byte	-28
+ 1958 0789 88       		.byte	-120
+ 1959 078a EC       		.byte	-20
+ 1960 078b 80       		.byte	-128
+ 1961 078c EE       		.byte	-18
+ 1962 078d 40       		.byte	64
+ 1963 078e 82       		.byte	-126
+ 1964 078f 01       		.byte	1
+ 1965 0790 86       		.byte	-122
+ 1966 0791 02       		.byte	2
+ 1967 0792 87       		.byte	-121
+ 1968 0793 04       		.byte	4
+ 1969 0794 97       		.byte	-105
+ 1970 0795 04       		.byte	4
+ 1971 0796 A2       		.byte	-94
+ 1972 0797 01       		.byte	1
+ 1973 0798 A6       		.byte	-90
+ 1974 0799 02       		.byte	2
+ 1975 079a AA       		.byte	-86
+ 1976 079b 40       		.byte	64
+ 1977 079c AF       		.byte	-81
+ 1978 079d 2A       		.byte	42
+ 1979 079e B2       		.byte	-78
+ 1980 079f 08       		.byte	8
+ 1981 07a0 E0       		.byte	-32
+ 1982 07a1 01       		.byte	1
+ 1983 07a2 E4       		.byte	-28
+ 1984 07a3 40       		.byte	64
+ 1985 07a4 E8       		.byte	-24
+ 1986 07a5 A8       		.byte	-88
+ 1987 07a6 33       		.byte	51
+ 1988 07a7 18       		.byte	24
+ 1989 07a8 35       		.byte	53
+ 1990 07a9 80       		.byte	-128
+ 1991 07aa CC       		.byte	-52
+ 1992 07ab 70       		.byte	112
+ 1993 07ac 0F       		.byte	15
+ 1994 07ad 01       		.byte	1
+ 1995 07ae 9D       		.byte	-99
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 36
 
 
- 1996 07af 03       		.byte	3
- 1997 07b0 DD       		.byte	-35
- 1998 07b1 03       		.byte	3
- 1999 07b2 DF       		.byte	-33
- 2000 07b3 01       		.byte	1
- 2001 07b4 E0       		.byte	-32
- 2002 07b5 40       		.byte	64
- 2003 07b6 E1       		.byte	-31
- 2004 07b7 A8       		.byte	-88
- 2005 07b8 E2       		.byte	-30
- 2006 07b9 40       		.byte	64
- 2007 07ba E3       		.byte	-29
- 2008 07bb 20       		.byte	32
- 2009 07bc 01       		.byte	1
+ 1996 07af 80       		.byte	-128
+ 1997 07b0 9F       		.byte	-97
+ 1998 07b1 10       		.byte	16
+ 1999 07b2 A7       		.byte	-89
+ 2000 07b3 08       		.byte	8
+ 2001 07b4 C2       		.byte	-62
+ 2002 07b5 80       		.byte	-128
+ 2003 07b6 50       		.byte	80
+ 2004 07b7 04       		.byte	4
+ 2005 07b8 57       		.byte	87
+ 2006 07b9 80       		.byte	-128
+ 2007 07ba 80       		.byte	-128
+ 2008 07bb 04       		.byte	4
+ 2009 07bc 8D       		.byte	-115
  2010 07bd 08       		.byte	8
- 2011 07be 02       		.byte	2
- 2012 07bf 04       		.byte	4
- 2013 07c0 03       		.byte	3
- 2014 07c1 40       		.byte	64
- 2015 07c2 05       		.byte	5
- 2016 07c3 38       		.byte	56
- 2017 07c4 07       		.byte	7
- 2018 07c5 40       		.byte	64
- 2019 07c6 09       		.byte	9
- 2020 07c7 40       		.byte	64
- 2021 07c8 0A       		.byte	10
- 2022 07c9 30       		.byte	48
- 2023 07ca 0C       		.byte	12
- 2024 07cb C0       		.byte	-64
- 2025 07cc 0E       		.byte	14
- 2026 07cd 90       		.byte	-112
- 2027 07ce 0F       		.byte	15
+ 2011 07be 9D       		.byte	-99
+ 2012 07bf 80       		.byte	-128
+ 2013 07c0 9F       		.byte	-97
+ 2014 07c1 10       		.byte	16
+ 2015 07c2 A7       		.byte	-89
+ 2016 07c3 08       		.byte	8
+ 2017 07c4 AB       		.byte	-85
+ 2018 07c5 01       		.byte	1
+ 2019 07c6 D4       		.byte	-44
+ 2020 07c7 60       		.byte	96
+ 2021 07c8 E6       		.byte	-26
+ 2022 07c9 80       		.byte	-128
+ 2023 07ca E8       		.byte	-24
+ 2024 07cb 80       		.byte	-128
+ 2025 07cc 9F       		.byte	-97
+ 2026 07cd 10       		.byte	16
+ 2027 07ce A1       		.byte	-95
  2028 07cf 08       		.byte	8
- 2029 07d0 10       		.byte	16
- 2030 07d1 80       		.byte	-128
- 2031 07d2 11       		.byte	17
- 2032 07d3 14       		.byte	20
- 2033 07d4 15       		.byte	21
- 2034 07d5 28       		.byte	40
- 2035 07d6 16       		.byte	22
- 2036 07d7 84       		.byte	-124
- 2037 07d8 18       		.byte	24
- 2038 07d9 04       		.byte	4
- 2039 07da 19       		.byte	25
- 2040 07db 08       		.byte	8
- 2041 07dc 1D       		.byte	29
- 2042 07dd 18       		.byte	24
- 2043 07de 1E       		.byte	30
- 2044 07df 01       		.byte	1
- 2045 07e0 20       		.byte	32
- 2046 07e1 08       		.byte	8
- 2047 07e2 25       		.byte	37
- 2048 07e3 41       		.byte	65
- 2049 07e4 26       		.byte	38
- 2050 07e5 E4       		.byte	-28
- 2051 07e6 27       		.byte	39
- 2052 07e7 04       		.byte	4
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 37
+ 2029 07d0 A7       		.byte	-89
+ 2030 07d1 08       		.byte	8
+ 2031 07d2 B1       		.byte	-79
+ 2032 07d3 80       		.byte	-128
+ 2033 07d4 B3       		.byte	-77
+ 2034 07d5 80       		.byte	-128
+ 2035 07d6 71       		.byte	113
+ 2036 07d7 08       		.byte	8
+ 2037 07d8 76       		.byte	118
+ 2038 07d9 20       		.byte	32
+ 2039 07da DC       		.byte	-36
+ 2040 07db 01       		.byte	1
+ 2041 07dc DE       		.byte	-34
+ 2042 07dd 04       		.byte	4
+ 2043 07de 63       		.byte	99
+ 2044 07df 20       		.byte	32
+ 2045 07e0 9E       		.byte	-98
+ 2046 07e1 20       		.byte	32
+ 2047 07e2 A5       		.byte	-91
+ 2048 07e3 08       		.byte	8
+ 2049 07e4 D8       		.byte	-40
+ 2050 07e5 02       		.byte	2
+ 2051 07e6 9E       		.byte	-98
+ 2052 07e7 20       		.byte	32
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 37
 
 
- 2053 07e8 28       		.byte	40
- 2054 07e9 02       		.byte	2
- 2055 07ea 2A       		.byte	42
- 2056 07eb 80       		.byte	-128
- 2057 07ec 2C       		.byte	44
+ 2053 07e8 A5       		.byte	-91
+ 2054 07e9 08       		.byte	8
+ 2055 07ea A7       		.byte	-89
+ 2056 07eb 10       		.byte	16
+ 2057 07ec 9E       		.byte	-98
  2058 07ed 20       		.byte	32
- 2059 07ee 2D       		.byte	45
- 2060 07ef 20       		.byte	32
- 2061 07f0 2F       		.byte	47
- 2062 07f1 01       		.byte	1
- 2063 07f2 31       		.byte	49
- 2064 07f3 20       		.byte	32
- 2065 07f4 32       		.byte	50
- 2066 07f5 80       		.byte	-128
- 2067 07f6 35       		.byte	53
- 2068 07f7 02       		.byte	2
- 2069 07f8 36       		.byte	54
- 2070 07f9 20       		.byte	32
- 2071 07fa 39       		.byte	57
- 2072 07fb 10       		.byte	16
- 2073 07fc 3E       		.byte	62
- 2074 07fd 48       		.byte	72
- 2075 07fe 41       		.byte	65
+ 2059 07ee A7       		.byte	-89
+ 2060 07ef 10       		.byte	16
+ 2061 07f0 B5       		.byte	-75
+ 2062 07f1 08       		.byte	8
+ 2063 07f2 EC       		.byte	-20
+ 2064 07f3 08       		.byte	8
+ 2065 07f4 9F       		.byte	-97
+ 2066 07f5 10       		.byte	16
+ 2067 07f6 A1       		.byte	-95
+ 2068 07f7 08       		.byte	8
+ 2069 07f8 A7       		.byte	-89
+ 2070 07f9 08       		.byte	8
+ 2071 07fa 22       		.byte	34
+ 2072 07fb 20       		.byte	32
+ 2073 07fc 57       		.byte	87
+ 2074 07fd 01       		.byte	1
+ 2075 07fe 71       		.byte	113
  2076 07ff 08       		.byte	8
- 2077 0800 44       		.byte	68
- 2078 0801 40       		.byte	64
- 2079 0802 47       		.byte	71
- 2080 0803 40       		.byte	64
- 2081 0804 48       		.byte	72
- 2082 0805 80       		.byte	-128
- 2083 0806 4E       		.byte	78
+ 2077 0800 74       		.byte	116
+ 2078 0801 01       		.byte	1
+ 2079 0802 83       		.byte	-125
+ 2080 0803 10       		.byte	16
+ 2081 0804 86       		.byte	-122
+ 2082 0805 20       		.byte	32
+ 2083 0806 87       		.byte	-121
  2084 0807 08       		.byte	8
- 2085 0808 4F       		.byte	79
- 2086 0809 0A       		.byte	10
- 2087 080a 51       		.byte	81
+ 2085 0808 88       		.byte	-120
+ 2086 0809 01       		.byte	1
+ 2087 080a 9F       		.byte	-97
  2088 080b 10       		.byte	16
- 2089 080c 53       		.byte	83
- 2090 080d 10       		.byte	16
- 2091 080e 57       		.byte	87
- 2092 080f 08       		.byte	8
- 2093 0810 75       		.byte	117
- 2094 0811 02       		.byte	2
- 2095 0812 81       		.byte	-127
+ 2089 080c A1       		.byte	-95
+ 2090 080d 08       		.byte	8
+ 2091 080e A3       		.byte	-93
+ 2092 080f 01       		.byte	1
+ 2093 0810 A7       		.byte	-89
+ 2094 0811 08       		.byte	8
+ 2095 0812 AF       		.byte	-81
  2096 0813 01       		.byte	1
- 2097 0814 84       		.byte	-124
- 2098 0815 04       		.byte	4
- 2099 0816 86       		.byte	-122
- 2100 0817 01       		.byte	1
- 2101 0818 91       		.byte	-111
- 2102 0819 1C       		.byte	28
- 2103 081a 92       		.byte	-110
- 2104 081b 60       		.byte	96
- 2105 081c 97       		.byte	-105
+ 2097 0814 C8       		.byte	-56
+ 2098 0815 10       		.byte	16
+ 2099 0816 D6       		.byte	-42
+ 2100 0817 20       		.byte	32
+ 2101 0818 DC       		.byte	-36
+ 2102 0819 80       		.byte	-128
+ 2103 081a DE       		.byte	-34
+ 2104 081b 20       		.byte	32
+ 2105 081c E2       		.byte	-30
  2106 081d 20       		.byte	32
- 2107 081e 98       		.byte	-104
- 2108 081f 02       		.byte	2
- 2109 0820 9A       		.byte	-102
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 38
+ 2107 081e EE       		.byte	-18
+ 2108 081f 10       		.byte	16
+ 2109 0820 58       		.byte	88
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 38
 
 
- 2110 0821 08       		.byte	8
- 2111 0822 9B       		.byte	-101
- 2112 0823 41       		.byte	65
- 2113 0824 9C       		.byte	-100
- 2114 0825 40       		.byte	64
- 2115 0826 9D       		.byte	-99
- 2116 0827 08       		.byte	8
- 2117 0828 9F       		.byte	-97
- 2118 0829 04       		.byte	4
- 2119 082a A0       		.byte	-96
- 2120 082b 20       		.byte	32
- 2121 082c A1       		.byte	-95
+ 2110 0821 40       		.byte	64
+ 2111 0822 63       		.byte	99
+ 2112 0823 02       		.byte	2
+ 2113 0824 66       		.byte	102
+ 2114 0825 04       		.byte	4
+ 2115 0826 84       		.byte	-124
+ 2116 0827 40       		.byte	64
+ 2117 0828 8C       		.byte	-116
+ 2118 0829 01       		.byte	1
+ 2119 082a 8F       		.byte	-113
+ 2120 082b 10       		.byte	16
+ 2121 082c 9E       		.byte	-98
  2122 082d 20       		.byte	32
- 2123 082e A2       		.byte	-94
- 2124 082f 08       		.byte	8
- 2125 0830 A4       		.byte	-92
- 2126 0831 80       		.byte	-128
- 2127 0832 A6       		.byte	-90
- 2128 0833 80       		.byte	-128
- 2129 0834 A7       		.byte	-89
- 2130 0835 08       		.byte	8
- 2131 0836 A8       		.byte	-88
- 2132 0837 10       		.byte	16
- 2133 0838 AE       		.byte	-82
- 2134 0839 04       		.byte	4
- 2135 083a B5       		.byte	-75
- 2136 083b 04       		.byte	4
- 2137 083c B6       		.byte	-74
- 2138 083d 40       		.byte	64
- 2139 083e B7       		.byte	-73
- 2140 083f 10       		.byte	16
- 2141 0840 C0       		.byte	-64
- 2142 0841 7E       		.byte	126
- 2143 0842 C2       		.byte	-62
- 2144 0843 F5       		.byte	-11
- 2145 0844 C4       		.byte	-60
- 2146 0845 7E       		.byte	126
- 2147 0846 CA       		.byte	-54
- 2148 0847 78       		.byte	120
- 2149 0848 CC       		.byte	-52
- 2150 0849 AC       		.byte	-84
- 2151 084a CE       		.byte	-50
- 2152 084b 54       		.byte	84
- 2153 084c D0       		.byte	-48
- 2154 084d 92       		.byte	-110
- 2155 084e D2       		.byte	-46
- 2156 084f 20       		.byte	32
- 2157 0850 E0       		.byte	-32
- 2158 0851 08       		.byte	8
- 2159 0852 E4       		.byte	-28
- 2160 0853 12       		.byte	18
- 2161 0854 EC       		.byte	-20
- 2162 0855 40       		.byte	64
- 2163 0856 87       		.byte	-121
- 2164 0857 09       		.byte	9
- 2165 0858 8B       		.byte	-117
- 2166 0859 01       		.byte	1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 39
+ 2123 082e A7       		.byte	-89
+ 2124 082f 10       		.byte	16
+ 2125 0830 D4       		.byte	-44
+ 2126 0831 01       		.byte	1
+ 2127 0832 D6       		.byte	-42
+ 2128 0833 02       		.byte	2
+ 2129 0834 D8       		.byte	-40
+ 2130 0835 01       		.byte	1
+ 2131 0836 E0       		.byte	-32
+ 2132 0837 0A       		.byte	10
+ 2133 0838 70       		.byte	112
+ 2134 0839 01       		.byte	1
+ 2135 083a 7F       		.byte	127
+ 2136 083b 02       		.byte	2
+ 2137 083c 82       		.byte	-126
+ 2138 083d 04       		.byte	4
+ 2139 083e 8F       		.byte	-113
+ 2140 083f 02       		.byte	2
+ 2141 0840 90       		.byte	-112
+ 2142 0841 02       		.byte	2
+ 2143 0842 9E       		.byte	-98
+ 2144 0843 04       		.byte	4
+ 2145 0844 AE       		.byte	-82
+ 2146 0845 20       		.byte	32
+ 2147 0846 B3       		.byte	-77
+ 2148 0847 01       		.byte	1
+ 2149 0848 DC       		.byte	-36
+ 2150 0849 01       		.byte	1
+ 2151 084a DE       		.byte	-34
+ 2152 084b 04       		.byte	4
+ 2153 084c E4       		.byte	-28
+ 2154 084d 02       		.byte	2
+ 2155 084e E8       		.byte	-24
+ 2156 084f 01       		.byte	1
+ 2157 0850 00       		.byte	0
+ 2158 0851 1F       		.byte	31
+ 2159 0852 01       		.byte	1
+ 2160 0853 01       		.byte	1
+ 2161 0854 0A       		.byte	10
+ 2162 0855 17       		.byte	23
+ 2163 0856 0B       		.byte	11
+ 2164 0857 01       		.byte	1
+ 2165 0858 0C       		.byte	12
+ 2166 0859 0D       		.byte	13
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 39
 
 
- 2167 085a 9B       		.byte	-101
+ 2167 085a 0D       		.byte	13
  2168 085b 01       		.byte	1
- 2169 085c A3       		.byte	-93
- 2170 085d 09       		.byte	9
- 2171 085e A8       		.byte	-88
- 2172 085f 04       		.byte	4
- 2173 0860 AA       		.byte	-86
- 2174 0861 04       		.byte	4
- 2175 0862 AB       		.byte	-85
- 2176 0863 01       		.byte	1
- 2177 0864 AE       		.byte	-82
- 2178 0865 20       		.byte	32
- 2179 0866 E0       		.byte	-32
- 2180 0867 08       		.byte	8
- 2181 0868 E6       		.byte	-26
- 2182 0869 20       		.byte	32
- 2183 086a E8       		.byte	-24
- 2184 086b 04       		.byte	4
- 2185 086c EC       		.byte	-20
- 2186 086d 08       		.byte	8
- 2187 086e 33       		.byte	51
- 2188 086f 48       		.byte	72
- 2189 0870 36       		.byte	54
- 2190 0871 40       		.byte	64
- 2191 0872 CC       		.byte	-52
- 2192 0873 70       		.byte	112
- 2193 0874 0F       		.byte	15
- 2194 0875 01       		.byte	1
- 2195 0876 9F       		.byte	-97
- 2196 0877 40       		.byte	64
- 2197 0878 A6       		.byte	-90
- 2198 0879 40       		.byte	64
- 2199 087a A7       		.byte	-89
- 2200 087b 08       		.byte	8
- 2201 087c C2       		.byte	-62
- 2202 087d 80       		.byte	-128
- 2203 087e 52       		.byte	82
- 2204 087f 20       		.byte	32
- 2205 0880 57       		.byte	87
- 2206 0881 10       		.byte	16
- 2207 0882 9F       		.byte	-97
- 2208 0883 40       		.byte	64
- 2209 0884 A6       		.byte	-90
- 2210 0885 40       		.byte	64
- 2211 0886 A7       		.byte	-89
- 2212 0887 08       		.byte	8
- 2213 0888 AB       		.byte	-85
- 2214 0889 01       		.byte	1
- 2215 088a D4       		.byte	-44
- 2216 088b 60       		.byte	96
- 2217 088c E8       		.byte	-24
- 2218 088d 80       		.byte	-128
- 2219 088e 8C       		.byte	-116
- 2220 088f 02       		.byte	2
- 2221 0890 9F       		.byte	-97
- 2222 0891 40       		.byte	64
- 2223 0892 A6       		.byte	-90
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 40
+ 2169 085c 10       		.byte	16
+ 2170 085d 1F       		.byte	31
+ 2171 085e 1A       		.byte	26
+ 2172 085f 17       		.byte	23
+ 2173 0860 1C       		.byte	28
+ 2174 0861 0D       		.byte	13
+ 2175 0862 00       		.byte	0
+ 2176 0863 3F       		.byte	63
+ 2177 0864 01       		.byte	1
+ 2178 0865 FF       		.byte	-1
+ 2179 0866 40       		.byte	64
+ 2180 0867 00       		.byte	0
+ 2181 0868 0C       		.byte	12
+ 2182 0869 3C       		.byte	60
+ 2183 086a 00       		.byte	0
+ 2184 086b C2       		.byte	-62
+ 2185 086c 04       		.byte	4
+ 2186 086d 00       		.byte	0
+ 2187 086e 00       		.byte	0
+ 2188 086f E3       		.byte	-29
+ 2189 0870 00       		.byte	0
+ 2190 0871 10       		.byte	16
+ 2191 0872 00       		.byte	0
+ 2192 0873 00       		.byte	0
+ 2193 0874 08       		.byte	8
+ 2194 0875 C0       		.byte	-64
+ 2195 0876 00       		.byte	0
+ 2196 0877 00       		.byte	0
+ 2197 0878 00       		.byte	0
+ 2198 0879 E7       		.byte	-25
+ 2199 087a 23       		.byte	35
+ 2200 087b 18       		.byte	24
+ 2201 087c 33       		.byte	51
+ 2202 087d 18       		.byte	24
+ 2203 087e 0C       		.byte	12
+ 2204 087f 00       		.byte	0
+ 2205 0880 3F       		.byte	63
+ 2206 0881 44       		.byte	68
+ 2207 0882 00       		.byte	0
+ 2208 0883 00       		.byte	0
+ 2209 0884 03       		.byte	3
+ 2210 0885 1C       		.byte	28
+ 2211 0886 00       		.byte	0
+ 2212 0887 E1       		.byte	-31
+ 2213 0888 02       		.byte	2
+ 2214 0889 80       		.byte	-128
+ 2215 088a 00       		.byte	0
+ 2216 088b 00       		.byte	0
+ 2217 088c 1C       		.byte	28
+ 2218 088d 08       		.byte	8
+ 2219 088e 23       		.byte	35
+ 2220 088f 00       		.byte	0
+ 2221 0890 1F       		.byte	31
+ 2222 0891 00       		.byte	0
+ 2223 0892 20       		.byte	32
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 40
 
 
- 2224 0893 40       		.byte	64
- 2225 0894 A7       		.byte	-89
- 2226 0895 18       		.byte	24
- 2227 0896 AA       		.byte	-86
- 2228 0897 20       		.byte	32
- 2229 0898 EE       		.byte	-18
- 2230 0899 80       		.byte	-128
- 2231 089a 73       		.byte	115
- 2232 089b 10       		.byte	16
- 2233 089c 7E       		.byte	126
- 2234 089d 01       		.byte	1
- 2235 089e DC       		.byte	-36
- 2236 089f 01       		.byte	1
- 2237 08a0 DE       		.byte	-34
- 2238 08a1 04       		.byte	4
- 2239 08a2 63       		.byte	99
- 2240 08a3 20       		.byte	32
- 2241 08a4 67       		.byte	103
- 2242 08a5 80       		.byte	-128
- 2243 08a6 96       		.byte	-106
- 2244 08a7 02       		.byte	2
- 2245 08a8 97       		.byte	-105
- 2246 08a9 10       		.byte	16
- 2247 08aa D8       		.byte	-40
- 2248 08ab 03       		.byte	3
- 2249 08ac 96       		.byte	-106
- 2250 08ad 02       		.byte	2
- 2251 08ae 97       		.byte	-105
- 2252 08af 90       		.byte	-112
- 2253 08b0 A7       		.byte	-89
- 2254 08b1 10       		.byte	16
- 2255 08b2 8A       		.byte	-118
- 2256 08b3 10       		.byte	16
- 2257 08b4 96       		.byte	-106
- 2258 08b5 02       		.byte	2
- 2259 08b6 97       		.byte	-105
- 2260 08b7 90       		.byte	-112
- 2261 08b8 A7       		.byte	-89
- 2262 08b9 10       		.byte	16
- 2263 08ba E4       		.byte	-28
- 2264 08bb 04       		.byte	4
- 2265 08bc 82       		.byte	-126
- 2266 08bd 40       		.byte	64
- 2267 08be 9F       		.byte	-97
- 2268 08bf 40       		.byte	64
- 2269 08c0 A0       		.byte	-96
- 2270 08c1 02       		.byte	2
- 2271 08c2 A6       		.byte	-90
- 2272 08c3 40       		.byte	64
- 2273 08c4 A7       		.byte	-89
- 2274 08c5 08       		.byte	8
- 2275 08c6 AB       		.byte	-85
- 2276 08c7 10       		.byte	16
- 2277 08c8 E6       		.byte	-26
- 2278 08c9 80       		.byte	-128
- 2279 08ca EE       		.byte	-18
- 2280 08cb 80       		.byte	-128
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 41
+ 2224 0893 04       		.byte	4
+ 2225 0894 40       		.byte	64
+ 2226 0895 38       		.byte	56
+ 2227 0896 2C       		.byte	44
+ 2228 0897 1F       		.byte	31
+ 2229 0898 0F       		.byte	15
+ 2230 0899 C0       		.byte	-64
+ 2231 089a 10       		.byte	16
+ 2232 089b 00       		.byte	0
+ 2233 089c 00       		.byte	0
+ 2234 089d 00       		.byte	0
+ 2235 089e 28       		.byte	40
+ 2236 089f 08       		.byte	8
+ 2237 08a0 00       		.byte	0
+ 2238 08a1 00       		.byte	0
+ 2239 08a2 40       		.byte	64
+ 2240 08a3 00       		.byte	0
+ 2241 08a4 60       		.byte	96
+ 2242 08a5 02       		.byte	2
+ 2243 08a6 00       		.byte	0
+ 2244 08a7 00       		.byte	0
+ 2245 08a8 00       		.byte	0
+ 2246 08a9 D2       		.byte	-46
+ 2247 08aa 00       		.byte	0
+ 2248 08ab 10       		.byte	16
+ 2249 08ac 23       		.byte	35
+ 2250 08ad FF       		.byte	-1
+ 2251 08ae FF       		.byte	-1
+ 2252 08af FF       		.byte	-1
+ 2253 08b0 00       		.byte	0
+ 2254 08b1 A0       		.byte	-96
+ 2255 08b2 00       		.byte	0
+ 2256 08b3 04       		.byte	4
+ 2257 08b4 18       		.byte	24
+ 2258 08b5 00       		.byte	0
+ 2259 08b6 80       		.byte	-128
+ 2260 08b7 00       		.byte	0
+ 2261 08b8 00       		.byte	0
+ 2262 08b9 00       		.byte	0
+ 2263 08ba 00       		.byte	0
+ 2264 08bb 00       		.byte	0
+ 2265 08bc 04       		.byte	4
+ 2266 08bd 04       		.byte	4
+ 2267 08be 04       		.byte	4
+ 2268 08bf 04       		.byte	4
+ 2269 08c0 44       		.byte	68
+ 2270 08c1 11       		.byte	17
+ 2271 08c2 00       		.byte	0
+ 2272 08c3 01       		.byte	1
+ 2273 08c4 40       		.byte	64
+ 2274 08c5 00       		.byte	0
+ 2275 08c6 C0       		.byte	-64
+ 2276 08c7 00       		.byte	0
+ 2277 08c8 40       		.byte	64
+ 2278 08c9 40       		.byte	64
+ 2279 08ca C0       		.byte	-64
+ 2280 08cb 00       		.byte	0
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 41
 
 
- 2281 08cc 22       		.byte	34
- 2282 08cd 20       		.byte	32
- 2283 08ce 5A       		.byte	90
- 2284 08cf 80       		.byte	-128
- 2285 08d0 70       		.byte	112
- 2286 08d1 02       		.byte	2
- 2287 08d2 7E       		.byte	126
- 2288 08d3 02       		.byte	2
- 2289 08d4 82       		.byte	-126
- 2290 08d5 02       		.byte	2
- 2291 08d6 83       		.byte	-125
- 2292 08d7 40       		.byte	64
- 2293 08d8 86       		.byte	-122
- 2294 08d9 20       		.byte	32
- 2295 08da 87       		.byte	-121
- 2296 08db 08       		.byte	8
- 2297 08dc 8A       		.byte	-118
- 2298 08dd 40       		.byte	64
- 2299 08de 92       		.byte	-110
- 2300 08df 80       		.byte	-128
- 2301 08e0 9F       		.byte	-97
- 2302 08e1 40       		.byte	64
- 2303 08e2 A0       		.byte	-96
- 2304 08e3 02       		.byte	2
- 2305 08e4 A6       		.byte	-90
- 2306 08e5 40       		.byte	64
- 2307 08e6 A7       		.byte	-89
- 2308 08e7 08       		.byte	8
- 2309 08e8 C8       		.byte	-56
- 2310 08e9 10       		.byte	16
- 2311 08ea D4       		.byte	-44
- 2312 08eb 80       		.byte	-128
- 2313 08ec DC       		.byte	-36
- 2314 08ed 80       		.byte	-128
- 2315 08ee DE       		.byte	-34
- 2316 08ef 20       		.byte	32
- 2317 08f0 E2       		.byte	-30
- 2318 08f1 80       		.byte	-128
- 2319 08f2 E6       		.byte	-26
- 2320 08f3 80       		.byte	-128
- 2321 08f4 59       		.byte	89
- 2322 08f5 40       		.byte	64
- 2323 08f6 5F       		.byte	95
- 2324 08f7 01       		.byte	1
- 2325 08f8 86       		.byte	-122
- 2326 08f9 01       		.byte	1
- 2327 08fa 87       		.byte	-121
- 2328 08fb 10       		.byte	16
- 2329 08fc 8F       		.byte	-113
- 2330 08fd 01       		.byte	1
- 2331 08fe 96       		.byte	-106
- 2332 08ff 02       		.byte	2
- 2333 0900 97       		.byte	-105
- 2334 0901 90       		.byte	-112
- 2335 0902 9A       		.byte	-102
- 2336 0903 10       		.byte	16
- 2337 0904 B7       		.byte	-73
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 42
+ 2281 08cc C0       		.byte	-64
+ 2282 08cd 00       		.byte	0
+ 2283 08ce C0       		.byte	-64
+ 2284 08cf 00       		.byte	0
+ 2285 08d0 C0       		.byte	-64
+ 2286 08d1 00       		.byte	0
+ 2287 08d2 C0       		.byte	-64
+ 2288 08d3 00       		.byte	0
+ 2289 08d4 00       		.byte	0
+ 2290 08d5 00       		.byte	0
+ 2291 08d6 00       		.byte	0
+ 2292 08d7 00       		.byte	0
+ 2293 08d8 00       		.byte	0
+ 2294 08d9 00       		.byte	0
+ 2295 08da 00       		.byte	0
+ 2296 08db 00       		.byte	0
+ 2297 08dc 00       		.byte	0
+ 2298 08dd 00       		.byte	0
+ 2299 08de 00       		.byte	0
+ 2300 08df 00       		.byte	0
+ 2301 08e0 00       		.byte	0
+ 2302 08e1 00       		.byte	0
+ 2303 08e2 00       		.byte	0
+ 2304 08e3 00       		.byte	0
+ 2305 08e4 80       		.byte	-128
+ 2306 08e5 00       		.byte	0
+ 2307 08e6 00       		.byte	0
+ 2308 08e7 00       		.byte	0
+ 2309 08e8 00       		.byte	0
+ 2310 08e9 00       		.byte	0
+ 2311 08ea 00       		.byte	0
+ 2312 08eb 00       		.byte	0
+ 2313 08ec 00       		.byte	0
+ 2314 08ed FF       		.byte	-1
+ 2315 08ee FF       		.byte	-1
+ 2316 08ef 00       		.byte	0
+ 2317 08f0 FF       		.byte	-1
+ 2318 08f1 00       		.byte	0
+ 2319 08f2 00       		.byte	0
+ 2320 08f3 00       		.byte	0
+ 2321 08f4 00       		.byte	0
+ 2322 08f5 3F       		.byte	63
+ 2323 08f6 3F       		.byte	63
+ 2324 08f7 00       		.byte	0
+ 2325 08f8 34       		.byte	52
+ 2326 08f9 00       		.byte	0
+ 2327 08fa 00       		.byte	0
+ 2328 08fb 00       		.byte	0
+ 2329 08fc 00       		.byte	0
+ 2330 08fd 82       		.byte	-126
+ 2331 08fe 82       		.byte	-126
+ 2332 08ff 00       		.byte	0
+ 2333 0900 80       		.byte	-128
+ 2334 0901 00       		.byte	0
+ 2335 0902 00       		.byte	0
+ 2336 0903 00       		.byte	0
+ 2337 0904 08       		.byte	8
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 42
 
 
- 2338 0905 10       		.byte	16
- 2339 0906 D4       		.byte	-44
- 2340 0907 01       		.byte	1
- 2341 0908 D6       		.byte	-42
- 2342 0909 01       		.byte	1
- 2343 090a E4       		.byte	-28
- 2344 090b 08       		.byte	8
- 2345 090c E8       		.byte	-24
- 2346 090d 08       		.byte	8
- 2347 090e 70       		.byte	112
- 2348 090f 02       		.byte	2
- 2349 0910 76       		.byte	118
- 2350 0911 10       		.byte	16
- 2351 0912 87       		.byte	-121
- 2352 0913 40       		.byte	64
- 2353 0914 97       		.byte	-105
- 2354 0915 80       		.byte	-128
- 2355 0916 9A       		.byte	-102
- 2356 0917 10       		.byte	16
- 2357 0918 A0       		.byte	-96
- 2358 0919 02       		.byte	2
- 2359 091a A8       		.byte	-88
- 2360 091b 02       		.byte	2
- 2361 091c AD       		.byte	-83
- 2362 091d 40       		.byte	64
- 2363 091e DC       		.byte	-36
- 2364 091f 01       		.byte	1
- 2365 0920 DE       		.byte	-34
- 2366 0921 04       		.byte	4
- 2367 0922 00       		.byte	0
- 2368 0923 1F       		.byte	31
- 2369 0924 01       		.byte	1
- 2370 0925 01       		.byte	1
- 2371 0926 0A       		.byte	10
- 2372 0927 17       		.byte	23
- 2373 0928 0B       		.byte	11
- 2374 0929 01       		.byte	1
- 2375 092a 0C       		.byte	12
- 2376 092b 1C       		.byte	28
- 2377 092c 10       		.byte	16
- 2378 092d 1F       		.byte	31
- 2379 092e 11       		.byte	17
- 2380 092f 01       		.byte	1
- 2381 0930 1A       		.byte	26
- 2382 0931 1F       		.byte	31
- 2383 0932 1C       		.byte	28
- 2384 0933 0C       		.byte	12
- 2385 0934 1D       		.byte	29
- 2386 0935 01       		.byte	1
- 2387 0936 00       		.byte	0
- 2388 0937 3F       		.byte	63
- 2389 0938 80       		.byte	-128
- 2390 0939 00       		.byte	0
- 2391 093a 00       		.byte	0
- 2392 093b 00       		.byte	0
- 2393 093c 00       		.byte	0
- 2394 093d 00       		.byte	0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 43
+ 2338 0905 00       		.byte	0
+ 2339 0906 00       		.byte	0
+ 2340 0907 08       		.byte	8
+ 2341 0908 08       		.byte	8
+ 2342 0909 00       		.byte	0
+ 2343 090a 08       		.byte	8
+ 2344 090b 00       		.byte	0
+ 2345 090c 00       		.byte	0
+ 2346 090d 00       		.byte	0
+ 2347 090e 00       		.byte	0
+ 2348 090f 00       		.byte	0
+ 2349              		.section	.cywolatch,"a",%progbits
+ 2350              		.align	2
+ 2351              		.type	cy_meta_wonvl, %object
+ 2352              		.size	cy_meta_wonvl, 4
+ 2353              	cy_meta_wonvl:
+ 2354 0000 BC       		.byte	-68
+ 2355 0001 90       		.byte	-112
+ 2356 0002 AC       		.byte	-84
+ 2357 0003 AF       		.byte	-81
+ 2358              		.section	.cycustnvl,"a",%progbits
+ 2359              		.align	2
+ 2360              		.type	cy_meta_custnvl, %object
+ 2361              		.size	cy_meta_custnvl, 4
+ 2362              	cy_meta_custnvl:
+ 2363 0000 00       		.byte	0
+ 2364 0001 00       		.byte	0
+ 2365 0002 40       		.byte	64
+ 2366 0003 05       		.byte	5
+ 2367              		.section	.cymeta,"a",%progbits
+ 2368              		.align	2
+ 2369              		.type	cy_metadata, %object
+ 2370              		.size	cy_metadata, 12
+ 2371              	cy_metadata:
+ 2372 0000 00       		.byte	0
+ 2373 0001 01       		.byte	1
+ 2374 0002 2E       		.byte	46
+ 2375 0003 16       		.byte	22
+ 2376 0004 10       		.byte	16
+ 2377 0005 69       		.byte	105
+ 2378 0006 00       		.byte	0
+ 2379 0007 01       		.byte	1
+ 2380 0008 00       		.byte	0
+ 2381 0009 00       		.byte	0
+ 2382 000a 00       		.byte	0
+ 2383 000b 00       		.byte	0
+ 2384              		.section	.cyflashprotect,"a",%progbits
+ 2385              		.align	2
+ 2386              		.type	cy_meta_flashprotect, %object
+ 2387              		.size	cy_meta_flashprotect, 256
+ 2388              	cy_meta_flashprotect:
+ 2389 0000 00000000 		.space	256
+ 2389      00000000 
+ 2389      00000000 
+ 2389      00000000 
+ 2389      00000000 
+ 2390              		.text
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 43
 
 
- 2395 093e 00       		.byte	0
- 2396 093f 00       		.byte	0
- 2397 0940 00       		.byte	0
- 2398 0941 FF       		.byte	-1
- 2399 0942 FF       		.byte	-1
- 2400 0943 00       		.byte	0
- 2401 0944 FF       		.byte	-1
- 2402 0945 00       		.byte	0
- 2403 0946 00       		.byte	0
- 2404 0947 00       		.byte	0
- 2405 0948 00       		.byte	0
- 2406 0949 2F       		.byte	47
- 2407 094a 2F       		.byte	47
- 2408 094b 00       		.byte	0
- 2409 094c 24       		.byte	36
- 2410 094d 00       		.byte	0
- 2411 094e 00       		.byte	0
- 2412 094f 00       		.byte	0
- 2413 0950 00       		.byte	0
- 2414 0951 A2       		.byte	-94
- 2415 0952 A2       		.byte	-94
- 2416 0953 00       		.byte	0
- 2417 0954 A0       		.byte	-96
- 2418 0955 00       		.byte	0
- 2419 0956 00       		.byte	0
- 2420 0957 00       		.byte	0
- 2421 0958 08       		.byte	8
- 2422 0959 00       		.byte	0
- 2423 095a 00       		.byte	0
- 2424 095b 08       		.byte	8
- 2425 095c 08       		.byte	8
- 2426 095d 00       		.byte	0
- 2427 095e 08       		.byte	8
- 2428 095f 00       		.byte	0
- 2429 0960 00       		.byte	0
- 2430 0961 00       		.byte	0
- 2431 0962 00       		.byte	0
- 2432 0963 00       		.byte	0
- 2433              		.section	.cywolatch,"a",%progbits
- 2434              		.align	2
- 2435              		.type	cy_meta_wonvl, %object
- 2436              		.size	cy_meta_wonvl, 4
- 2437              	cy_meta_wonvl:
- 2438 0000 BC       		.byte	-68
- 2439 0001 90       		.byte	-112
- 2440 0002 AC       		.byte	-84
- 2441 0003 AF       		.byte	-81
- 2442              		.section	.cycustnvl,"a",%progbits
- 2443              		.align	2
- 2444              		.type	cy_meta_custnvl, %object
- 2445              		.size	cy_meta_custnvl, 4
- 2446              	cy_meta_custnvl:
- 2447 0000 00       		.byte	0
- 2448 0001 00       		.byte	0
- 2449 0002 40       		.byte	64
- 2450 0003 05       		.byte	5
- 2451              		.section	.cymeta,"a",%progbits
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 44
+ 2391              	.Letext0:
+ 2392              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2393              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
+ 2394              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
+ 2395              		.section	.debug_info,"",%progbits
+ 2396              	.Ldebug_info0:
+ 2397 0000 35010000 		.4byte	0x135
+ 2398 0004 0400     		.2byte	0x4
+ 2399 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 2400 000a 04       		.byte	0x4
+ 2401 000b 01       		.uleb128 0x1
+ 2402 000c 24000000 		.4byte	.LASF17
+ 2403 0010 0C       		.byte	0xc
+ 2404 0011 B2010000 		.4byte	.LASF18
+ 2405 0015 48010000 		.4byte	.LASF19
+ 2406 0019 00000000 		.4byte	.Ldebug_line0
+ 2407 001d 02       		.uleb128 0x2
+ 2408 001e 01       		.byte	0x1
+ 2409 001f 06       		.byte	0x6
+ 2410 0020 A6010000 		.4byte	.LASF0
+ 2411 0024 03       		.uleb128 0x3
+ 2412 0025 00000000 		.4byte	.LASF9
+ 2413 0029 01       		.byte	0x1
+ 2414 002a 1D       		.byte	0x1d
+ 2415 002b 2F000000 		.4byte	0x2f
+ 2416 002f 02       		.uleb128 0x2
+ 2417 0030 01       		.byte	0x1
+ 2418 0031 08       		.byte	0x8
+ 2419 0032 16000000 		.4byte	.LASF1
+ 2420 0036 02       		.uleb128 0x2
+ 2421 0037 02       		.byte	0x2
+ 2422 0038 05       		.byte	0x5
+ 2423 0039 93010000 		.4byte	.LASF2
+ 2424 003d 02       		.uleb128 0x2
+ 2425 003e 02       		.byte	0x2
+ 2426 003f 07       		.byte	0x7
+ 2427 0040 C4000000 		.4byte	.LASF3
+ 2428 0044 02       		.uleb128 0x2
+ 2429 0045 04       		.byte	0x4
+ 2430 0046 05       		.byte	0x5
+ 2431 0047 9D010000 		.4byte	.LASF4
+ 2432 004b 02       		.uleb128 0x2
+ 2433 004c 04       		.byte	0x4
+ 2434 004d 07       		.byte	0x7
+ 2435 004e B2000000 		.4byte	.LASF5
+ 2436 0052 02       		.uleb128 0x2
+ 2437 0053 08       		.byte	0x8
+ 2438 0054 05       		.byte	0x5
+ 2439 0055 85010000 		.4byte	.LASF6
+ 2440 0059 02       		.uleb128 0x2
+ 2441 005a 08       		.byte	0x8
+ 2442 005b 07       		.byte	0x7
+ 2443 005c 06010000 		.4byte	.LASF7
+ 2444 0060 04       		.uleb128 0x4
+ 2445 0061 04       		.byte	0x4
+ 2446 0062 05       		.byte	0x5
+ 2447 0063 696E7400 		.ascii	"int\000"
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 44
 
 
- 2452              		.align	2
- 2453              		.type	cy_metadata, %object
- 2454              		.size	cy_metadata, 12
- 2455              	cy_metadata:
- 2456 0000 00       		.byte	0
- 2457 0001 01       		.byte	1
- 2458 0002 2E       		.byte	46
- 2459 0003 16       		.byte	22
- 2460 0004 10       		.byte	16
- 2461 0005 69       		.byte	105
- 2462 0006 00       		.byte	0
- 2463 0007 01       		.byte	1
- 2464 0008 00       		.byte	0
- 2465 0009 00       		.byte	0
- 2466 000a 00       		.byte	0
- 2467 000b 00       		.byte	0
- 2468              		.section	.cyflashprotect,"a",%progbits
- 2469              		.align	2
- 2470              		.type	cy_meta_flashprotect, %object
- 2471              		.size	cy_meta_flashprotect, 256
- 2472              	cy_meta_flashprotect:
- 2473 0000 00000000 		.space	256
- 2473      00000000 
- 2473      00000000 
- 2473      00000000 
- 2473      00000000 
- 2474              		.text
- 2475              	.Letext0:
- 2476              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
- 2477              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.1\\psoc creator\\import\\gnu\\arm\\5.4.
- 2478              		.file 3 "Generated_Source\\PSoC5\\cymetadata.c"
- 2479              		.section	.debug_info,"",%progbits
- 2480              	.Ldebug_info0:
- 2481 0000 35010000 		.4byte	0x135
- 2482 0004 0400     		.2byte	0x4
- 2483 0006 00000000 		.4byte	.Ldebug_abbrev0
- 2484 000a 04       		.byte	0x4
- 2485 000b 01       		.uleb128 0x1
- 2486 000c 24000000 		.4byte	.LASF17
- 2487 0010 0C       		.byte	0xc
- 2488 0011 B2010000 		.4byte	.LASF18
- 2489 0015 48010000 		.4byte	.LASF19
- 2490 0019 00000000 		.4byte	.Ldebug_line0
- 2491 001d 02       		.uleb128 0x2
- 2492 001e 01       		.byte	0x1
- 2493 001f 06       		.byte	0x6
- 2494 0020 A6010000 		.4byte	.LASF0
- 2495 0024 03       		.uleb128 0x3
- 2496 0025 00000000 		.4byte	.LASF9
- 2497 0029 01       		.byte	0x1
- 2498 002a 1D       		.byte	0x1d
- 2499 002b 2F000000 		.4byte	0x2f
- 2500 002f 02       		.uleb128 0x2
- 2501 0030 01       		.byte	0x1
- 2502 0031 08       		.byte	0x8
- 2503 0032 16000000 		.4byte	.LASF1
- 2504 0036 02       		.uleb128 0x2
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 45
+ 2448 0067 02       		.uleb128 0x2
+ 2449 0068 04       		.byte	0x4
+ 2450 0069 07       		.byte	0x7
+ 2451 006a F9000000 		.4byte	.LASF8
+ 2452 006e 03       		.uleb128 0x3
+ 2453 006f 1D010000 		.4byte	.LASF10
+ 2454 0073 02       		.byte	0x2
+ 2455 0074 18       		.byte	0x18
+ 2456 0075 24000000 		.4byte	0x24
+ 2457 0079 05       		.uleb128 0x5
+ 2458 007a 91000000 		.4byte	0x91
+ 2459 007e 8A000000 		.4byte	0x8a
+ 2460 0082 06       		.uleb128 0x6
+ 2461 0083 8A000000 		.4byte	0x8a
+ 2462 0087 0F09     		.2byte	0x90f
+ 2463 0089 00       		.byte	0
+ 2464 008a 02       		.uleb128 0x2
+ 2465 008b 04       		.byte	0x4
+ 2466 008c 07       		.byte	0x7
+ 2467 008d 7C010000 		.4byte	.LASF11
+ 2468 0091 07       		.uleb128 0x7
+ 2469 0092 6E000000 		.4byte	0x6e
+ 2470 0096 08       		.uleb128 0x8
+ 2471 0097 E7000000 		.4byte	.LASF12
+ 2472 009b 03       		.byte	0x3
+ 2473 009c 1F       		.byte	0x1f
+ 2474 009d A7000000 		.4byte	0xa7
+ 2475 00a1 05       		.uleb128 0x5
+ 2476 00a2 03       		.byte	0x3
+ 2477 00a3 00000000 		.4byte	cy_meta_configecc
+ 2478 00a7 07       		.uleb128 0x7
+ 2479 00a8 79000000 		.4byte	0x79
+ 2480 00ac 05       		.uleb128 0x5
+ 2481 00ad 91000000 		.4byte	0x91
+ 2482 00b1 BC000000 		.4byte	0xbc
+ 2483 00b5 09       		.uleb128 0x9
+ 2484 00b6 8A000000 		.4byte	0x8a
+ 2485 00ba 03       		.byte	0x3
+ 2486 00bb 00       		.byte	0
+ 2487 00bc 0A       		.uleb128 0xa
+ 2488 00bd D7000000 		.4byte	.LASF13
+ 2489 00c1 03       		.byte	0x3
+ 2490 00c2 4E01     		.2byte	0x14e
+ 2491 00c4 CE000000 		.4byte	0xce
+ 2492 00c8 05       		.uleb128 0x5
+ 2493 00c9 03       		.byte	0x3
+ 2494 00ca 00000000 		.4byte	cy_meta_custnvl
+ 2495 00ce 07       		.uleb128 0x7
+ 2496 00cf AC000000 		.4byte	0xac
+ 2497 00d3 0A       		.uleb128 0xa
+ 2498 00d4 3A010000 		.4byte	.LASF14
+ 2499 00d8 03       		.byte	0x3
+ 2500 00d9 5C01     		.2byte	0x15c
+ 2501 00db E5000000 		.4byte	0xe5
+ 2502 00df 05       		.uleb128 0x5
+ 2503 00e0 03       		.byte	0x3
+ 2504 00e1 00000000 		.4byte	cy_meta_wonvl
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 45
 
 
- 2505 0037 02       		.byte	0x2
- 2506 0038 05       		.byte	0x5
- 2507 0039 93010000 		.4byte	.LASF2
- 2508 003d 02       		.uleb128 0x2
- 2509 003e 02       		.byte	0x2
- 2510 003f 07       		.byte	0x7
- 2511 0040 C4000000 		.4byte	.LASF3
- 2512 0044 02       		.uleb128 0x2
- 2513 0045 04       		.byte	0x4
- 2514 0046 05       		.byte	0x5
- 2515 0047 9D010000 		.4byte	.LASF4
- 2516 004b 02       		.uleb128 0x2
- 2517 004c 04       		.byte	0x4
- 2518 004d 07       		.byte	0x7
- 2519 004e B2000000 		.4byte	.LASF5
- 2520 0052 02       		.uleb128 0x2
- 2521 0053 08       		.byte	0x8
- 2522 0054 05       		.byte	0x5
- 2523 0055 85010000 		.4byte	.LASF6
- 2524 0059 02       		.uleb128 0x2
- 2525 005a 08       		.byte	0x8
- 2526 005b 07       		.byte	0x7
- 2527 005c 06010000 		.4byte	.LASF7
- 2528 0060 04       		.uleb128 0x4
- 2529 0061 04       		.byte	0x4
- 2530 0062 05       		.byte	0x5
- 2531 0063 696E7400 		.ascii	"int\000"
- 2532 0067 02       		.uleb128 0x2
- 2533 0068 04       		.byte	0x4
- 2534 0069 07       		.byte	0x7
- 2535 006a F9000000 		.4byte	.LASF8
- 2536 006e 03       		.uleb128 0x3
- 2537 006f 1D010000 		.4byte	.LASF10
- 2538 0073 02       		.byte	0x2
- 2539 0074 18       		.byte	0x18
- 2540 0075 24000000 		.4byte	0x24
- 2541 0079 05       		.uleb128 0x5
- 2542 007a 91000000 		.4byte	0x91
- 2543 007e 8A000000 		.4byte	0x8a
- 2544 0082 06       		.uleb128 0x6
- 2545 0083 8A000000 		.4byte	0x8a
- 2546 0087 6309     		.2byte	0x963
- 2547 0089 00       		.byte	0
- 2548 008a 02       		.uleb128 0x2
- 2549 008b 04       		.byte	0x4
- 2550 008c 07       		.byte	0x7
- 2551 008d 7C010000 		.4byte	.LASF11
- 2552 0091 07       		.uleb128 0x7
- 2553 0092 6E000000 		.4byte	0x6e
- 2554 0096 08       		.uleb128 0x8
- 2555 0097 E7000000 		.4byte	.LASF12
- 2556 009b 03       		.byte	0x3
- 2557 009c 1F       		.byte	0x1f
- 2558 009d A7000000 		.4byte	0xa7
- 2559 00a1 05       		.uleb128 0x5
- 2560 00a2 03       		.byte	0x3
- 2561 00a3 00000000 		.4byte	cy_meta_configecc
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 46
+ 2505 00e5 07       		.uleb128 0x7
+ 2506 00e6 AC000000 		.4byte	0xac
+ 2507 00ea 05       		.uleb128 0x5
+ 2508 00eb 91000000 		.4byte	0x91
+ 2509 00ef FA000000 		.4byte	0xfa
+ 2510 00f3 09       		.uleb128 0x9
+ 2511 00f4 8A000000 		.4byte	0x8a
+ 2512 00f8 FF       		.byte	0xff
+ 2513 00f9 00       		.byte	0
+ 2514 00fa 0A       		.uleb128 0xa
+ 2515 00fb 25010000 		.4byte	.LASF15
+ 2516 00ff 03       		.byte	0x3
+ 2517 0100 6A01     		.2byte	0x16a
+ 2518 0102 0C010000 		.4byte	0x10c
+ 2519 0106 05       		.uleb128 0x5
+ 2520 0107 03       		.byte	0x3
+ 2521 0108 00000000 		.4byte	cy_meta_flashprotect
+ 2522 010c 07       		.uleb128 0x7
+ 2523 010d EA000000 		.4byte	0xea
+ 2524 0111 05       		.uleb128 0x5
+ 2525 0112 91000000 		.4byte	0x91
+ 2526 0116 21010000 		.4byte	0x121
+ 2527 011a 09       		.uleb128 0x9
+ 2528 011b 8A000000 		.4byte	0x8a
+ 2529 011f 0B       		.byte	0xb
+ 2530 0120 00       		.byte	0
+ 2531 0121 0A       		.uleb128 0xa
+ 2532 0122 0A000000 		.4byte	.LASF16
+ 2533 0126 03       		.byte	0x3
+ 2534 0127 9701     		.2byte	0x197
+ 2535 0129 33010000 		.4byte	0x133
+ 2536 012d 05       		.uleb128 0x5
+ 2537 012e 03       		.byte	0x3
+ 2538 012f 00000000 		.4byte	cy_metadata
+ 2539 0133 07       		.uleb128 0x7
+ 2540 0134 11010000 		.4byte	0x111
+ 2541 0138 00       		.byte	0
+ 2542              		.section	.debug_abbrev,"",%progbits
+ 2543              	.Ldebug_abbrev0:
+ 2544 0000 01       		.uleb128 0x1
+ 2545 0001 11       		.uleb128 0x11
+ 2546 0002 01       		.byte	0x1
+ 2547 0003 25       		.uleb128 0x25
+ 2548 0004 0E       		.uleb128 0xe
+ 2549 0005 13       		.uleb128 0x13
+ 2550 0006 0B       		.uleb128 0xb
+ 2551 0007 03       		.uleb128 0x3
+ 2552 0008 0E       		.uleb128 0xe
+ 2553 0009 1B       		.uleb128 0x1b
+ 2554 000a 0E       		.uleb128 0xe
+ 2555 000b 10       		.uleb128 0x10
+ 2556 000c 17       		.uleb128 0x17
+ 2557 000d 00       		.byte	0
+ 2558 000e 00       		.byte	0
+ 2559 000f 02       		.uleb128 0x2
+ 2560 0010 24       		.uleb128 0x24
+ 2561 0011 00       		.byte	0
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 46
 
 
- 2562 00a7 07       		.uleb128 0x7
- 2563 00a8 79000000 		.4byte	0x79
- 2564 00ac 05       		.uleb128 0x5
- 2565 00ad 91000000 		.4byte	0x91
- 2566 00b1 BC000000 		.4byte	0xbc
- 2567 00b5 09       		.uleb128 0x9
- 2568 00b6 8A000000 		.4byte	0x8a
- 2569 00ba 03       		.byte	0x3
- 2570 00bb 00       		.byte	0
- 2571 00bc 0A       		.uleb128 0xa
- 2572 00bd D7000000 		.4byte	.LASF13
- 2573 00c1 03       		.byte	0x3
- 2574 00c2 5901     		.2byte	0x159
- 2575 00c4 CE000000 		.4byte	0xce
- 2576 00c8 05       		.uleb128 0x5
- 2577 00c9 03       		.byte	0x3
- 2578 00ca 00000000 		.4byte	cy_meta_custnvl
- 2579 00ce 07       		.uleb128 0x7
- 2580 00cf AC000000 		.4byte	0xac
- 2581 00d3 0A       		.uleb128 0xa
- 2582 00d4 3A010000 		.4byte	.LASF14
- 2583 00d8 03       		.byte	0x3
- 2584 00d9 6701     		.2byte	0x167
- 2585 00db E5000000 		.4byte	0xe5
- 2586 00df 05       		.uleb128 0x5
- 2587 00e0 03       		.byte	0x3
- 2588 00e1 00000000 		.4byte	cy_meta_wonvl
- 2589 00e5 07       		.uleb128 0x7
- 2590 00e6 AC000000 		.4byte	0xac
- 2591 00ea 05       		.uleb128 0x5
- 2592 00eb 91000000 		.4byte	0x91
- 2593 00ef FA000000 		.4byte	0xfa
- 2594 00f3 09       		.uleb128 0x9
- 2595 00f4 8A000000 		.4byte	0x8a
- 2596 00f8 FF       		.byte	0xff
- 2597 00f9 00       		.byte	0
- 2598 00fa 0A       		.uleb128 0xa
- 2599 00fb 25010000 		.4byte	.LASF15
- 2600 00ff 03       		.byte	0x3
- 2601 0100 7501     		.2byte	0x175
- 2602 0102 0C010000 		.4byte	0x10c
- 2603 0106 05       		.uleb128 0x5
- 2604 0107 03       		.byte	0x3
- 2605 0108 00000000 		.4byte	cy_meta_flashprotect
- 2606 010c 07       		.uleb128 0x7
- 2607 010d EA000000 		.4byte	0xea
- 2608 0111 05       		.uleb128 0x5
- 2609 0112 91000000 		.4byte	0x91
- 2610 0116 21010000 		.4byte	0x121
- 2611 011a 09       		.uleb128 0x9
- 2612 011b 8A000000 		.4byte	0x8a
- 2613 011f 0B       		.byte	0xb
- 2614 0120 00       		.byte	0
- 2615 0121 0A       		.uleb128 0xa
- 2616 0122 0A000000 		.4byte	.LASF16
- 2617 0126 03       		.byte	0x3
- 2618 0127 A201     		.2byte	0x1a2
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 47
+ 2562 0012 0B       		.uleb128 0xb
+ 2563 0013 0B       		.uleb128 0xb
+ 2564 0014 3E       		.uleb128 0x3e
+ 2565 0015 0B       		.uleb128 0xb
+ 2566 0016 03       		.uleb128 0x3
+ 2567 0017 0E       		.uleb128 0xe
+ 2568 0018 00       		.byte	0
+ 2569 0019 00       		.byte	0
+ 2570 001a 03       		.uleb128 0x3
+ 2571 001b 16       		.uleb128 0x16
+ 2572 001c 00       		.byte	0
+ 2573 001d 03       		.uleb128 0x3
+ 2574 001e 0E       		.uleb128 0xe
+ 2575 001f 3A       		.uleb128 0x3a
+ 2576 0020 0B       		.uleb128 0xb
+ 2577 0021 3B       		.uleb128 0x3b
+ 2578 0022 0B       		.uleb128 0xb
+ 2579 0023 49       		.uleb128 0x49
+ 2580 0024 13       		.uleb128 0x13
+ 2581 0025 00       		.byte	0
+ 2582 0026 00       		.byte	0
+ 2583 0027 04       		.uleb128 0x4
+ 2584 0028 24       		.uleb128 0x24
+ 2585 0029 00       		.byte	0
+ 2586 002a 0B       		.uleb128 0xb
+ 2587 002b 0B       		.uleb128 0xb
+ 2588 002c 3E       		.uleb128 0x3e
+ 2589 002d 0B       		.uleb128 0xb
+ 2590 002e 03       		.uleb128 0x3
+ 2591 002f 08       		.uleb128 0x8
+ 2592 0030 00       		.byte	0
+ 2593 0031 00       		.byte	0
+ 2594 0032 05       		.uleb128 0x5
+ 2595 0033 01       		.uleb128 0x1
+ 2596 0034 01       		.byte	0x1
+ 2597 0035 49       		.uleb128 0x49
+ 2598 0036 13       		.uleb128 0x13
+ 2599 0037 01       		.uleb128 0x1
+ 2600 0038 13       		.uleb128 0x13
+ 2601 0039 00       		.byte	0
+ 2602 003a 00       		.byte	0
+ 2603 003b 06       		.uleb128 0x6
+ 2604 003c 21       		.uleb128 0x21
+ 2605 003d 00       		.byte	0
+ 2606 003e 49       		.uleb128 0x49
+ 2607 003f 13       		.uleb128 0x13
+ 2608 0040 2F       		.uleb128 0x2f
+ 2609 0041 05       		.uleb128 0x5
+ 2610 0042 00       		.byte	0
+ 2611 0043 00       		.byte	0
+ 2612 0044 07       		.uleb128 0x7
+ 2613 0045 26       		.uleb128 0x26
+ 2614 0046 00       		.byte	0
+ 2615 0047 49       		.uleb128 0x49
+ 2616 0048 13       		.uleb128 0x13
+ 2617 0049 00       		.byte	0
+ 2618 004a 00       		.byte	0
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 47
 
 
- 2619 0129 33010000 		.4byte	0x133
- 2620 012d 05       		.uleb128 0x5
- 2621 012e 03       		.byte	0x3
- 2622 012f 00000000 		.4byte	cy_metadata
- 2623 0133 07       		.uleb128 0x7
- 2624 0134 11010000 		.4byte	0x111
- 2625 0138 00       		.byte	0
- 2626              		.section	.debug_abbrev,"",%progbits
- 2627              	.Ldebug_abbrev0:
- 2628 0000 01       		.uleb128 0x1
- 2629 0001 11       		.uleb128 0x11
- 2630 0002 01       		.byte	0x1
- 2631 0003 25       		.uleb128 0x25
- 2632 0004 0E       		.uleb128 0xe
- 2633 0005 13       		.uleb128 0x13
- 2634 0006 0B       		.uleb128 0xb
- 2635 0007 03       		.uleb128 0x3
- 2636 0008 0E       		.uleb128 0xe
- 2637 0009 1B       		.uleb128 0x1b
- 2638 000a 0E       		.uleb128 0xe
- 2639 000b 10       		.uleb128 0x10
- 2640 000c 17       		.uleb128 0x17
- 2641 000d 00       		.byte	0
- 2642 000e 00       		.byte	0
- 2643 000f 02       		.uleb128 0x2
- 2644 0010 24       		.uleb128 0x24
- 2645 0011 00       		.byte	0
- 2646 0012 0B       		.uleb128 0xb
- 2647 0013 0B       		.uleb128 0xb
- 2648 0014 3E       		.uleb128 0x3e
- 2649 0015 0B       		.uleb128 0xb
- 2650 0016 03       		.uleb128 0x3
- 2651 0017 0E       		.uleb128 0xe
- 2652 0018 00       		.byte	0
- 2653 0019 00       		.byte	0
- 2654 001a 03       		.uleb128 0x3
- 2655 001b 16       		.uleb128 0x16
- 2656 001c 00       		.byte	0
- 2657 001d 03       		.uleb128 0x3
- 2658 001e 0E       		.uleb128 0xe
- 2659 001f 3A       		.uleb128 0x3a
- 2660 0020 0B       		.uleb128 0xb
- 2661 0021 3B       		.uleb128 0x3b
- 2662 0022 0B       		.uleb128 0xb
- 2663 0023 49       		.uleb128 0x49
- 2664 0024 13       		.uleb128 0x13
- 2665 0025 00       		.byte	0
- 2666 0026 00       		.byte	0
- 2667 0027 04       		.uleb128 0x4
- 2668 0028 24       		.uleb128 0x24
- 2669 0029 00       		.byte	0
- 2670 002a 0B       		.uleb128 0xb
- 2671 002b 0B       		.uleb128 0xb
- 2672 002c 3E       		.uleb128 0x3e
- 2673 002d 0B       		.uleb128 0xb
- 2674 002e 03       		.uleb128 0x3
- 2675 002f 08       		.uleb128 0x8
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 48
+ 2619 004b 08       		.uleb128 0x8
+ 2620 004c 34       		.uleb128 0x34
+ 2621 004d 00       		.byte	0
+ 2622 004e 03       		.uleb128 0x3
+ 2623 004f 0E       		.uleb128 0xe
+ 2624 0050 3A       		.uleb128 0x3a
+ 2625 0051 0B       		.uleb128 0xb
+ 2626 0052 3B       		.uleb128 0x3b
+ 2627 0053 0B       		.uleb128 0xb
+ 2628 0054 49       		.uleb128 0x49
+ 2629 0055 13       		.uleb128 0x13
+ 2630 0056 3F       		.uleb128 0x3f
+ 2631 0057 19       		.uleb128 0x19
+ 2632 0058 02       		.uleb128 0x2
+ 2633 0059 18       		.uleb128 0x18
+ 2634 005a 00       		.byte	0
+ 2635 005b 00       		.byte	0
+ 2636 005c 09       		.uleb128 0x9
+ 2637 005d 21       		.uleb128 0x21
+ 2638 005e 00       		.byte	0
+ 2639 005f 49       		.uleb128 0x49
+ 2640 0060 13       		.uleb128 0x13
+ 2641 0061 2F       		.uleb128 0x2f
+ 2642 0062 0B       		.uleb128 0xb
+ 2643 0063 00       		.byte	0
+ 2644 0064 00       		.byte	0
+ 2645 0065 0A       		.uleb128 0xa
+ 2646 0066 34       		.uleb128 0x34
+ 2647 0067 00       		.byte	0
+ 2648 0068 03       		.uleb128 0x3
+ 2649 0069 0E       		.uleb128 0xe
+ 2650 006a 3A       		.uleb128 0x3a
+ 2651 006b 0B       		.uleb128 0xb
+ 2652 006c 3B       		.uleb128 0x3b
+ 2653 006d 05       		.uleb128 0x5
+ 2654 006e 49       		.uleb128 0x49
+ 2655 006f 13       		.uleb128 0x13
+ 2656 0070 3F       		.uleb128 0x3f
+ 2657 0071 19       		.uleb128 0x19
+ 2658 0072 02       		.uleb128 0x2
+ 2659 0073 18       		.uleb128 0x18
+ 2660 0074 00       		.byte	0
+ 2661 0075 00       		.byte	0
+ 2662 0076 00       		.byte	0
+ 2663              		.section	.debug_aranges,"",%progbits
+ 2664 0000 14000000 		.4byte	0x14
+ 2665 0004 0200     		.2byte	0x2
+ 2666 0006 00000000 		.4byte	.Ldebug_info0
+ 2667 000a 04       		.byte	0x4
+ 2668 000b 00       		.byte	0
+ 2669 000c 0000     		.2byte	0
+ 2670 000e 0000     		.2byte	0
+ 2671 0010 00000000 		.4byte	0
+ 2672 0014 00000000 		.4byte	0
+ 2673              		.section	.debug_line,"",%progbits
+ 2674              	.Ldebug_line0:
+ 2675 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 48
 
 
- 2676 0030 00       		.byte	0
- 2677 0031 00       		.byte	0
- 2678 0032 05       		.uleb128 0x5
- 2679 0033 01       		.uleb128 0x1
- 2680 0034 01       		.byte	0x1
- 2681 0035 49       		.uleb128 0x49
- 2682 0036 13       		.uleb128 0x13
- 2683 0037 01       		.uleb128 0x1
- 2684 0038 13       		.uleb128 0x13
- 2685 0039 00       		.byte	0
- 2686 003a 00       		.byte	0
- 2687 003b 06       		.uleb128 0x6
- 2688 003c 21       		.uleb128 0x21
- 2689 003d 00       		.byte	0
- 2690 003e 49       		.uleb128 0x49
- 2691 003f 13       		.uleb128 0x13
- 2692 0040 2F       		.uleb128 0x2f
- 2693 0041 05       		.uleb128 0x5
- 2694 0042 00       		.byte	0
- 2695 0043 00       		.byte	0
- 2696 0044 07       		.uleb128 0x7
- 2697 0045 26       		.uleb128 0x26
- 2698 0046 00       		.byte	0
- 2699 0047 49       		.uleb128 0x49
- 2700 0048 13       		.uleb128 0x13
- 2701 0049 00       		.byte	0
- 2702 004a 00       		.byte	0
- 2703 004b 08       		.uleb128 0x8
- 2704 004c 34       		.uleb128 0x34
- 2705 004d 00       		.byte	0
- 2706 004e 03       		.uleb128 0x3
- 2707 004f 0E       		.uleb128 0xe
- 2708 0050 3A       		.uleb128 0x3a
- 2709 0051 0B       		.uleb128 0xb
- 2710 0052 3B       		.uleb128 0x3b
- 2711 0053 0B       		.uleb128 0xb
- 2712 0054 49       		.uleb128 0x49
- 2713 0055 13       		.uleb128 0x13
- 2714 0056 3F       		.uleb128 0x3f
- 2715 0057 19       		.uleb128 0x19
- 2716 0058 02       		.uleb128 0x2
- 2717 0059 18       		.uleb128 0x18
- 2718 005a 00       		.byte	0
- 2719 005b 00       		.byte	0
- 2720 005c 09       		.uleb128 0x9
- 2721 005d 21       		.uleb128 0x21
- 2722 005e 00       		.byte	0
- 2723 005f 49       		.uleb128 0x49
- 2724 0060 13       		.uleb128 0x13
- 2725 0061 2F       		.uleb128 0x2f
- 2726 0062 0B       		.uleb128 0xb
- 2727 0063 00       		.byte	0
- 2728 0064 00       		.byte	0
- 2729 0065 0A       		.uleb128 0xa
- 2730 0066 34       		.uleb128 0x34
- 2731 0067 00       		.byte	0
- 2732 0068 03       		.uleb128 0x3
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 49
+ 2675      02003701 
+ 2675      00000201 
+ 2675      FB0E0D00 
+ 2675      01010101 
+ 2676              	.LASF9:
+ 2677 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 2677      6E74385F 
+ 2677      7400
+ 2678              	.LASF16:
+ 2679 000a 63795F6D 		.ascii	"cy_metadata\000"
+ 2679      65746164 
+ 2679      61746100 
+ 2680              	.LASF1:
+ 2681 0016 756E7369 		.ascii	"unsigned char\000"
+ 2681      676E6564 
+ 2681      20636861 
+ 2681      7200
+ 2682              	.LASF17:
+ 2683 0024 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2683      43313120 
+ 2683      352E342E 
+ 2683      31203230 
+ 2683      31363036 
+ 2684 0057 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 2684      20726576 
+ 2684      6973696F 
+ 2684      6E203233 
+ 2684      37373135 
+ 2685 008a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2685      66756E63 
+ 2685      74696F6E 
+ 2685      2D736563 
+ 2685      74696F6E 
+ 2686              	.LASF5:
+ 2687 00b2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2687      20756E73 
+ 2687      69676E65 
+ 2687      6420696E 
+ 2687      7400
+ 2688              	.LASF3:
+ 2689 00c4 73686F72 		.ascii	"short unsigned int\000"
+ 2689      7420756E 
+ 2689      7369676E 
+ 2689      65642069 
+ 2689      6E7400
+ 2690              	.LASF13:
+ 2691 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 2691      6574615F 
+ 2691      63757374 
+ 2691      6E766C00 
+ 2692              	.LASF12:
+ 2693 00e7 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 2693      6574615F 
+ 2693      636F6E66 
+ 2693      69676563 
+ 2693      6300
+ 2694              	.LASF8:
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 49
 
 
- 2733 0069 0E       		.uleb128 0xe
- 2734 006a 3A       		.uleb128 0x3a
- 2735 006b 0B       		.uleb128 0xb
- 2736 006c 3B       		.uleb128 0x3b
- 2737 006d 05       		.uleb128 0x5
- 2738 006e 49       		.uleb128 0x49
- 2739 006f 13       		.uleb128 0x13
- 2740 0070 3F       		.uleb128 0x3f
- 2741 0071 19       		.uleb128 0x19
- 2742 0072 02       		.uleb128 0x2
- 2743 0073 18       		.uleb128 0x18
- 2744 0074 00       		.byte	0
- 2745 0075 00       		.byte	0
- 2746 0076 00       		.byte	0
- 2747              		.section	.debug_aranges,"",%progbits
- 2748 0000 14000000 		.4byte	0x14
- 2749 0004 0200     		.2byte	0x2
- 2750 0006 00000000 		.4byte	.Ldebug_info0
- 2751 000a 04       		.byte	0x4
- 2752 000b 00       		.byte	0
- 2753 000c 0000     		.2byte	0
- 2754 000e 0000     		.2byte	0
- 2755 0010 00000000 		.4byte	0
- 2756 0014 00000000 		.4byte	0
- 2757              		.section	.debug_line,"",%progbits
- 2758              	.Ldebug_line0:
- 2759 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
- 2759      02003701 
- 2759      00000201 
- 2759      FB0E0D00 
- 2759      01010101 
- 2760              	.LASF9:
- 2761 0000 5F5F7569 		.ascii	"__uint8_t\000"
- 2761      6E74385F 
- 2761      7400
- 2762              	.LASF16:
- 2763 000a 63795F6D 		.ascii	"cy_metadata\000"
- 2763      65746164 
- 2763      61746100 
- 2764              	.LASF1:
- 2765 0016 756E7369 		.ascii	"unsigned char\000"
- 2765      676E6564 
- 2765      20636861 
- 2765      7200
- 2766              	.LASF17:
- 2767 0024 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 2767      43313120 
- 2767      352E342E 
- 2767      31203230 
- 2767      31363036 
- 2768 0057 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 2768      20726576 
- 2768      6973696F 
- 2768      6E203233 
- 2768      37373135 
- 2769 008a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 2769      66756E63 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 50
+ 2695 00f9 756E7369 		.ascii	"unsigned int\000"
+ 2695      676E6564 
+ 2695      20696E74 
+ 2695      00
+ 2696              	.LASF7:
+ 2697 0106 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2697      206C6F6E 
+ 2697      6720756E 
+ 2697      7369676E 
+ 2697      65642069 
+ 2698              	.LASF10:
+ 2699 011d 75696E74 		.ascii	"uint8_t\000"
+ 2699      385F7400 
+ 2700              	.LASF15:
+ 2701 0125 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 2701      6574615F 
+ 2701      666C6173 
+ 2701      6870726F 
+ 2701      74656374 
+ 2702              	.LASF14:
+ 2703 013a 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 2703      6574615F 
+ 2703      776F6E76 
+ 2703      6C00
+ 2704              	.LASF19:
+ 2705 0148 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\motor_yao\\Design01."
+ 2705      73657273 
+ 2705      5C746574 
+ 2705      73757961 
+ 2705      5C446F63 
+ 2706 0176 63796473 		.ascii	"cydsn\000"
+ 2706      6E00
+ 2707              	.LASF11:
+ 2708 017c 73697A65 		.ascii	"sizetype\000"
+ 2708      74797065 
+ 2708      00
+ 2709              	.LASF6:
+ 2710 0185 6C6F6E67 		.ascii	"long long int\000"
+ 2710      206C6F6E 
+ 2710      6720696E 
+ 2710      7400
+ 2711              	.LASF2:
+ 2712 0193 73686F72 		.ascii	"short int\000"
+ 2712      7420696E 
+ 2712      7400
+ 2713              	.LASF4:
+ 2714 019d 6C6F6E67 		.ascii	"long int\000"
+ 2714      20696E74 
+ 2714      00
+ 2715              	.LASF0:
+ 2716 01a6 7369676E 		.ascii	"signed char\000"
+ 2716      65642063 
+ 2716      68617200 
+ 2717              	.LASF18:
+ 2718 01b2 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2718      72617465 
+ 2718      645F536F 
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 50
 
 
- 2769      74696F6E 
- 2769      2D736563 
- 2769      74696F6E 
- 2770              	.LASF5:
- 2771 00b2 6C6F6E67 		.ascii	"long unsigned int\000"
- 2771      20756E73 
- 2771      69676E65 
- 2771      6420696E 
- 2771      7400
- 2772              	.LASF3:
- 2773 00c4 73686F72 		.ascii	"short unsigned int\000"
- 2773      7420756E 
- 2773      7369676E 
- 2773      65642069 
- 2773      6E7400
- 2774              	.LASF13:
- 2775 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 2775      6574615F 
- 2775      63757374 
- 2775      6E766C00 
- 2776              	.LASF12:
- 2777 00e7 63795F6D 		.ascii	"cy_meta_configecc\000"
- 2777      6574615F 
- 2777      636F6E66 
- 2777      69676563 
- 2777      6300
- 2778              	.LASF8:
- 2779 00f9 756E7369 		.ascii	"unsigned int\000"
- 2779      676E6564 
- 2779      20696E74 
- 2779      00
- 2780              	.LASF7:
- 2781 0106 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2781      206C6F6E 
- 2781      6720756E 
- 2781      7369676E 
- 2781      65642069 
- 2782              	.LASF10:
- 2783 011d 75696E74 		.ascii	"uint8_t\000"
- 2783      385F7400 
- 2784              	.LASF15:
- 2785 0125 63795F6D 		.ascii	"cy_meta_flashprotect\000"
- 2785      6574615F 
- 2785      666C6173 
- 2785      6870726F 
- 2785      74656374 
- 2786              	.LASF14:
- 2787 013a 63795F6D 		.ascii	"cy_meta_wonvl\000"
- 2787      6574615F 
- 2787      776F6E76 
- 2787      6C00
- 2788              	.LASF19:
- 2789 0148 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\motor_yao\\Design01."
- 2789      73657273 
- 2789      5C746574 
- 2789      73757961 
- 2789      5C446F63 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccNIes1x.s 			page 51
-
-
- 2790 0176 63796473 		.ascii	"cydsn\000"
- 2790      6E00
- 2791              	.LASF11:
- 2792 017c 73697A65 		.ascii	"sizetype\000"
- 2792      74797065 
- 2792      00
- 2793              	.LASF6:
- 2794 0185 6C6F6E67 		.ascii	"long long int\000"
- 2794      206C6F6E 
- 2794      6720696E 
- 2794      7400
- 2795              	.LASF2:
- 2796 0193 73686F72 		.ascii	"short int\000"
- 2796      7420696E 
- 2796      7400
- 2797              	.LASF4:
- 2798 019d 6C6F6E67 		.ascii	"long int\000"
- 2798      20696E74 
- 2798      00
- 2799              	.LASF0:
- 2800 01a6 7369676E 		.ascii	"signed char\000"
- 2800      65642063 
- 2800      68617200 
- 2801              	.LASF18:
- 2802 01b2 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
- 2802      72617465 
- 2802      645F536F 
- 2802      75726365 
- 2802      5C50536F 
- 2803              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 2718      75726365 
+ 2718      5C50536F 
+ 2719              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

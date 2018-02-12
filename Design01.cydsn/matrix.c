@@ -40,6 +40,6 @@ void matrix(PS3Controller *ps3, uint8 motor[], char na[]) {
 		motor[i] = fabsf(re[i]);
 	}
    
-    sprintf(output, "%d %d %d\n", motor[0], motor[1], motor[2]);
-    UART_1_PutString(output);
+    //sprintf(output, "%d %d %d\n", motor[0], motor[1], motor[2]);
+   //UART_1_PutString(output);
 }

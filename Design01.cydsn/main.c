@@ -52,29 +52,41 @@ int main(void)
         power = (int)(sqrt(s));
         
 		matrix(&ps3, m, na);
-		if (na[0])
+		if (na[0]) {
 			reverse_1_Write(1);
-		else
+		} else {
 			reverse_1_Write(2);
-		if (na[1])
+        }
+		if (na[1]) {
 			reverse_2_Write(1);
-		else
+		} else {
 			reverse_2_Write(2);
-		if (na[2])
+        }
+		if (na[2]) {
 			reverse_3_Write(1);
-		else
+		} else {
 			reverse_3_Write(2);
-
+        }
+/*
 		for (i = 0; i < 3; i++) {
 				m[i] *= MAX_POWER / (double)91 * (double)power;
 		}
-            
-		motor1_WriteCompare(m[0]);
+  */     
+        for (i = 0; i < 3; i++) {
+	        m[i] *= 2;
+		}
+        
+        if (m[0] > MAX_POWER || m[1] > MAX_POWER || m[2] > MAX_POWER) {
+            m[0] = 0;
+            m[1] = 0;
+            m[2] = 0;
+        }
+        motor1_WriteCompare(m[0]);
 		motor2_WriteCompare(m[1]);
 		motor3_WriteCompare(m[2]);
        
-        //sprintf(output, "%d %d %d\n", m[0], m[1], m[2]);
-        //UART_1_PutString(output);
+        sprintf(output, "%f %f %f\n", m[0]/255.0, m[1]/255.0, m[2]/255.0);
+        UART_1_PutString(output);
         
         
         /* Place your application code here. */
