@@ -19,6 +19,21 @@
 
 #define MAX_POWER 230
 
+void rotate(PS3Controller ps) {
+	if (ps.L2) {
+		reverse_D_Write(1);
+		reverse_B_Write(2);
+		reverse_C_Write(2);
+	}else {
+		reverse_D_Write(1);
+		reverse_B_Write(2);
+		reverse_C_Write(2);
+	}
+	motorD_WriteCompare(200);
+	motorB_WriteCompare(200);
+	motorC_WriteCompare(200);
+}
+
 int main(void)
 {
  	PS3Controller ps3;
@@ -42,6 +57,9 @@ int main(void)
     for(;;)
     {
 		ps3 = PS3_Controller_get();
+
+		if (ps3.L2 || ps3.R2)
+			rotate(ps3);
         //sprintf(output, "%d %d\n", ps3.ANALOG_LX, ps3.ANALOG_LY);
         //UART_1_PutString(output);
 		x = ps3.ANALOG_LX - 64;
