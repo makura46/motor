@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
   55 001a 01       		.byte	1
   56 001b 40       		.byte	64
   57 001c 62       		.byte	98
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 2
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 2
 
 
   58 001d 08       		.byte	8
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  112 0053 40       		.byte	64
  113 0054 04       		.byte	4
  114 0055 45       		.byte	69
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 3
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 3
 
 
  115 0056 01       		.byte	1
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  169 008c 88       		.byte	-120
  170 008d 0F       		.byte	15
  171 008e 84       		.byte	-124
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 4
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 4
 
 
  172 008f 0D       		.byte	13
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  226 00c5 40       		.byte	64
  227 00c6 14       		.byte	20
  228 00c7 10       		.byte	16
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 5
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 5
 
 
  229 00c8 16       		.byte	22
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  283 00fe 57       		.byte	87
  284 00ff 01       		.byte	1
  285 0100 68       		.byte	104
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 6
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 6
 
 
  286 0101 08       		.byte	8
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  340 0137 21       		.byte	33
  341 0138 2E       		.byte	46
  342 0139 4A       		.byte	74
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 7
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 7
 
 
  343 013a 30       		.byte	48
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  397 0170 5B       		.byte	91
  398 0171 04       		.byte	4
  399 0172 5C       		.byte	92
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 8
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 8
 
 
  400 0173 14       		.byte	20
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  454 01a9 01       		.byte	1
  455 01aa B5       		.byte	-75
  456 01ab 08       		.byte	8
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 9
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 9
 
 
  457 01ac B7       		.byte	-73
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  511 01e2 02       		.byte	2
  512 01e3 C0       		.byte	-64
  513 01e4 03       		.byte	3
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 10
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 10
 
 
  514 01e5 01       		.byte	1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  568 021b 02       		.byte	2
  569 021c 42       		.byte	66
  570 021d 20       		.byte	32
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 11
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 11
 
 
  571 021e 44       		.byte	68
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  625 0254 C0       		.byte	-64
  626 0255 57       		.byte	87
  627 0256 C2       		.byte	-62
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 12
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 12
 
 
  628 0257 58       		.byte	88
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  682 028d 1A       		.byte	26
  683 028e 2C       		.byte	44
  684 028f 0E       		.byte	14
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 13
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 13
 
 
  685 0290 30       		.byte	48
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  739 02c6 5F       		.byte	95
  740 02c7 01       		.byte	1
  741 02c8 66       		.byte	102
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 14
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 14
 
 
  742 02c9 C0       		.byte	-64
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  796 02ff 02       		.byte	2
  797 0300 BB       		.byte	-69
  798 0301 28       		.byte	40
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 15
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 15
 
 
  799 0302 BF       		.byte	-65
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  853 0338 0A       		.byte	10
  854 0339 81       		.byte	-127
  855 033a 0E       		.byte	14
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 16
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 16
 
 
  856 033b 22       		.byte	34
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  910 0371 08       		.byte	8
  911 0372 50       		.byte	80
  912 0373 40       		.byte	64
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 17
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 17
 
 
  913 0374 51       		.byte	81
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  967 03aa 12       		.byte	18
  968 03ab 04       		.byte	4
  969 03ac 15       		.byte	21
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 18
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 18
 
 
  970 03ad 03       		.byte	3
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1024 03e3 01       		.byte	1
  1025 03e4 60       		.byte	96
  1026 03e5 40       		.byte	64
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 19
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 19
 
 
  1027 03e6 62       		.byte	98
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1081 041c B0       		.byte	-80
  1082 041d 0F       		.byte	15
  1083 041e B1       		.byte	-79
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 20
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 20
 
 
  1084 041f 01       		.byte	1
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1138 0455 40       		.byte	64
  1139 0456 E3       		.byte	-29
  1140 0457 40       		.byte	64
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 21
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 21
 
 
  1141 0458 E4       		.byte	-28
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1195 048e 29       		.byte	41
  1196 048f 20       		.byte	32
  1197 0490 2E       		.byte	46
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 22
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 22
 
 
  1198 0491 06       		.byte	6
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1252 04c7 08       		.byte	8
  1253 04c8 98       		.byte	-104
  1254 04c9 C0       		.byte	-64
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 23
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 23
 
 
  1255 04ca 99       		.byte	-103
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1309 0500 EE       		.byte	-18
  1310 0501 0A       		.byte	10
  1311 0502 00       		.byte	0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 24
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 24
 
 
  1312 0503 10       		.byte	16
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1366 0539 04       		.byte	4
  1367 053a 59       		.byte	89
  1368 053b 04       		.byte	4
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 25
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 25
 
 
  1369 053c 5B       		.byte	91
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1423 0572 B1       		.byte	-79
  1424 0573 F0       		.byte	-16
  1425 0574 B2       		.byte	-78
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 26
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 26
 
 
  1426 0575 10       		.byte	16
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1480 05ab 40       		.byte	64
  1481 05ac EA       		.byte	-22
  1482 05ad 40       		.byte	64
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 27
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 27
 
 
  1483 05ae EC       		.byte	-20
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1537 05e4 3A       		.byte	58
  1538 05e5 08       		.byte	8
  1539 05e6 3F       		.byte	63
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 28
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 28
 
 
  1540 05e7 12       		.byte	18
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1594 061d 04       		.byte	4
  1595 061e 9C       		.byte	-100
  1596 061f 22       		.byte	34
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 29
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 29
 
 
  1597 0620 9D       		.byte	-99
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1651 0656 0D       		.byte	13
  1652 0657 04       		.byte	4
  1653 0658 0E       		.byte	14
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 30
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 30
 
 
  1654 0659 02       		.byte	2
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1708 068f D0       		.byte	-48
  1709 0690 47       		.byte	71
  1710 0691 21       		.byte	33
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 31
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 31
 
 
  1711 0692 48       		.byte	72
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1765 06c8 88       		.byte	-120
  1766 06c9 06       		.byte	6
  1767 06ca 8A       		.byte	-118
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 32
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 32
 
 
  1768 06cb 18       		.byte	24
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1822 0701 40       		.byte	64
  1823 0702 08       		.byte	8
  1824 0703 80       		.byte	-128
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 33
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 33
 
 
  1825 0704 09       		.byte	9
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1879 073a 4A       		.byte	74
  1880 073b 01       		.byte	1
  1881 073c 4B       		.byte	75
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 34
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 34
 
 
  1882 073d 80       		.byte	-128
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1936 0773 10       		.byte	16
  1937 0774 B2       		.byte	-78
  1938 0775 48       		.byte	72
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 35
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 35
 
 
  1939 0776 B5       		.byte	-75
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  1993 07ac 0F       		.byte	15
  1994 07ad 01       		.byte	1
  1995 07ae 9D       		.byte	-99
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 36
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 36
 
 
  1996 07af 80       		.byte	-128
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2050 07e5 02       		.byte	2
  2051 07e6 9E       		.byte	-98
  2052 07e7 20       		.byte	32
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 37
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 37
 
 
  2053 07e8 A5       		.byte	-91
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2107 081e EE       		.byte	-18
  2108 081f 10       		.byte	16
  2109 0820 58       		.byte	88
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 38
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 38
 
 
  2110 0821 40       		.byte	64
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2164 0857 01       		.byte	1
  2165 0858 0C       		.byte	12
  2166 0859 0D       		.byte	13
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 39
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 39
 
 
  2167 085a 0D       		.byte	13
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2221 0890 1F       		.byte	31
  2222 0891 00       		.byte	0
  2223 0892 20       		.byte	32
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 40
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 40
 
 
  2224 0893 04       		.byte	4
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2278 08c9 40       		.byte	64
  2279 08ca C0       		.byte	-64
  2280 08cb 00       		.byte	0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 41
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 41
 
 
  2281 08cc C0       		.byte	-64
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2335 0902 00       		.byte	0
  2336 0903 00       		.byte	0
  2337 0904 08       		.byte	8
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 42
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 42
 
 
  2338 0905 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2389      00000000 
  2389      00000000 
  2390              		.text
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 43
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 43
 
 
  2391              	.Letext0:
@@ -2534,13 +2534,13 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2401 000b 01       		.uleb128 0x1
  2402 000c 24000000 		.4byte	.LASF17
  2403 0010 0C       		.byte	0xc
- 2404 0011 B2010000 		.4byte	.LASF18
- 2405 0015 48010000 		.4byte	.LASF19
+ 2404 0011 AE010000 		.4byte	.LASF18
+ 2405 0015 C4000000 		.4byte	.LASF19
  2406 0019 00000000 		.4byte	.Ldebug_line0
  2407 001d 02       		.uleb128 0x2
  2408 001e 01       		.byte	0x1
  2409 001f 06       		.byte	0x6
- 2410 0020 A6010000 		.4byte	.LASF0
+ 2410 0020 A2010000 		.4byte	.LASF0
  2411 0024 03       		.uleb128 0x3
  2412 0025 00000000 		.4byte	.LASF9
  2413 0029 01       		.byte	0x1
@@ -2553,15 +2553,15 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2420 0036 02       		.uleb128 0x2
  2421 0037 02       		.byte	0x2
  2422 0038 05       		.byte	0x5
- 2423 0039 93010000 		.4byte	.LASF2
+ 2423 0039 8F010000 		.4byte	.LASF2
  2424 003d 02       		.uleb128 0x2
  2425 003e 02       		.byte	0x2
  2426 003f 07       		.byte	0x7
- 2427 0040 C4000000 		.4byte	.LASF3
+ 2427 0040 F4000000 		.4byte	.LASF3
  2428 0044 02       		.uleb128 0x2
  2429 0045 04       		.byte	0x4
  2430 0046 05       		.byte	0x5
- 2431 0047 9D010000 		.4byte	.LASF4
+ 2431 0047 99010000 		.4byte	.LASF4
  2432 004b 02       		.uleb128 0x2
  2433 004c 04       		.byte	0x4
  2434 004d 07       		.byte	0x7
@@ -2569,24 +2569,24 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2436 0052 02       		.uleb128 0x2
  2437 0053 08       		.byte	0x8
  2438 0054 05       		.byte	0x5
- 2439 0055 85010000 		.4byte	.LASF6
+ 2439 0055 81010000 		.4byte	.LASF6
  2440 0059 02       		.uleb128 0x2
  2441 005a 08       		.byte	0x8
  2442 005b 07       		.byte	0x7
- 2443 005c 06010000 		.4byte	.LASF7
+ 2443 005c 36010000 		.4byte	.LASF7
  2444 0060 04       		.uleb128 0x4
  2445 0061 04       		.byte	0x4
  2446 0062 05       		.byte	0x5
  2447 0063 696E7400 		.ascii	"int\000"
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 44
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 44
 
 
  2448 0067 02       		.uleb128 0x2
  2449 0068 04       		.byte	0x4
  2450 0069 07       		.byte	0x7
- 2451 006a F9000000 		.4byte	.LASF8
+ 2451 006a 29010000 		.4byte	.LASF8
  2452 006e 03       		.uleb128 0x3
- 2453 006f 1D010000 		.4byte	.LASF10
+ 2453 006f 4D010000 		.4byte	.LASF10
  2454 0073 02       		.byte	0x2
  2455 0074 18       		.byte	0x18
  2456 0075 24000000 		.4byte	0x24
@@ -2600,11 +2600,11 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2464 008a 02       		.uleb128 0x2
  2465 008b 04       		.byte	0x4
  2466 008c 07       		.byte	0x7
- 2467 008d 7C010000 		.4byte	.LASF11
+ 2467 008d 78010000 		.4byte	.LASF11
  2468 0091 07       		.uleb128 0x7
  2469 0092 6E000000 		.4byte	0x6e
  2470 0096 08       		.uleb128 0x8
- 2471 0097 E7000000 		.4byte	.LASF12
+ 2471 0097 17010000 		.4byte	.LASF12
  2472 009b 03       		.byte	0x3
  2473 009c 1F       		.byte	0x1f
  2474 009d A7000000 		.4byte	0xa7
@@ -2621,7 +2621,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2485 00ba 03       		.byte	0x3
  2486 00bb 00       		.byte	0
  2487 00bc 0A       		.uleb128 0xa
- 2488 00bd D7000000 		.4byte	.LASF13
+ 2488 00bd 07010000 		.4byte	.LASF13
  2489 00c1 03       		.byte	0x3
  2490 00c2 4E01     		.2byte	0x14e
  2491 00c4 CE000000 		.4byte	0xce
@@ -2631,14 +2631,14 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2495 00ce 07       		.uleb128 0x7
  2496 00cf AC000000 		.4byte	0xac
  2497 00d3 0A       		.uleb128 0xa
- 2498 00d4 3A010000 		.4byte	.LASF14
+ 2498 00d4 6A010000 		.4byte	.LASF14
  2499 00d8 03       		.byte	0x3
  2500 00d9 5C01     		.2byte	0x15c
  2501 00db E5000000 		.4byte	0xe5
  2502 00df 05       		.uleb128 0x5
  2503 00e0 03       		.byte	0x3
  2504 00e1 00000000 		.4byte	cy_meta_wonvl
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 45
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 45
 
 
  2505 00e5 07       		.uleb128 0x7
@@ -2651,7 +2651,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2512 00f8 FF       		.byte	0xff
  2513 00f9 00       		.byte	0
  2514 00fa 0A       		.uleb128 0xa
- 2515 00fb 25010000 		.4byte	.LASF15
+ 2515 00fb 55010000 		.4byte	.LASF15
  2516 00ff 03       		.byte	0x3
  2517 0100 6A01     		.2byte	0x16a
  2518 0102 0C010000 		.4byte	0x10c
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2559 000f 02       		.uleb128 0x2
  2560 0010 24       		.uleb128 0x24
  2561 0011 00       		.byte	0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 46
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 46
 
 
  2562 0012 0B       		.uleb128 0xb
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2616 0048 13       		.uleb128 0x13
  2617 0049 00       		.byte	0
  2618 004a 00       		.byte	0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 47
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 47
 
 
  2619 004b 08       		.uleb128 0x8
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2673              		.section	.debug_line,"",%progbits
  2674              	.Ldebug_line0:
  2675 0000 3D010000 		.section	.debug_str,"MS",%progbits,1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 48
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 48
 
 
  2675      02003701 
@@ -2860,87 +2860,86 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 1
  2687      69676E65 
  2687      6420696E 
  2687      7400
- 2688              	.LASF3:
- 2689 00c4 73686F72 		.ascii	"short unsigned int\000"
- 2689      7420756E 
- 2689      7369676E 
- 2689      65642069 
- 2689      6E7400
- 2690              	.LASF13:
- 2691 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
- 2691      6574615F 
- 2691      63757374 
- 2691      6E766C00 
- 2692              	.LASF12:
- 2693 00e7 63795F6D 		.ascii	"cy_meta_configecc\000"
- 2693      6574615F 
- 2693      636F6E66 
- 2693      69676563 
- 2693      6300
- 2694              	.LASF8:
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 49
+ 2688              	.LASF19:
+ 2689 00c4 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\motor\\Design01.cyds"
+ 2689      73657273 
+ 2689      5C746574 
+ 2689      73757961 
+ 2689      5C446F63 
+ 2690 00f2 6E00     		.ascii	"n\000"
+ 2691              	.LASF3:
+ 2692 00f4 73686F72 		.ascii	"short unsigned int\000"
+ 2692      7420756E 
+ 2692      7369676E 
+ 2692      65642069 
+ 2692      6E7400
+ 2693              	.LASF13:
+ 2694 0107 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 2694      6574615F 
+ 2694      63757374 
+ 2694      6E766C00 
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 49
 
 
- 2695 00f9 756E7369 		.ascii	"unsigned int\000"
- 2695      676E6564 
- 2695      20696E74 
- 2695      00
- 2696              	.LASF7:
- 2697 0106 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2697      206C6F6E 
- 2697      6720756E 
- 2697      7369676E 
- 2697      65642069 
- 2698              	.LASF10:
- 2699 011d 75696E74 		.ascii	"uint8_t\000"
- 2699      385F7400 
- 2700              	.LASF15:
- 2701 0125 63795F6D 		.ascii	"cy_meta_flashprotect\000"
- 2701      6574615F 
- 2701      666C6173 
- 2701      6870726F 
- 2701      74656374 
- 2702              	.LASF14:
- 2703 013a 63795F6D 		.ascii	"cy_meta_wonvl\000"
- 2703      6574615F 
- 2703      776F6E76 
- 2703      6C00
- 2704              	.LASF19:
- 2705 0148 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\motor_yao\\Design01."
- 2705      73657273 
- 2705      5C746574 
- 2705      73757961 
- 2705      5C446F63 
- 2706 0176 63796473 		.ascii	"cydsn\000"
- 2706      6E00
+ 2695              	.LASF12:
+ 2696 0117 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 2696      6574615F 
+ 2696      636F6E66 
+ 2696      69676563 
+ 2696      6300
+ 2697              	.LASF8:
+ 2698 0129 756E7369 		.ascii	"unsigned int\000"
+ 2698      676E6564 
+ 2698      20696E74 
+ 2698      00
+ 2699              	.LASF7:
+ 2700 0136 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2700      206C6F6E 
+ 2700      6720756E 
+ 2700      7369676E 
+ 2700      65642069 
+ 2701              	.LASF10:
+ 2702 014d 75696E74 		.ascii	"uint8_t\000"
+ 2702      385F7400 
+ 2703              	.LASF15:
+ 2704 0155 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 2704      6574615F 
+ 2704      666C6173 
+ 2704      6870726F 
+ 2704      74656374 
+ 2705              	.LASF14:
+ 2706 016a 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 2706      6574615F 
+ 2706      776F6E76 
+ 2706      6C00
  2707              	.LASF11:
- 2708 017c 73697A65 		.ascii	"sizetype\000"
+ 2708 0178 73697A65 		.ascii	"sizetype\000"
  2708      74797065 
  2708      00
  2709              	.LASF6:
- 2710 0185 6C6F6E67 		.ascii	"long long int\000"
+ 2710 0181 6C6F6E67 		.ascii	"long long int\000"
  2710      206C6F6E 
  2710      6720696E 
  2710      7400
  2711              	.LASF2:
- 2712 0193 73686F72 		.ascii	"short int\000"
+ 2712 018f 73686F72 		.ascii	"short int\000"
  2712      7420696E 
  2712      7400
  2713              	.LASF4:
- 2714 019d 6C6F6E67 		.ascii	"long int\000"
+ 2714 0199 6C6F6E67 		.ascii	"long int\000"
  2714      20696E74 
  2714      00
  2715              	.LASF0:
- 2716 01a6 7369676E 		.ascii	"signed char\000"
+ 2716 01a2 7369676E 		.ascii	"signed char\000"
  2716      65642063 
  2716      68617200 
  2717              	.LASF18:
- 2718 01b2 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2718 01ae 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
  2718      72617465 
  2718      645F536F 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccaFXgMP.s 			page 50
-
-
  2718      75726365 
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccjZwY6a.s 			page 50
+
+
  2718      5C50536F 
  2719              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

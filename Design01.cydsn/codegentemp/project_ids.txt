@@ -1,6 +1,6 @@
-C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\Design01.cyprj|61e56699-ae8f-4c27-909c-19c587ab2155
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|90468d95-f7df-44cc-a528-51262dac2e29
-C:\Users\tetsuya\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|ce6a911a-387d-421a-adf8-f7f6b3472f1a
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|b6a46c6e-a222-4925-9605-95312bd2fbfe
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|eea40397-7e1a-4cd7-8340-b3cc1c7f2ca9
-C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|1f732f85-4ae0-4ead-9e42-a899f6939f52
+C:\Users\tetsuya\Documents\motor\Design01.cydsn\Design01.cyprj|56fe4cf3-a226-457e-b9a3-68da85ecb72f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|6569577e-0a50-46a6-9c6c-530e7aa15de1
+C:\Users\tetsuya\Documents\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|6f1b49a0-567f-4386-b672-cf3ae5ac52c6
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|7b83b2dc-bf57-41a1-8c19-3a2b5412d875
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|252c1a18-b001-48f1-ba3f-bf69c7a625ef
+C:\Program Files (x86)\Cypress\PSoC Creator\4.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|182b73fb-9e82-4a2c-8d0f-fc712da459e1

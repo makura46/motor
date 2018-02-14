@@ -11,8 +11,8 @@ void matrix(PS3Controller *ps3, uint8 motor[], char na[]) {
 	//double m[3] = {0}
     
 	double mat[3][3] = {{1.0, 0.0, L}, 
-					  {-1.0/2, sqrt(3.0/2), L}, 
-					  {-1.0/2, -sqrt(3.0/2), L}};
+					  {-1.0/2, -sqrt(3.0)/2, L}, 
+					  {-1.0/2, sqrt(3.0)/2, L}};
     
 	float x = ps3->ANALOG_LX - 64;
 	float y = ps3->ANALOG_LY - 64;
@@ -26,11 +26,8 @@ void matrix(PS3Controller *ps3, uint8 motor[], char na[]) {
 		for (j = 0; j < 3; j++) {
 			re[i] += mat[i][j] * col[j];
 		}
-        
 	}
-    //sprintf(output, "%s ", "\n\n");
-    //sprintf(output, "%f %f %f\n", re[0], re[1], re[2]);
-    //UART_1_PutString(output);
+    
     
 	for (i = 0; i < 3; i++) {
         if (re[i] >=0)
