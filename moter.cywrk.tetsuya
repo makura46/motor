@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="moter\Design01\Source Files\PS3_Controller.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="moter\Design01\Header Files\matrix.h">
 <ExpandedNodeIds>
 <v>moter</v>
 <v>moter\Design01</v>
@@ -66,6 +66,9 @@
 <v>moter\Design01\CortexM3\ARM_GCC_541</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Air1.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Air2.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Air3.lst</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
 <v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_3.lst</v>
@@ -128,6 +131,34 @@
 <VisibleNodeIds>
 <v>moter</v>
 <v>moter\Design01</v>
+<v>moter\Design01\CortexM3</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Air1.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Air2.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Air3.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_3.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_4.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\high1_1.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\high1_2.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\high2_1.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\high2_2.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\high3_1.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\high3_2.lst</v>
+<v>moter\Design01\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_PS3.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -175,12 +206,11 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\Design01.cydsn\main.c" />
+<name v=".\Design01.cydsn\Design01.cydwr" />
 <name v=".\Design01.cydsn\matrix.c" />
 <name v=".\Design01.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\Design01.cydsn\Design01.cydwr" />
-<name v=".\Design01.cydsn\matrix.h" />
-<name v=".\Design01.cydsn\PS3_Controller.h" />
 <name v=".\Design01.cydsn\PS3_Controller.c" />
+<name v=".\Design01.cydsn\matrix.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -188,7 +218,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1439, 711" SelectedTabbedMdiWindow="64fb457b-a08f-41c7-8522-5a66a04b96a7"><ToolWindow Key="CyFeedbackPageToolWindow:279a374f-99bb-478b-83b4-831f8474bf17:Component Feedback" Guid="719558cf-6077-438b-907f-962b481f6555" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="85e9028f-6e03-410b-9b24-eb586ac63506" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\main.c" Guid="64fb457b-a08f-41c7-8522-5a66a04b96a7" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\matrix.c" Guid="12b64b61-a96c-4087-98f6-23fdd096138a" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="af5b2f46-18fe-4aa0-8fff-bd7af0959892" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\Design01.cydwr" Guid="6fdeac10-bc7f-4674-a645-5f51a1ca7466" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\matrix.h" Guid="b2f97f93-e6a3-4fdb-9554-253b47573d2a" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\PS3_Controller.h" Guid="b4b71793-78d8-473e-a865-11043161ffbd" /><DocumentWindow Key="C:\Users\tetsuya\Documents\motor_yao\Design01.cydsn\PS3_Controller.c" Guid="1d4f0474-a9d5-4df6-87cf-b0b43c3ddaa8" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1041, 399" SelectedTabbedMdiWindow="b275aea1-bb7a-46ea-a954-f9c7df2bc237"><ToolWindow Key="CyFeedbackPageToolWindow:279a374f-99bb-478b-83b4-831f8474bf17:Component Feedback" Guid="719558cf-6077-438b-907f-962b481f6555" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="85e9028f-6e03-410b-9b24-eb586ac63506" /><DocumentWindow Key="C:\Users\tetsuya\Documents\git\motor\Design01.cydsn\main.c" Guid="b275aea1-bb7a-46ea-a954-f9c7df2bc237" /><DocumentWindow Key="C:\Users\tetsuya\Documents\git\motor\Design01.cydsn\Design01.cydwr" Guid="22930d8f-3f60-4143-82ce-06e45d236115" /><DocumentWindow Key="C:\Users\tetsuya\Documents\git\motor\Design01.cydsn\matrix.c" Guid="d0fde3d2-1ea4-4b72-b123-a0b44889ceee" /><DocumentWindow Key="C:\Users\tetsuya\Documents\git\motor\Design01.cydsn\TopDesign\TopDesign.cysch" Guid="b32c9332-659c-446c-908c-3cae6cd2bb5c" /><DocumentWindow Key="C:\Users\tetsuya\Documents\git\motor\Design01.cydsn\PS3_Controller.c" Guid="0be90001-4483-498c-a6ef-bcaa59070f94" /><DocumentWindow Key="C:\Users\tetsuya\Documents\git\motor\Design01.cydsn\matrix.h" Guid="ea511bc0-dd72-489a-ac3f-e5ec24ba28bd" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

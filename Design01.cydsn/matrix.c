@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include "project.h"
 
-void matrix(PS3Controller *ps3, uint8 motor[], char na[]) {
+void matrix(PS3Controller *ps3, uint8 motor[], uint8 na[]) {
 	int i, j;
 	float L = 176;
 

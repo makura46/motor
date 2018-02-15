@@ -9,6 +9,16 @@
  *
  * ========================================
  */
+
+// 時計周りにD, C, B　の順にモーターを取り付ける
+// その場合C, B辺が正面
+/* 
+Cモーター         Bモーター
+
+
+        Dモーター
+*/
+
 #include "project.h"
 #include <stdio.h>
 #include <math.h>
@@ -20,25 +30,25 @@
 #define MAX_POWER 230
 
 char out[100]={0};
-void rotate(PS3Controller ps, char na[]) {	// 回転する関数
+void rotate(PS3Controller ps, uint8 na[]) {	// 回転する関数
 	if (ps.L1) {
 		na[0] = 1;
 		na[1] = 1;
-		na[2] = -1;
+		na[2] = 2;
 		reverse_D_Write(1);
 		reverse_B_Write(1);
 		reverse_C_Write(2);
 	}else {
-		na[0] = -1;
-		na[1] = -1;
+		na[0] = 2;
+		na[1] = 2;
 		na[2] = 1;
 		reverse_D_Write(2);
 		reverse_B_Write(2);
 		reverse_C_Write(1);
 	}
-	motorD_WriteCompare(200);
-	motorB_WriteCompare(200);
-	motorC_WriteCompare(200);
+	motorD_WriteCompare(150);
+	motorB_WriteCompare(150);
+	motorC_WriteCompare(150);
 
 	sprintf(out, "%s\n", "aaa");
 	UART_1_PutString(out);
@@ -57,6 +67,7 @@ int main(void)
 	double x, y;
 	char output[100] = {0};
 	char flag = 0;	// 操作可能かどうか
+    uint8 catch = 0;
 
 	CyGlobalIntEnable; /* Enable global interrupts. */
 
@@ -79,8 +90,28 @@ int main(void)
 		if (flag) {	// flagが立っていれば操作可能
 			if (ps3.CROSS)	// バツを押すと操作を受け付けない
 				flag = !flag;
+            if (ps3.TRIANGLE) {
+                if (catch) {
+                    Air1_Write(0);
+                    catch = !catch;
+                } else {
+                    Air1_Write(1);
+                    catch= !catch;
+                }
+            }
+            
+            if (ps3.R2) {
+                Air2_Write(1);
+            } else {
+                Air2_Write(0);
+            }
+            
+            if (ps3.L2) {
+                Air2_Write(1);
+            } else {
+                Air2_Write(0);   
+            }
 			if (!ps3.L1 && !ps3.R1) {	// L1とR1が押されていなかった場合
-
 
 				//sprintf(output, "%d %d\n", ps3.ANALOG_LX, ps3.ANALOG_LY);
 				//UART_1_PutString(output);
