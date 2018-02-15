@@ -30,7 +30,7 @@ void matrix(PS3Controller *ps3, uint8 motor[], char na[]) {
 		if (re[i] > 0)
 			na[i] = 1;
 		else if (re[i] < 0)
-			na[i] = -1;
+			na[i] = 2;
 		else
 			na[i] = 0;
 		motor[i] = fabsf(re[i]);

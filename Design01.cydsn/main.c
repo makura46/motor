@@ -51,8 +51,8 @@ int main(void)
 	char i;
 	double power;
 	uint8 m[3] = {0};
-	char na[3] = {0};
-	char saveRotate[3] = {0};
+	uint8 na[3] = {0};
+	uint8 saveRotate[3] = {0};
 	double s;
 	double x, y;
 	char output[100] = {0};
@@ -97,32 +97,32 @@ int main(void)
 				matrix(&ps3, m, na);	// 行列計算しmの配列に値を格納  naには回転の向き
 				if (na[0] == 1) {
 					reverse_D_Write(1);
-				} else if (na[0] == -1) {
+				} else if (na[0] == 2) {
 					reverse_D_Write(2);
 				} else {
 					if (saveRotate[0] == 1)
-						reverse_D_Write(1);
-					else if (saveRotate[0] == -1)
 						reverse_D_Write(2);
+					else if (saveRotate[0] == 2)
+						reverse_D_Write(1);
 				}
 				if (na[1] == 1) {
 					reverse_B_Write(1);
-				} else if (na[1] == -1) {
+				} else if (na[1] == 2) {
 					reverse_B_Write(2);
 				} else {
 					if (saveRotate[1] == 1)
 						reverse_B_Write(2);
-					else if (saveRotate[1] == -1)
+					else if (saveRotate[1] == 2)
 						reverse_B_Write(1);
 				}
 				if (na[2] == 1) {
 					reverse_C_Write(2);
-				} else if (na[2] == -1) {
+				} else if (na[2] == 2) {
 					reverse_C_Write(1);
 				} else {
 					if (saveRotate[2] == 1)
 						reverse_C_Write(1);
-					else if (saveRotate[2] == -1)
+					else if (saveRotate[2] == 2)
 						reverse_C_Write(2);
 				}
 				/*
@@ -130,13 +130,20 @@ int main(void)
 				   m[i] *= MAX_POWER / (double)91 * (double)power;
 				   }
 				 */     
-				int max = fmax((double)m[0], fmax((double)m[1], m[2])); 	// mの中で最大のものを探す
+				double max = fmax((double)m[0], fmax((double)m[1], m[2])); 	// mの中で最大のものを探す
 
 
 				for (i = 0; i < 3; i++) {
+					double tmp = m[i];
+					tmp *= MAX_POWER;
+					tmp /= max;
+					/*
 					m[i] *= MAX_POWER/max;
+					*/
+					tmp *= power;
+					m[i] = (uint8)tmp;
 
-					m[i] *= power;	// 最大の値に全部の入力を合わす
+					//m[i] *= power;	// 最大の値に全部の入力を合わす
 
 				}
 				sprintf(output, "\r\n");
