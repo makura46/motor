@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
   28:Generated_Source\PSoC5/UART_PS3_PM.c **** };
   29:Generated_Source\PSoC5/UART_PS3_PM.c **** 
   30:Generated_Source\PSoC5/UART_PS3_PM.c **** 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 2
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 2
 
 
   31:Generated_Source\PSoC5/UART_PS3_PM.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
   68:Generated_Source\PSoC5/UART_PS3_PM.c **** *  Does not restore the FIFO which is a set of nonretention registers.
   69:Generated_Source\PSoC5/UART_PS3_PM.c **** *
   70:Generated_Source\PSoC5/UART_PS3_PM.c **** * Parameters:
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 3
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 3
 
 
   71:Generated_Source\PSoC5/UART_PS3_PM.c **** *  None.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  108:Generated_Source\PSoC5/UART_PS3_PM.c **** *  None.
  109:Generated_Source\PSoC5/UART_PS3_PM.c **** *
  110:Generated_Source\PSoC5/UART_PS3_PM.c **** * Return:
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 4
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 4
 
 
  111:Generated_Source\PSoC5/UART_PS3_PM.c **** *  None.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  140:Generated_Source\PSoC5/UART_PS3_PM.c ****     #endif /* End UART_PS3_RX_ENABLED || UART_PS3_HD_ENABLED*/
  141:Generated_Source\PSoC5/UART_PS3_PM.c **** 
  142:Generated_Source\PSoC5/UART_PS3_PM.c ****     UART_PS3_Stop();
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 5
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 5
 
 
   87              		.loc 1 142 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  110              		@ frame_needed = 0, uses_anonymous_args = 0
  111 0000 08B5     		push	{r3, lr}
  112              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 6
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 6
 
 
  113              		.cfi_offset 3, -8
@@ -351,28 +351,28 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  149 0006 00000000 		.4byte	.Ldebug_abbrev0
  150 000a 04       		.byte	0x4
  151 000b 01       		.uleb128 0x1
- 152 000c 87000000 		.4byte	.LASF24
+ 152 000c BB000000 		.4byte	.LASF24
  153 0010 0C       		.byte	0xc
  154 0011 00000000 		.4byte	.LASF25
- 155 0015 2C010000 		.4byte	.LASF26
+ 155 0015 63000000 		.4byte	.LASF26
  156 0019 00000000 		.4byte	.Ldebug_ranges0+0
  157 001d 00000000 		.4byte	0
  158 0021 00000000 		.4byte	.Ldebug_line0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 7
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 7
 
 
  159 0025 02       		.uleb128 0x2
  160 0026 01       		.byte	0x1
  161 0027 06       		.byte	0x6
- 162 0028 46020000 		.4byte	.LASF0
+ 162 0028 4A020000 		.4byte	.LASF0
  163 002c 02       		.uleb128 0x2
  164 002d 01       		.byte	0x1
  165 002e 08       		.byte	0x8
- 166 002f 79000000 		.4byte	.LASF1
+ 166 002f AD000000 		.4byte	.LASF1
  167 0033 02       		.uleb128 0x2
  168 0034 02       		.byte	0x2
  169 0035 05       		.byte	0x5
- 170 0036 0C020000 		.4byte	.LASF2
+ 170 0036 10020000 		.4byte	.LASF2
  171 003a 02       		.uleb128 0x2
  172 003b 02       		.byte	0x2
  173 003c 07       		.byte	0x7
@@ -380,19 +380,19 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  175 0041 02       		.uleb128 0x2
  176 0042 04       		.byte	0x4
  177 0043 05       		.byte	0x5
- 178 0044 25020000 		.4byte	.LASF4
+ 178 0044 29020000 		.4byte	.LASF4
  179 0048 02       		.uleb128 0x2
  180 0049 04       		.byte	0x4
  181 004a 07       		.byte	0x7
- 182 004b 1A010000 		.4byte	.LASF5
+ 182 004b 4E010000 		.4byte	.LASF5
  183 004f 02       		.uleb128 0x2
  184 0050 08       		.byte	0x8
  185 0051 05       		.byte	0x5
- 186 0052 F9010000 		.4byte	.LASF6
+ 186 0052 FD010000 		.4byte	.LASF6
  187 0056 02       		.uleb128 0x2
  188 0057 08       		.byte	0x8
  189 0058 07       		.byte	0x7
- 190 0059 B4010000 		.4byte	.LASF7
+ 190 0059 B8010000 		.4byte	.LASF7
  191 005d 03       		.uleb128 0x3
  192 005e 04       		.byte	0x4
  193 005f 05       		.byte	0x5
@@ -400,29 +400,29 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  195 0064 02       		.uleb128 0x2
  196 0065 04       		.byte	0x4
  197 0066 07       		.byte	0x7
- 198 0067 A7010000 		.4byte	.LASF8
+ 198 0067 AB010000 		.4byte	.LASF8
  199 006b 04       		.uleb128 0x4
- 200 006c 5C010000 		.4byte	.LASF12
+ 200 006c 60010000 		.4byte	.LASF12
  201 0070 02       		.byte	0x2
  202 0071 9201     		.2byte	0x192
  203 0073 2C000000 		.4byte	0x2c
  204 0077 02       		.uleb128 0x2
  205 0078 04       		.byte	0x4
  206 0079 04       		.byte	0x4
- 207 007a 63000000 		.4byte	.LASF9
+ 207 007a 97000000 		.4byte	.LASF9
  208 007e 02       		.uleb128 0x2
  209 007f 08       		.byte	0x8
  210 0080 04       		.byte	0x4
- 211 0081 62010000 		.4byte	.LASF10
+ 211 0081 66010000 		.4byte	.LASF10
  212 0085 02       		.uleb128 0x2
  213 0086 01       		.byte	0x1
  214 0087 08       		.byte	0x8
- 215 0088 07020000 		.4byte	.LASF11
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 8
+ 215 0088 0B020000 		.4byte	.LASF11
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 8
 
 
  216 008c 04       		.uleb128 0x4
- 217 008d 15010000 		.4byte	.LASF13
+ 217 008d 49010000 		.4byte	.LASF13
  218 0091 02       		.byte	0x2
  219 0092 3C02     		.2byte	0x23c
  220 0094 98000000 		.4byte	0x98
@@ -431,11 +431,11 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  223 009d 02       		.uleb128 0x2
  224 009e 08       		.byte	0x8
  225 009f 04       		.byte	0x4
- 226 00a0 3A020000 		.4byte	.LASF14
+ 226 00a0 3E020000 		.4byte	.LASF14
  227 00a4 02       		.uleb128 0x2
  228 00a5 04       		.byte	0x4
  229 00a6 07       		.byte	0x7
- 230 00a7 F0010000 		.4byte	.LASF15
+ 230 00a7 F4010000 		.4byte	.LASF15
  231 00ab 06       		.uleb128 0x6
  232 00ac 4C000000 		.4byte	.LASF27
  233 00b0 01       		.byte	0x1
@@ -443,14 +443,14 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  235 00b2 45       		.byte	0x45
  236 00b3 C4000000 		.4byte	0xc4
  237 00b7 07       		.uleb128 0x7
- 238 00b8 2E020000 		.4byte	.LASF28
+ 238 00b8 32020000 		.4byte	.LASF28
  239 00bc 03       		.byte	0x3
  240 00bd 47       		.byte	0x47
  241 00be 6B000000 		.4byte	0x6b
  242 00c2 00       		.byte	0
  243 00c3 00       		.byte	0
  244 00c4 08       		.uleb128 0x8
- 245 00c5 79010000 		.4byte	.LASF16
+ 245 00c5 7D010000 		.4byte	.LASF16
  246 00c9 03       		.byte	0x3
  247 00ca 4D       		.byte	0x4d
  248 00cb AB000000 		.4byte	0xab
@@ -463,7 +463,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  255 00de 01       		.uleb128 0x1
  256 00df 9C       		.byte	0x9c
  257 00e0 09       		.uleb128 0x9
- 258 00e1 D9010000 		.4byte	.LASF18
+ 258 00e1 DD010000 		.4byte	.LASF18
  259 00e5 01       		.byte	0x1
  260 00e6 57       		.byte	0x57
  261 00e7 00000000 		.4byte	.LFB1
@@ -471,14 +471,14 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  263 00ef 01       		.uleb128 0x1
  264 00f0 9C       		.byte	0x9c
  265 00f1 0A       		.uleb128 0xa
- 266 00f2 16020000 		.4byte	.LASF19
+ 266 00f2 1A020000 		.4byte	.LASF19
  267 00f6 01       		.byte	0x1
  268 00f7 78       		.byte	0x78
  269 00f8 00000000 		.4byte	.LFB2
  270 00fc 28000000 		.4byte	.LFE2-.LFB2
  271 0100 01       		.uleb128 0x1
  272 0101 9C       		.byte	0x9c
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 9
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 9
 
 
  273 0102 10010000 		.4byte	0x110
@@ -487,7 +487,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  276 010b 49010000 		.4byte	0x149
  277 010f 00       		.byte	0
  278 0110 0A       		.uleb128 0xa
- 279 0111 69010000 		.4byte	.LASF20
+ 279 0111 6D010000 		.4byte	.LASF20
  280 0115 01       		.byte	0x1
  281 0116 AC       		.byte	0xac
  282 0117 00000000 		.4byte	.LFB3
@@ -503,7 +503,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  292 0133 5F010000 		.4byte	0x15f
  293 0137 00       		.byte	0
  294 0138 0C       		.uleb128 0xc
- 295 0139 69000000 		.4byte	.LASF29
+ 295 0139 9D000000 		.4byte	.LASF29
  296 013d 01       		.byte	0x1
  297 013e 18       		.byte	0x18
  298 013f C4000000 		.4byte	0xc4
@@ -511,18 +511,18 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  300 0144 03       		.byte	0x3
  301 0145 00000000 		.4byte	UART_PS3_backup
  302 0149 0D       		.uleb128 0xd
- 303 014a CB010000 		.4byte	.LASF21
- 304 014e CB010000 		.4byte	.LASF21
+ 303 014a CF010000 		.4byte	.LASF21
+ 304 014e CF010000 		.4byte	.LASF21
  305 0152 03       		.byte	0x3
  306 0153 55       		.byte	0x55
  307 0154 0D       		.uleb128 0xd
- 308 0155 90010000 		.4byte	.LASF22
- 309 0159 90010000 		.4byte	.LASF22
+ 308 0155 94010000 		.4byte	.LASF22
+ 309 0159 94010000 		.4byte	.LASF22
  310 015d 03       		.byte	0x3
  311 015e 75       		.byte	0x75
  312 015f 0D       		.uleb128 0xd
- 313 0160 52020000 		.4byte	.LASF23
- 314 0164 52020000 		.4byte	.LASF23
+ 313 0160 56020000 		.4byte	.LASF23
+ 314 0164 56020000 		.4byte	.LASF23
  315 0168 03       		.byte	0x3
  316 0169 5A       		.byte	0x5a
  317 016a 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  327 0007 03       		.uleb128 0x3
  328 0008 0E       		.uleb128 0xe
  329 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 10
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 10
 
 
  330 000a 0E       		.uleb128 0xe
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  384 0040 03       		.uleb128 0x3
  385 0041 0E       		.uleb128 0xe
  386 0042 0B       		.uleb128 0xb
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 11
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 11
 
 
  387 0043 0B       		.uleb128 0xb
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  441 0079 40       		.uleb128 0x40
  442 007a 18       		.uleb128 0x18
  443 007b 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 12
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 12
 
 
  444 007d 19       		.uleb128 0x19
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  498 00b6 00       		.byte	0
  499 00b7 3F       		.uleb128 0x3f
  500 00b8 19       		.uleb128 0x19
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 13
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 13
 
 
  501 00b9 3C       		.uleb128 0x3c
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  548      75726365 
  548      5C50536F 
  549              	.LASF3:
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 14
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 14
 
 
  550 0025 73686F72 		.ascii	"short unsigned int\000"
@@ -798,141 +798,142 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 1
  554      5F626163 
  554      6B757053 
  554      74727563 
- 555              	.LASF9:
- 556 0063 666C6F61 		.ascii	"float\000"
- 556      7400
- 557              	.LASF29:
- 558 0069 55415254 		.ascii	"UART_PS3_backup\000"
- 558      5F505333 
- 558      5F626163 
- 558      6B757000 
- 559              	.LASF1:
- 560 0079 756E7369 		.ascii	"unsigned char\000"
- 560      676E6564 
- 560      20636861 
- 560      7200
- 561              	.LASF24:
- 562 0087 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 562      43313120 
- 562      352E342E 
- 562      31203230 
- 562      31363036 
- 563 00ba 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 563      20726576 
- 563      6973696F 
- 563      6E203233 
- 563      37373135 
- 564 00ed 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 564      66756E63 
- 564      74696F6E 
- 564      2D736563 
- 564      74696F6E 
- 565              	.LASF13:
- 566 0115 72656738 		.ascii	"reg8\000"
- 566      00
- 567              	.LASF5:
- 568 011a 6C6F6E67 		.ascii	"long unsigned int\000"
- 568      20756E73 
- 568      69676E65 
- 568      6420696E 
- 568      7400
- 569              	.LASF26:
- 570 012c 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\motor\\Design01.cyds"
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 15
+ 555              	.LASF26:
+ 556 0063 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\git\\motor\\Design01"
+ 556      73657273 
+ 556      5C746574 
+ 556      73757961 
+ 556      5C446F63 
+ 557 0090 2E637964 		.ascii	".cydsn\000"
+ 557      736E00
+ 558              	.LASF9:
+ 559 0097 666C6F61 		.ascii	"float\000"
+ 559      7400
+ 560              	.LASF29:
+ 561 009d 55415254 		.ascii	"UART_PS3_backup\000"
+ 561      5F505333 
+ 561      5F626163 
+ 561      6B757000 
+ 562              	.LASF1:
+ 563 00ad 756E7369 		.ascii	"unsigned char\000"
+ 563      676E6564 
+ 563      20636861 
+ 563      7200
+ 564              	.LASF24:
+ 565 00bb 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 565      43313120 
+ 565      352E342E 
+ 565      31203230 
+ 565      31363036 
+ 566 00ee 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 566      20726576 
+ 566      6973696F 
+ 566      6E203233 
+ 566      37373135 
+ 567 0121 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 567      66756E63 
+ 567      74696F6E 
+ 567      2D736563 
+ 567      74696F6E 
+ 568              	.LASF13:
+ 569 0149 72656738 		.ascii	"reg8\000"
+ 569      00
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 15
 
 
- 570      73657273 
- 570      5C746574 
- 570      73757961 
- 570      5C446F63 
- 571 015a 6E00     		.ascii	"n\000"
+ 570              	.LASF5:
+ 571 014e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 571      20756E73 
+ 571      69676E65 
+ 571      6420696E 
+ 571      7400
  572              	.LASF12:
- 573 015c 75696E74 		.ascii	"uint8\000"
+ 573 0160 75696E74 		.ascii	"uint8\000"
  573      3800
  574              	.LASF10:
- 575 0162 646F7562 		.ascii	"double\000"
+ 575 0166 646F7562 		.ascii	"double\000"
  575      6C6500
  576              	.LASF20:
- 577 0169 55415254 		.ascii	"UART_PS3_Wakeup\000"
+ 577 016d 55415254 		.ascii	"UART_PS3_Wakeup\000"
  577      5F505333 
  577      5F57616B 
  577      65757000 
  578              	.LASF16:
- 579 0179 55415254 		.ascii	"UART_PS3_BACKUP_STRUCT\000"
+ 579 017d 55415254 		.ascii	"UART_PS3_BACKUP_STRUCT\000"
  579      5F505333 
  579      5F424143 
  579      4B55505F 
  579      53545255 
  580              	.LASF22:
- 581 0190 55415254 		.ascii	"UART_PS3_ClearRxBuffer\000"
+ 581 0194 55415254 		.ascii	"UART_PS3_ClearRxBuffer\000"
  581      5F505333 
  581      5F436C65 
  581      61725278 
  581      42756666 
  582              	.LASF8:
- 583 01a7 756E7369 		.ascii	"unsigned int\000"
+ 583 01ab 756E7369 		.ascii	"unsigned int\000"
  583      676E6564 
  583      20696E74 
  583      00
  584              	.LASF7:
- 585 01b4 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 585 01b8 6C6F6E67 		.ascii	"long long unsigned int\000"
  585      206C6F6E 
  585      6720756E 
  585      7369676E 
  585      65642069 
  586              	.LASF21:
- 587 01cb 55415254 		.ascii	"UART_PS3_Stop\000"
+ 587 01cf 55415254 		.ascii	"UART_PS3_Stop\000"
  587      5F505333 
  587      5F53746F 
  587      7000
  588              	.LASF18:
- 589 01d9 55415254 		.ascii	"UART_PS3_RestoreConfig\000"
+ 589 01dd 55415254 		.ascii	"UART_PS3_RestoreConfig\000"
  589      5F505333 
  589      5F526573 
  589      746F7265 
  589      436F6E66 
  590              	.LASF15:
- 591 01f0 73697A65 		.ascii	"sizetype\000"
+ 591 01f4 73697A65 		.ascii	"sizetype\000"
  591      74797065 
  591      00
  592              	.LASF6:
- 593 01f9 6C6F6E67 		.ascii	"long long int\000"
+ 593 01fd 6C6F6E67 		.ascii	"long long int\000"
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccbqLAVo.s 			page 16
+
+
  593      206C6F6E 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccD9rUFc.s 			page 16
-
-
  593      6720696E 
  593      7400
  594              	.LASF11:
- 595 0207 63686172 		.ascii	"char\000"
+ 595 020b 63686172 		.ascii	"char\000"
  595      00
  596              	.LASF2:
- 597 020c 73686F72 		.ascii	"short int\000"
+ 597 0210 73686F72 		.ascii	"short int\000"
  597      7420696E 
  597      7400
  598              	.LASF19:
- 599 0216 55415254 		.ascii	"UART_PS3_Sleep\000"
+ 599 021a 55415254 		.ascii	"UART_PS3_Sleep\000"
  599      5F505333 
  599      5F536C65 
  599      657000
  600              	.LASF4:
- 601 0225 6C6F6E67 		.ascii	"long int\000"
+ 601 0229 6C6F6E67 		.ascii	"long int\000"
  601      20696E74 
  601      00
  602              	.LASF28:
- 603 022e 656E6162 		.ascii	"enableState\000"
+ 603 0232 656E6162 		.ascii	"enableState\000"
  603      6C655374 
  603      61746500 
  604              	.LASF14:
- 605 023a 6C6F6E67 		.ascii	"long double\000"
+ 605 023e 6C6F6E67 		.ascii	"long double\000"
  605      20646F75 
  605      626C6500 
  606              	.LASF0:
- 607 0246 7369676E 		.ascii	"signed char\000"
+ 607 024a 7369676E 		.ascii	"signed char\000"
  607      65642063 
  607      68617200 
  608              	.LASF23:
- 609 0252 55415254 		.ascii	"UART_PS3_Enable\000"
+ 609 0256 55415254 		.ascii	"UART_PS3_Enable\000"
  609      5F505333 
  609      5F456E61 
  609      626C6500 

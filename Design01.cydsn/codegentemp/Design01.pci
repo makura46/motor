@@ -1,5 +1,5 @@
 # Design01
-# 2018-02-14 10:14:41Z
+# 2018-02-15 18:07:49Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -22,3 +22,6 @@ set_io "high3_2(0)" iocell 12 1
 set_io "low3_2(0)" iocell 12 2
 set_io "PS3_IN(0)" iocell 0 7
 set_io "Tx_1(0)" iocell 3 3
+set_io "Air3(0)" iocell 0 6
+set_io "Air2(0)" iocell 0 5
+set_io "Air1(0)" iocell 0 4

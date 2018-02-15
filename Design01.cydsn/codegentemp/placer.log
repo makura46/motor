@@ -6,7 +6,7 @@
 
 #Build Date:         Jul 19 2017 14:31:00
 
-#File Generated:     Feb 14 2018 19:14:41
+#File Generated:     Feb 16 2018 03:07:49
 
 #Purpose:            
 
@@ -55,7 +55,7 @@ Design Statistics after Packing
 Device Utilization Summary after Packing
     Macrocells                  :	66/192
     UDBS                        :	11/24
-    IOs                         :	15/72
+    IOs                         :	18/72
 
 
 D2088: Phase 3, elapsed time : 0.0 (sec)
@@ -97,7 +97,7 @@ Clock: UART_PS3_IntClock    | Frequency:  53.4 MHz | Target:   0.0 MHz
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.0 (sec)
+D2088: Phase 6, elapsed time : 0.1 (sec)
 
 Phase 7
 ######################################################################
@@ -120,7 +120,7 @@ Clock: UART_PS3_IntClock    | Frequency:   1.3 MHz | Target:   0.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.6 (sec)
+D2088: Phase 7, elapsed time : 1.4 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	26
@@ -130,11 +130,11 @@ Final Design Statistics
     Number of Status            	:	5
     Number of SyncCells         	:	0
     Number of count7cells       	:	1
-    Number of IOs       	:	15
+    Number of IOs       	:	18
 
 Device Utilization Summary
     Macrocells                  :	66/192
-    IOs                         :	15/72
+    IOs                         :	18/72
 
 
 
@@ -173,5 +173,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 1.2 sec.
+I2076: Total run-time: 3.5 sec.
 

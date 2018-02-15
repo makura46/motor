@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
   28:Generated_Source\PSoC5/reverse_C_PM.c **** ********************************************************************************
   29:Generated_Source\PSoC5/reverse_C_PM.c **** *
   30:Generated_Source\PSoC5/reverse_C_PM.c **** * Summary:
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 2
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 2
 
 
   31:Generated_Source\PSoC5/reverse_C_PM.c **** *  Saves the control register value.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
   58:Generated_Source\PSoC5/reverse_C_PM.c **** *
   59:Generated_Source\PSoC5/reverse_C_PM.c **** *
   60:Generated_Source\PSoC5/reverse_C_PM.c **** *******************************************************************************/
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 3
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 3
 
 
   61:Generated_Source\PSoC5/reverse_C_PM.c **** void reverse_C_RestoreConfig(void) 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
   87              		.cfi_def_cfa_offset 8
   88              		.cfi_offset 3, -8
   89              		.cfi_offset 14, -4
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 4
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 4
 
 
   83:Generated_Source\PSoC5/reverse_C_PM.c ****     reverse_C_SaveConfig();
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  123              		.type	reverse_C_backup, %object
  124              		.size	reverse_C_backup, 1
  125              	reverse_C_backup:
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 5
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 5
 
 
  126 0000 00       		.space	1
@@ -253,37 +253,37 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  135 0006 00000000 		.4byte	.Ldebug_abbrev0
  136 000a 04       		.byte	0x4
  137 000b 01       		.uleb128 0x1
- 138 000c 60000000 		.4byte	.LASF19
+ 138 000c 94000000 		.4byte	.LASF19
  139 0010 0C       		.byte	0xc
- 140 0011 A8010000 		.4byte	.LASF20
- 141 0015 15010000 		.4byte	.LASF21
+ 140 0011 AC010000 		.4byte	.LASF20
+ 141 0015 34000000 		.4byte	.LASF21
  142 0019 00000000 		.4byte	.Ldebug_ranges0+0
  143 001d 00000000 		.4byte	0
  144 0021 00000000 		.4byte	.Ldebug_line0
  145 0025 02       		.uleb128 0x2
  146 0026 01       		.byte	0x1
  147 0027 06       		.byte	0x6
- 148 0028 FD010000 		.4byte	.LASF0
+ 148 0028 01020000 		.4byte	.LASF0
  149 002c 02       		.uleb128 0x2
  150 002d 01       		.byte	0x1
  151 002e 08       		.byte	0x8
- 152 002f 52000000 		.4byte	.LASF1
+ 152 002f 86000000 		.4byte	.LASF1
  153 0033 02       		.uleb128 0x2
  154 0034 02       		.byte	0x2
  155 0035 05       		.byte	0x5
- 156 0036 D3010000 		.4byte	.LASF2
+ 156 0036 D7010000 		.4byte	.LASF2
  157 003a 02       		.uleb128 0x2
  158 003b 02       		.byte	0x2
  159 003c 07       		.byte	0x7
- 160 003d 45010000 		.4byte	.LASF3
+ 160 003d 49010000 		.4byte	.LASF3
  161 0041 02       		.uleb128 0x2
  162 0042 04       		.byte	0x4
  163 0043 05       		.byte	0x5
- 164 0044 F4010000 		.4byte	.LASF4
+ 164 0044 F8010000 		.4byte	.LASF4
  165 0048 02       		.uleb128 0x2
  166 0049 04       		.byte	0x4
  167 004a 07       		.byte	0x7
- 168 004b 03010000 		.4byte	.LASF5
+ 168 004b 37010000 		.4byte	.LASF5
  169 004f 02       		.uleb128 0x2
  170 0050 08       		.byte	0x8
  171 0051 05       		.byte	0x5
@@ -291,37 +291,37 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  173 0056 02       		.uleb128 0x2
  174 0057 08       		.byte	0x8
  175 0058 07       		.byte	0x7
- 176 0059 91010000 		.4byte	.LASF7
+ 176 0059 95010000 		.4byte	.LASF7
  177 005d 03       		.uleb128 0x3
  178 005e 04       		.byte	0x4
  179 005f 05       		.byte	0x5
  180 0060 696E7400 		.ascii	"int\000"
  181 0064 02       		.uleb128 0x2
  182 0065 04       		.byte	0x4
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 6
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 6
 
 
  183 0066 07       		.byte	0x7
- 184 0067 84010000 		.4byte	.LASF8
+ 184 0067 88010000 		.4byte	.LASF8
  185 006b 04       		.uleb128 0x4
- 186 006c DD010000 		.4byte	.LASF12
+ 186 006c E1010000 		.4byte	.LASF12
  187 0070 02       		.byte	0x2
  188 0071 9201     		.2byte	0x192
  189 0073 2C000000 		.4byte	0x2c
  190 0077 02       		.uleb128 0x2
  191 0078 04       		.byte	0x4
  192 0079 04       		.byte	0x4
- 193 007a 34000000 		.4byte	.LASF9
+ 193 007a 68000000 		.4byte	.LASF9
  194 007e 02       		.uleb128 0x2
  195 007f 08       		.byte	0x8
  196 0080 04       		.byte	0x4
- 197 0081 65010000 		.4byte	.LASF10
+ 197 0081 69010000 		.4byte	.LASF10
  198 0085 02       		.uleb128 0x2
  199 0086 01       		.byte	0x1
  200 0087 08       		.byte	0x8
- 201 0088 CE010000 		.4byte	.LASF11
+ 201 0088 D2010000 		.4byte	.LASF11
  202 008c 04       		.uleb128 0x4
- 203 008d EE000000 		.4byte	.LASF13
+ 203 008d 22010000 		.4byte	.LASF13
  204 0091 02       		.byte	0x2
  205 0092 3C02     		.2byte	0x23c
  206 0094 98000000 		.4byte	0x98
@@ -333,14 +333,14 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  212 00a0 24       		.byte	0x24
  213 00a1 B2000000 		.4byte	0xb2
  214 00a5 07       		.uleb128 0x7
- 215 00a6 58010000 		.4byte	.LASF22
+ 215 00a6 5C010000 		.4byte	.LASF22
  216 00aa 03       		.byte	0x3
  217 00ab 26       		.byte	0x26
  218 00ac 6B000000 		.4byte	0x6b
  219 00b0 00       		.byte	0
  220 00b1 00       		.byte	0
  221 00b2 08       		.uleb128 0x8
- 222 00b3 3A000000 		.4byte	.LASF14
+ 222 00b3 6E000000 		.4byte	.LASF14
  223 00b7 03       		.byte	0x3
  224 00b8 28       		.byte	0x28
  225 00b9 9D000000 		.4byte	0x9d
@@ -353,18 +353,18 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  232 00cc 01       		.uleb128 0x1
  233 00cd 9C       		.byte	0x9c
  234 00ce 09       		.uleb128 0x9
- 235 00cf 6C010000 		.4byte	.LASF16
+ 235 00cf 70010000 		.4byte	.LASF16
  236 00d3 01       		.byte	0x1
  237 00d4 3D       		.byte	0x3d
  238 00d5 00000000 		.4byte	.LFB1
  239 00d9 14000000 		.4byte	.LFE1-.LFB1
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 7
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 7
 
 
  240 00dd 01       		.uleb128 0x1
  241 00de 9C       		.byte	0x9c
  242 00df 0A       		.uleb128 0xa
- 243 00e0 F3000000 		.4byte	.LASF17
+ 243 00e0 27010000 		.4byte	.LASF17
  244 00e4 01       		.byte	0x1
  245 00e5 51       		.byte	0x51
  246 00e6 00000000 		.4byte	.LFB2
@@ -390,7 +390,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  266 0118 CE000000 		.4byte	0xce
  267 011c 00       		.byte	0
  268 011d 0C       		.uleb128 0xc
- 269 011e E3010000 		.4byte	.LASF23
+ 269 011e E7010000 		.4byte	.LASF23
  270 0122 01       		.byte	0x1
  271 0123 17       		.byte	0x17
  272 0124 B2000000 		.4byte	0xb2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  294 000f 10       		.uleb128 0x10
  295 0010 17       		.uleb128 0x17
  296 0011 00       		.byte	0
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 8
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 8
 
 
  297 0012 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  351 0048 00       		.byte	0
  352 0049 00       		.byte	0
  353 004a 07       		.uleb128 0x7
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 9
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 9
 
 
  354 004b 0D       		.uleb128 0xd
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  408 0082 19       		.uleb128 0x19
  409 0083 03       		.uleb128 0x3
  410 0084 0E       		.uleb128 0xe
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 10
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 10
 
 
  411 0085 3A       		.uleb128 0x3a
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  465 001c 14000000 		.4byte	.LFE1-.LFB1
  466 0020 00000000 		.4byte	.LFB2
  467 0024 08000000 		.4byte	.LFE2-.LFB2
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 11
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 11
 
 
  468 0028 00000000 		.4byte	.LFB3
@@ -641,122 +641,123 @@ ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 1
  492      435F5361 
  492      7665436F 
  492      6E666967 
- 493              	.LASF9:
- 494 0034 666C6F61 		.ascii	"float\000"
- 494      7400
- 495              	.LASF14:
- 496 003a 72657665 		.ascii	"reverse_C_BACKUP_STRUCT\000"
- 496      7273655F 
- 496      435F4241 
- 496      434B5550 
- 496      5F535452 
- 497              	.LASF1:
- 498 0052 756E7369 		.ascii	"unsigned char\000"
- 498      676E6564 
- 498      20636861 
- 498      7200
- 499              	.LASF19:
- 500 0060 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 500      43313120 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 12
+ 493              	.LASF21:
+ 494 0034 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\git\\motor\\Design01"
+ 494      73657273 
+ 494      5C746574 
+ 494      73757961 
+ 494      5C446F63 
+ 495 0061 2E637964 		.ascii	".cydsn\000"
+ 495      736E00
+ 496              	.LASF9:
+ 497 0068 666C6F61 		.ascii	"float\000"
+ 497      7400
+ 498              	.LASF14:
+ 499 006e 72657665 		.ascii	"reverse_C_BACKUP_STRUCT\000"
+ 499      7273655F 
+ 499      435F4241 
+ 499      434B5550 
+ 499      5F535452 
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 12
 
 
- 500      352E342E 
- 500      31203230 
- 500      31363036 
- 501 0093 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 501      20726576 
- 501      6973696F 
- 501      6E203233 
- 501      37373135 
- 502 00c6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 502      66756E63 
- 502      74696F6E 
- 502      2D736563 
- 502      74696F6E 
- 503              	.LASF13:
- 504 00ee 72656738 		.ascii	"reg8\000"
- 504      00
- 505              	.LASF17:
- 506 00f3 72657665 		.ascii	"reverse_C_Sleep\000"
- 506      7273655F 
- 506      435F536C 
- 506      65657000 
- 507              	.LASF5:
- 508 0103 6C6F6E67 		.ascii	"long unsigned int\000"
- 508      20756E73 
- 508      69676E65 
- 508      6420696E 
- 508      7400
- 509              	.LASF21:
- 510 0115 433A5C55 		.ascii	"C:\\Users\\tetsuya\\Documents\\motor\\Design01.cyds"
- 510      73657273 
- 510      5C746574 
- 510      73757961 
- 510      5C446F63 
- 511 0143 6E00     		.ascii	"n\000"
+ 500              	.LASF1:
+ 501 0086 756E7369 		.ascii	"unsigned char\000"
+ 501      676E6564 
+ 501      20636861 
+ 501      7200
+ 502              	.LASF19:
+ 503 0094 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 503      43313120 
+ 503      352E342E 
+ 503      31203230 
+ 503      31363036 
+ 504 00c7 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 504      20726576 
+ 504      6973696F 
+ 504      6E203233 
+ 504      37373135 
+ 505 00fa 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 505      66756E63 
+ 505      74696F6E 
+ 505      2D736563 
+ 505      74696F6E 
+ 506              	.LASF13:
+ 507 0122 72656738 		.ascii	"reg8\000"
+ 507      00
+ 508              	.LASF17:
+ 509 0127 72657665 		.ascii	"reverse_C_Sleep\000"
+ 509      7273655F 
+ 509      435F536C 
+ 509      65657000 
+ 510              	.LASF5:
+ 511 0137 6C6F6E67 		.ascii	"long unsigned int\000"
+ 511      20756E73 
+ 511      69676E65 
+ 511      6420696E 
+ 511      7400
  512              	.LASF3:
- 513 0145 73686F72 		.ascii	"short unsigned int\000"
+ 513 0149 73686F72 		.ascii	"short unsigned int\000"
  513      7420756E 
  513      7369676E 
  513      65642069 
  513      6E7400
  514              	.LASF22:
- 515 0158 636F6E74 		.ascii	"controlState\000"
+ 515 015c 636F6E74 		.ascii	"controlState\000"
  515      726F6C53 
  515      74617465 
  515      00
  516              	.LASF10:
- 517 0165 646F7562 		.ascii	"double\000"
+ 517 0169 646F7562 		.ascii	"double\000"
  517      6C6500
  518              	.LASF16:
- 519 016c 72657665 		.ascii	"reverse_C_RestoreConfig\000"
+ 519 0170 72657665 		.ascii	"reverse_C_RestoreConfig\000"
  519      7273655F 
  519      435F5265 
  519      73746F72 
  519      65436F6E 
  520              	.LASF8:
- 521 0184 756E7369 		.ascii	"unsigned int\000"
+ 521 0188 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccoSnfIy.s 			page 13
+
+
  521      676E6564 
-ARM GAS  C:\Users\tetsuya\AppData\Local\Temp\ccz4IxbA.s 			page 13
-
-
  521      20696E74 
  521      00
  522              	.LASF7:
- 523 0191 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 523 0195 6C6F6E67 		.ascii	"long long unsigned int\000"
  523      206C6F6E 
  523      6720756E 
  523      7369676E 
  523      65642069 
  524              	.LASF20:
- 525 01a8 47656E65 		.ascii	"Generated_Source\\PSoC5\\reverse_C_PM.c\000"
+ 525 01ac 47656E65 		.ascii	"Generated_Source\\PSoC5\\reverse_C_PM.c\000"
  525      72617465 
  525      645F536F 
  525      75726365 
  525      5C50536F 
  526              	.LASF11:
- 527 01ce 63686172 		.ascii	"char\000"
+ 527 01d2 63686172 		.ascii	"char\000"
  527      00
  528              	.LASF2:
- 529 01d3 73686F72 		.ascii	"short int\000"
+ 529 01d7 73686F72 		.ascii	"short int\000"
  529      7420696E 
  529      7400
  530              	.LASF12:
- 531 01dd 75696E74 		.ascii	"uint8\000"
+ 531 01e1 75696E74 		.ascii	"uint8\000"
  531      3800
  532              	.LASF23:
- 533 01e3 72657665 		.ascii	"reverse_C_backup\000"
+ 533 01e7 72657665 		.ascii	"reverse_C_backup\000"
  533      7273655F 
  533      435F6261 
  533      636B7570 
  533      00
  534              	.LASF4:
- 535 01f4 6C6F6E67 		.ascii	"long int\000"
+ 535 01f8 6C6F6E67 		.ascii	"long int\000"
  535      20696E74 
  535      00
  536              	.LASF0:
- 537 01fd 7369676E 		.ascii	"signed char\000"
+ 537 0201 7369676E 		.ascii	"signed char\000"
  537      65642063 
  537      68617200 
  538              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

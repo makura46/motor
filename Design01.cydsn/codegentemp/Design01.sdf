@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2018-02-14T10:14:45Z")
+ (DATE "2018-02-15T18:08:00Z")
  (DESIGN "Design01")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -426,6 +426,9 @@
     (INTERCONNECT PS3_IN\(0\)_PAD PS3_IN\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT Tx_1\(0\).pad_out Tx_1\(0\)_PAD (0.000:0.000:0.000))
     (INTERCONNECT Tx_1\(0\)_PAD Tx_1\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Air3\(0\)_PAD Air3\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Air2\(0\)_PAD Air2\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT Air1\(0\)_PAD Air1\(0\).pad_in (0.000:0.000:0.000))
    )
   )
  )

@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="and_14" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_13" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="low3_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Clock_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="reverse_C" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <register name="reverse_C_CONTROL_REG" address="0x40006474" bitWidth="8" desc="" hidden="false" />
   </block>
-  <block name="and_15" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_14" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="or_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Clock_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_12" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_11" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="or_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="or_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_16" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_15" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="high3_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="motorC" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="vmIRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="vmCompare" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -62,33 +60,19 @@
       </field>
     </register>
   </block>
-  <block name="high3_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_12" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="low3_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="high3_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Tx_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="UART_1" BASE="0x0" SIZE="0x0" desc="UART" visible="true" hidden="false">
-    <block name="IntClock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="VirtualMux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="BUART" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <block name="TXInternalInterrupt" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-    <register name="TX_UART_1_TX_DATA" address="0x40006448" bitWidth="8" desc="TX Data Register" hidden="false" />
-    <register name="TX_UART_1_TX_STATUS" address="0x40006468" bitWidth="8" desc="TX status register" hidden="false">
-      <field name="UART_1_TX_STS_COMPLETE" from="0" to="0" access="R" resetVal="" desc="" hidden="false" />
-      <field name="UART_1_TX_STS_FIFO_EMPTY" from="1" to="1" access="R" resetVal="" desc="" hidden="false" />
-      <field name="UART_1_TX_STS_FIFO_FULL" from="2" to="2" access="R" resetVal="" desc="" hidden="false" />
-      <field name="UART_1_TX_STS_FIFO_NOT_FULL" from="3" to="3" access="R" resetVal="" desc="" hidden="false" />
-    </register>
-  </block>
-  <block name="ISR_PS3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="cy_constant_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_13" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="low3_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="high3_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_17" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Clock_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="isr1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_17" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="or_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_16" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_18" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ZeroTerminal_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_constant_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Air3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="cy_boot" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Air1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Air2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PS3_IN" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="UART_PS3" BASE="0x0" SIZE="0x0" desc="UART" visible="true" hidden="false">
     <block name="IntClock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -107,6 +91,24 @@
       <field name="UART_PS3_RX_STS_ADDR_MATCH" from="6" to="6" access="R" resetVal="" desc="" hidden="false" />
     </register>
   </block>
+  <block name="and_18" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ZeroTerminal_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Tx_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="UART_1" BASE="0x0" SIZE="0x0" desc="UART" visible="true" hidden="false">
+    <block name="IntClock" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="VirtualMux_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="BUART" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <block name="TXInternalInterrupt" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+    <register name="TX_UART_1_TX_DATA" address="0x40006448" bitWidth="8" desc="TX Data Register" hidden="false" />
+    <register name="TX_UART_1_TX_STATUS" address="0x40006468" bitWidth="8" desc="TX status register" hidden="false">
+      <field name="UART_1_TX_STS_COMPLETE" from="0" to="0" access="R" resetVal="" desc="" hidden="false" />
+      <field name="UART_1_TX_STS_FIFO_EMPTY" from="1" to="1" access="R" resetVal="" desc="" hidden="false" />
+      <field name="UART_1_TX_STS_FIFO_FULL" from="2" to="2" access="R" resetVal="" desc="" hidden="false" />
+      <field name="UART_1_TX_STS_FIFO_NOT_FULL" from="3" to="3" access="R" resetVal="" desc="" hidden="false" />
+    </register>
+  </block>
+  <block name="ISR_PS3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_11" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Clock_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="reverse_D" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <register name="reverse_D_CONTROL_REG" address="0x40006476" bitWidth="8" desc="" hidden="false" />
@@ -172,15 +174,17 @@
   <block name="and_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="low1_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="Clock_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="reverse_B" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <register name="reverse_B_CONTROL_REG" address="0x40006579" bitWidth="8" desc="" hidden="false" />
   </block>
   <block name="and_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="Clock_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="or_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="or_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_10" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_9" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="or_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="high2_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="motorB" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="vmIRQ" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="vmCompare" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
@@ -232,9 +236,8 @@
     </register>
   </block>
   <block name="led" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="high2_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="low2_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="low2_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="high2_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="low2_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>
