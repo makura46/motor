@@ -73,6 +73,8 @@ int main(void)
 	for(;;)
 	{
 		ps3 = PS3_Controller_get();
+		for (i = 0; i < 3; i++)
+			na[i] = 0;
 
 		if (flag) {	// flagが立っていれば操作可能
 			if (ps3.CROSS)	// バツを押すと操作を受け付けない
